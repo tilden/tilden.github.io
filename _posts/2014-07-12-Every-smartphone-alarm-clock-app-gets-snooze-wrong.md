@@ -22,11 +22,11 @@ Touching that point reveals both the alarm off and snooze functions:
 
 However, note that both actions have the exact same target size! The only distinction is which direction you swipe -- a rather easy mistake to make for someone just being woken up by an alarm!
 
-This isn't unique to Android, however. Windows Phone makes the same mistake, offering two small, identically-sized buttons: [(source)](http://www.windowsphone.com/en-us/how-to/wp8/settings-and-personalization/set-alarms-on-my-phone)
+This isn't unique to Android, however. Windows Phone makes the same mistake, offering two small, identically-sized buttons: [(image credit)](http://www.windowsphone.com/en-us/how-to/wp8/settings-and-personalization/set-alarms-on-my-phone)
 
 ![Windows Phone Alarm Screenshot]({{ site.url }}/images/clocks/wp-alarm.png)
 
-iOS does a better job; the snooze and off actions are highly distinct -- one is a button press[^phonenote], and one is a swipe: [(source)](http://www.iphonehacks.com/2013/07/ios-7-beta-4-whats-new.html)
+iOS does a better job; the snooze and off actions are feature distinct interactions -- one is a button press, and one is a swipe. However, the button's area is still not large enough to easily press without either looking at the screen or memorizing its position[^phonenote]:  [(image credit)](http://www.iphonehacks.com/2013/07/ios-7-beta-4-whats-new.html)
 
 ![iOS 7 Alarm Screenshot]({{ site.url }}/images/clocks/ios7-beta4-alarm.jpg)
 
