@@ -8,9 +8,9 @@ date:   2014-07-12 16:05:21
 
 In 1956 General Electric introduced the *Telechron 7H241 Snooz-Alarm*[^telechron].  Like no alarm clock before it, the Telechron introduced a "snooz" button that, when pressed, would silence the alarm for several minutes before reactivating it, allowing the user to gain several more minutes of sleep. This feature was first copied three years later, but using the name "drowse" instead of snooze[^westclox]. Today, almost all alarm clocks provide a snooze function of this kind; GE's term evidently became the widely accepted one. 
 
-As on the Telechron, the "snooze" function on today's alarm clocks is activated by a larger and easier to press button than the "alarm off" function. Presumably, this design was chosen so that the person being woken (who is presumably very drowsy) will be more likely to hit the snooze button (and thus be woken again in several minutes) than the alarm off button (and thus sleep for several extra hours and be really late).
+As on the Telechron, the "snooze" function on today's alarm clocks is activated by a larger and easier to press button than the "alarm off" function. Presumably, this design was chosen so that the person being woken (who is probably very drowsy) will be more likely to hit the snooze button (and thus be woken again in several minutes) than the alarm off button (and thus sleep for several extra hours and be really late).
 
-Pretty much every smartphone OS on the market today provides a built in alarm clock app -- iOS, Android, Windows Phone. Even most feature phones have this! However, almost all of them make the same mistake: something they missed from the physical clocks.  **The snooze button is the same size as the alarm-off button!**
+Pretty much every smartphone OS on the market today provides a built in alarm clock app -- iOS, Android, Windows Phone. Even most feature phones have this! However, almost all of them exhibit the same mistake: **the snooze button is the same size as the alarm-off button!**
 
 Let's start with Android, my current mobile OS of choice. The Android Kitkat alarm clock app offers a point from which one can touch and slide toward a target, which is consistent with the behavior of the phone's lock screen:
 
