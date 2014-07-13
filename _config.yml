@@ -1,0 +1,11 @@
+# Site settings
+title: ~n
+description: "Various observations about user interfaces."
+baseurl: ""
+url: ""
+twitter_username: freakified
+github_username:  tilden
+
+# Build settings
+markdown: kramdown 
+permalink: pretty
