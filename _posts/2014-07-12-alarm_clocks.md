@@ -34,6 +34,8 @@ Of course, these are all examples of alarm clock apps included with the operatin
 
 ![Timely for Android Screenshot]({{ site.url }}/images/clocks/timely.png)
 
+[Discuss this post on Hacker News](https://news.ycombinator.com/item?id=8030463)
+
 [^telechron]: [http://www.telechron.net/eod/7h241.htm](http://www.telechron.net/eod/7h241.htm)
 
 [^westclox]: [http://clockhistory.com/westclox/products/electric/drowse/](http://clockhistory.com/westclox/products/electric/drowse/)
