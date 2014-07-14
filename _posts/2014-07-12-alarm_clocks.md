@@ -26,7 +26,7 @@ This isn't unique to Android, however. Windows Phone makes the same mistake, off
 
 ![Windows Phone Alarm Screenshot]({{ site.url }}/images/clocks/wp-alarm.png)
 
-iOS does a better job; the snooze and off actions are distinct interactions -- one is a button press, and one is a swipe. However, the button's area is still not large enough to easily press without either looking at the screen or memorizing its position[^phonenote]:  [(image credit)](http://www.iphonehacks.com/2013/07/ios-7-beta-4-whats-new.html)
+iOS does a better job; the snooze and off actions are distinct interactions -- one is a button press, and one is a swipe. Furthermore, snoozing by pressing any physical button on the phone is possible[^phonecomment]!  However, the on-screen button's area is still not large enough to easily press without either looking at the screen or memorizing its position[^phonenote]:  [(image credit)](http://www.iphonehacks.com/2013/07/ios-7-beta-4-whats-new.html)
 
 ![iOS 7 Alarm Screenshot]({{ site.url }}/images/clocks/ios7-beta4-alarm.jpg)
 
@@ -41,5 +41,7 @@ Of course, these are all examples of alarm clock apps included with the operatin
 [^westclox]: [http://clockhistory.com/westclox/products/electric/drowse/](http://clockhistory.com/westclox/products/electric/drowse/)
 
 [^phonenote]: I *think* the target area is only that of the text itself, because in iOS 6 and below it was a button.
+
+[^phonecomment]: [https://news.ycombinator.com/item?id=8030655](https://news.ycombinator.com/item?id=8030655)
 
 [^timely]: [Google acquires Bitspin, makers of beautiful Android alarm clock app Timely](http://www.theverge.com/2014/1/4/5273474/google-acquires-bitspin-timely)
