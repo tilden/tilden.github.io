@@ -1,0 +1,215 @@
+body {
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  background: white;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+#main {
+  perspective: 100px;
+  -moz-perspective: 100px;
+  -webkit-perspective: 100px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sky_bg {
+  background: transparent url('images/photo_bg.jpg') center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: translate3d(0, 0, -100px) scale(2);
+  -moz-transform: translate3d(0, 0, -100px) scale(2);
+  -webkit-transform: translate3d(0, 0, -100px) scale(2);
+}
+
+/*@media (max-width: 1280px) {
+  .sky_bg {
+    background-size: 1280px 50vh;
+  }
+}*/
+
+h1, .subtitle, .teaser {
+  font-weight: 300;
+}
+
+/*.title {
+  transform: translate3d(0px, -50px, -60px) scale(1.5);
+  -webkit-transform: translate3d(0px, -50px, -60px) scale(1.5);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}*/
+
+.title, .subtitle, .ground {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.title {
+  font-size: 72px;
+  margin: 0;
+  color: white;
+  position: relative;
+  top: -60px;
+  line-height: 72px;
+}
+
+.subtitle {
+  font-size: 24px;
+  position: relative;
+  top: -50px;
+  line-height: 24px;
+  color: #6282A4;
+  margin: 0;
+}
+
+.ground {
+  padding: 5ex 0;
+  background: #F6F6F6;
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  color: black;
+  min-height: 100%;
+}
+
+.nav {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 40px;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+
+.nav.compact {
+  padding: 10px 10px 10px 20px;
+  background-color: rgba(0,0,0,.5);
+
+}
+
+.nav.fixed {
+  background-color: rgba(0,0,0,.93);
+
+}
+
+.nav p.subheading {
+  opacity: 0.5;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  line-height: 14px;
+}
+
+
+
+
+.logo {
+  float: left;
+}
+
+h1.logo {
+  margin: 0;
+  line-height: 32px;
+  font-size: 24px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.nav > ul {
+  list-style: none;
+  font-size: 18px;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.nav > ul > li {
+  line-height: 48px;
+  float: left;
+  padding: 0 20px 0;
+}
+
+.nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.nav > ul > li > a:hover {
+  opacity: 1;
+}
+
+.projects {
+  margin: 0 auto;
+}
+
+.project {
+  border-radius: 2px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+  width: 512px;
+  height: 417px;
+  margin: 0 1% 2ex;
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+  padding: 3px;
+  border: 1px solid white;
+}
+
+.project:hover, .project:focus {
+  border: 1px solid #1274C5;
+  outline: 0;
+}
+
+.project .fake_link {
+  line-height: 22px;
+  color: #1274C5;
+  float: right;
+  display: block;
+  height: 17px;
+  border-bottom: 1px solid white;
+  transition: all 0.5s;
+}
+
+.project:hover .fake_link, .project:focus .fake_link  {
+  border-bottom: 1px solid #1274C5;
+}
+
+.project > img {
+  /*margin*/
+}
+
+.project > h3 {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 10px 20px;
+}
+
+.project > p {
+  font-size: 16px;
+  margin: 10px 20px;
+  color: #4e4e4e;
+}
+
+.project > a {
+  margin: 10px 20px;
+  font-size: 16px;
+}

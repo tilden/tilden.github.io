@@ -2,19 +2,37 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1>Posts</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<div id="main">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+	<div class="sky_bg"></div>
+
+	<div class="ground">
+		<div class="projects">
+		
+			<a class="project" href="projects/project.html">
+				<img src="images/projects/jga_banner.png" width="512px" height="250px" />
+				<h3>JGA: Crossroads of Destiny</h3>
+				<p>
+				In this open-source RPG for PCs and mobile devices, you play as an exiled infomercial chef who must restore balance to the world.
+				</p>
+				<p class="fake_link">Read more...</p>
+			</a>
+
+			<a class="project" href="projects/project.html">
+				<img src="images/projects/jga_banner.png" width="512px" height="250px" />
+				<h3>JGA: Crossroads of Destiny</h3>
+				<p>
+				In this open-source RPG for PCs and mobile devices, you play as an exiled infomercial chef who must restore balance to the world.
+				</p>
+				<p class="fake_link">Read more...</p>
+			</a>
+
+		</div>
+
+	</div>
 
 </div>
+
