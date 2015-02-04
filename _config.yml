@@ -7,5 +7,5 @@ twitter_username: freakified
 github_username:  tilden
 
 # Build settings
-markdown: kramdown 
+markdown: kramdown
 permalink: pretty

@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+a {
+  transition: color 0.2s;
+}
+
 
 #main {
   perspective: 100px;
@@ -19,9 +23,9 @@ body {
 }
 
 .sky_bg {
+  background: #888 url('images/IMG_9924.jpg') center -160px no-repeat;
   /*background: transparent url('images/photo_bg.jpg') center top no-repeat;*/
   /*background: transparent url('images/IMG_9379.jpg') center -300px no-repeat;*/
-  background: transparent url('images/IMG_9924.jpg') center -160px no-repeat;
   /*background: transparent url('images/IMG_9299.jpg') center -150px no-repeat;*/
   /*background: transparent url('images/IMG_9455.jpg') center -200px no-repeat;*/
   /*background: transparent url('images/IMG_9775.jpg') center -270px no-repeat;*/
@@ -35,6 +39,37 @@ body {
   -webkit-transform: translate3d(0, 0, -100px) scale(2);
 }
 
+#ground {
+  /*background-image: linear-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,1) 200px);*/
+  background: #eee;
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  min-height: 100%;
+
+}
+
+#ground.short {
+  top: 40%;
+}
+
+#ground.dark {
+  background-color: #252525;
+  color: white;
+}
+
+#ground.dark a {
+  color: #ccc;
+}
+
+#ground.dark a:visited {
+  color: #aaa;
+}
+
+#ground.dark a:hover {
+  color: white;
+}
+
 /*@media (max-width: 1280px) {
   .sky_bg {
     background-size: 1280px 50vh;
@@ -45,6 +80,8 @@ h1, .subtitle, .teaser {
   font-weight: 300;
 }
 
+
+
 /*.title {
   transform: translate3d(0px, -50px, -60px) scale(1.5);
   -webkit-transform: translate3d(0px, -50px, -60px) scale(1.5);
@@ -52,7 +89,7 @@ h1, .subtitle, .teaser {
   -webkit-transform-style: preserve-3d;
 }*/
 
-.title, .subtitle, .ground {
+.title, .subtitle, #ground {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
@@ -77,15 +114,6 @@ h1, .subtitle, .teaser {
   margin: 0;
 }
 
-.ground {
-  padding: 5ex 0;
-  background: #F6F6F6;
-  width: 100%;
-  position: absolute;
-  top: 500px;
-  color: white;
-  min-height: 100%;
-}
 
 .nav {
   position: absolute;
@@ -109,7 +137,6 @@ h1, .subtitle, .teaser {
 .nav.fixed {
   /*background-color: rgba(0,0,0,.93);*/
   background-color: black;
-
 }
 
 .nav p.subheading {
@@ -133,6 +160,7 @@ h1.logo {
   font-size: 24px;
   padding-left: 10px;
   text-align: left;
+  color: white;
 }
 
 .nav > ul {
@@ -169,8 +197,83 @@ h1.logo {
   background-color: rgba(255,255,255,0.25);
 }
 
+.project_title {
+  font-size: 7vw;
+  margin: 20px auto;
+  font-weight: 300;
+}
+
+.project_desc > p {
+  text-align: center;
+  line-height: 140%;
+  max-width: 800px;
+  margin: 4em auto;
+  font-weight: 300;
+}
+
+.project_desc > .project_subtitle {
+  margin: 4ex auto 6ex;
+  color: #ccc;
+}
+
 .projects {
+  margin: 5ex auto;
+}
+
+blockquote {
+  font-weight: 300;
+  max-width: 485px;
+  font-size: 26px;
+  line-height: 170%;
+  margin: 2em auto 2em;
+  position: relative;
+}
+
+blockquote:before, blockquote:after {
+  font-size: 200px;
+  font-family: "Times New Roman", Times, sans-serif;
+  opacity: 0.2;
+  position: absolute;
+}
+
+blockquote:before {
+  content: '\201c';
+  left: 0;
+}
+
+blockquote:after {
+  content: '\201d';
+  right: 0;
+}
+
+blockquote, blockquote a {
+  text-decoration: none;
+  color: #00A008;
+}
+
+blockquote b {
+  font-size: 130%;
+}
+
+blockquote .attribution {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.cols {
+  display: table;
   margin: 0 auto;
+}
+
+.cols > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.project_desc img {
+  border-radius: 4px;
+  margin-right: 20px;
+  border: 4px solid black;
 }
 
 .project {
@@ -189,24 +292,44 @@ h1.logo {
   position: relative;
 }
 
-/*.project:hover, .project:focus {
-  box-shadow: 0 0 1em red;
+.project:hover {
+  background-color: #1274C5;
+  color: white;
 }
-*/
+
+.project:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1274C5;
+}
+
+.project > p {
+  font-size: 16px;
+  margin: 10px 20px;
+  color: black;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.project:hover > p {
+  color: white;
+}
+
 .project .fake_link {
   line-height: 22px;
   color: #1274C5;
   display: block;
   height: 17px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
   transition: all 0.5s;
   position: absolute;
   bottom: 15px;
   left: 0;
+  opacity: 1;
 }
 
-.project:hover .fake_link, .project:focus .fake_link  {
-  border-bottom: 1px solid #1274C5;
+.project:hover .fake_link {
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 .project > img {
@@ -219,11 +342,6 @@ h1.logo {
   margin: 10px 20px;
 }
 
-.project > p {
-  font-size: 16px;
-  margin: 10px 20px;
-  color: #4e4e4e;
-}
 
 .project > a {
   margin: 10px 20px;

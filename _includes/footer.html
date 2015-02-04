@@ -8,14 +8,17 @@
 
 <script>
 	$('#main').on('scroll', function () {
-		console.log($('#main').scrollTop());
-	    if ($('#main').scrollTop() > 372) {
+		var navCompactCutoff = 160;
+		var navFixedCutoff = 68;
+		var bannerHeight = $('#ground').position().top;
+
+	    if (bannerHeight < navCompactCutoff) {
 	    	$('.nav').addClass('compact');
 	    } else {
 	        $('.nav').removeClass('compact');
 	    }
 
-    	if ($('#main').scrollTop() > 432) {
+    	if (bannerHeight < navFixedCutoff) {
         	$('.nav').addClass('fixed');
    		} else {
    			$('.nav').removeClass('fixed');
