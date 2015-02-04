@@ -46,16 +46,31 @@ a {
   position: absolute;
   top: 65%;
   min-height: 100%;
-
 }
 
 #ground.short {
   top: 40%;
 }
 
+#ground.project_desc {
+  background-color: white;
+}
+
 #ground.dark {
   background-color: #252525;
   color: white;
+}
+
+#ground a {
+  color: #1274C5;
+}
+
+#ground a:visited {
+  color: #905BD2;
+}
+
+#ground a:hover {
+  color: #5E99CA;
 }
 
 #ground.dark a {
@@ -79,15 +94,6 @@ a {
 h1, .subtitle, .teaser {
   font-weight: 300;
 }
-
-
-
-/*.title {
-  transform: translate3d(0px, -50px, -60px) scale(1.5);
-  -webkit-transform: translate3d(0px, -50px, -60px) scale(1.5);
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-}*/
 
 .title, .subtitle, #ground {
   transform: translate3d(0, 0, 0);
@@ -213,11 +219,27 @@ h1.logo {
 
 .project_desc > .project_subtitle {
   margin: 4ex auto 6ex;
+  color: #666;
+}
+
+.project_desc.dark > .project_subtitle {
   color: #ccc;
 }
 
 .projects {
   margin: 5ex auto;
+}
+
+.project_desc small {
+  max-width: 600px;
+  display: block;
+  line-height: 120%;
+  margin: 0.2em auto;
+  color: #666;
+}
+
+.project_desc.dark small {
+  color: #ccc;
 }
 
 blockquote {
@@ -268,6 +290,10 @@ blockquote .attribution {
 .cols > div {
   display: table-cell;
   vertical-align: middle;
+}
+
+.cols.top_align > div {
+  vertical-align: top;
 }
 
 .project_desc img {
