@@ -10,16 +10,20 @@ body {
   margin: 0;
 }
 
-
 /* 3d parallax */
 
-#main {
+#viewport {
   perspective: 100px;
   -moz-perspective: 100px;
   -webkit-perspective: 100px;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  background: #eee;
+}
+
+#viewport.dark {
+  background: #252525;
 }
 
 .title, .subtitle, #ground {
@@ -30,7 +34,7 @@ body {
 }
 
 .sky_bg {
-  background: #888 url('images/IMG_9924.jpg') center -160px no-repeat;
+  background: #888 url('images/IMG_9924.jpg') center 20px no-repeat;
   /*background: transparent url('images/photo_bg.jpg') center top no-repeat;*/
   /*background: transparent url('images/IMG_9379.jpg') center -300px no-repeat;*/
   /*background: transparent url('images/IMG_9299.jpg') center -150px no-repeat;*/
@@ -41,36 +45,46 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  transform: translate3d(0, 0, -100px) scale(2);
   -moz-transform: translate3d(0, 0, -100px) scale(2);
   -webkit-transform: translate3d(0, 0, -100px) scale(2);
+  -webkit-transform-origin: center bottom;
+  transform: translate3d(0, 0, -100px) scale(2);
+  transform-origin: center bottom;
 }
 
 #ground {
   /*background-image: linear-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,1) 200px);*/
   background: #eee;
-  width: 100%;
   position: absolute;
   top: 65%;
-  min-height: 100%;
+  width: 100%;
+  opacity: 1;
 }
 
 #ground.short {
   top: 40%;
 }
 
+#ground.overlap, #ground.post {
+  top: 200px;
+}
+
+#ground.overlap > div {
+  margin-top: -50px;
+}
+
 #ground.project_desc {
   background-color: white;
 }
 
-#ground.dark {
+.dark #ground {
   background-color: #252525;
   color: white;
 }
 
 #ground a {
   color: #1274C5;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 
 #ground a:visited {
@@ -81,15 +95,15 @@ body {
   color: #5E99CA;
 }
 
-#ground.dark a {
+.dark #ground a {
   color: #ccc;
 }
 
-#ground.dark a:visited {
+.dark #ground a:visited {
   color: #aaa;
 }
 
-#ground.dark a:hover {
+.dark #ground a:hover {
   color: white;
 }
 
@@ -128,6 +142,7 @@ h1, .subtitle, .teaser {
   font-weight: 300;
   transition: all 0.5s;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
+  box-shadow: none;
 }
 
 .nav.compact {
@@ -138,6 +153,7 @@ h1, .subtitle, .teaser {
 
 .nav.fixed {
   background-color: black;
+  box-shadow: 0 -7px 9px 5px black;
 }
 
 .nav p.subheading {
@@ -195,86 +211,96 @@ h1.logo {
   background-color: rgba(255,255,255,0.25);
 }
 
-/* landing page project cards */
+/* landing page project cards / post cards */
 
-.project {
-  border-radius: 2px;
+.cards {
+  margin: 5ex auto;
+}
+
+.card {
+  border-radius: 5px 5px 2px 2px;
   background: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   width: 512px;
   height: 417px;
   margin: 0 1% 2ex;
-  overflow: hidden;
   text-align: left;
   display: inline-block;
   text-decoration: none;
   color: black;
-  transition: all 0.5s;
+  transition: all 0.2s;
   position: relative;
+  vertical-align: top;
 }
 
-.project:hover {
+.card:hover {
   background-color: #1274C5;
   color: white;
 }
 
-.project:focus {
+.card:focus {
   outline: none;
   box-shadow: 0 0 0 2px #1274C5;
 }
 
-.project > p {
+.card > p {
   font-size: 16px;
   margin: 10px 20px;
   color: black;
   opacity: 0.6;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
-.project:hover > p {
+.card:hover > p {
   color: white;
 }
 
-.project .fake_link {
+.card .fake_link {
   line-height: 22px;
   color: #1274C5;
   display: block;
   height: 17px;
   border-bottom: 1px solid transparent;
-  transition: all 0.5s;
+  transition: all 0.2s;
   position: absolute;
   bottom: 15px;
   left: 0;
   opacity: 1;
 }
 
-.project:hover .fake_link {
+.card:hover .fake_link {
   border-bottom: 1px solid white;
   color: white;
 }
 
-.project > img {
+.card > img {
   border-radius: 2px 2px 0 0;
 }
 
-.project > h3 {
+.card .post_thumb {
+  background-size: cover;
+  width: 512px;
+  height: 250px;
+  border-radius: 2px 2px 0 0;
+}
+
+.card > h3 {
   font-weight: 300;
   font-size: 22px;
   margin: 10px 20px;
   color: black;
-  transition: color 0.1s;
+  transition: color 0.2s;
 }
 
-.project:hover > h3 {
+.card:hover > h3 {
   color: white;
 }
 
-
-.project > a {
+.card > a {
   margin: 10px 20px;
   font-size: 16px;
 }
-.project:focus {
+.card:focus {
   outline: none;
   box-shadow: 0 0 0 2px #1274C5;
 }
@@ -300,12 +326,8 @@ h1.logo {
   font-weight: 300;
 }
 
-.project_desc.dark > .project_subtitle {
+.dark .project_subtitle {
   color: #ccc;
-}
-
-.projects {
-  margin: 5ex auto;
 }
 
 .project_desc small {
@@ -316,7 +338,7 @@ h1.logo {
   color: #666;
 }
 
-.project_desc.dark small {
+.dark small {
   color: #ccc;
 }
 
@@ -404,4 +426,17 @@ blockquote .attribution {
   font-weight: 300;
   line-height: 140%;
   text-align: left;
+}
+
+/* blog page */
+.post > h2 {
+  color: white;
+  font-weight: 300;
+  padding: 0 60px;
+  margin: 0;
+  transform: translate(0, -100%);
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  box-sizing: border-box;
 }

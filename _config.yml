@@ -8,4 +8,4 @@ github_username:  tilden
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title.html
