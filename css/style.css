@@ -440,3 +440,43 @@ blockquote .attribution {
   top: -10px;
   box-sizing: border-box;
 }
+
+p.meta {
+  color: #666;
+  font-size: 80%;
+}
+
+.post_content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+.post_content {
+  width: 800px;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 140%;
+  font-size: 80%;
+}
+
+.post_content p {
+  margin-bottom: 1em;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: 80%;
+}
+
+.footnotes li p {
+  margin: 0.2em;
+}
+
+a.reversefootnote {
+  text-decoration: none;
+}
