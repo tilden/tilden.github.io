@@ -8,8 +8,26 @@
   </a>
 
   <ul>
-    <li><a href="/">Portfolio</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="about.html">About</a></li>
+    <li>
+    {% if page.section == 'portfolio' %}
+      <span>Portfolio</span>
+    {% else %}
+      <a href="/">Portfolio</a>
+    {% endif %}
+    </li>
+    <li>
+    {% if page.section == 'blog' %}
+      <span>Blog</span>
+    {% else %}
+      <a href="/blog">Blog</a>
+    {% endif %}
+    </li>
+    <li>
+    {% if page.section == 'about' %}
+      <span>About</span>
+    {% else %}
+      <a href="/about">About</a>
+    {% endif %}
+    </li>
   </ul>
 </div>
