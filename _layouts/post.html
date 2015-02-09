@@ -2,12 +2,17 @@
 layout: default
 ---
 <div id="viewport">
-  <div class="sky_bg" style="background: #483D8B"></div>
+  {% if page.top_bar_color %}
+    {% assign top_bar_color = page.top_bar_color %}
+  {% else %}
+    {% assign top_bar_color = '#483D8B' %}
+  {% endif %}
+  <div class="sky_bg" style="background: {{top_bar_color}}"></div>
 
   <div id="ground" class="post">
-      <h2>{{ page.title }}</h2>
+    <h2>{{ page.title }}</h2>
 
-      <p class="meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
     <article class="post_content">
     {{ content }}

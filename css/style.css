@@ -35,11 +35,6 @@ body {
 
 .sky_bg {
   background: #888 url('images/IMG_9924.jpg') center 20px no-repeat;
-  /*background: transparent url('images/photo_bg.jpg') center top no-repeat;*/
-  /*background: transparent url('images/IMG_9379.jpg') center -300px no-repeat;*/
-  /*background: transparent url('images/IMG_9299.jpg') center -150px no-repeat;*/
-  /*background: transparent url('images/IMG_9455.jpg') center -200px no-repeat;*/
-  /*background: transparent url('images/IMG_9775.jpg') center -270px no-repeat;*/
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -53,20 +48,22 @@ body {
 }
 
 #ground {
-  /*background-image: linear-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,1) 200px);*/
   background: #eee;
   position: absolute;
   top: 65%;
+  min-height: calc(100vh - 65%);
   width: 100%;
   opacity: 1;
 }
 
 #ground.short {
   top: 40%;
+  min-height: calc(100vh - 40%);
 }
 
 #ground.overlap, #ground.post {
   top: 200px;
+  min-height: calc(100vh - 200px);
 }
 
 #ground.overlap > div {
@@ -209,6 +206,29 @@ h1.logo {
 
 .nav > ul > li > span {
   background-color: rgba(255,255,255,0.25);
+}
+
+@media (max-width: 600px) {
+  .nav, .nav.compact {
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 545px) {
+  .nav > ul > li {
+    padding: 0 1px 0;
+  }
+
+  .nav > ul > li > a, .nav > ul > li > span {
+    padding: 11px 10px;
+  }
+}
+
+@media (max-width: 435px) {
+  h1.logo {
+    display: none;
+  }
+
 }
 
 /* landing page project cards / post cards */
