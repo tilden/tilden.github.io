@@ -228,7 +228,6 @@ h1.logo {
   h1.logo {
     display: none;
   }
-
 }
 
 /* landing page project cards / post cards */
@@ -323,6 +322,21 @@ h1.logo {
 .card:focus {
   outline: none;
   box-shadow: 0 0 0 2px #1274C5;
+}
+
+@media (max-width: 525px) {
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .card > img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* project pages */
@@ -471,14 +485,17 @@ p.meta {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .post_content {
+  box-sizing: border-box;
   width: 800px;
   text-align: left;
   margin: 0 auto;
   line-height: 140%;
   font-size: 80%;
+  padding: 10px;
 }
 
 .post_content p {
@@ -499,4 +516,10 @@ sup a {
 
 a.reversefootnote {
   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .post_content {
+    width: 100%;
+  }
 }
