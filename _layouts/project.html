@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% if page.use_dark_style %}
+  {% assign viewport_extra_class = "dark" %}
+{% endif %}
+
+<div id="viewport" class="short {{viewport_extra_class}}">
+  {% if page.banner_photo %}
+    {% capture sky_style %}background-image: url('{{page.banner_photo}}');{% endcapture %}
+  {% else %}
+    {% if page.top_bar_color %}
+      {% capture sky_style %}background: {{page.top_bar_color}};{% endcapture %}
+    {% else %}
+      {% capture sky_style %}background: #483D8B;{% endcapture %}
+    {% endif %}
+  {% endif %}
+  <div class="sky_bg" style="{{ sky_style }}"></div>
+
+  <div id="ground"  class="project_desc">
+    <h2 class="project_title">{{ page.project_title }}</h2>
+
+    <div class="project_subtitle">
+      {{ page.project_subtitle}}
+    </div>
+
+    {{ content }}
+
+  </div>
+</div>
