@@ -1,20 +1,18 @@
 ---
 layout: default
 ---
-<div id="viewport">
-  {% if page.top_bar_color %}
-    {% assign top_bar_color = page.top_bar_color %}
-  {% else %}
-    {% assign top_bar_color = '#483D8B' %}
-  {% endif %}
-  <div class="sky_bg" style="background: {{top_bar_color}}"></div>
+{% if page.top_bar_color %}
+  {% assign top_bar_color = page.top_bar_color %}
+{% else %}
+  {% assign top_bar_color = '#483D8B' %}
+{% endif %}
+<div class="sky_bg" style="background: {{top_bar_color}}"></div>
 
-  <div id="ground" class="post">
-    <h2>{{ page.title }}</h2>
+<div id="ground" class="post">
+  <h2>{{ page.title }}</h2>
 
-    <article class="post_content">
-    {{ content }}
-    </article>
+  <article class="post_content">
+  {{ content }}
+  </article>
 
-  </div>
 </div>

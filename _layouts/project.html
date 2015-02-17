@@ -5,7 +5,7 @@ layout: default
   {% assign viewport_extra_class = "dark" %}
 {% endif %}
 
-<div id="viewport" class="short {{viewport_extra_class}}">
+<div class="short {{viewport_extra_class}}">
   {% if page.banner_photo %}
     {% capture sky_style %}background-image: url('{{page.banner_photo}}');{% endcapture %}
   {% else %}

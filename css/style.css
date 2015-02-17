@@ -12,32 +12,12 @@ body {
   font-size: 22px;
   color: black;
   text-align: center;
-  background: white;
-  overflow: hidden;
   margin: 0;
-}
-
-/* 3d parallax */
-
-#viewport {
-  perspective: 100px;
-  -moz-perspective: 100px;
-  -webkit-perspective: 100px;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
   background: #eee;
 }
 
-#viewport.dark {
+.dark {
   background: #252525;
-}
-
-.title, .subtitle, #ground {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
 }
 
 .sky_bg {
@@ -45,14 +25,8 @@ body {
   background-size: cover;
   width: 100%;
   height: 65%;
-  position: absolute;
-  top: 15vh;
-  -moz-transform: translate3d(0, 0, -100px) scale(2);
-  -webkit-transform: translate3d(0, 0, -100px) scale(2);
-  -webkit-transform-origin: center bottom;
-  transform: translate3d(0, 0, -100px) scale(2);
-  /*transform: translate3d(0,300px, -100px) scale(2);*/
-  transform-origin: center bottom;
+  position: fixed;
+  top: 0;
 }
 
 #ground {
@@ -62,6 +36,7 @@ body {
   min-height: calc(100vh - 65%);
   width: 100%;
   opacity: 1;
+  overflow-x: hidden;
 }
 
 .short #ground {
@@ -71,7 +46,6 @@ body {
 
 .short .sky_bg {
   height: 40%;
-  top: -10vh;
 }
 
 #ground.overlap, #ground.post {
@@ -142,7 +116,7 @@ h1, .subtitle, .teaser {
 /* navigation */
 
 .nav {
-  position: absolute;
+  position: fixed;
   color: white;
   top: 0;
   left: 0;
@@ -150,7 +124,7 @@ h1, .subtitle, .teaser {
   z-index: 1;
   padding: 40px;
   font-weight: 300;
-  transition: background-color 0.5s, height 0.5s, padding 0.5s;
+  transition: all 0.5s;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
   box-shadow: none;
 }
@@ -163,7 +137,7 @@ h1, .subtitle, .teaser {
 
 .nav.fixed {
   background-color: black;
-  /*box-shadow: 0 -7px 9px 5px black;*/
+  box-shadow: 0 -7px 9px 5px black;
 }
 
 .nav p.subheading {
@@ -482,17 +456,13 @@ blockquote .attribution {
   border-radius: 4px;
   border: 4px solid black;
   max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .cols {
     display: block;
     margin: 0 auto;
-  }
-
-  .project_desc img.screenshot {
-    border: 0;
-    border-radius: 0;
   }
 
   .cols > div {
@@ -508,6 +478,13 @@ blockquote .attribution {
 
   .row_of_pics .screenshot {
     margin: 25px 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project_desc img.screenshot {
+    border: 0;
+    border-radius: 0;
   }
 }
 
