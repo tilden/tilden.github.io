@@ -150,7 +150,7 @@ h1, .subtitle, .teaser {
   z-index: 1;
   padding: 40px;
   font-weight: 300;
-  transition: all 0.5s;
+  transition: background-color 0.5s, height 0.5s, padding 0.5s;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
   box-shadow: none;
 }
@@ -163,7 +163,7 @@ h1, .subtitle, .teaser {
 
 .nav.fixed {
   background-color: black;
-  box-shadow: 0 -7px 9px 5px black;
+  /*box-shadow: 0 -7px 9px 5px black;*/
 }
 
 .nav p.subheading {
