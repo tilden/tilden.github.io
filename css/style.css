@@ -462,7 +462,6 @@ blockquote .attribution {
 @media (max-width: 980px) {
   .cols {
     display: block;
-    margin: 0 auto;
   }
 
   .cols > div {
