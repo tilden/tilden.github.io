@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{% if page.use_dark_style %}
-  {% assign viewport_extra_class = "dark" %}
-{% endif %}
 
-<div class="short {{viewport_extra_class}}">
+
+<div class="short">
   {% if page.banner_photo %}
     {% capture sky_style %}background-image: url('{{page.banner_photo}}');{% endcapture %}
   {% else %}

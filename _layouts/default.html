@@ -3,13 +3,17 @@
 
   {% include head.html %}
 
-    <body>
+  {% if page.use_dark_style %}
+    {% assign viewport_extra_class = "dark" %}
+  {% endif %}
 
-    {% include navigation.html %}
+  <body class="{{viewport_extra_class}}">
 
-    {{ content }}
+  {% include navigation.html %}
 
-    {% include footer.html %}
+  {{ content }}
 
-    </body>
+  {% include footer.html %}
+
+  </body>
 </html>

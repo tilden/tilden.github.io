@@ -5,30 +5,56 @@
 </footer>
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
 
 <script>
-	$(document).on('scroll', function () {
+  counter= 0;
+
+	$ground = $('#ground')
+	$nav    = $('.nav')
+	$skyBg  = $('.sky_bg');
+
+	function pageTransforms() {
 		// navbar magical transformation sequence
 		var navCompactCutoff = 160;
 		var navFixedCutoff = 68;
-		var skyHeight = $('#ground').offset().top - $(window).scrollTop();
+		var skyHeight = $ground.offset().top - $(window).scrollTop();
 
-    if (skyHeight < navCompactCutoff) {
-    	$('.nav').addClass('compact');
-    } else {
-        $('.nav').removeClass('compact');
-    }
+		if (skyHeight < navCompactCutoff) {
+			$nav.addClass('compact');
+		} else {
+			$nav.removeClass('compact');
+		}
 
-  	if (skyHeight < navFixedCutoff) {
-      	$('.nav').addClass('fixed');
- 		} else {
- 			$('.nav').removeClass('fixed');
- 		}
+		if (skyHeight < navFixedCutoff) {
+			$nav.addClass('fixed');
+		} else {
+			$nav.removeClass('fixed');
+		}
 
-		// parallax
-		parallaxFactor = -0.5;
-		skyTop = Math.round(Math.max($(window).scrollTop(), 0) * parallaxFactor) + 'px';
-		$('.sky_bg').css('top', skyTop);
-	});
+		if(skyHeight > 0) {
+			// parallax
+			parallaxFactor = -0.5;
+			skyTop = Math.floor($(window).scrollTop() * parallaxFactor) + 'px';
+			// $skyBg.css('top', skyTop);
+			transformation = "translate3d(0, " + skyTop + ", 0)";
+			$skyBg.css({
+				'-webkit-transform' : transformation,
+				'-moz-transform'    : transformation,
+				'-ms-transform'     : transformation,
+				'-o-transform'      : transformation,
+				'transform'         : transformation
+			});
+		}
+	}
+
+	function scrollHandler() {
+		if(window.requestAnimationFrame) {
+			window.requestAnimationFrame(pageTransforms);
+		} else {
+			pageTransforms();
+		}
+	}
+
+	setInterval(scrollHandler, 10);
 </script>
