@@ -527,7 +527,7 @@ blockquote .attribution {
   max-width: 100%;
 }
 
-.post_content {
+.post_content, .footnotes {
   width: 800px;
   text-align: left;
   margin: 0 auto;
@@ -545,7 +545,7 @@ sup a {
 }
 
 .footnotes {
-  font-size: 80%;
+  font-size: 14px;
 }
 
 .footnotes li p {
@@ -557,7 +557,7 @@ sup a {
 }
 
 @media (max-width: 800px) {
-  .post_content {
+  .post_content, .footnotes {
     width: 100%;
   }
 }
