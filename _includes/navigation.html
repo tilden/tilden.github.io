@@ -1,0 +1,33 @@
+<div class="nav">
+  <a href="/">
+    <img src="/images/logo.svg" width="48px" height="48px" alt="logo" class="logo" data-no-retina />
+    <h1 class="logo">
+      Dan Tilden
+      <p class="subheading">UX Designer</p>
+    </h1>
+  </a>
+
+  <ul>
+    <li>
+    {% if page.section == 'portfolio' %}
+      <span>Portfolio</span>
+    {% else %}
+      <a href="/">Portfolio</a>
+    {% endif %}
+    </li>
+    <li>
+    {% if page.section == 'blog' %}
+      <span>Blog</span>
+    {% else %}
+      <a href="/blog">Blog</a>
+    {% endif %}
+    </li>
+    <li>
+    {% if page.section == 'about' %}
+      <span>About</span>
+    {% else %}
+      <a href="/about">About</a>
+    {% endif %}
+    </li>
+  </ul>
+</div>

@@ -1,15 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
+{% if page.top_bar_color %}
+  {% assign top_bar_color = page.top_bar_color %}
+{% else %}
+  {% assign top_bar_color = '#483D8B' %}
+{% endif %}
+<div class="sky_bg" style="background: {{top_bar_color}}"></div>
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div id="ground" class="post">
+  <h2>{{ page.title }}</h2>
 
-  <article class="post-content">
+  <p class="meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+  <div class="post_content">
   {{ content }}
-  </article>
+</div>
 
 </div>

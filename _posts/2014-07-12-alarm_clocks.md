@@ -2,9 +2,10 @@
 layout: post
 title:  "How every smartphone platform gets the alarm clock wrong"
 date:   2014-07-12 16:05:21
+thumbnail: "/images/clocks/telechron.jpg"
 ---
 
-[![Telechron 7H241 Snooz-Alarm]({{ site.url }}/images/clocks/telechron.jpg)](http://www.telechron.net/eod/7h241.htm)
+![Telechron 7H241 Snooz-Alarm]({{ site.url }}/images/clocks/telechron.jpg)
 
 In 1956 General Electric introduced the *Telechron 7H241 Snooz-Alarm*[^telechron].  Like no alarm clock before it, the Telechron introduced a "snooze" button that, when pressed, would silence the alarm for several minutes before reactivating it, allowing the user to gain several more minutes of sleep. This feature was first copied three years later, but using the name "drowse" instead of snooze[^westclox]. Today, almost all alarm clocks provide a snooze function of this kind; GE's term evidently became the widely accepted one. 
 
