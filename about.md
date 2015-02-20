@@ -6,7 +6,7 @@ section: about
 top_bar_color: '#A52A2A'
 ---
 
-<img src="/images/about_photo.jpg" width="640px" />
+<img src="/images/about_photo.jpg" width="640px" height="505px" />
 <small class="caption">Me introducing [Don Norman](http://en.wikipedia.org/wiki/Don_Norman) at CHI 2012 SV area, wearing the [t-shirt I designed](/projects/archive/#chi_shirt)!</small>
 
 Let's be honest, no one likes badly designed user interfaces. However, in order to fix

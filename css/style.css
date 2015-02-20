@@ -290,7 +290,7 @@ img.logo {
 
 .card .post_thumb {
   background-size: cover;
-  width: 512px;
+  width: 100%;
   height: 250px;
   border-radius: 2px 2px 0 0;
 }
@@ -530,6 +530,7 @@ blockquote .attribution {
   margin-right: auto;
   border-radius: 4px;
   max-width: 100%;
+  height: auto;
 }
 
 .post_content, .footnotes {
@@ -561,6 +562,7 @@ sup a {
 
 .footnotes {
   font-size: 14px;
+  word-wrap: break-word;
 }
 
 .footnotes li p {
