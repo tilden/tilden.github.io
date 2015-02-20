@@ -1,12 +1,5 @@
 /* global stuff */
 
-/*html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
-
 body {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 22px;
@@ -532,12 +525,16 @@ blockquote .attribution {
 }
 
 .post_content, .footnotes {
-  width: 800px;
+  width: 780px;
   text-align: left;
   margin: 0 auto;
   line-height: 140%;
   font-size: 80%;
   padding: 10px;
+}
+
+.post > h2, .post_content, .footnotes {
+  box-sizing: border-box;
 }
 
 .post_content p {
