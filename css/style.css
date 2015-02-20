@@ -358,8 +358,16 @@ img.logo {
 .section {
   text-align: center;
   line-height: 140%;
-  margin: 4em auto;
+  margin: 0 auto 4em auto;
   font-weight: 300;
+}
+
+/* wacky alternative margin so we can jump to click targets
+   without navbar overlap */
+.section:before {
+   content: "";
+   display: block;
+   height: 2em;
 }
 
 .project_desc > .project_subtitle {
@@ -543,6 +551,12 @@ blockquote .attribution {
 
 sup a {
   text-decoration: none;
+}
+
+.caption {
+  text-align: center;
+  font-size: 80%;
+  display: block;
 }
 
 .footnotes {
