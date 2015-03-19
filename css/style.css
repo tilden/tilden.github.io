@@ -13,9 +13,11 @@ body {
 /* 3d parallax */
 
 #viewport {
-  perspective: 100px;
-  -moz-perspective: 100px;
   -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  -ms-perspective: 100px;
+  -o-perspective: 100px;
+  perspective: 100px;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -27,10 +29,16 @@ body {
 }
 
 .title, .subtitle, #ground {
-  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  transform-style: preserve-3d;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .sky_bg {
@@ -40,11 +48,17 @@ body {
   height: 65%;
   position: absolute;
   top: 15vh;
-  -moz-transform: translate3d(0, 0, -100px) scale(2);
+
   -webkit-transform: translate3d(0, 0, -100px) scale(2);
-  -webkit-transform-origin: center bottom;
+  -moz-transform: translate3d(0, 0, -100px) scale(2);
+  -ms-transform: translate3d(0, 0, -100px) scale(2);
+  -o-transform: translate3d(0, 0, -100px) scale(2);
   transform: translate3d(0, 0, -100px) scale(2);
-  /*transform: translate3d(0,300px, -100px) scale(2);*/
+
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
   transform-origin: center bottom;
 }
 
@@ -149,7 +163,7 @@ h1, .subtitle, .teaser {
   box-shadow: 0 -7px 9px 5px rgba(0,0,0,0);
   -webkit-font-smoothing: antialiased;
   /* for our dear friend ie9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C000000', endColorstr='#00000000')"; /* for IE */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C000000', endColorstr='#00000000')";
 }
 
 .nav.compact {
