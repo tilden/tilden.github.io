@@ -100,28 +100,28 @@ body {
   color: white;
 }
 
-#ground a {
+a {
   color: #1274C5;
   transition: all 0.2s;
 }
 
-#ground a:visited {
+a:visited {
   color: #905BD2;
 }
 
-#ground a:hover {
+a:hover {
   color: #5E99CA;
 }
 
-.dark #ground a {
+.dark a {
   color: #ccc;
 }
 
-.dark #ground a:visited {
+.dark a:visited {
   color: #aaa;
 }
 
-.dark #ground a:hover {
+.dark a:hover {
   color: white;
 }
 
@@ -228,6 +228,9 @@ img.logo {
   border: 1px solid rgba(255,255,255,0.3);
 }
 
+.nav > ul > li > a:visited {
+  color: white;
+}
 
 .nav > ul > li > span {
   background-color: rgba(255,255,255,0.25);
@@ -362,6 +365,54 @@ img.logo {
     width: 100%;
     height: auto;
   }
+}
+
+/* about page contact cards */
+
+.contact_info {
+  text-align: center;
+}
+
+.contact_info > h3 {
+  font-size: 16px;
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: #666;
+}
+
+.contact, .contact:visited, .resume, .resume:visited {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #666;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.contact {
+  width: 75px;
+  height: 75px;
+}
+
+.contact:hover, .resume:hover {
+  background: #ddd;
+  color: #666;
+}
+
+.contact > span {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+.resume {
+  margin-bottom: -8px;
+}
+
+.resume > span {
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 /* main page extras */

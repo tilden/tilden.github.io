@@ -46,4 +46,22 @@
 
 			return (width1 - width2);
 	}
+
+
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		// simple email encoder; we'll just hope spambots can't parse JS...
+		var a = {'gmail': 'dan', 'com': 'tilden', '@': '.'};
+		var b = "";
+		b += a[Object.getOwnPropertyNames(a)[0]];
+		b += a[Object.getOwnPropertyNames(a)[2]];
+		b += a[Object.getOwnPropertyNames(a)[1]];
+		b += Object.getOwnPropertyNames(a)[2];
+		b += Object.getOwnPropertyNames(a)[0];
+		b += a[Object.getOwnPropertyNames(a)[2]];
+		b += Object.getOwnPropertyNames(a)[1];
+		$('#email_link').attr('href', 'mailto:' + b);
+  });
 </script>

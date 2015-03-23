@@ -6,8 +6,19 @@ section: about
 top_bar_color: '#A52A2A'
 ---
 
+<div class="contact_info">
+  <a class="resume" href="#" id="email_link">
+    <i class="site-icon fa fa-envelope-o fa-lg"></i>
+    <span>Contact via email</span>
+  </a>
+	<a class="resume" href="/files/DanTilden-Resume.pdf">
+    <i class="site-icon fa fa-file-text-o fa-lg"></i>
+    <span>View résumé (PDF)</span>
+	</a>
+</div>
+
 <img src="/images/about_photo.jpg" width="640px" height="505px" />
-<small class="caption">Me introducing [Don Norman](http://en.wikipedia.org/wiki/Don_Norman) at CHI 2012 SV area, wearing the [t-shirt I designed](/projects/archive/#chi_shirt)!</small>
+<small class="caption">Me introducing [Don Norman](http://en.wikipedia.org/wiki/Don_Norman) to student volunteers at the <a href="http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems">CHI</a> conference, wearing the [t-shirt I designed](/projects/archive/#chi_shirt)!</small>
 
 Let's be honest, no one likes badly designed user interfaces. However, in order to fix
 the problems, you need to know know <b>why</b> it's so bad. Over the course of my years as a CS major, HCI student, and professional UX engineer I've been learning to do exactly that.
@@ -18,3 +29,21 @@ To get a better idea of the kinds of products I work on, check out [Drive-Thru M
 and [Production Control](/projects/productioncontrol)!
 
 My goal is to improve the world's user interfaces, one step at a time.
+
+
+
+<div class="contact_info">
+  <h3>Visit me on...</h3>
+	<a class="contact " href="https://www.linkedin.com/pub/dan-tilden/">
+    <i class="site-icon fa fa-linkedin-square fa-3x" style="color: #0077b5;"></i>
+    <span>LinkedIn</span>
+	</a>
+  <a class="contact " href="https://github.com/tilden">
+    <i class="site-icon fa fa-github-square fa-3x" style="color: #333;"></i>
+    <span>GitHub</span>
+  </a>
+  <a class="contact " href="https://instagram.com/freakified/">
+    <i class="site-icon fa fa-instagram fa-3x" style="color: #3f729b;"></i>
+    <span>Instagram</span>
+  </a>
+</div>
