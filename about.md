@@ -18,7 +18,8 @@ top_bar_color: '#A52A2A'
 </div>
 
 <img src="/images/about_photo.jpg" width="640px" height="505px" />
-<small class="caption">Me introducing [Don Norman](http://en.wikipedia.org/wiki/Don_Norman) to student volunteers at the <a href="http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems">CHI</a> conference, wearing the [t-shirt I designed](/projects/archive/#chi_shirt)!</small>
+
+<div class="caption">Me introducing <a href="http://en.wikipedia.org/wiki/Don_Norman">Don Norman</a> to student volunteers at the <a href="http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems">CHI</a> conference, wearing the <a href="/projects/archive/#chi_shirt">t-shirt I designed</a>!</div>
 
 Let's be honest, no one likes badly designed user interfaces. However, in order to fix
 the problems, you need to know know <b>why</b> it's so bad. Over the course of my years as a CS major, HCI student, and professional UX engineer I've been learning to do exactly that.

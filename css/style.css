@@ -587,7 +587,7 @@ blockquote .attribution {
 /* blog page */
 
 .post_content {
-  font-size: 14px;
+  font-size: 75%;
 }
 
 .post > h2 {
@@ -620,13 +620,15 @@ blockquote .attribution {
 }
 
 .post_content, .footnotes {
-  font-family: Merriweather, Georgia, Serif;
   width: 780px;
   text-align: left;
   margin: 0 auto;
-  line-height: 160%;
-  font-size: 75%;
   padding: 10px;
+}
+
+.post_content p, .post_content ul {
+  font-family: Merriweather, Georgia, Serif;
+  line-height: 160%;
 }
 
 .post > h2, .post_content, .footnotes {
