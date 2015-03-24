@@ -41,7 +41,7 @@ Other commands that also take on this form include...
 * [`rsync`](http://en.wikipedia.org/wiki/Rsync#Uses) (used to copy large amounts of files to/from a remote server)
 * [`scp`](http://en.wikipedia.org/wiki/Secure_copy#SCP_program) (used to copy files over SSH)
 
-### How it happened
+## How it happened
 
 To determine why `tar` takes this unusual form, we must examine the history of the command.
 The command was initially released with Version 7 Unix in 1979[^unixv7] as a utility
@@ -60,7 +60,7 @@ Going back to our original example command:
 We can now see why "destination.tar" must be specified first:
 the filename is actually part of the `f` flag, and therefore must directly follow it.
 
-### Implications for design
+## Implications for design
 
 The `tar` command is not difficult to remember because it is inherently the wrong order, but because it fails to maintain **consistency** with other, similar commands. When designing any user interface (not just command line ones), it's important to maintain a sense of consistency -- failing to do so will, as we see here, often result in unexpected behavior, which in turn leads to frustration.
 
