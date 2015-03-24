@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "YouTube's \"watch later\" doesn't make sense: here's how it should work"
+title:  "YouTube's \"watch later\" function could be so much more useful"
 date:   2015-03-20 16:05:21
 ---
 

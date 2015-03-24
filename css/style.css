@@ -585,6 +585,11 @@ blockquote .attribution {
 }
 
 /* blog page */
+
+.post_content {
+  font-size: 14px;
+}
+
 .post > h2 {
   color: white;
   font-weight: 300;
@@ -615,11 +620,12 @@ blockquote .attribution {
 }
 
 .post_content, .footnotes {
+  font-family: Merriweather, Georgia, Serif;
   width: 780px;
   text-align: left;
   margin: 0 auto;
-  line-height: 140%;
-  font-size: 80%;
+  line-height: 160%;
+  font-size: 75%;
   padding: 10px;
 }
 
@@ -631,8 +637,27 @@ blockquote .attribution {
   margin-bottom: 1em;
 }
 
+sup {
+  line-height: 1em;
+}
+
 sup a {
   text-decoration: none;
+}
+
+code {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", monospace;
+  font-weight: bold;
+}
+
+pre > code {
+  font-weight: normal;
+  font-size: 14px;
+  white-space: pre;
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
 }
 
 .caption {
