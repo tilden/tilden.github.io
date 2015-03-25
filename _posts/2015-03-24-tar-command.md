@@ -64,6 +64,8 @@ the filename is actually part of the `f` flag, and therefore must directly follo
 
 The `tar` command is not difficult to remember because it is inherently the wrong order, but because it fails to maintain **consistency** with other, similar commands. When designing any user interface (not just command line ones), it's important to maintain a sense of consistency -- failing to do so will, as we see here, often result in unexpected behavior, which in turn leads to frustration.
 
+[Discuss this post on Hacker News](https://news.ycombinator.com/item?id=9262575)
+
 [^tar_original_manpage]: ["tar – tape archiver". Unix Programmer’s Manual, Seventh Ed. Vol 1, Jan 1979, pp179-180.]({{ site.url }}/files/posts/unix_v7_manual_tar.pdf) Retrieved from [http://cm.bell-labs.com/7thEdMan/bswv7.html](http://cm.bell-labs.com/7thEdMan/bswv7.html).
 [^unixv7]: [Version 7 Unix: Wikipedia](http://en.wikipedia.org/wiki/Version_7_Unix#New_features_in_Version_7)
 [^gnutar]: [tar - The GNU version of the tar archiving utility](http://linuxcommand.org/man_pages/tar1.html)
