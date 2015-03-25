@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: "Dan Tilden: About"
 permalink: /about/
 section: about
 top_bar_color: '#A52A2A'
