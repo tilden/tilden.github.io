@@ -19,7 +19,7 @@ The answer, I suspect, lies in the order of the command's arguments. To illustra
 called "destination.tar" containing 3 files. To create this file, the  `tar` command
 takes the following form:
 
-    tar cf destination.tar file1.txt file2.txt file3.txt
+    tar -c -f destination.tar file1.txt file2.txt file3.txt
 
 That's not *so* bad, right? However, the command's confusing nature doesn't necessarily
 relate to its inherent properties -- rather, it relates to how it *differs* from
@@ -37,7 +37,7 @@ Similarly to *move* the files instead of copying them, the `mv` command is used 
 
 Other commands that also take on this form include...
 
-* [`ln`](http://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html) (used to create symbolic links, among other things)
+* [`ln`](http://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html) (used to create filesystem links)
 * [`rsync`](http://en.wikipedia.org/wiki/Rsync#Uses) (used to copy large amounts of files to/from a remote server)
 * [`scp`](http://en.wikipedia.org/wiki/Secure_copy#SCP_program) (used to copy files over SSH)
 
@@ -45,20 +45,20 @@ Other commands that also take on this form include...
 
 To determine why `tar` takes this unusual form, we must examine the history of the command.
 The command was initially released with Version 7 Unix in 1979[^unixv7] as a utility
-which "saves and restores files on magtape"[^tar_original_manpage]. *(`tar` is actually short for <b>TA</b>pe a<b>R</b>chive.)* As such, the default form of `tar`, without any arguments, accepts a list of source files
+which "saves and restores files on magtape"[^tar_original_manpage]. *(`tar` is actually short for <b>T</b>ape <b>AR</b>chive.)* As such, the default form of `tar`, without any arguments, accepts a list of source files
 and writes them to your *magnetic tape device*[^tar_original_manpage]. (Your computer *does* have one of those,
 right?)
 
-Naturally, `tar` is never really used in this way anymore. Instead, the `c` and `f` flags are used, which
+Naturally, `tar` is never really used in this way anymore. Instead, the `-c` and `-f` flags are used, which
 cause the command to `c`reate a new `f`ile for use as the archive. (Tellingly, every example command listed
-in the manual for the current version `tar` contains the `f` flag [^gnutar].)
+in the manual for the current version `tar` contains the `-f` flag [^gnutar].)
 
 Going back to our original example command:
 
-    tar cf destination.tar file1.txt file2.txt file3.txt
+    tar -c -f destination.tar file1.txt file2.txt file3.txt
 
 We can now see why "destination.tar" must be specified first:
-the filename is actually part of the `f` flag, and therefore must directly follow it.
+the filename is actually part of the `-f` flag, and therefore must directly follow it.
 
 ## Implications for design
 
