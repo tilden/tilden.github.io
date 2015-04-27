@@ -174,11 +174,10 @@ h1, .subtitle, .teaser {
 
 .nav.fixed {
   background-color: black;
-  /*box-shadow: 0 -7px 9px 5px black;*/
 }
 
 .nav .subheading {
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 14px;
   margin: 0;
   text-align: left;
