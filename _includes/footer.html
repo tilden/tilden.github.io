@@ -8,28 +8,33 @@
 <script src="/scripts/retina.min.js"></script>
 
 <script>
-	$('#viewport').on('scroll', function () {
+	function adjustNavBar() {
 		var navCompactCutoff = 160;
 		var navFixedCutoff = 68;
 		var bannerHeight = $('#ground').position().top;
+		var navBar = $('.nav');
+		var viewport = $('#viewport');
 
-	    if (bannerHeight < navCompactCutoff) {
-	    	$('.nav').addClass('compact');
-	    } else {
-	        $('.nav').removeClass('compact');
-	    }
+    if (bannerHeight < navCompactCutoff) {
+			navBar.addClass('compact');
+    } else {
+			navBar.removeClass('compact');
+    }
 
-    	if (bannerHeight < navFixedCutoff) {
-        	$('.nav').addClass('fixed');
-   		} else {
-   			$('.nav').removeClass('fixed');
-   		}
-	});
+  	if (bannerHeight < navFixedCutoff) {
+			navBar.addClass('fixed');
+ 		} else {
+			navBar.removeClass('fixed');
+ 		}
 
-	$(document).ready(function () {
-		$(".nav").css('right', scrollbarWidth() + 'px');
-	});
+		if(viewport.get(0).scrollHeight > viewport.height()) {
+			navBar.css('right', scrollbarWidth() + 'px');
+		} else {
+			navBar.css('right', '0');
+		}
+	}
 
+	setInterval(adjustNavBar, 100);
 
 	function scrollbarWidth() {
 			var $inner = jQuery('<div style="width: 100%; height:200px;">test</div>'),
