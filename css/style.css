@@ -370,6 +370,7 @@ img.logo {
 /* about page contact cards */
 
 .contact_info {
+  margin: 2em 0;
   text-align: center;
 }
 
@@ -380,39 +381,52 @@ img.logo {
   color: #666;
 }
 
-.contact, .contact:visited, .resume, .resume:visited {
+.contact, .contact:visited, .social, .social:visited {
   text-decoration: none;
-  margin: 0 5px;
-  color: #666;
+  margin: 5px;
   display: inline-block;
   border-radius: 3px;
   padding: 10px;
 }
 
-.contact {
-  width: 75px;
-  height: 75px;
+.contact, .contact:visited {
+  color: #1274C5;
+  border: 1px solid #ddd;
+  background-color: white;
 }
 
-.contact:hover, .resume:hover {
+.contact:hover {
+  background: #1274C5;
+  color: white;
+  border: 1px solid #1274C5;
+}
+
+.social, .social:visited {
+  width: 75px;
+  height: 75px;
+  color: #666;
+}
+
+.social:hover {
   background: #ddd;
   color: #666;
 }
 
-.contact > span {
+.social > span {
   display: block;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 30px;
 }
 
-
-.resume {
-  margin-bottom: -8px;
-}
-
-.resume > span {
+.contact > span {
   font-size: 14px;
   margin-left: 5px;
+}
+
+@media all and (max-width: 600px) {
+  .contact {
+      width: 90%;
+  }
 }
 
 /* main page extras */
