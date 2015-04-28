@@ -385,7 +385,11 @@ img.logo {
   margin: 5px;
   display: inline-block;
   border-radius: 3px;
-  padding: 10px;
+  padding: 15px 5px;
+}
+
+.contact .site-icon {
+  margin-right: 5px;
 }
 
 .contact, .contact:visited {
@@ -401,7 +405,7 @@ img.logo {
 }
 
 .social, .social:visited {
-  width: 75px;
+  width: 100px;
   height: 75px;
   color: #666;
 }
@@ -413,7 +417,6 @@ img.logo {
 
 .social > span {
   display: block;
-  font-size: 14px;
   line-height: 30px;
 }
 
@@ -714,6 +717,16 @@ pre > code {
   opacity: 1;
 }
 
+#nav_footer.narrow {
+  width: 300px;
+  margin-left: -150px;
+}
+
+.narrow #contact_minibox {
+  left: 10px;
+  right: 10px;
+}
+
 #nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited {
   box-sizing: border-box;
   display: block;
@@ -752,12 +765,14 @@ pre > code {
   text-align: left;
   left: -80px;
   padding-left: 70px;
+  padding-right: 10px;
 }
 
 #next_proj {
   text-align: right;
   right: -80px;
   padding-right: 70px;
+  padding-left: 10px;
 }
 
 #prev_proj:before, #next_proj:before {
@@ -817,10 +832,6 @@ pre > code {
   color: #ddd;
 }
 
-#ground {
-  padding-bottom: 60px; /* leave room for the footer nav */
-}
-
 /* responsive mode */
 @media all and (max-width: 900px) {
   #nav_footer {
@@ -830,14 +841,16 @@ pre > code {
 }
 
 @media all and (max-width: 780px) {
-  #nav_footer {
+  #nav_footer:not(.narrow) {
     height: auto;
     width: 100%;
     margin-left: -50%;
     border-radius: 0;
   }
 
-  #nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited, #contact_minibox {
+  #nav_footer:not(.narrow) .nav_footer_button,
+  #nav_footer:not(.narrow) .nav_footer_button:visited,
+  #nav_footer:not(.narrow) #contact_minibox {
     position: relative;
     top: 0;
     left: 0;
@@ -850,7 +863,4 @@ pre > code {
     width: 90%;
   }
 
-  #ground {
-    padding-bottom: 220px; /* leave room for the footer nav */
-  }
 }

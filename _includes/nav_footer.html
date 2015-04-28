@@ -1,18 +1,34 @@
-<div id="nav_footer">
-  {% if page.prev_project %}
-  <a id="prev_proj" class="nav_footer_button" href="{{page.prev_project_url}}">
+{% assign nav_type = false %}
+{% if page.prev_project or page.next_project %}
+  {% assign nav_type = "Project" %}
+{% elsif page.previous.url or page.next.url %}
+  {% assign nav_type = "Post" %}
+{% endif %}
+
+{% if nav_type %}
+<div id="nav_footer" >
+{% else %}
+<div id="nav_footer" class="narrow">
+{% endif %}
+
+  {% if page.next.url or page.prev_project %}
+  <a id="prev_proj" class="nav_footer_button" href="{{page.next.url}}{{page.prev_project_url}}">
     <span>
-      <div class="label">Previous Project</div>
-      <div class="name">{{page.prev_project}}</div>
+      {% if nav_type == "Project" %}
+      <div class="label">Previous project</div>
+      {% endif %}
+      <div class="name">{{page.next.title}}{{page.prev_project}}</div>
     </span>
   </a>
   {% endif %}
 
-  {% if page.next_project %}
-  <a id="next_proj" class="nav_footer_button" href="{{page.next_project_url}}">
+  {% if page.previous.url or page.next_project %}
+  <a id="next_proj" class="nav_footer_button" href="{{page.previous.url}}{{page.next_project_url}}">
     <span>
-      <div class="label">Next Project</div>
-      <div class="name">{{page.next_project}}</div>
+      {% if nav_type == "Project" %}
+      <div class="label">Next project</div>
+      {% endif %}
+      <div class="name">{{page.previous.title}}{{page.next_project}}</div>
     </span>
   </a>
   {% endif %}
@@ -40,3 +56,14 @@
   </div>
 
 </div>
+
+<script type="text/javascript">
+  function adjustFooterSpace() {
+    var ground = $('#ground');
+  	var footerNav = $('#nav_footer');
+
+    ground.css('padding-bottom', footerNav.height());
+  }
+
+	setInterval(adjustFooterSpace, 500);
+</script>

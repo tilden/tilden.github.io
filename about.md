@@ -4,6 +4,7 @@ title: "About Me"
 permalink: /about/
 section: about
 top_bar_color: '#A52A2A'
+no_footer_nav: true
 ---
 
 <img src="/images/about_photo.jpg" width="640px" height="505px" />
@@ -17,7 +18,7 @@ top_bar_color: '#A52A2A'
   </a>
 	<a class="contact" href="/files/DanTilden-Resume.pdf">
     <i class="site-icon fa fa-file-text-o fa-lg"></i>
-    <span>View résumé (PDF)</span>
+    <span>Download resume (PDF)</span>
 	</a>
 </div>
 
@@ -46,5 +47,9 @@ My goal is to improve the world's user interfaces, one step at a time.
   <a class="social" href="https://instagram.com/freakified/">
     <i class="site-icon fa fa-instagram fa-3x" style="color: #3f729b;"></i>
     <span>Instagram</span>
+  </a>
+  <a class="social" href="https://soundcloud.com/freakified/">
+    <i class="site-icon fa fa-soundcloud fa-3x" style="color: #FF5500;"></i>
+    <span>Soundcloud</span>
   </a>
 </div>

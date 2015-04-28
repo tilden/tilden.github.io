@@ -13,6 +13,11 @@
 
   {{ content }}
 
+
+  {% unless page.no_footer_nav %}
+    {% include nav_footer.html %}
+  {% endunless %}
+
   {% include footer.html %}
 
   </body>
