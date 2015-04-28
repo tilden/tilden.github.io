@@ -8,33 +8,53 @@
 <script src="/scripts/retina.min.js"></script>
 
 <script>
-	function adjustNavBar() {
+	function addClass2(object, className) {
+		// if(!object.hasClass(className)) {
+			object.addClass(className);
+		// }
+	}
+
+	function removeClass2(object, className) {
+		// if(object.hasClass(className)) {
+			object.removeClass(className);
+		// }
+	}
+
+	function adjustNavBars() {
 		var navCompactCutoff = 160;
 		var navFixedCutoff = 68;
 		var bannerHeight = $('#ground').position().top;
 		var navBar = $('.nav');
 		var viewport = $('#viewport');
+		var footerNav = $('#nav_footer');
+		var scrollDistanceFromBottom = viewport.get(0).scrollHeight - viewport.get(0).scrollTop  - viewport.get(0).offsetHeight;
 
+		// adjust main nav bar based on scroll position
     if (bannerHeight < navCompactCutoff) {
-			navBar.addClass('compact');
+			addClass2(navBar, 'compact');
     } else {
-			navBar.removeClass('compact');
+			removeClass2(navBar, 'compact');
     }
 
   	if (bannerHeight < navFixedCutoff) {
-			navBar.addClass('fixed');
- 		} else {
-			navBar.removeClass('fixed');
+			addClass2(navBar, 'fixed');
+		} else if(navBar.hasClass('fixed')) {
+			removeClass2(navBar, 'fixed');
  		}
 
-		if(viewport.get(0).scrollHeight > viewport.height()) {
-			navBar.css('right', scrollbarWidth() + 'px');
-		} else {
-			navBar.css('right', '0');
+		// control footer nav visibility
+		if(scrollDistanceFromBottom < 50) {
+			addClass2(footerNav, 'visible');
+		} else if(footerNav.hasClass('visible')){
+			removeClass2(footerNav, 'visible');
 		}
 	}
 
-	setInterval(adjustNavBar, 100);
+	setInterval(adjustNavBars, 100);
+
+	$('document').ready(function() {
+		$(".nav").css('right', scrollbarWidth() + 'px');
+	});
 
 	function scrollbarWidth() {
 			var $inner = jQuery('<div style="width: 100%; height:200px;">test</div>'),

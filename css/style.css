@@ -44,7 +44,7 @@ body {
 .sky_bg {
   background: #888 url('images/portfolio_sky.jpg') center top no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 65%;
   position: absolute;
   top: 15vh;
@@ -70,6 +70,7 @@ body {
   width: 100%;
   opacity: 1;
   overflow: visible;
+  padding-bottom: 60px; /* leave room for the footer nav */
 }
 
 .short #ground {
@@ -417,11 +418,6 @@ img.logo {
   line-height: 30px;
 }
 
-.contact > span {
-  font-size: 14px;
-  margin-left: 5px;
-}
-
 @media all and (max-width: 600px) {
   .contact {
       width: 90%;
@@ -705,4 +701,125 @@ pre > code {
     padding: 0;
     font-size: 28px;
   }
+}
+
+/* footer project navigation */
+#nav_footer {
+  position: absolute;
+  width: 70%;
+  bottom: -120px;
+  left: 50%;
+  margin-left: -35%;
+  background-color: rgba(0,0,0,0.7);
+  height: 120px;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+#nav_footer.visible {
+  transform: translateY(-120px);
+  opacity: 1;
+}
+
+#nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: #175D96;
+  height: 80px;
+  bottom: 20px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  width: 300px;
+}
+
+#nav_footer .nav_footer_button:hover {
+  background-color: #1274C5;
+}
+
+.nav_footer_button span {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform:translateY(-50%);
+}
+
+.nav_footer_button .label {
+  opacity: 0.5;
+}
+
+.nav_footer_button .name {
+  font-weight: bold;
+}
+
+#nav_footer #prev_proj {
+  text-align: left;
+  left: -80px;
+  padding-left: 70px;
+}
+
+#nav_footer #next_proj {
+  text-align: right;
+  right: -80px;
+  padding-right: 70px;
+}
+
+#prev_proj:before, #next_proj:before {
+  position: absolute;
+  font-family: FontAwesome;
+  top: 7px;
+  font-size: 64px;
+}
+
+#prev_proj:before {
+  left: 16px;
+  content: '\f100';
+}
+
+#next_proj:before {
+  right: 16px;
+  content: '\f101';
+}
+
+#contact_minibox {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: white;
+}
+
+#contact_minibox .byline {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+#contact_minibox .contact {
+  border: 0;
+  font-size: 16px;
+  width: 220px;
+  background-color: rgba(255,255,255,.25);
+  color: white;
+  padding: 8px;
+  margin: 8px 0 4px;
+}
+
+#contact_minibox .contact:hover {
+  background-color: rgba(255,255,255,.35);
+}
+
+.social_icons a {
+  color: #888;
+  padding: 0 5px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social_icons a:hover {
+  color: #ddd;
 }
