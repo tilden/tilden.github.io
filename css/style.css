@@ -70,7 +70,6 @@ body {
   width: 100%;
   opacity: 1;
   overflow: visible;
-  padding-bottom: 60px; /* leave room for the footer nav */
 }
 
 .short #ground {
@@ -749,13 +748,13 @@ pre > code {
   font-weight: bold;
 }
 
-#nav_footer #prev_proj {
+#prev_proj {
   text-align: left;
   left: -80px;
   padding-left: 70px;
 }
 
-#nav_footer #next_proj {
+#next_proj {
   text-align: right;
   right: -80px;
   padding-right: 70px;
@@ -779,11 +778,11 @@ pre > code {
 }
 
 #contact_minibox {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   color: white;
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  right: 230px;
 }
 
 #contact_minibox .byline {
@@ -792,9 +791,11 @@ pre > code {
 }
 
 #contact_minibox .contact {
+  box-sizing: border-box;
   border: 0;
   font-size: 16px;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   background-color: rgba(255,255,255,.25);
   color: white;
   padding: 8px;
@@ -814,4 +815,42 @@ pre > code {
 
 .social_icons a:hover {
   color: #ddd;
+}
+
+#ground {
+  padding-bottom: 60px; /* leave room for the footer nav */
+}
+
+/* responsive mode */
+@media all and (max-width: 900px) {
+  #nav_footer {
+    width: 80%;
+    margin-left: -40%;
+  }
+}
+
+@media all and (max-width: 780px) {
+  #nav_footer {
+    height: auto;
+    width: 100%;
+    margin-left: -50%;
+    border-radius: 0;
+  }
+
+  #nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited, #contact_minibox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #contact_minibox .contact {
+    max-width: none;
+    width: 90%;
+  }
+
+  #ground {
+    padding-bottom: 220px; /* leave room for the footer nav */
+  }
 }
