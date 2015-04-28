@@ -13,8 +13,7 @@ readers to submit a pull-request to edit one of your markdown pages!)
 * Trendy flat-design to impress all your designer friends
 * Card-based appearance for posts and projects
 * Parallax scrolling because regular scrolling is just passé
-* Animated nav color transitions; picking a single color for your nav bar
-is just so 2009
+* Fancy animated nav transitions
 
 ## Responsive
 
@@ -24,7 +23,7 @@ your page while browsing on their MacBooks and drinking their caramel macchiatos
 
 ## Compatible
 
-* Works for internet explorers using any browser newer than Internet Explorer 9
+* Works for internet explorers using Internet Explorer 9 or higher 
 
 # License
 All the content (blog posts, photos, other graphics) are licensed under
