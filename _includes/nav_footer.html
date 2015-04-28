@@ -1,17 +1,21 @@
-<div id="nav_footer" class="visible">
-  <a id="prev_proj" class="nav_footer_button" href="/projects/jga">
+<div id="nav_footer">
+  {% if page.prev_project %}
+  <a id="prev_proj" class="nav_footer_button" href="{{page.prev_project_url}}">
     <span>
       <div class="label">Previous Project</div>
-      <div class="name">JGA: Crossroads of Destiny</div>
+      <div class="name">{{page.prev_project}}</div>
     </span>
   </a>
+  {% endif %}
 
-  <a id="next_proj" class="nav_footer_button" href="/projects/jga">
+  {% if page.next_project %}
+  <a id="next_proj" class="nav_footer_button" href="{{page.next_project_url}}">
     <span>
       <div class="label">Next Project</div>
-      <div class="name">The New Adventures of Scrapinold Dooington</div>
+      <div class="name">{{page.next_project}}</div>
     </span>
   </a>
+  {% endif %}
 
   <div id="contact_minibox">
     <div class="byline">Designed by Dan Tilden</div>
