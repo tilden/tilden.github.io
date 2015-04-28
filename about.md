@@ -18,7 +18,7 @@ no_footer_nav: true
   </a>
 	<a class="contact" href="/files/DanTilden-Resume.pdf">
     <i class="site-icon fa fa-file-text-o fa-lg"></i>
-    <span>Download resume (PDF)</span>
+    <span>Download resume</span>
 	</a>
 </div>
 

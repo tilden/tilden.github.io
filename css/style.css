@@ -1,4 +1,10 @@
 /* global stuff */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -385,7 +391,6 @@ img.logo {
   margin: 5px;
   display: inline-block;
   border-radius: 3px;
-  padding: 15px 5px;
 }
 
 .contact .site-icon {
@@ -396,6 +401,7 @@ img.logo {
   color: #1274C5;
   border: 1px solid #ddd;
   background-color: white;
+  padding: 15px;
 }
 
 .contact:hover {
@@ -406,8 +412,8 @@ img.logo {
 
 .social, .social:visited {
   width: 100px;
-  height: 75px;
   color: #666;
+  padding: 15px 5px;
 }
 
 .social:hover {
@@ -455,6 +461,10 @@ img.logo {
   line-height: 140%;
   margin: 0 auto 4em auto;
   font-weight: 300;
+}
+
+.section:last-of-type {
+  margin-bottom: 2em;
 }
 
 .project_desc > .project_subtitle {
@@ -634,10 +644,6 @@ blockquote .attribution {
   line-height: 160%;
 }
 
-.post > h2, .post_content, .footnotes {
-  box-sizing: border-box;
-}
-
 .post_content p {
   margin-bottom: 1em;
 }
@@ -701,7 +707,7 @@ pre > code {
 #nav_footer {
   position: absolute;
   width: 70%;
-  bottom: -120px;
+  bottom: 0;
   left: 50%;
   margin-left: -35%;
   background-color: rgba(0,0,0,0.7);
@@ -709,11 +715,19 @@ pre > code {
   border-radius: 5px 5px 0 0;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  transform: translateY(0);
+  -webkit-transform: translateY(100%);
+  -moz-transform:    translateY(100%);
+  -ms-transform:     translateY(100%);
+  -o-transform:      translateY(100%);
+  transform:         translateY(100%);
 }
 
 #nav_footer.visible {
-  transform: translateY(-120px);
+  -webkit-transform: translateY(0);
+  -moz-transform:    translateY(0);
+  -ms-transform:     translateY(0);
+  -o-transform:      translateY(0);
+  transform:         translateY(0);
   opacity: 1;
 }
 
@@ -728,7 +742,6 @@ pre > code {
 }
 
 #nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited {
-  box-sizing: border-box;
   display: block;
   position: absolute;
   text-decoration: none;
@@ -750,7 +763,11 @@ pre > code {
   display: block;
   position: relative;
   top: 50%;
-  transform:translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  transform:         translateY(-50%);
 }
 
 .nav_footer_button .label {
@@ -806,7 +823,6 @@ pre > code {
 }
 
 #contact_minibox .contact {
-  box-sizing: border-box;
   border: 0;
   font-size: 16px;
   width: 100%;
