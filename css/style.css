@@ -455,14 +455,6 @@ img.logo {
   font-weight: 300;
 }
 
-/* wacky alternative margin so we can jump to click targets
-   without navbar overlap */
-.section:before {
-   content: "";
-   display: block;
-   height: 2em;
-}
-
 .project_desc > .project_subtitle {
   margin: 4ex auto 6ex;
   color: #666;
