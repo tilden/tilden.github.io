@@ -23,7 +23,7 @@ your page while browsing on their MacBooks and drinking their caramel macchiatos
 
 ## Compatible
 
-* Works for internet explorers using Internet Explorer 9 or higher 
+* Viewable by internet explorers using Internet Explorer version 10 or higher 
 
 # License
 All the content (blog posts, photos, other graphics) are licensed under
