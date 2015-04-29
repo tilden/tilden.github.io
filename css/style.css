@@ -183,6 +183,7 @@ h1, .subtitle, .teaser {
 }
 
 .nav .subheading {
+  display: block;
   opacity: 0.7;
   font-size: 14px;
   margin: 0;
@@ -759,8 +760,7 @@ pre > code {
   background-color: #1274C5;
 }
 
-.nav_footer_button span {
-  display: block;
+.nav_footer_button > div {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);

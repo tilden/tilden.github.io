@@ -13,23 +13,23 @@
 
   {% if page.next.url or page.prev_project %}
   <a id="prev_proj" class="nav_footer_button" href="{{page.next.url}}{{page.prev_project_url}}">
-    <span>
+    <div>
       {% if nav_type == "Project" %}
       <div class="label">Previous project</div>
       {% endif %}
       <div class="name">{{page.next.title}}{{page.prev_project}}</div>
-    </span>
+    </div>
   </a>
   {% endif %}
 
   {% if page.previous.url or page.next_project %}
   <a id="next_proj" class="nav_footer_button" href="{{page.previous.url}}{{page.next_project_url}}">
-    <span>
+    <div>
       {% if nav_type == "Project" %}
       <div class="label">Next project</div>
       {% endif %}
       <div class="name">{{page.previous.title}}{{page.next_project}}</div>
-    </span>
+    </div>
   </a>
   {% endif %}
 
