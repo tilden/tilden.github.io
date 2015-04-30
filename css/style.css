@@ -619,8 +619,9 @@ blockquote .attribution {
 }
 
 .post_content p, .post_content ul {
-  font-family: Merriweather, Georgia, Serif;
+  font-weight: 400;
   line-height: 160%;
+  letter-spacing: 0.015em;
 }
 
 .post_content p {
