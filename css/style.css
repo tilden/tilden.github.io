@@ -265,7 +265,7 @@ img.logo {
 /* landing page project cards / post cards */
 
 .cards {
-  margin: 5ex auto;
+  margin: 30px auto;
 }
 
 .card {
@@ -274,7 +274,7 @@ img.logo {
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   width: 512px;
   height: 380px;
-  margin: 0 1% 2ex;
+  margin: 10px 8px;
   text-align: left;
   display: inline-block;
   text-decoration: none;
@@ -418,7 +418,7 @@ img.logo {
 .main_page_footer {
   font-size: 80%;
   max-width: 575px;
-  margin: 0 auto 5ex;
+  margin: 0 auto 40px;
 }
 
 .main_page_footer > h3 {
@@ -473,8 +473,7 @@ img.logo {
 }
 
 blockquote {
-  font-weight: 300;
-  max-width: 485px;
+  text-align: center;
   font-size: 26px;
   line-height: 170%;
   margin: 2em auto 2em;
@@ -482,25 +481,28 @@ blockquote {
 }
 
 blockquote:before, blockquote:after {
-  font-size: 200px;
-  font-family: "Times New Roman", Times, sans-serif;
-  opacity: 0.2;
+  content: "";
   position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  opacity: 0.1;
 }
 
 blockquote:before {
-  content: '\201c';
+  background-image: url('images/quote_L.svg');
   left: 0;
+  top: -63px;
 }
 
 blockquote:after {
-  content: '\201d';
+  background-image: url('images/quote_R.svg');
   right: 0;
+  bottom: -37px;
 }
 
 blockquote, blockquote a {
   text-decoration: none;
-  color: #00A008;
 }
 
 blockquote b {
