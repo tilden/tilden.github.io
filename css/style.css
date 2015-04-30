@@ -168,8 +168,6 @@ h1, .subtitle, .teaser {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
   box-shadow: 0 -7px 9px 5px rgba(0,0,0,0);
   -webkit-font-smoothing: antialiased;
-  /* for our dear friend ie9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C000000', endColorstr='#00000000')";
 }
 
 .nav.compact {
