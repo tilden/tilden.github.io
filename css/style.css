@@ -444,10 +444,6 @@ img.logo {
   font-weight: 300;
 }
 
-.section:last-of-type {
-  margin-bottom: 2em;
-}
-
 .project_desc > .project_subtitle {
   margin: 4ex auto 6ex;
   color: #666;
@@ -629,6 +625,10 @@ blockquote .attribution {
 
 .post_content p {
   margin-bottom: 1em;
+}
+
+.post_content p:last-of-type {
+  margin-bottom: 0;
 }
 
 sup {
