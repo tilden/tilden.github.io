@@ -659,6 +659,7 @@ pre > code {
   text-align: center;
   font-size: 80%;
   display: block;
+  line-height: 1.8;
 }
 
 .footnotes {
