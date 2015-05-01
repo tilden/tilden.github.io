@@ -9,7 +9,7 @@ no_footer_nav: true
 
 <img src="/images/about_photo.jpg" width="640" height="505" alt="Photo of me" />
 
-<div class="caption">Me introducing <a href="http://en.wikipedia.org/wiki/Don_Norman">Don Norman</a> to student volunteers at the <a href="http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems">CHI</a> conference, wearing the <a href="/projects/archive/#chi_shirt">t-shirt I designed</a>!</div>
+<div class="caption">Me introducing <a href="http://en.wikipedia.org/wiki/Don_Norman">Don Norman</a> to student volunteers at the <a href="http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems">CHI</a> conference, wearing the <a href="/projects/archive/#chi_shirt">t-shirt I designed</a>!<br />Photo by <a href="http://www.minqiluo.com/">Minqui Luo.</a></div>
 
 <div class="contact_info">
   <a class="contact" href="#" id="email_link">
