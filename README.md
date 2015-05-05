@@ -3,8 +3,7 @@ tilden.github.io
 
 A combined portfolio/blog built entirely using a plugin-free Jekyll. (This ensures
 that rebuilds can happen on the server side as well as the client side.
-Check out the contributor logs -- it is entirely possible for one of your
-readers to submit a pull-request to edit one of your markdown pages!)
+That means it's entirely possible for a reader to [submit a pull request](https://github.com/tilden/tilden.github.io/pulls?q=is%3Apr+is%3Aclosed)!)
 
 # Features
 
