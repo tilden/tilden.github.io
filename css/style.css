@@ -71,8 +71,8 @@ body {
 #ground {
   background: #eee;
   position: absolute;
-  top: 65%;
-  min-height: calc(100vh - 65%);
+  top: 50%;
+  min-height: calc(100vh - 50%);
   width: 100%;
   opacity: 1;
   overflow: visible;
@@ -265,7 +265,7 @@ img.logo {
 /* landing page project cards / post cards */
 
 .cards {
-  margin: 30px auto;
+  margin: -50px 30px auto;
 }
 
 .card {
