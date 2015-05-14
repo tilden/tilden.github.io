@@ -547,12 +547,7 @@ blockquote .attribution {
   border: 4px solid black;
 }
 
-.character_box {
-  background: linear-gradient(0deg, #666, transparent);
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
+
 
 @media (max-width: 980px) {
   .project_desc img {
@@ -588,6 +583,42 @@ blockquote .attribution {
   .project_title {
     font-size: 30px;
   }
+}
+
+/* special styles unique to JGA */
+/* TODO: put these somewhere better */
+
+.character_box {
+  background: #666;
+  width: 300px;
+  height: 91px;
+  margin: 30px auto 0;
+  border-radius: 3px;
+  border: 3px solid black;
+  position: relative;
+}
+
+.character_box:after {
+  content: '';
+  background-image: url('../projects/jga/chars/lm_bball.png');
+  display: block;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 14px;
+  left: 43px;
+  -webkit-animation: rotation 2s infinite linear;
+  animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
+
+@keyframes rotation {
+    from {transform: rotate(359deg);}
+    to   {transform: rotate(0deg);}
 }
 
 /* blog page */
