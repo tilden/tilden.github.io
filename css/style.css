@@ -72,7 +72,7 @@ body {
   background: #eee;
   position: absolute;
   top: 50%;
-  min-height: calc(100vh - 50%);
+  min-height: calc(100vh - 55%);
   width: 100%;
   opacity: 1;
   overflow: visible;
@@ -94,7 +94,7 @@ body {
 }
 
 #ground.overlap > div {
-  margin-top: -50px;
+  /*margin-top: -50px;*/
 }
 
 #ground.project_desc {
@@ -265,7 +265,8 @@ img.logo {
 /* landing page project cards / post cards */
 
 .cards {
-  margin: -50px 30px auto;
+  /*margin: -50px 30px auto;*/
+  margin: 15px auto;
 }
 
 .card {
