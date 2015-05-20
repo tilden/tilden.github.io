@@ -1,6 +1,23 @@
+
 {% assign nav_type = false %}
-{% if page.prev_project or page.next_project %}
+{% if page.is_project %}
   {% assign nav_type = "Project" %}
+  {% comment %}  If this page is a project, determine the next and previous projects
+  based on the YAML datafile {% endcomment %}
+  {% for project in site.data.projects %}
+    {% if project.name == page.title %}
+      {% unless forloop.last %}
+        {% assign next_project = site.data.projects[forloop.index].name %}
+        {% assign next_project_url = site.data.projects[forloop.index].url %}
+      {% endunless %}
+      {% break %}
+    {% endif %}
+
+    {% assign prev_project = project.name %}
+    {% assign prev_project_url = project.url %}
+
+  {% endfor %}
+
 {% elsif page.previous.url or page.next.url %}
   {% assign nav_type = "Post" %}
 {% endif %}
@@ -11,24 +28,24 @@
 <div id="nav_footer" class="narrow">
 {% endif %}
 
-  {% if page.next.url or page.prev_project %}
-  <a id="prev_proj" class="nav_footer_button" href="{{page.next.url}}{{page.prev_project_url}}">
+  {% if page.next.url or prev_project %}
+  <a id="prev_proj" class="nav_footer_button" href="{{page.next.url}}{{prev_project_url}}">
     <div>
       {% if nav_type == "Project" %}
       <div class="label">Previous project</div>
       {% endif %}
-      <div class="name">{{page.next.title}}{{page.prev_project}}</div>
+      <div class="name">{{page.next.title}}{{prev_project}}</div>
     </div>
   </a>
   {% endif %}
 
-  {% if page.previous.url or page.next_project %}
-  <a id="next_proj" class="nav_footer_button" href="{{page.previous.url}}{{page.next_project_url}}">
+  {% if page.previous.url or next_project %}
+  <a id="next_proj" class="nav_footer_button" href="{{page.previous.url}}{{next_project_url}}">
     <div>
       {% if nav_type == "Project" %}
       <div class="label">Next project</div>
       {% endif %}
-      <div class="name">{{page.previous.title}}{{page.next_project}}</div>
+      <div class="name">{{page.previous.title}}{{next_project}}</div>
     </div>
   </a>
   {% endif %}

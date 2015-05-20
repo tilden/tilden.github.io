@@ -10,7 +10,7 @@ section: portfolio
 	<div class="cards">
 
 		{% for project in site.data.projects %}
-		<a class="card" href="projects/{{ project.url }}">
+		<a class="card" href="{{ project.url }}">
 			<img src="images/banners/{{ project.banner_img }}" width="512" height="250" alt="" />
 			<h3>{{ project.name }}</h3>
 			<p>
