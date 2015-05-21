@@ -304,6 +304,7 @@ img.logo {
 
 .card > img {
   border-radius: 2px 2px 0 0;
+  border-bottom: 1px solid #eee;
 }
 
 .card .post_thumb {
