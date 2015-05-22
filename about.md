@@ -28,7 +28,7 @@ the problems, you need to know know <b>why</b> it's so bad. Over the course of m
 Right now, I'm working at [Sicom Systems, Inc](http://www.sicom.com), where I'm designing
 software to make managing your fast food restaurant empire fun and exciting.
 To get a better idea of the kinds of products I work on, check out [Drive-Thru Monitor](/projects/drivethru/)
-and [Production Control](/projects/productioncontrol)!
+, [Production Control](/projects/productioncontrol), or the [Restaurant Management System redesign project](/projects/restaurant_management)!
 
 My goal is to improve the world's user interfaces, one step at a time.
 
