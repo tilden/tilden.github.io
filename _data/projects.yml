@@ -18,10 +18,10 @@
   banner_img: "scrapinold_banner.jpg"
   url: "/projects/scrapinold"
 
-- name: "Restaurant Management System Redesign"
-  desc: "Whether you manage a single restaurant or a thousand, you'll need a way to analyze sales, manage employees, and more. This system has you covered."
-  banner_img: "sems4_banner.png"
-  url: "/projects/sems4"
+# - name: "Restaurant Management System Redesign"
+#   desc: "Whether you manage a single restaurant or a thousand, you'll need a way to analyze sales, manage employees, and more. This system has you covered."
+#   banner_img: "sems4_banner.png"
+#   url: "/projects/sems4"
 
 - name: "Production Control"
   desc: "As a burger chef, you'll need to keep tabs on what you've cooked, what you're cooking, and what you will cook. Production Control is here to help."
