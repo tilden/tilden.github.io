@@ -8,18 +8,6 @@
 <script src="/scripts/retina.min.js"></script>
 
 <script>
-	function addClass2(object, className) {
-		// if(!object.hasClass(className)) {
-			object.addClass(className);
-		// }
-	}
-
-	function removeClass2(object, className) {
-		// if(object.hasClass(className)) {
-			object.removeClass(className);
-		// }
-	}
-
 	function adjustNavBars() {
 		var navCompactCutoff = 160;
 		var navFixedCutoff = 68;
@@ -31,22 +19,22 @@
 
 		// adjust main nav bar based on scroll position
     if (bannerHeight < navCompactCutoff) {
-			addClass2(navBar, 'compact');
+			navBar.addClass('compact');
     } else {
-			removeClass2(navBar, 'compact');
+			navBar.removeClass('compact');
     }
 
   	if (bannerHeight < navFixedCutoff) {
-			addClass2(navBar, 'fixed');
+			navBar.addClass('fixed');
 		} else if(navBar.hasClass('fixed')) {
-			removeClass2(navBar, 'fixed');
+			navBar.removeClass('fixed');
  		}
 
 		// control footer nav visibility
 		if(scrollDistanceFromBottom < 50) {
-			addClass2(footerNav, 'visible');
+			footerNav.addClass('visible');
 		} else if(footerNav.hasClass('visible')){
-			removeClass2(footerNav, 'visible');
+			footerNav.removeClass('visible');
 		}
 	}
 
