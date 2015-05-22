@@ -373,15 +373,14 @@ img.logo {
 
 .contact, .contact:visited {
   color: #1274C5;
-  border: 1px solid #ddd;
   background-color: white;
   padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .contact:hover {
-  background: #1274C5;
-  color: white;
-  border: 1px solid #1274C5;
+  color: #1274C5;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .social, .social:visited {
