@@ -6,6 +6,10 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  box-sizing: content-box;
+}
+
 body {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 22px;
