@@ -9,11 +9,6 @@
   banner_img: "restaurant_management_banner.png"
   url: "/projects/restaurant_management"
 
-- name: "Production Control"
-  desc: "As a burger chef, you'll need to keep tabs on what you've cooked, what you're cooking, and what you will cook. Production Control is here to help."
-  banner_img: "pcu_banner.png"
-  url: "/projects/productioncontrol"
-
 - name: "JGA: Crossroads of Destiny"
   desc: "As an exiled infomercial chef, embrace your destiny and bring balance to the world once again! A story-driven side-scrolling RPG made using Unity."
   banner_img: "jga_banner.jpg"
@@ -28,6 +23,12 @@
   desc: "An open-source, responsive webcomic site built using Github Pages and Jekyll."
   banner_img: "scrapinold_banner.jpg"
   url: "/projects/scrapinold"
+  
+- name: "Production Control"
+  desc: "As a burger chef, you'll need to keep tabs on what you've cooked, what you're cooking, and what you will cook. Production Control is here to help."
+  banner_img: "pcu_banner.png"
+  url: "/projects/productioncontrol"
+
 
 - name: "Pythy"
   desc: "What if intro computer science students didn't have to install any software, and could start programming right away?"
