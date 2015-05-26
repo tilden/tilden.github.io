@@ -23,7 +23,7 @@ no_footer_nav: true
 </div>
 
 Let's be honest, no one likes badly designed user interfaces. However, in order to fix
-the problems, you need to know know <b>why</b> it's so bad. Over the course of my years as a CS major, HCI student, and professional UX engineer I've been learning to do exactly that.
+the problems, you need to know know <b>why</b> they're so bad. Over the course of my years as a CS major, HCI student, and professional UX engineer I've been learning to do exactly that.
 
 Right now, I'm working at [Sicom Systems, Inc](http://www.sicom.com), where I'm designing
 software to make managing your fast food restaurant empire fun and exciting.
