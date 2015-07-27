@@ -78,7 +78,7 @@ is_project: true
     </small>
 </div>
 
-<h3 style="margin-top: 2em">Evolution</h3>
+<h3 style="margin-top: 1em">Evolution</h3>
 
 <div class="section cols row_of_pics">
 	<div>
@@ -98,7 +98,7 @@ is_project: true
   <div>
     <img class="screenshot" width="144" height="168" src="draft3.png" alt="Early draft 3" /><br />
 		<small style="width: 180px; margin: 0px 10px">
-      A text-heavy concept based on the &ldquo;cards&rdquo; ui guidelines, featuring the weather.
+      A text-heavy concept based on the official &ldquo;cards&rdquo; ui guidelines, featuring the weather.
     </small>
   </div>
 
@@ -113,8 +113,8 @@ is_project: true
 <div class="section">
 	<div class="pic_desc">
     <small>
-    Building upon this last concept, I switched to a thinner font and dropped the AM/PM indication. I composited
-    this element into an official press photo of the Pebble Time, and posted this mockup to
+    Building upon this last concept, I switched to a thinner font and dropped the AM/PM indication. Compositing
+    this into an official press photo of the Pebble Time, I posted the following mockup to
     <a href="https://dribbble.com/shots/2138543-Pebble-Time-Watchface-Concept">Dribbble</a>
     and Reddit:<br><br>
     </small>
@@ -125,31 +125,46 @@ is_project: true
   </div>
 
   <small>
-    On Reddit, the response was extremely positive, with the mockup becoming one of the 25 most highly voted posts of all time on <a href="http://www.reddit.com/r/pebble">r/pebble</a>.)
+    On Reddit, the response was extremely positive, with the mockup becoming one of the 25 most highly voted posts of all time on <a href="http://www.reddit.com/r/pebble">r/pebble</a>.
+    <br><br>
     However, with this popularity came something I didn't anticipate -- customization requests!
-
-    I had people asking for all different colors schemes, the ability to build custom themes, the ability to show battery life, and tons of other features. I didn't want to let them down -- after all, I wanted to take advantge of the crazy response I had gotten. However, adding the level of customization required would prove challenging to implement.
+    People were asking for all sorts of features; I didn't want to let them down, but
+    adding the level of customization required would prove challenging to implement.
   </small>
 </div> <!-- div.cols -->
 
 <div class="section">
-	<h3>Implementation</h3>
+  <h3>Implementation</h3>
+  <small>
+    Like all Pebble watchfaces, TimeStyle was written in pure C.<br><br>
+  A key challenge I faced was antialiasing the digits. While the Pebble Time's screen is technically
+   capable of displaying text with AA, the software does not support it.
+Early on, I had wanted to include text-AA, and had planned to just bake it in by using images for the digits.
+ However, that was thrown into question with all the requests for customizability -- how could I use images for the text if the background color and text color were customizable?
+</small>
+</div>
 
+<div class="section cols left_pic">
   <div>
     <img class="screenshot" src="palswap.png" width="400" height="230" alt="Example " />
   </div>
-
-	<div class="pic_desc">
-    <small>
-      A key challenge in building this face was antialiasing the digits. While the Pebble Time's screen is technically capable of displaying text with AA (it has 64 colors), the software will only ever render text with jagged edges. This results in essentially every digital watchface having unpleasantly pixellated text. Early on, I decided that I wanted to include text-AA, and had planned to just bake it in by using pre-rendered digits. However, that was thrown into question with all the requests for customizability -- how could I use images for the text if the background color and text color were customizable?
-<br><br>
-The answer, it turned out, was by using palette swapping to dynamically alter the images in memory. Each digit image has four colors: white (the background), black (the foreground), and two intermediate shades of grey. On the watch itself, TimeStyle swaps white with the user's chosen background color, swaps black with the user's chosen foreground color, and averages the R, G, and B components of each color to determine the two closest intermediate colors that the Pebble Time's display can show.
-    </small>
+  <div class="pic_desc">
+My solution was to use palette swapping: each digit image has four colors: white (the background), black (the foreground), and two intermediate shades of grey.
+Black and white are replaced with the user's chosen foreground background colors, and the R, G, and B components of these colors are averaged to determine the two closest intermediate colors.
 	</div>
 </div> <!-- div.cols -->
 
 <div class="section">
 	<h3>Release</h3>
+	<div class="pic_desc">
+    <small>
+      My efforts to satisfy the various user requests proved worthwhile -- within only two weeks
+      of its release, TimeStyle had already become one of the top 15 most popular color
+      watchfaces of all time, garnering over 860 &ldquo;hearts&rdquo; and more than 10,000 installations.
+      <br><br>
+      It was even a featured watchface in the Pebble app store:<br><br>
+    </small>
+  </div>
 
   <div>
     <img class="screenshot" src="app_store_featured.png" width="360" height="640" alt="Example " />
@@ -157,10 +172,7 @@ The answer, it turned out, was by using palette swapping to dynamically alter th
 
 	<div class="pic_desc">
     <small>
-      My efforts to satisfy potential user requests proved worthwhile -- as of only two weeks
-      following its release, it had already garnered over 850 "hearts" and more than 10,000 installations, placing it among the most popular color watch faces of all time!
 
-      Maybe include something from twitter?
     </small>
 	</div>
 </div> <!-- div.cols -->
