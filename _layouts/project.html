@@ -15,7 +15,11 @@ layout: default
   <div class="sky_bg" style="{{ sky_style }}"></div>
 
   <div id="ground"  class="project_desc">
-    <h2 class="project_title">{{ page.title }}</h2>
+    {% if page.display_title %}
+      <h2 class="project_title">{{ page.display_title}}</h2>
+    {% else %}
+      <h2 class="project_title">{{ page.title }}</h2>
+    {% endif %}
 
     <div class="project_subtitle">
       {{ page.project_subtitle}}
