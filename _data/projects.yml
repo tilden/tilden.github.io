@@ -1,4 +1,9 @@
 
+- name: "Pebble Watchface: TimeStyle"
+  desc: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
+  banner_img: "timestyle_banner.png"
+  url: "/projects/timestyle"
+
 - name: "Drive-Thru Monitor"
   desc: "Stay in command of your restaurant's drive-thru with this highly visual way to monitor the current status of all waiting vehicles."
   banner_img: "dt_banner.png"
@@ -23,7 +28,7 @@
   desc: "An open-source, responsive webcomic site built using Github Pages and Jekyll."
   banner_img: "scrapinold_banner.jpg"
   url: "/projects/scrapinold"
-  
+
 - name: "Production Control"
   desc: "As a burger chef, you'll need to keep tabs on what you've cooked, what you're cooking, and what you will cook. Production Control is here to help."
   banner_img: "pcu_banner.png"

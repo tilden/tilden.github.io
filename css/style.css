@@ -440,6 +440,10 @@ img.logo {
   font-weight: 300;
 }
 
+.section h4 {
+  margin-bottom: 0;
+}
+
 .project_desc > .project_subtitle {
   margin: 4ex auto 6ex;
   color: #666;
