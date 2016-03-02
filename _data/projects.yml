@@ -3,6 +3,11 @@
   desc: "Stay in command of your restaurant's drive-thru with this highly visual way to monitor the current status of all waiting vehicles."
   banner_img: "dt_banner.png"
   url: "/projects/drivethru"
+  
+- name: "Smartwatch face: TimeStyle"
+  desc: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
+  banner_img: "timestyle_banner.png"
+  url: "/projects/timestyle"
 
 - name: "Restaurant Management System Redesign"
   desc: "Whether you manage a single restaurant or a thousand, you'll need a way to analyze sales, manage employees, and more. This system has you covered."
@@ -13,11 +18,6 @@
   desc: "With this webapp, any small internet-enabled device can become a wall-mounted clock displaying the weather."
   banner_img: "weatherclock_banner.jpg"
   url: "/projects/weatherclock"
-
-- name: "Smartwatch face: TimeStyle"
-  desc: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
-  banner_img: "timestyle_banner.png"
-  url: "/projects/timestyle"
 
 - name: "JGA: Crossroads of Destiny"
   desc: "As an exiled infomercial chef, embrace your destiny and bring balance to the world once again! A story-driven side-scrolling RPG made using Unity."
