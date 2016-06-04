@@ -31,67 +31,17 @@ body {
   margin: 0;
 }
 
-
-.sky_bg {
-  background: #888 url('images/portfolio_sky.jpg') center top no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 65%;
-  position: absolute;
-  top: 15vh;
-}
-
-#ground {
-  background: #eee;
-  position: absolute;
-  top: 50%;
-  min-height: calc(100vh - 55%);
-  width: 100%;
-  opacity: 1;
-  overflow: visible;
-}
-
-.short  {
-  #ground {
-    top: 40%;
-    min-height: calc(100vh - 40%);
-  }
-  
-  .sky_bg {
-    height: 40.5%;
-    top: -10vh;
-  }
-}
-
-#ground.overlap, #ground.post {
-  top: 200px;
-  min-height: calc(100vh - 200px);
-}
-
-#ground.overlap > div {
-  /*margin-top: -50px;*/
-}
-
-#ground.project_desc {
-  background-color: white;
-}
-
-.dark #ground {
-  background-color: #252525;
-  color: white;
-}
-
 a {
-  color: #1274C5;
+  color: $material-indigo-500;
   transition: all 0.2s;
 }
 
 a:visited {
-  color: #905BD2;
+  color: $material-purple-500;
 }
 
 a:hover {
-  color: #5E99CA;
+  // color: #5E99CA;
 }
 
 .dark a {
@@ -131,29 +81,30 @@ h1, .subtitle, .teaser {
 /* navigation */
 
 .nav {
-  position: fixed;
   color: white;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
   padding: 0px 40px;
-  height: 64px;
-  font-weight: 400;
-  transition: background-color 0.5s, height 0.5s, padding 0.5s;
-  background: $material-indigo-500;
+  position: fixed;
+  height: 192px;
+  border-bottom: 11px transparent solid;
+  transition: background-color 0.5s, padding 0.5s;
   -webkit-font-smoothing: antialiased;
-}
-
-.nav::after {
-  position: absolute;
-  left: -5px;
-  right: -5px;
-  top: 0;
-  bottom: 0;
-  content: "";
-  pointer-events: none;
-  @include shadow-elevation-6dp;
+  background: $material-indigo-500;
+  
+  &::after {
+    position: absolute;
+    bottom: -11px;
+    top: 0;
+    content: "";
+    left: -5px;
+    right: -5px;
+    pointer-events: none;
+    @include shadow-elevation-4dp;
+  }
+  
 }
 
 .nav .subheading {
@@ -241,8 +192,7 @@ img.logo {
 /* landing page project cards / post cards */
 
 .cards {
-  /*margin: -50px 30px auto;*/
-  margin: 15px auto;
+  margin: 220px 15px auto;
 }
 
 .card {

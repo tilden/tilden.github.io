@@ -9,40 +9,49 @@
 
 <script>
 	function adjustNavBars() {
-		var navCompactCutoff = 160;
-		var navFixedCutoff = 68;
-		var bannerHeight = $('#ground').position().top;
+		// var navCompactCutoff = 160;
+		// var bannerHeight = $('#ground').position().top;
 		var navBar = $('.nav');
-		var viewport = $('#viewport');
-		var footerNav = $('#nav_footer');
-		var scrollDistanceFromBottom = viewport.get(0).scrollHeight - viewport.get(0).scrollTop  - viewport.get(0).offsetHeight;
+		var navFixedCutoff = 170 - 64;
+		var scrollDistance = $(document).scrollTop();
+		// var footerNav = $('#nav_footer');
+		// var scrollDistanceFromBottom = viewport.get(0).scrollHeight - viewport.get(0).scrollTop  - viewport.get(0).offsetHeight;
+		var fullHeight = 192;
+		var condensedHeight = 64;
+		var heightDiff = fullHeight - condensedHeight;
+        var yRatio = Math.min(1, scrollDistance / heightDiff);
 
-		// adjust main nav bar based on scroll position
-    if (bannerHeight < navCompactCutoff) {
-			navBar.addClass('compact');
-    } else {
-			navBar.removeClass('compact');
-    }
+		
+		console.log('scroll dist:' + yRatio);
+		
+		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
 
-  	if (bannerHeight < navFixedCutoff) {
-			navBar.addClass('fixed');
-		} else if(navBar.hasClass('fixed')) {
-			navBar.removeClass('fixed');
- 		}
-	 
+		// // adjust main nav bar based on scroll position
+		// if (bannerHeight < navCompactCutoff) {
+		// 	navBar.addClass('compact');
+		// } else {
+		// 	navBar.removeClass('compact');
+		// }
 
-		// control footer nav visibility
-		if(scrollDistanceFromBottom < 150) {
-			footerNav.addClass('visible');
-		} else if(footerNav.hasClass('visible')){
-			footerNav.removeClass('visible');
-		}
+		// if (bannerHeight < navFixedCutoff) {
+		// 	navBar.addClass('fixed');
+		// } else if(navBar.hasClass('fixed')) {
+		// 	navBar.removeClass('fixed');
+		// }
+
+
+		// // control footer nav visibility
+		// if(scrollDistanceFromBottom < 150) {
+		// 	footerNav.addClass('visible');
+		// } else if(footerNav.hasClass('visible')){
+		// 	footerNav.removeClass('visible');
+		// }
 	}
 
 	$('document').ready(function() {
 		{% unless page.no_footer_nav %}
-		adjustFooterSpace();
-		setInterval(adjustFooterSpace, 500);
+		// adjustFooterSpace();
+		// setInterval(adjustFooterSpace, 500);
 		{% endunless %}
 
 		adjustNavBars();
@@ -66,7 +75,7 @@
   });
 </script>
 
-<script>
+<!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -75,4 +84,4 @@
   ga('create', 'UA-18252375-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script>-->
