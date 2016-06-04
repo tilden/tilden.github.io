@@ -86,11 +86,11 @@ h1, .subtitle, .teaser {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 0px 40px;
+  padding: 20px 40px;
   position: fixed;
   height: 192px;
   border-bottom: 11px transparent solid;
-  transition: background-color 0.5s, padding 0.5s;
+  transition: background-color 0.5s;
   -webkit-font-smoothing: antialiased;
   background: $material-indigo-500;
   
@@ -105,28 +105,35 @@ h1, .subtitle, .teaser {
     @include shadow-elevation-4dp;
   }
   
+  .lower-area {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-.nav .subheading {
+h1.logo {
+  text-align: left;
+  float: left;
+  line-height: 32px;
+  font-size: 34px;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.logo .subheading {
   display: block;
   opacity: 0.7;
-  font-size: 14px;
-  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 0 2px;
   text-align: left;
-  line-height: 14px;
-}
-
-.logo {
-  float: left;
-  margin: 0;
-  line-height: 32px;
-  font-size: 24px;
-  text-align: left;
-  color: white;
+  line-height: 24px;
+  
 }
 
 img.logo {
-  margin-right: 10px;
+  float: left;
+  margin: 4px 0;
   border: 0;
 }
 

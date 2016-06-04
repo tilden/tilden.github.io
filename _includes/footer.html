@@ -9,43 +9,18 @@
 
 <script>
 	function adjustNavBars() {
-		// var navCompactCutoff = 160;
-		// var bannerHeight = $('#ground').position().top;
 		var navBar = $('.nav');
-		var navFixedCutoff = 170 - 64;
-		var scrollDistance = $(document).scrollTop();
-		// var footerNav = $('#nav_footer');
-		// var scrollDistanceFromBottom = viewport.get(0).scrollHeight - viewport.get(0).scrollTop  - viewport.get(0).offsetHeight;
+		var lowerArea = $('.nav .lower-area');
 		var fullHeight = 192;
 		var condensedHeight = 64;
 		var heightDiff = fullHeight - condensedHeight;
+		var scrollDistance = $(document).scrollTop();
         var yRatio = Math.min(1, scrollDistance / heightDiff);
-
-		
-		console.log('scroll dist:' + yRatio);
 		
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
+		navBar.css('padding-top', (1 - yRatio) * 20);
 
-		// // adjust main nav bar based on scroll position
-		// if (bannerHeight < navCompactCutoff) {
-		// 	navBar.addClass('compact');
-		// } else {
-		// 	navBar.removeClass('compact');
-		// }
-
-		// if (bannerHeight < navFixedCutoff) {
-		// 	navBar.addClass('fixed');
-		// } else if(navBar.hasClass('fixed')) {
-		// 	navBar.removeClass('fixed');
-		// }
-
-
-		// // control footer nav visibility
-		// if(scrollDistanceFromBottom < 150) {
-		// 	footerNav.addClass('visible');
-		// } else if(footerNav.hasClass('visible')){
-		// 	footerNav.removeClass('visible');
-		// }
+		lowerArea.css('opacity', 1 - yRatio * 3);
 	}
 
 	$('document').ready(function() {
