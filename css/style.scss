@@ -6,6 +6,9 @@
 @import 'material-colors';
 @import 'material-shadows';
 
+$material-primary-color: $material-indigo-400;
+$material-accent-color: $material-amber-a400;
+
 /* global stuff */
 html {
   box-sizing: border-box;
@@ -25,40 +28,9 @@ body {
   color: black;
   text-align: center;
   background: white;
-  overflow: hidden;
   margin: 0;
 }
 
-/* 3d parallax */
-
-#viewport {
-  -webkit-perspective: 100px;
-  -moz-perspective: 100px;
-  -ms-perspective: 100px;
-  -o-perspective: 100px;
-  perspective: 100px;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background: #eee;
-}
-
-#viewport.dark {
-  background: #252525;
-}
-
-.title, .subtitle, #ground {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
 
 .sky_bg {
   background: #888 url('images/portfolio_sky.jpg') center top no-repeat;
@@ -67,18 +39,6 @@ body {
   height: 65%;
   position: absolute;
   top: 15vh;
-
-  -webkit-transform: translate3d(0, 0, -100px) scale(2);
-  -moz-transform: translate3d(0, 0, -100px) scale(2);
-  -ms-transform: translate3d(0, 0, -100px) scale(2);
-  -o-transform: translate3d(0, 0, -100px) scale(2);
-  transform: translate3d(0, 0, -100px) scale(2);
-
-  -webkit-transform-origin: center bottom;
-  -moz-transform-origin: center bottom;
-  -ms-transform-origin: center bottom;
-  -o-transform-origin: center bottom;
-  transform-origin: center bottom;
 }
 
 #ground {
@@ -171,16 +131,17 @@ h1, .subtitle, .teaser {
 /* navigation */
 
 .nav {
-  position: absolute;
+  position: fixed;
   color: white;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 40px 40px 80px;
+  padding: 0px 40px;
+  height: 64px;
   font-weight: 400;
   transition: background-color 0.5s, height 0.5s, padding 0.5s;
-  // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+  background: $material-indigo-500;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -193,16 +154,6 @@ h1, .subtitle, .teaser {
   content: "";
   pointer-events: none;
   @include shadow-elevation-6dp;
-}
-      
-
-.nav.compact {
-  padding: 10px 10px 10px 20px;
-
-}
-
-.nav.fixed {
-  background: $material-indigo-500;
 }
 
 .nav .subheading {
@@ -237,24 +188,23 @@ img.logo {
 }
 
 .nav > ul > li {
-  line-height: 48px;
+  line-height: 64px;
   float: left;
-  padding: 0 10px 0;
 }
 
 
 .nav > ul > li > a, .nav > ul > li > span {
   color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   opacity: 1;
   transition: all 0.5s;
-  padding: 11px 19px;
-  border: 1px solid transparent;
-  border-radius: 2px;
-}
-
-.nav > ul > li > a:hover {
-  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0 20px;
+  display: block;
+  height: 64px;
+  opacity: 0.8;
 }
 
 .nav > ul > li > a:visited {
@@ -262,9 +212,10 @@ img.logo {
 }
 
 .nav > ul > li > span {
-  background-color: rgba(255,255,255,0.25);
+  border-bottom: 2px solid $material-orange-a400;
+  opacity: 1;
 }
-
+    
 @media all and (max-width: 600px) {
   .nav, .nav.compact {
     padding: 10px 10px 10px 10px;

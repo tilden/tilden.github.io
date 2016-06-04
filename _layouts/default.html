@@ -4,10 +4,10 @@
   {% include head.html %}
 
   {% if page.use_dark_style %}
-    {% assign viewport_extra_class = "dark" %}
+    {% assign body_class = "dark" %}
   {% endif %}
 
-  <body class="{{viewport_extra_class}}">
+  <body class="{{body_class}}">
 
   {% include navigation.html %}
 
