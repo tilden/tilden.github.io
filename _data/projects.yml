@@ -1,11 +1,18 @@
 
 - name: "Drive-Thru Monitor"
-  desc: "Stay in command of your restaurant's drive-thru with this highly visual way to monitor the current status of all waiting vehicles."
+  desc: >
+        Stay in command of your restaurant's drive-thru with this highly visual
+        way to monitor the current status of all waiting vehicles.
   banner_img: "dt_banner.png"
   url: "/projects/drivethru"
   
 - name: "Smartwatch face: TimeStyle"
-  desc: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
+  desc: >
+        Wristwatches reflect the wearer's style, and wearables are no different.
+        TimeStyle provides a readable and customizable time display, designed to
+        blend with the watch's design language. <br>
+        It is among the most popular watch faces for the Pebble smartwatch,
+        with nearly 100,000 users.
   banner_img: "timestyle_banner.png"
   url: "/projects/timestyle"
 

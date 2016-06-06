@@ -8,11 +8,13 @@ section: portfolio
 
 	{% for project in site.data.projects %}
 	<a class="card" href="{{ project.url }}">
-		<img src="images/banners/{{ project.banner_img }}" width="512" height="250" alt="" />
-		<h3>{{ project.name }}</h3>
-		<p>
-		{{ project.desc }}
-		</p>
+		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
+		<div class="desc">
+			<h3>{{ project.name }}</h3>
+			<p>
+			{{ project.desc }}
+			</p>
+		</div>
 	</a>
 	{% endfor %}
 

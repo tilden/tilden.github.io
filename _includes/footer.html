@@ -10,6 +10,7 @@
 <script>
 	function adjustNavBars() {
 		var navBar = $('.nav');
+		var navInner = $('.nav .nav-contents');
 		var lowerArea = $('.nav .lower-area');
 		var fullHeight = 192;
 		var condensedHeight = 64;
@@ -18,7 +19,7 @@
         var yRatio = Math.min(1, scrollDistance / heightDiff);
 		
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
-		navBar.css('padding-top', (1 - yRatio) * 20);
+		navInner.css('padding-top', (1 - yRatio) * 20);
 
 		lowerArea.css('opacity', 1 - yRatio * 3);
 	}
@@ -30,7 +31,7 @@
 		{% endunless %}
 
 		adjustNavBars();
-		setInterval(adjustNavBars, 100);
+		setInterval(adjustNavBars, 10);
 	});
 </script>
 

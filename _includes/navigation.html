@@ -1,36 +1,38 @@
 <div class="nav">
-  <a href="/" >
-    <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
-  </a>
+  <div class="nav-contents">
+    <a href="/" >
+      <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
+    </a>
 
-  <ul>
-    <li>
-    {% if page.section == 'portfolio' %}
-      <span>Portfolio</span>
-    {% else %}
-      <a href="/">Portfolio</a>
-    {% endif %}
-    </li>
-    <li>
-    {% if page.section == 'blog' %}
-      <span>Blog</span>
-    {% else %}
-      <a href="/blog">Blog</a>
-    {% endif %}
-    </li>
-    <li>
-    {% if page.section == 'about' %}
-      <span>About</span>
-    {% else %}
-      <a href="/about">About</a>
-    {% endif %}
-    </li>
-  </ul>
-  
-  <div class="lower-area">
-    <h1 class="logo">
-      Dan Tilden
-      <span class="subheading">I'm a hybrid interaction designer & prototyper with a multidisiplinary background</span>
-    </h1>
+    <ul>
+      <li>
+      {% if page.section == 'portfolio' %}
+        <span>Portfolio</span>
+      {% else %}
+        <a href="/">Portfolio</a>
+      {% endif %}
+      </li>
+      <li>
+      {% if page.section == 'blog' %}
+        <span>Blog</span>
+      {% else %}
+        <a href="/blog">Blog</a>
+      {% endif %}
+      </li>
+      <li>
+      {% if page.section == 'about' %}
+        <span>About</span>
+      {% else %}
+        <a href="/about">About</a>
+      {% endif %}
+      </li>
+    </ul>
+    
+    <div class="lower-area">
+      <h1 class="logo">
+        Dan Tilden
+        <span class="subheading">I'm a hybrid interaction designer & prototyper with a multidisiplinary background</span>
+      </h1>
+    </div>
   </div>
 </div>

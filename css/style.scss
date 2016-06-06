@@ -5,6 +5,7 @@
 
 @import 'material-colors';
 @import 'material-shadows';
+@import 'material-typography';
 
 $material-primary-color: $material-indigo-400;
 $material-accent-color: $material-amber-a400;
@@ -24,11 +25,16 @@ img {
 
 body {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 22px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
   color: black;
+  background: $material-grey-200;
   text-align: center;
-  background: white;
+  // background: url('/css/images/portfolio_sky.jpg');
+  // background-attachment: fixed;
+  // background-size: cover;
   margin: 0;
+  margin-top: 220px;
 }
 
 a {
@@ -56,27 +62,22 @@ a:hover {
   color: white;
 }
 
-h1, .subtitle, .teaser {
-  font-weight: 400;
-}
+// .title {
+//   @include paper-font-display4;  
+//   margin: 0;
+//   color: white;
+//   position: relative;
+//   top: -60px;
+// }
 
-.title {
-  font-size: 72px;
-  margin: 0;
-  color: white;
-  position: relative;
-  top: -60px;
-  line-height: 72px;
-}
-
-.subtitle {
-  font-size: 24px;
-  position: relative;
-  top: -50px;
-  line-height: 24px;
-  color: #6282A4;
-  margin: 0;
-}
+// .subtitle {
+//   font-size: 24px;
+//   position: relative;
+//   top: -50px;
+//   line-height: 24px;
+//   color: #6282A4;
+//   margin: 0;
+// }
 
 /* navigation */
 
@@ -86,13 +87,13 @@ h1, .subtitle, .teaser {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 20px 40px;
   position: fixed;
   height: 192px;
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
-  -webkit-font-smoothing: antialiased;
   background: $material-indigo-500;
+  // background: url('/projects/jga/jga_sky.jpg');
+  background-size: cover;
   
   &::after {
     position: absolute;
@@ -107,7 +108,7 @@ h1, .subtitle, .teaser {
   
   .lower-area {
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
   }
 }
 
@@ -116,8 +117,10 @@ h1.logo {
   float: left;
   line-height: 32px;
   font-size: 34px;
+  font-weight: 400;
   color: white;
   transition: opacity 0.2s;
+  margin: 0;
 }
 
 .logo .subheading {
@@ -137,7 +140,14 @@ img.logo {
   border: 0;
 }
 
-.nav > ul {
+.nav-contents {
+    padding: 20px 0;
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-contents > ul {
   list-style: none;
   font-size: 18px;
   float: right;
@@ -145,14 +155,14 @@ img.logo {
   margin: 0;
 }
 
-.nav > ul > li {
+.nav-contents > ul > li {
   line-height: 64px;
   float: left;
 }
 
 
-.nav > ul > li > a, .nav > ul > li > span {
-  color: white;
+.nav-contents > ul > li > a, .nav-contents > ul > li > span {
+  color: inherit;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -165,11 +175,11 @@ img.logo {
   opacity: 0.8;
 }
 
-.nav > ul > li > a:visited {
-  color: white;
+.nav-contents > ul > li > a:visited {
+  color: inherit;
 }
 
-.nav > ul > li > span {
+.nav-contents > ul > li > span {
   border-bottom: 2px solid $material-orange-a400;
   opacity: 1;
 }
@@ -198,64 +208,80 @@ img.logo {
 
 /* landing page project cards / post cards */
 
-.cards {
-  margin: 220px 15px auto;
-}
-
 .card {
-  border-radius: 5px 5px 2px 2px;
-  background: #FFFFFF;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  width: 512px;
-  height: 380px;
-  margin: 10px 8px;
+  border-radius: 2px;
+  // background: $material-blue-grey-500;
+  background: white;
+  @include shadow-elevation-3dp;
+  width: 80%;
+  height: 300px;
   text-align: left;
-  display: inline-block;
+  display: block;
+  flex-direction: row;
+  margin: 30px auto;
   text-decoration: none;
   color: black;
   transition: all 0.2s;
-  position: relative;
-  vertical-align: top;
+  max-width: 1440px;
 }
 
 .card:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    @include shadow-elevation-6dp;
 }
 
 .card:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #1274C5;
+  // box-shadow: 0 0 0 2px #1274C5;
 }
 
-.card > p {
+.card .desc {
+  position: relative;
+  margin-left: 50%;
+  padding-top: 2em;
+}
+
+.card p {
   font-size: 16px;
   margin: 10px 20px;
-  color: black;
-  opacity: 0.6;
+  color: inherit;
+  opacity: $material-light-secondary-opacity;
   transition: all 0.2s;
 }
 
-.card > img {
-  border-radius: 2px 2px 0 0;
-  border-bottom: 1px solid #eee;
+.card br {
+  line-height: 200%;
 }
 
-.card .post_thumb {
+.card .thumb {
   background-size: cover;
-  width: 100%;
-  height: 250px;
-  border-radius: 2px 2px 0 0;
+  float: left;
+  width: 55%;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  border-right: 1px solid $material-grey-400;
+  position: relative;
+} 
+
+.card .thumb::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  height: 100%;
+  width: 100px;
+  background-color: white;
+  transform: skewX(-10deg);
+
 }
 
-.card > h3 {
+.card h3 {
   font-weight: 300;
   font-size: 22px;
-  margin: 10px 20px;
-  color: black;
+  margin: 10px 20px 20px;
+  color: inherit;
   transition: color 0.2s;
 }
 
-.card > a {
+.card a {
   margin: 10px 20px;
   font-size: 16px;
 }
