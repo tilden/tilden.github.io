@@ -37,6 +37,10 @@ body {
   margin-top: 220px;
 }
 
+h1, h2, h3 {
+  font-weight: 400;
+}
+
 a {
   color: $material-indigo-500;
   transition: all 0.2s;
@@ -62,23 +66,6 @@ a:hover {
   color: white;
 }
 
-// .title {
-//   @include paper-font-display4;  
-//   margin: 0;
-//   color: white;
-//   position: relative;
-//   top: -60px;
-// }
-
-// .subtitle {
-//   font-size: 24px;
-//   position: relative;
-//   top: -50px;
-//   line-height: 24px;
-//   color: #6282A4;
-//   margin: 0;
-// }
-
 /* navigation */
 
 .nav {
@@ -92,6 +79,7 @@ a:hover {
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
   background: $material-indigo-500;
+  // background: linear-gradient(to left, #946363 0%, #3f51b5 100%);
   // background: url('/projects/jga/jga_sky.jpg');
   background-size: cover;
   
@@ -216,13 +204,14 @@ img.logo {
   width: 80%;
   height: 300px;
   text-align: left;
-  display: block;
-  flex-direction: row;
+  display: flex;
+  align-items: center;
   margin: 30px auto;
   text-decoration: none;
   color: black;
   transition: all 0.2s;
   max-width: 1440px;
+  padding-right: 20px;
 }
 
 .card:hover {
@@ -234,15 +223,43 @@ img.logo {
   // box-shadow: 0 0 0 2px #1274C5;
 }
 
-.card .desc {
+.card .thumb {
+  background-size: cover;
+  flex: 10;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
   position: relative;
-  margin-left: 50%;
-  padding-top: 2em;
+} 
+
+.card .thumb::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  height: 100%;
+  width: 90px;
+  background-color: white;
+  transform: skewX(-10deg);
+
+}
+
+.card .desc {
+  flex: 9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 26px;
+  line-height: 1;
+  margin: 0 0 22px;
+  color: inherit;
+  transition: color 0.2s;
 }
 
 .card p {
   font-size: 16px;
-  margin: 10px 20px;
+  margin: 0;
   color: inherit;
   opacity: $material-light-secondary-opacity;
   transition: all 0.2s;
@@ -252,34 +269,7 @@ img.logo {
   line-height: 200%;
 }
 
-.card .thumb {
-  background-size: cover;
-  float: left;
-  width: 55%;
-  height: 100%;
-  border-radius: 2px 0 0 2px;
-  border-right: 1px solid $material-grey-400;
-  position: relative;
-} 
 
-.card .thumb::after {
-  content: '';
-  position: absolute;
-  right: -50px;
-  height: 100%;
-  width: 100px;
-  background-color: white;
-  transform: skewX(-10deg);
-
-}
-
-.card h3 {
-  font-weight: 300;
-  font-size: 22px;
-  margin: 10px 20px 20px;
-  color: inherit;
-  transition: color 0.2s;
-}
 
 .card a {
   margin: 10px 20px;
@@ -385,14 +375,12 @@ img.logo {
 .project_title {
   font-size: 7vw;
   margin: 20px auto;
-  font-weight: 300;
 }
 
 .section {
   text-align: center;
   line-height: 140%;
   margin: 0 auto 4em auto;
-  font-weight: 300;
 }
 
 .section h4 {
@@ -402,7 +390,6 @@ img.logo {
 .project_desc > .project_subtitle {
   margin: 4ex auto 6ex;
   color: #666;
-  font-weight: 300;
   max-width: 800px;
   padding: 10px;
 }
@@ -489,7 +476,6 @@ blockquote .attribution {
 
 .left_pic .pic_desc {
   max-width: 400px;
-  font-weight: 300;
   line-height: 140%;
   text-align: left;
   padding-left: 20px;

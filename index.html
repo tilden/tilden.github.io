@@ -14,6 +14,11 @@ section: portfolio
 			<p>
 			{{ project.desc }}
 			</p>
+			<ul class="tags">
+			{% for tag in project.tags %}
+				<li>{{tag}}</li>
+			{% endfor %}
+			</ul>
 		</div>
 	</a>
 	{% endfor %}

@@ -14,6 +14,10 @@
         It is among the most popular watch faces for the Pebble smartwatch,
         with nearly 100,000 users.
   banner_img: "timestyle_banner.png"
+  tags:
+    - Prototyping
+    - Interaction Design
+    - Wearable
   url: "/projects/timestyle"
 
 - name: "Restaurant Management System Redesign"
