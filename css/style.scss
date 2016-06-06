@@ -239,7 +239,6 @@ img.logo {
   width: 90px;
   background-color: white;
   transform: skewX(-10deg);
-
 }
 
 .card .desc {
@@ -269,8 +268,6 @@ img.logo {
   line-height: 200%;
 }
 
-
-
 .card a {
   margin: 10px 20px;
   font-size: 16px;
@@ -279,6 +276,8 @@ img.logo {
   outline: none;
   box-shadow: 0 0 0 2px #1274C5;
 }
+
+
 
 @media (max-width: 525px) {
   .card {

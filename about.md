@@ -30,6 +30,8 @@ software to make managing your fast food restaurant empire fun and exciting.
 To get a better idea of the kinds of products I work on, check out [Drive-Thru Monitor](/projects/drivethru/)
 , [Production Control](/projects/productioncontrol), or the [Restaurant Management System redesign project](/projects/restaurant_management)!
 
+In my spare time, I've built even more exciting projects, like JGA: Crossroads of Destiny.
+
 My goal is to improve the world's user interfaces, one step at a time.
 
 
