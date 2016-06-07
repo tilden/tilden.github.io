@@ -12,6 +12,8 @@
 		var navBar = $('.nav');
 		var navInner = $('.nav .nav-contents');
 		var lowerArea = $('.nav .lower-area');
+		var bannerImage = $('.nav .banner-image');
+		var toolbarTitle = $('.nav a.logo span');
 		var fullHeight = 192;
 		var condensedHeight = 64;
 		var heightDiff = fullHeight - condensedHeight;
@@ -20,8 +22,12 @@
 		
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
 		navInner.css('padding-top', (1 - yRatio) * 20);
+		bannerImage.css('opacity', 1 - yRatio);
+		bannerImage.css('top', (yRatio) * -20);
 
 		lowerArea.css('opacity', 1 - yRatio * 3);
+
+		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
 	}
 
 	$('document').ready(function() {

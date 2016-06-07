@@ -2,6 +2,7 @@
 layout: page
 title: "About Me"
 permalink: /about/
+is_top_level: true
 section: about
 top_bar_color: '#A52A2A'
 no_footer_nav: true

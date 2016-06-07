@@ -41,22 +41,22 @@
 #   banner_img: "weatherclock_banner.jpg"
 #   url: "/projects/weatherclock"
 
-# - name: "JGA: Crossroads of Destiny"
-#   desc: "As an exiled infomercial chef, embrace your destiny and bring balance to the world once again! A story-driven side-scrolling RPG made using Unity."
-#   banner_img: "jga_banner.jpg"
-#   url: "/projects/jga"
+- name: "JGA: Crossroads of Destiny"
+  desc: "As an exiled infomercial chef, embrace your destiny and bring balance to the world once again! A story-driven side-scrolling RPG made using Unity."
+  banner_img: "jga_banner.jpg"
+  url: "/projects/jga"
 
 # - name: "The New Adventures of Scrapinold Dooington"
 #   desc: "An open-source, responsive webcomic site built using Github Pages and Jekyll."
 #   banner_img: "scrapinold_banner.jpg"
 #   url: "/projects/scrapinold"
 
-# - name: "Drive-Thru Monitor"
-#   desc: >
-#         Stay in command of your restaurant's drive-thru with this highly visual
-#         way to monitor the current status of all waiting vehicles.
-#   banner_img: "dt_banner.png"
-#   url: "/projects/drivethru"
+- name: "Drive-Thru Monitor"
+  desc: >
+        Stay in command of your restaurant's drive-thru with this highly visual
+        way to monitor the current status of all waiting vehicles.
+  banner_img: "dt_banner.png"
+  url: "/projects/drivethru"
 
 # - name: "Production Control"
 #   desc: "As a burger chef, you'll need to keep tabs on what you've cooked, what you're cooking, and what you will cook. Production Control is here to help."

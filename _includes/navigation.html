@@ -1,9 +1,8 @@
 <div class="nav">
+  <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   <div class="nav-contents">
-    <a href="/" >
-      <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
-    </a>
-
+    {% if page.is_top_level %}
+    <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
     <ul>
       <li>
       {% if page.section == 'portfolio' %}
@@ -27,6 +26,15 @@
       {% endif %}
       </li>
     </ul>
+    
+    {% else %}
+    <a href="/" class="logo" >
+      <i class="material-icons">arrow_back</i>
+      <span>{{page.title}}<span>
+    </a>
+    {% endif %}
+
+
     
     <div class="lower-area">
       <h1 class="logo">

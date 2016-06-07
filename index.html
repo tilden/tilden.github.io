@@ -1,15 +1,17 @@
 ---
 layout: default
 section: portfolio
+is_top_level: true
 title: "Dan Tilden"
 subtitle: >
           I'm a hybrid interation designer and prototyper with a multidisciplinary
           background
+banner_photo: "images/leaf2.jpg"
 ---
 
 
 <div class="cards">
-
+  <h2>Featured Projects</h2>
 	{% for project in site.data.projects %}
 	<a class="card" href="{{ project.url }}">
 		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
