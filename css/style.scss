@@ -7,7 +7,7 @@
 @import 'material-shadows';
 @import 'material-typography';
 
-$material-primary-color: $material-indigo-400;
+$material-primary-color: $material-blue-grey-500;
 $material-accent-color: $material-amber-a400;
 
 /* global stuff */
@@ -60,7 +60,9 @@ a:hover {
   height: 192px;
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
-  background-color: $material-indigo-800;
+  // background-color: $material-blue-grey-600;
+  background-color: $material-teal-800;
+  // background-color: $material-indigo-800;
   // background: url('/projects/jga/jga_sky.jpg');
   
   &::after {
@@ -665,181 +667,4 @@ pre > code {
     padding: 0;
     font-size: 28px;
   }
-}
-
-/* footer project navigation */
-#nav_footer {
-  position: absolute;
-  width: 70%;
-  bottom: 0;
-  left: 50%;
-  margin-left: -35%;
-  background-color: rgba(0,0,0,0.7);
-  height: 120px;
-  border-radius: 5px 5px 0 0;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-  -moz-transform:    translateY(100%);
-  -ms-transform:     translateY(100%);
-  -o-transform:      translateY(100%);
-  transform:         translateY(100%);
-}
-
-#nav_footer.visible {
-  -webkit-transform: translateY(0);
-  -moz-transform:    translateY(0);
-  -ms-transform:     translateY(0);
-  -o-transform:      translateY(0);
-  transform:         translateY(0);
-  opacity: 1;
-}
-
-#nav_footer.narrow {
-  width: 300px;
-  margin-left: -150px;
-}
-
-.narrow #contact_minibox {
-  left: 10px;
-  right: 10px;
-}
-
-#nav_footer .nav_footer_button, #nav_footer .nav_footer_button:visited {
-  display: block;
-  position: absolute;
-  text-decoration: none;
-  border-radius: 3px;
-  font-size: 16px;
-  color: white;
-  background-color: #175D96;
-  height: 80px;
-  bottom: 20px;
-  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  width: 300px;
-}
-
-#nav_footer .nav_footer_button:hover {
-  background-color: #1274C5;
-}
-
-.nav_footer_button > div {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform:    translateY(-50%);
-  -ms-transform:     translateY(-50%);
-  -o-transform:      translateY(-50%);
-  transform:         translateY(-50%);
-}
-
-.nav_footer_button .label {
-  opacity: 0.5;
-}
-
-.nav_footer_button .name {
-  font-weight: bold;
-}
-
-#prev_proj {
-  text-align: left;
-  left: -80px;
-  padding-left: 70px;
-  padding-right: 10px;
-}
-
-#next_proj {
-  text-align: right;
-  right: -80px;
-  padding-right: 70px;
-  padding-left: 10px;
-}
-
-#prev_proj:before, #next_proj:before {
-  position: absolute;
-  font-family: FontAwesome;
-  top: 7px;
-  font-size: 64px;
-}
-
-#prev_proj:before {
-  left: 16px;
-  content: '\f100';
-}
-
-#next_proj:before {
-  right: 16px;
-  content: '\f101';
-}
-
-#contact_minibox {
-  color: white;
-  position: absolute;
-  top: 20px;
-  left: 230px;
-  right: 230px;
-}
-
-#contact_minibox .byline {
-  opacity: 0.5;
-  font-size: 12px;
-}
-
-#contact_minibox .contact {
-  border: 0;
-  font-size: 16px;
-  width: 100%;
-  max-width: 220px;
-  background-color: #797979;
-  color: white;
-  padding: 8px;
-  margin: 8px 0 4px;
-}
-
-#contact_minibox .contact:hover {
-  background-color: #8B8B8B;
-}
-
-.social_icons a {
-  color: #888;
-  padding: 0 5px;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.social_icons a:hover {
-  color: #ddd;
-}
-
-/* responsive mode */
-@media all and (max-width: 900px) {
-  #nav_footer {
-    width: 80%;
-    margin-left: -40%;
-  }
-}
-
-@media all and (max-width: 780px) {
-  #nav_footer:not(.narrow) {
-    height: auto;
-    width: 100%;
-    margin-left: -50%;
-    border-radius: 0;
-  }
-
-  #nav_footer:not(.narrow) .nav_footer_button,
-  #nav_footer:not(.narrow) .nav_footer_button:visited,
-  #nav_footer:not(.narrow) #contact_minibox {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  #contact_minibox .contact {
-    max-width: none;
-    width: 90%;
-  }
-
 }

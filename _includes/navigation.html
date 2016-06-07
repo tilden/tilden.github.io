@@ -1,4 +1,4 @@
-<div class="nav">
+<div class="nav" {% if page.top_bar_color %} style="background-color: {{page.top_bar_color}}" {% endif %}>
   {% if page.banner_photo %}
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   {% endif %}
