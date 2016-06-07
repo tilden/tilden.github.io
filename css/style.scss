@@ -186,7 +186,7 @@ a.logo {
 }
 
 
-.nav-contents > ul > li > a, .nav-contents > ul > li > span {
+.nav-contents > ul > li > a {
   color: inherit;
   text-transform: uppercase;
   font-weight: 500;
@@ -198,15 +198,15 @@ a.logo {
   display: block;
   height: 64px;
   opacity: 0.8;
+
+  &.current {
+    border-bottom: 2px solid $material-orange-a400;
+    opacity: 1;
+  }
 }
 
 .nav-contents > ul > li > a:visited {
   color: inherit;
-}
-
-.nav-contents > ul > li > span {
-  border-bottom: 2px solid $material-orange-a400;
-  opacity: 1;
 }
 
 /* landing page project cards / post cards */

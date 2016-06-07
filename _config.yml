@@ -21,3 +21,10 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
+      section: "blog"
+  -
+    scope: 
+      path: "projects"
+      type: "pages"
+    values:
+      section: "portfolio"

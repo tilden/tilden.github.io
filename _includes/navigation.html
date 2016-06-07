@@ -11,7 +11,7 @@
     
     {% else %}
 
-    {%  if page.is_post %}
+    {% if page.is_post %}
       {% assign home_dest = 'blog' %}
     {% endif %}
 
@@ -23,25 +23,22 @@
     {% endif %}
     <ul>
       <li>
-      {% if page.section == 'portfolio' %}
-        <span>Portfolio</span>
-      {% else %}
-        <a href="/">Portfolio</a>
-      {% endif %}
+        {% if page.section == 'portfolio' %}
+          {% assign portfolio_cls = 'current' %}
+        {% endif %}
+        <a href="/" class="{{portfolio_cls}}">Portfolio</a>
       </li>
       <li>
-      {% if page.section == 'blog' %}
-        <span>Blog</span>
-      {% else %}
-        <a href="/blog">Blog</a>
-      {% endif %}
+        {% if page.section == 'blog' %}
+          {% assign blog_cls = 'current' %}
+        {% endif %}
+        <a href="/blog" class="{{blog_cls}}">Blog</a>
       </li>
       <li>
-      {% if page.section == 'about' %}
-        <span>About</span>
-      {% else %}
-        <a href="/about">About</a>
-      {% endif %}
+        {% if page.section == 'about' %}
+          {% assign about_cls = 'current' %}
+        {% endif %}
+        <a href="/about" class="{{about_cls}}">About</a>
       </li>
     </ul>
 
