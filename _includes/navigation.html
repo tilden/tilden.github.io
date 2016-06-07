@@ -1,15 +1,23 @@
 <div class="nav">
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   <div class="nav-contents central-col">
-    {% if page.is_top_level %}
-    <a href="/" class="logo" >
-      <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
-    </a>
 
     
+    {% if page.is_top_level %}
+
+    <a href="/{{home_dest}}" class="logo" >
+      <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
+    </a>
+    
     {% else %}
-    <a href="/" class="logo" >
+
+    {%  if page.is_post %}
+      {% assign home_dest = 'blog' %}
+    {% endif %}
+
+    <a href="/{{home_dest}}" class="logo" >
       <i class="material-icons">arrow_back</i>
+      
       <span>{{page.title}}<span>
     </a>
     {% endif %}
