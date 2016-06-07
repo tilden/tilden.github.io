@@ -4,6 +4,7 @@ title: "About Me"
 permalink: /about/
 is_top_level: true
 section: about
+banner_photo: "/images/leaf.jpg"
 top_bar_color: '#A52A2A'
 no_footer_nav: true
 ---

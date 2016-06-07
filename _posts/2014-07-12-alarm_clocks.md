@@ -2,7 +2,7 @@
 layout: post
 title:  "How every smartphone platform gets the alarm clock wrong"
 date:   2014-07-12 16:05:21
-thumbnail: "/images/clocks/telechron.jpg"
+banner_photo: "/images/clocks/telechron.jpg"
 ---
 
 ![Telechron 7H241 Snooz-Alarm]({{ site.url }}/images/clocks/telechron.jpg)

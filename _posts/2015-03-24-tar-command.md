@@ -3,7 +3,7 @@ layout: post
 title:  "Why is it so difficult to write valid &ldquo;tar&rdquo; commands from memory?"
 # title:  "The importance of convention in design: why the Unix tar utility is so  difficult to use"
 date:   2015-03-24 16:05:21
-thumbnail: "/images/posts/tar/post_banner.png"
+banner_photo: "/images/posts/tar/post_banner.png"
 ---
 
 ![XKCD Comic: tar](http://imgs.xkcd.com/comics/tar.png)
