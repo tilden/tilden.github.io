@@ -30,9 +30,6 @@ body {
   color: black;
   background: $material-grey-200;
   text-align: center;
-  // background: url('/css/images/portfolio_sky.jpg');
-  // background-attachment: fixed;
-  // background-size: cover;
   margin: 0;
   margin-top: 220px;
 }
@@ -42,16 +39,12 @@ h1, h2, h3 {
 }
 
 a {
-  color: $material-indigo-500;
-  transition: all 0.2s;
-}
-
-a:visited {
-  color: $material-purple-500;
+  text-decoration: none;
+  color: $material-indigo-a700;
 }
 
 a:hover {
-  // color: #5E99CA;
+  text-decoration: underline;
 }
 
 /* navigation */
@@ -83,24 +76,47 @@ a:hover {
   .lower-area {
     position: absolute;
     pointer-events: none;
-    bottom: 15px;
+    bottom: -11px;
+    display: flex;
+    justify-content: center;
+    height: 108px;
+    flex-direction: column;
+    text-align: left;
+
+    h1, p {
+      margin: 0;
+      line-height: 1.3;
+    } 
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      opacity: $material-light-secondary-opacity;
+    }
   }
 
   .banner-image {
     position: absolute;
     background-size: cover;
-    top: 0;
     bottom: -11px;
-    left: 0;
-    right: 0;
+    height: 196px;
+    width: 100%;
     z-index: -1;
+  }
+
+  .banner-image::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
   }
 }
 
 h1.logo {
   text-align: left;
-  float: left;
-  line-height: 32px;
   font-size: 34px;
   font-weight: 400;
   color: white;
@@ -113,10 +129,7 @@ h1.logo {
   opacity: 0.7;
   font-size: 16px;
   font-weight: 400;
-  margin: 10px 0 0 2px;
   text-align: left;
-  line-height: 24px;
-  
 }
 
 .logo {
@@ -130,12 +143,13 @@ a.logo {
   display: block;
   margin: 0;
   text-decoration: none;
-  margin-left: -23px;
+  text-align: left;
   
   i {
     line-height: 64px;
     height: 64px;
-    width: 64px;
+    width: 50px;
+    text-align: left;
   }
 
   span {
@@ -147,11 +161,14 @@ a.logo {
   }
 }
 
+.central-col {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .nav-contents {
     padding: 20px 0;
-    max-width: 1440px;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .nav-contents > ul {
@@ -190,35 +207,10 @@ a.logo {
   border-bottom: 2px solid $material-orange-a400;
   opacity: 1;
 }
-    
-@media all and (max-width: 600px) {
-  .nav, .nav.compact {
-    padding: 10px 10px 10px 10px;
-  }
-}
-
-@media all and (max-width: 545px) {
-  .nav > ul > li {
-    padding: 0 1px 0;
-  }
-
-  .nav > ul > li > a, .nav > ul > li > span {
-    padding: 11px 10px;
-  }
-}
-
-@media all and (max-width: 435px) {
-  h1.logo {
-    display: none;
-  }
-}
 
 /* landing page project cards / post cards */
 
 .cards {
-  max-width: 1440px;
-  width: 80%;
-  margin: 0 auto;
 
   > h2 {
     text-align: left;
@@ -232,9 +224,11 @@ a.logo {
 
 .card {
   border-radius: 2px;
-  // background: $material-blue-grey-500;
   background: white;
   @include shadow-elevation-3dp;
+}
+
+.project-card {
   height: 300px;
   text-align: left;
   display: flex;
@@ -246,16 +240,12 @@ a.logo {
   margin-bottom: 30px;
 }
 
-.card:hover {
-    @include shadow-elevation-6dp;
+.project-card:hover {
+  @include shadow-elevation-6dp;
+  text-decoration: none;
 }
 
-.card:focus {
-  outline: none;
-  // box-shadow: 0 0 0 2px #1274C5;
-}
-
-.card .thumb {
+.project-card .thumb {
   background-size: cover;
   flex: 10;
   height: 100%;
@@ -263,7 +253,7 @@ a.logo {
   position: relative;
 } 
 
-.card .thumb::after {
+.project-card .thumb::after {
   content: '';
   position: absolute;
   right: -50px;
@@ -273,14 +263,14 @@ a.logo {
   transform: skewX(-10deg);
 }
 
-.card .desc {
+.project-card .desc {
   flex: 9;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.card h3 {
+.project-card h3 {
   font-size: 26px;
   line-height: 1;
   margin: 0 0 22px;
@@ -288,7 +278,7 @@ a.logo {
   transition: color 0.2s;
 }
 
-.card p {
+.project-card p {
   font-size: 16px;
   margin: 0;
   color: inherit;
@@ -296,34 +286,13 @@ a.logo {
   transition: all 0.2s;
 }
 
-.card br {
+.project-card br {
   line-height: 200%;
 }
 
-.card a {
+.project-card a {
   margin: 10px 20px;
   font-size: 16px;
-}
-.card:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #1274C5;
-}
-
-
-
-@media (max-width: 525px) {
-  .card {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: auto;
-    padding-bottom: 10px;
-  }
-
-  .card > img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /* about page contact cards */
@@ -388,7 +357,6 @@ a.logo {
 /* main page extras */
 
 .main_page_footer {
-  font-size: 80%;
   max-width: 575px;
   margin: 0 auto 40px;
 }
@@ -402,11 +370,6 @@ a.logo {
 }
 
 /* project pages */
-
-.project_title {
-  font-size: 7vw;
-  margin: 20px auto;
-}
 
 .section {
   text-align: center;
@@ -594,10 +557,6 @@ blockquote .attribution {
 
 /* blog page */
 
-.post_content {
-  font-size: 75%;
-}
-
 .post > h2 {
   color: white;
   font-weight: 300;
@@ -619,38 +578,34 @@ blockquote .attribution {
   margin-bottom: 0;
 }
 
-.post_content img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  max-width: 100%;
-  height: auto;
-}
-
-.post_content, .footnotes {
-  width: 780px;
+.post-content {
+  padding: 30px 54px;
+  margin: -30px auto 30px;
   text-align: left;
-  margin: 0 auto;
-  padding: 10px;
-}
 
-.post_content {
-  padding: 2px 10px 10px 10px;
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+     @include shadow-elevation-2dp;
+  }
 
-.post_content p, .post_content ul {
-  font-weight: 400;
-  line-height: 160%;
-  letter-spacing: 0.015em;
-}
+  p, ul {
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.015em;
+  }
 
-.post_content p {
-  margin-bottom: 1em;
-}
+  p {
+    margin-bottom: 1em;
+  }
 
-.post_content p:last-of-type {
-  margin-bottom: 0;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 sup {
@@ -663,17 +618,16 @@ sup a {
 
 code {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", monospace;
-  font-weight: bold;
 }
 
 pre > code {
   font-weight: normal;
   font-size: 14px;
   white-space: pre;
-  background-color: white;
+  background-color: $material-grey-200;
   border-radius: 5px;
   display: block;
-  padding: 10px;
+  padding: 10px 10px 7px;
 }
 
 .caption {
@@ -686,10 +640,13 @@ pre > code {
 .footnotes {
   font-size: 14px;
   word-wrap: break-word;
-}
+  border-top: 1px dashed $material-grey-400;
+  margin-top: 2.5em;
+  padding-top: 1.5em;
 
-.footnotes li p {
-  margin: 0.2em;
+  li p {
+    margin: 0.2em;
+  }
 }
 
 .reversefootnote {

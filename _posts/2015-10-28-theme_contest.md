@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Sencha ExtJS Theming Contest - First Place Submission"
+subtitle: "October 28th, 2015"
 date:   2015-10-28 16:00:00
 thumbnail: "/images/posts/theme_contest/post_banner.png"
 ---

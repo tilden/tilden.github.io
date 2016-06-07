@@ -6,14 +6,14 @@ title: "Dan Tilden"
 subtitle: >
           I'm a hybrid interation designer and prototyper with a multidisciplinary
           background
-banner_photo: "images/leaf2.jpg"
+banner_photo: "images/pebbles2.jpg"
 ---
 
 
-<div class="cards">
+<div class="cards central-col">
   <h2>Featured Projects</h2>
 	{% for project in site.data.projects %}
-	<a class="card" href="{{ project.url }}">
+	<a class="card project-card" href="{{ project.url }}">
 		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
 		<div class="desc">
 			<h3>{{ project.name }}</h3>
