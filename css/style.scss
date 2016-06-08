@@ -150,7 +150,6 @@ a.logo {
   height: 64px;
   overflow: hidden;
   white-space: nowrap;
-  // text-overflow: ellipsis;
   
   i {
     line-height: 64px;
@@ -356,233 +355,13 @@ a.logo {
   }
 }
 
-/* main page extras */
-
-.main_page_footer {
-  max-width: 575px;
-  margin: 0 auto 40px;
-}
-
-.main_page_footer > h3 {
-  margin-bottom: 1ex;
-}
-
-.main_page_footer > small {
-  color: #666;
-}
-
-/* project pages */
-
-.section {
-  text-align: center;
-  line-height: 140%;
-  margin: 0 auto 4em auto;
-}
-
-.section h4 {
-  margin-bottom: 0;
-}
-
-.project_desc > .project_subtitle {
-  margin: 4ex auto 6ex;
-  color: #666;
-  max-width: 800px;
-  padding: 10px;
-}
-
-.dark .project_subtitle {
-  color: #ccc;
-}
-
-.project_desc small {
-  max-width: 600px;
-  display: block;
-  line-height: 120%;
-  margin: 0.2em auto;
-  color: #666;
-}
-
-.dark small {
-  color: #ccc;
-}
-
-blockquote {
-  text-align: center;
-  font-size: 26px;
-  line-height: 170%;
-  margin: 2em auto 2em;
-  position: relative;
-}
-
-blockquote:before, blockquote:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 80px;
-  height: 80px;
-  opacity: 0.1;
-}
-
-blockquote:before {
-  background-image: url('images/quote_L.svg');
-  left: 0;
-  top: -63px;
-}
-
-blockquote:after {
-  background-image: url('images/quote_R.svg');
-  right: 0;
-  bottom: -37px;
-}
-
-blockquote, blockquote a {
-  text-decoration: none;
-}
-
-blockquote b {
-  font-size: 130%;
-}
-
-blockquote .attribution {
-  font-size: 14px;
-  line-height: normal;
-}
-
-.cols {
-  display: table;
-}
-
-.cols > div {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.cols.row_of_pics > div {
-  vertical-align: top;
-}
-
-.row_of_pics small {
-  text-align: left;
-  font-size: 16px;
-}
-
-.row_of_pics .screenshot {
-  margin: 0 10px;
-}
-
-.left_pic .pic_desc {
-  max-width: 400px;
-  line-height: 140%;
-  text-align: left;
-  padding-left: 20px;
-  font-size: 18px
-}
-
-.project_desc .screenshot {
-  border-radius: 4px;
-  border: 4px solid black;
-}
-
-
-
-@media (max-width: 980px) {
-  .project_desc img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .cols {
-    display: block;
-  }
-
-  .project_desc img.screenshot {
-    border: 0;
-    border-radius: 0;
-  }
-
-  .cols > div {
-    display: block;
-  }
-
-  .cols.left_pic .pic_desc {
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-  }
-
-  .row_of_pics .screenshot {
-    margin: 25px 0 0 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .project_title {
-    font-size: 30px;
-  }
-}
-
-/* special styles unique to JGA */
-/* TODO: put these somewhere better */
-
-.character_box {
-  background: #666;
-  width: 300px;
-  height: 91px;
-  margin: 30px auto 0;
-  border-radius: 3px;
-  border: 3px solid black;
-  position: relative;
-}
-
-.character_box:after {
-  content: '';
-  background-image: url('../projects/jga/chars/lm_bball.png');
-  display: block;
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  top: 14px;
-  left: 43px;
-  -webkit-animation: rotation 2s infinite linear;
-  animation: rotation 2s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-    from {-webkit-transform: rotate(359deg);}
-    to   {-webkit-transform: rotate(0deg);}
-}
-
-@keyframes rotation {
-    from {transform: rotate(359deg);}
-    to   {transform: rotate(0deg);}
-}
-
 /* blog page */
 
-.post > h2 {
-  color: white;
-  font-weight: 300;
-  padding: 0 60px;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  top: -10px;
-  -webkit-transform: translate(0, -100%);
-  -moz-transform:    translate(0, -100%);
-  -ms-transform:     translate(0, -100%);
-  -o-transform:      translate(0, -100%);
-  transform:         translate(0, -100%);
-}
-
-.meta {
-  color: #666;
-  font-size: 80%;
-  margin-bottom: 0;
-}
-
 .post-content {
-  padding: 30px 54px;
-  margin: -30px auto 30px;
+  color: rgba(0,0,0,$material-light-secondary-opacity);
+  width: 760px;
+  margin: 0 auto;
+  
   text-align: left;
 
   img {
@@ -590,19 +369,18 @@ blockquote .attribution {
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
      @include shadow-elevation-2dp;
   }
 
   p, ul {
     font-weight: 400;
-    line-height: 160%;
-    letter-spacing: 0.015em;
+    line-height: 1.8;
   }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
 
   p:last-of-type {
