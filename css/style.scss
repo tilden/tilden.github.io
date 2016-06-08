@@ -75,15 +75,15 @@ a:hover {
     @include shadow-elevation-4dp;
   }
   
-  .lower-area {
-    position: absolute;
+  .nav-lower {
     pointer-events: none;
-    bottom: -11px;
     display: flex;
     justify-content: center;
-    height: 108px;
     flex-direction: column;
     text-align: left;
+    height: 108px;
+    position: relative;
+    bottom: 20px;
 
     h1, p {
       margin: 0;
@@ -146,6 +146,11 @@ a.logo {
   margin: 0;
   text-decoration: none;
   text-align: left;
+  flex-grow: 1;
+  height: 64px;
+  overflow: hidden;
+  white-space: nowrap;
+  // text-overflow: ellipsis;
   
   i {
     line-height: 64px;
@@ -169,46 +174,41 @@ a.logo {
   margin: 0 auto;
 }
 
-.nav-contents {
+.nav-upper {
     padding: 20px 0;
+    display: flex;
 }
 
-.nav-contents > ul {
+.nav-tabs {
   list-style: none;
   font-size: 18px;
-  float: right;
   padding: 0;
   margin: 0;
-}
+  display: flex;
 
-.nav-contents > ul > li {
-  line-height: 64px;
-  float: left;
-}
-
-
-.nav-contents > ul > li > a {
-  color: inherit;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-  opacity: 1;
-  transition: all 0.5s;
-  padding: 0 20px;
-  display: block;
-  height: 64px;
-  opacity: 0.8;
-
-  &.current {
-    border-bottom: 2px solid white;
-    opacity: 1;
+  li {
+    line-height: 64px;
   }
-}
 
-.nav-contents > ul > li > a:visited {
-  color: inherit;
-}
+  li > a {
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all 0.5s;
+    padding: 0 20px;
+    display: block;
+    height: 64px;
+    opacity: 0.8;
+
+    &.current {
+      border-bottom: 2px solid white;
+      opacity: 1;
+    }
+  }
+} 
 
 /* landing page project cards / post cards */
 

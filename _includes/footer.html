@@ -10,8 +10,8 @@
 <script>
 	function adjustNavBars() {
 		var navBar = $('.nav');
-		var navInner = $('.nav .nav-contents');
-		var lowerArea = $('.nav .lower-area');
+		var upperNav = $('.nav-upper');
+		var lowerNav = $('.nav-lower');
 		var bannerImage = $('.nav .banner-image');
 		var toolbarTitle = $('.nav a.logo span');
 		var fullHeight = 192;
@@ -21,13 +21,13 @@
         var yRatio = Math.min(1, scrollDistance / heightDiff);
 		
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
-		navInner.css('padding-top', (1 - yRatio) * 20);
+		upperNav.css('padding-top', (1 - yRatio) * 20);
 		bannerImage.css('opacity', 1 - yRatio);
 		// bannerImage.css('top', (yRatio) * -20);
 		// 		bannerImage.css('transform', 'translateY(' + (yRatio) * -20 + 'px)');
 
 
-		lowerArea.css('opacity', 1 - yRatio * 3);
+		lowerNav.css('opacity', 1 - yRatio * 3);
 
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
 	}

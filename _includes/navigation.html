@@ -2,9 +2,7 @@
   {% if page.banner_photo %}
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   {% endif %}
-  <div class="nav-contents central-col">
-
-    
+  <div class="nav-upper central-col">
     {% if page.is_top_level %}
 
     <a href="/{{home_dest}}" class="logo" >
@@ -23,7 +21,8 @@
       <span>{{page.title}}<span>
     </a>
     {% endif %}
-    <ul>
+
+    <ul class="nav-tabs">
       <li>
         {% if page.section == 'portfolio' %}
           {% assign portfolio_cls = 'current' %}
@@ -43,13 +42,12 @@
         <a href="/about" class="{{about_cls}}">About</a>
       </li>
     </ul>
+  </div>
 
-    
-    <div class="lower-area">
-      <h1>
-        {{page.title}}
-      </h1>
-      <p class="subheading">{{page.subtitle}}{{subtitle}}</p>
-    </div>
+  <div class="nav-lower central-col">
+    <h1>
+      {{page.title}}
+    </h1>
+    <p class="subheading">{{page.subtitle}}{{subtitle}}</p>
   </div>
 </div>
