@@ -3,11 +3,11 @@
 
   {% include head.html %}
 
-  {% if page.use_dark_style %}
-    {% assign body_class = "dark" %}
-  {% endif %}
+  <!-- {% if page.section == "blog" %}
+    {% assign body_class = "blog" %}
+  {% endif %} -->
 
-  <body class="{{body_class}}">
+  <body class="section-{{page.section}}">
 
   {% include navigation.html %}
 
