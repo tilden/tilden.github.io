@@ -1,16 +1,8 @@
 ---
 layout: default
 ---
-  {% if page.top_bar_color %}
-    {% assign top_bar_color = page.top_bar_color %}
-  {% else %}
-    {% assign top_bar_color = '#483D8B' %}
-  {% endif %}
-  <!--<div class="sky_bg" style="background: {{top_bar_color}}"></div>-->
 
-<h2>{{ page.title }}</h2>
-
-<article class="post_content">
+<article class="post-content central-col">
 {{ content }}
 </article>
 

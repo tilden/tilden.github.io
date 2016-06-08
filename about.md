@@ -5,7 +5,7 @@ permalink: /about/
 is_top_level: true
 section: about
 banner_photo: "/images/leaf.jpg"
-top_bar_color: '#558B2F'
+top_bar_color: '#33691E'
 no_footer_nav: true
 ---
 

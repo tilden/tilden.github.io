@@ -22,7 +22,7 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
       section: "blog"
-      top_bar_color: "#EF6C00"
+      top_bar_color: "#3F51B5"
   -
     scope: 
       path: "projects"

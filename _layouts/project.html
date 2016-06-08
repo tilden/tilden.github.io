@@ -2,26 +2,7 @@
 layout: default
 ---
 
-  {% if page.banner_photo %}
-    {% capture sky_style %}background-image: url('{{page.banner_photo}}');{% endcapture %}
-  {% else %}
-    {% if page.top_bar_color %}
-      {% capture sky_style %}background: {{page.top_bar_color}};{% endcapture %}
-    {% else %}
-      {% capture sky_style %}background: #483D8B;{% endcapture %}
-    {% endif %}
-  {% endif %}
-  <!--<div class="sky_bg" style="{{ sky_style }}"></div>-->
-
-    {% if page.display_title %}
-      <h2 class="project_title">{{ page.display_title}}</h2>
-    {% else %}
-      <h2 class="project_title">{{ page.title }}</h2>
-    {% endif %}
-
-    <div class="project_subtitle">
-      {{ page.project_subtitle}}
-    </div>
-
-    {{ content }}
+<article class="post-content central-col">
+{{ content }}
+</article>
 

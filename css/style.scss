@@ -29,7 +29,6 @@ body {
   line-height: 1.5;
   color: black;
   background: $material-grey-200;
-  // background: url('/images/sayagata-400px.png');
   text-align: center;
   margin: 0;
   margin-top: 220px;
@@ -60,8 +59,8 @@ a:hover {
   height: 192px;
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
-  // background-color: $material-blue-grey-600;
-  background-color: $material-teal-800;
+  background-color: $material-blue-grey-600;
+  // background-color: $material-teal-500;
   // background-color: $material-indigo-800;
   // background: url('/projects/jga/jga_sky.jpg');
   
