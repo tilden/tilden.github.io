@@ -386,26 +386,32 @@ a.logo {
   p:last-of-type {
     margin-bottom: 0;
   }
-}
-
-figure {
-  margin:  40px 0 40px;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 80%;
 
   img {
     max-width: 100%;
     height: auto;
+    margin: 40px auto;
+    display: block;
   }
 
+  figure {
+    margin:  40px 0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 80%;
 
-  figcaption {
-    padding-top: 15px;
-    width: 80%;
-    margin: 0 auto;
+    img {
+      margin: 0 auto 20px;
+    }
+
+    figcaption {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
+
+
 
 #markdown-toc {
   list-style: none;

@@ -6,9 +6,11 @@ date:   2015-03-24 16:05:21
 banner_photo: "/images/posts/tar/post_banner.png"
 ---
 
-![XKCD Comic: tar](http://imgs.xkcd.com/comics/tar.png)
-
-<div class="caption">via <a href="https://xkcd.com/1168/">XKCD</a></div>
+{% include img.html
+  url="http://imgs.xkcd.com/comics/tar.png"
+  alt="XKCD Comic: tar"
+  caption="via <a href='https://xkcd.com/1168/'>XKCD</a>"
+%}
 
 The `tar` utility, used to consolidate multiple files or directories into a single
 archive file, is ubiquitous among Unix-like operating systems; whenever source
