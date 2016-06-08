@@ -39,7 +39,7 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  color: $material-indigo-a700;
+  color: $material-blue-grey-600;
 }
 
 a:hover {
@@ -220,7 +220,7 @@ a.logo {
     text-align: left;
     text-transform: uppercase;
     font-weight: 500;
-    color: $material-indigo-500;
+    color: $material-blue-grey-600;
     font-size: 14px;
     padding: 0 0 13px 0;
     margin-top: -3px;
@@ -368,15 +368,6 @@ a.logo {
   padding-top: 38px;
   text-align: left;
 
-  img {
-    display: block;
-    margin: 54px auto;
-    border-radius: 2px;
-    max-width: 90%;
-    height: auto;
-     @include shadow-elevation-2dp;
-  }
-
   h2, h3 {
     font-size: 24px;
     line-height: 1.2;
@@ -397,15 +388,70 @@ a.logo {
   }
 }
 
+figure {
+  margin:  40px 0 40px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 80%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  figcaption {
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+#markdown-toc {
+  list-style: none;
+  margin-left: 0;
+  padding: 0px 15px;
+  font-weight: 400;
+  font-size: 18px;
+  border-left: 4px solid $material-blue-grey-200;
+
+  &:before {
+    content: 'Contents';
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    color: $material-grey-500;
+  }
+
+  ul  {
+    margin-left: 10px;
+  }
+
+  li li {
+    font-size: 15px;
+    list-style: none;
+  }
+
+  li li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    margin: 0 7px 4px 3px;
+    display: inline-block;
+    background-color: $material-blue-grey-200;
+  }
+}
+
 // special colors
 .section-about .post-content {
-  h2, h3 {
+  h2, h3, a {
     color: $material-light-green-900;
   }
 }
 
 .section-blog .post-content {
-  h2, h3 {
+  h2, h3, a {
     color: $material-indigo-500;
   }
 }
@@ -432,12 +478,6 @@ pre > code {
   padding: 10px 10px 7px;
 }
 
-.caption {
-  text-align: center;
-  font-size: 80%;
-  display: block;
-  line-height: 1.8;
-}
 
 .footnotes {
   font-size: 14px;

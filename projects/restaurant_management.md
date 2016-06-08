@@ -6,6 +6,10 @@ subtitle: "Working with a usability firm, we delivered over 350 pages of wirefra
 is_project: true
 ---
 
+
+* TOC
+{:toc}
+
 ## A massive undertaking for a sprawling system...
 
 In use at over 7,000 restaurants worldwide, the Restaurant Management System was an unqualified success.
