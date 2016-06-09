@@ -279,7 +279,6 @@ h1.logo {
   line-height: 1;
   margin: 0 0 22px;
   color: inherit;
-  transition: color 0.2s;
 }
 
 .project-card p {
@@ -399,10 +398,10 @@ footer {
   .central-col {
     display: flex;
     height: 100%;
+    justify-content: center;
   }
 
   .contact-minibox {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,11 +416,16 @@ footer {
       transition: 0.2s all;
       padding: 0 2px;
     }
+  }
 
-    a:hover {
+  .social-icons:hover a {
+    opacity: 0.5;
+
+    &:hover {
       opacity: 1;
     }
   }
+
 
   .footer-nav-button {
     flex: 50%;
@@ -466,22 +470,26 @@ footer {
 }
 
 .section-about {
-  h2, h3, a, code, blockquote {
-    color: $material-light-green-900;
+  .post-content, footer {
+    h2, h3, a, code, blockquote {
+      color: $material-light-green-900;
+    }
   }
 
   footer {
-    background-color: $material-light-green-200;
+    background-color: mix($material-light-green-900, $material-grey-200, 10%);
   }
 }
 
 .section-blog {
-  h2, h3, a, code, blockquote {
-      color: $material-indigo-500;
+  .post-content, footer {
+    h2, h3, a, code, blockquote {
+        color: $material-indigo-500;
+    }
   }
 
   footer {
-    background-color: $material-indigo-100;
+    background-color: mix($material-indigo-500, $material-grey-200, 10%);
   }
 }
 
