@@ -175,8 +175,9 @@ h1.logo {
   padding-top: 30px;
 }
 
-.nav-upper {
-    padding: 20px 0;
+.nav-upper.central-col {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
 }
 
@@ -530,4 +531,24 @@ pre > code {
 
 .reversefootnote {
   text-decoration: none;
+}
+
+// responsive modes
+@media all and (max-width: 600px) {
+  .central-col {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .lower-level .nav-tabs {
+    display: none;
+  }
+
+  .post-content {
+    padding-top: 5px;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
 }
