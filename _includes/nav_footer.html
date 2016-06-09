@@ -22,12 +22,9 @@
   {% assign nav_type = "Post" %}
 {% endif %}
 
-{% if nav_type %}
-<footer class="site-footer">
-{% else %}
-<footer class="site-footer" class="narrow">
-{% endif %}
 
+
+<footer class="site-footer">
   <div class="central-col">
 
     {% if page.next.url or prev_project %}
@@ -36,6 +33,30 @@
       <div class="name">{{page.next.title}}{{prev_project}}</div>
     </a>
     {% endif %}
+
+    {% unless nav_type %}
+    <div class="contact-minibox">
+      <div class="label"><a href="https://github.com/tilden/tilden.github.io">Designed by Dan Tilden</a></div>
+
+      <div class="social-icons">
+      	<a title="Dribbble" href="https://dribbble.com/dantilden">
+          <i class="site-icon fa fa-dribbble"></i>
+      	</a>
+      	<a title="LinkedIn" href="https://www.linkedin.com/in/tildend">
+          <i class="site-icon fa fa-linkedin-square"></i>
+      	</a>
+        <a title="GitHub" href="https://github.com/freakified">
+          <i class="site-icon fa fa-github-square"></i>
+        </a>
+        <a title="Instagram" href="https://instagram.com/freakified/">
+          <i class="site-icon fa fa-instagram"></i>
+        </a>
+        <a title="SoundCloud" href="https://soundcloud.com/freakified/">
+          <i class="site-icon fa fa-soundcloud"></i>
+        </a>
+      </div>
+    </div>
+    {% endunless %}
 
     {% if page.previous.url or next_project %}
     <a class="footer-nav-button next" href="{{page.previous.url}}{{next_project_url}}">
@@ -46,5 +67,4 @@
     {% endif %}
 
   </div>
-
 </footer>
