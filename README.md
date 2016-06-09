@@ -3,26 +3,25 @@ tilden.github.io
 
 A combined portfolio/blog built entirely using a plugin-free Jekyll. (This ensures
 that rebuilds can happen on the server side as well as the client side.
-That means it's entirely possible for a reader to [submit a pull request](https://github.com/tilden/tilden.github.io/pulls?q=is%3Apr+is%3Aclosed)!)
+That means it's entirely possible for a reader to submit pull requests!
 
 # Features
 
 ## Design
 
-* Trendy flat-design to impress all your designer friends
-* Card-based appearance for posts and projects
-* Parallax scrolling because regular scrolling is just passé
-* Fancy animated nav transitions
+* Applies aspects of Google's material design for a clean and consistent look and
+  feel across projects and pages
+* Projects are as easy to create as posts, with single Markdown files
+* Definitely a website
 
 ## Responsive
 
 * Scales for mobiles, tablets, and desktops
-* High-DPI (retina-compatible) graphics, so hipsters in coffee shops can enjoy
-your page while browsing on their MacBooks and drinking their caramel macchiatos
+* High-DPI (retina-compatible) graphics
 
 ## Compatible
 
-* Viewable by internet explorers using Internet Explorer version 10 or higher 
+* Viewable by internet explorers using Internet Explorer version 10 or higher
 
 # License
 All the content (blog posts, photos, other graphics) are licensed under

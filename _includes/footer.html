@@ -1,8 +1,4 @@
-<footer class="site-footer">
 
-
-
-</footer>
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="/scripts/retina.min.js"></script>
@@ -19,7 +15,7 @@
 		var heightDiff = fullHeight - condensedHeight;
 		var scrollDistance = $(document).scrollTop();
         var yRatio = Math.min(1, scrollDistance / heightDiff);
-		
+
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
 		upperNav.css('padding-top', (1 - yRatio) * 20);
 		bannerImage.css('opacity', 1 - yRatio);

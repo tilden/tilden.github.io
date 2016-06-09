@@ -12,8 +12,8 @@
     - Interaction Design
     - Wearable
   url: "/projects/timestyle"
-  
-- name: "Restaurant Management System"
+
+- name: "Restaurant Management System Redesign"
   desc: >
         The Restaurant Management system, in use at over 7,000 restaurants worldwide, allowed
         restaurant operators to manage many restaurants at once.<br>
@@ -21,8 +21,8 @@
         reimagined version of the product.
   banner_img: "restaurant_management_banner.png"
   url: "/projects/restaurant_management"
- 
-- name: "On Our Own"
+
+- name: "On Our Own Roanoke Valley"
   desc: >
         The Restaurant Management system, in use at over 7,000 restaurants worldwide, allowed
         restaurant operators to manage many restaurants at once.<br>
@@ -30,7 +30,7 @@
         reimagined version of the product.
   banner_img: "onourown_banner.jpg"
   url: "/projects/onourown"
-  
+
 - name: "Pythy"
   desc: "What if intro computer science students didn't have to install any software, and could start programming right away?"
   banner_img: "pythy_banner.png"

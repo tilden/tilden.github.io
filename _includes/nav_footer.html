@@ -23,65 +23,27 @@
 {% endif %}
 
 {% if nav_type %}
-<div id="nav_footer" >
+<footer class="site-footer">
 {% else %}
-<div id="nav_footer" class="narrow">
+<footer class="site-footer" class="narrow">
 {% endif %}
 
-  {% if page.next.url or prev_project %}
-  <a id="prev_proj" class="nav_footer_button" href="{{page.next.url}}{{prev_project_url}}">
-    <div>
-      {% if nav_type == "Project" %}
-      <div class="label">Previous project</div>
-      {% endif %}
+  <div class="central-col">
+
+    {% if page.next.url or prev_project %}
+    <a class="footer-nav-button prev" href="{{page.next.url}}{{prev_project_url}}">
+      <div class="label">Previous</div>
       <div class="name">{{page.next.title}}{{prev_project}}</div>
-    </div>
-  </a>
-  {% endif %}
+    </a>
+    {% endif %}
 
-  {% if page.previous.url or next_project %}
-  <a id="next_proj" class="nav_footer_button" href="{{page.previous.url}}{{next_project_url}}">
-    <div>
-      {% if nav_type == "Project" %}
-      <div class="label">Next project</div>
-      {% endif %}
+    {% if page.previous.url or next_project %}
+    <a class="footer-nav-button next" href="{{page.previous.url}}{{next_project_url}}">
+      <div class="label">Next</div>
       <div class="name">{{page.previous.title}}{{next_project}}</div>
-    </div>
-  </a>
-  {% endif %}
+    </a>
+    {% endif %}
 
-  <div id="contact_minibox">
-    <div class="byline">Designed by Dan Tilden</div>
-    <a class="contact" href="/files/DanTilden-Resume.pdf">
-      <span>Download resume</span>
-  	</a>
-
-    <div class="social_icons">
-    	<a title="Dribbble" href="https://dribbble.com/dantilden">
-        <i class="site-icon fa fa-dribbble"></i>
-    	</a>
-    	<a title="LinkedIn" href="https://www.linkedin.com/pub/dan-tilden/20/415/450">
-        <i class="site-icon fa fa-linkedin-square"></i>
-    	</a>
-      <a title="GitHub" href="https://github.com/tilden">
-        <i class="site-icon fa fa-github-square"></i>
-      </a>
-      <a title="Instagram" href="https://instagram.com/freakified/">
-        <i class="site-icon fa fa-instagram"></i>
-      </a>
-      <a title="SoundCloud" href="https://soundcloud.com/freakified/">
-        <i class="site-icon fa fa-soundcloud"></i>
-      </a>
-    </div>
   </div>
 
-</div>
-
-<script type="text/javascript">
-  function adjustFooterSpace() {
-    var ground = $('#ground');
-  	var footerNav = $('#nav_footer');
-
-    ground.css('padding-bottom', footerNav.height());
-  }
-</script>
+</footer>
