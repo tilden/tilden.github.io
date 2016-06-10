@@ -111,7 +111,10 @@ a:hover {
     content: '';
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    // background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    // background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    // background-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,.25) 100%);
+    background-color: rgba(0,0,0,0.25);
   }
 }
 
@@ -124,7 +127,7 @@ h1.logo {
   margin: 0;
 }
 
-.logo .subheading {
+.subheading {
   display: block;
   opacity: 0.7;
   font-size: 16px;
@@ -167,6 +170,7 @@ h1.logo {
 
 .central-col {
   max-width: 1440px;
+  min-width: 780px;
   width: 80%;
   margin: 0 auto;
 }
@@ -462,7 +466,7 @@ footer {
 
 
 // per-section colors
-h2, h3, a, code, blockquote {
+h2, h3, a, code, blockquote, .mobile-title {
   color: $material-blue-grey-600;
 }
 
@@ -472,7 +476,7 @@ footer {
 
 .section-about {
   .post-content, footer {
-    h2, h3, a, code, blockquote {
+    h1, h2, h3, a, code, blockquote, .mobile-title {
       color: $material-light-green-900;
     }
   }
@@ -484,7 +488,7 @@ footer {
 
 .section-blog {
   .post-content, footer {
-    h2, h3, a, code, blockquote {
+    h1, h2, h3, a, code, blockquote, .mobile-title {
         color: $material-indigo-500;
     }
   }
@@ -514,6 +518,7 @@ pre > code {
   background-color: white;
   display: block;
   padding: 10px 10px 7px;
+  overflow: auto;
 }
 
 
@@ -533,22 +538,66 @@ pre > code {
   text-decoration: none;
 }
 
-// responsive modes
-@media all and (max-width: 600px) {
-  .central-col {
-    width: 100%;
-    padding: 0 16px;
+.mobile-title {
+  display: none;
+  padding-bottom: 11px;
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 12px;
   }
 
-  .lower-level .nav-tabs {
-    display: none;
+  .subheading {
+    opacity: 1;
+  }
+}
+
+// responsive modes
+@media all and (max-width: 827px) {
+  .central-col {
+    width: 100%;
+    min-width: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .lower-level  {
+    .nav-lower {
+      display: none;
+    }
+
+    a.logo span {
+      display: none;
+    }
   }
 
   .post-content {
     padding-top: 5px;
   }
 
-  .subheading {
-    font-size: 14px;
+  .mobile-title {
+    display: block;
   }
+
+  .project-card {
+    padding: 0;
+    height: auto;
+    flex-direction: column;
+
+    .thumb {
+      width: 100%;
+      height: 200px;
+      border-bottom: 1px solid $material-grey-100;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .desc {
+      padding: 20px;
+    }
+  }
+
 }
