@@ -80,8 +80,10 @@ a:hover {
     flex-direction: column;
     text-align: left;
     height: 108px;
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0;
 
     h1, p {
       margin: 0;

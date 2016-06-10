@@ -4,38 +4,30 @@
 <script src="/scripts/retina.min.js"></script>
 
 <script>
-	function adjustNavBars() {
-		var navBar = $('.nav');
-		var upperNav = $('.nav-upper');
-		var lowerNav = $('.nav-lower');
-		var bannerImage = $('.nav .banner-image');
-		var toolbarTitle = $('.nav a.logo span');
-		var fullHeight = 192;
-		var condensedHeight = 64;
-		var heightDiff = fullHeight - condensedHeight;
+	var navBar = $('.nav');
+	var upperNav = $('.nav-upper');
+	var lowerNav = $('.nav-lower');
+	var bannerImage = $('.nav .banner-image');
+	var toolbarTitle = $('.nav a.logo span');
+	var fullHeight = 192;
+	var condensedHeight = 64;
+	var heightDiff = fullHeight - condensedHeight;
+
+	function adjustNavBar() {
 		var scrollDistance = $(document).scrollTop();
-        var yRatio = Math.min(1, scrollDistance / heightDiff);
+    var yRatio = Math.min(1, scrollDistance / heightDiff);
 
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
 		upperNav.css('padding-top', (1 - yRatio) * 20);
 		bannerImage.css('opacity', 1 - yRatio);
-		// bannerImage.css('top', (yRatio) * -20);
-		// 		bannerImage.css('transform', 'translateY(' + (yRatio) * -20 + 'px)');
-
-
 		lowerNav.css('opacity', 1 - yRatio * 3);
 
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
 	}
 
 	$('document').ready(function() {
-		{% unless page.no_footer_nav %}
-		// adjustFooterSpace();
-		// setInterval(adjustFooterSpace, 500);
-		{% endunless %}
-
-		adjustNavBars();
-		setInterval(adjustNavBars, 10);
+		adjustNavBar();
+		setInterval(adjustNavBar, 10);
 	});
 </script>
 
