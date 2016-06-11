@@ -315,11 +315,25 @@ h1.logo {
     font-size: 24px;
     line-height: 1.2;
     color: $material-blue-grey-600;
+
+    // sneaky way to take fixed nav into account for anchor links
+    // courtesy of http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+    &::before {
+      content: ''; display: block; position: relative; width: 0; height: 84px; margin-top: -84px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   p, ul {
     font-weight: 400;
     line-height: 1.8;
+  }
+
+  ol li {
+    margin: 0.5em 0;
   }
 
   p {
@@ -353,6 +367,20 @@ h1.logo {
       margin: 0 auto;
     }
   }
+
+  blockquote {
+    border-left: 3px solid;
+    margin: 0;
+    padding: 1em 2em;
+
+    p {
+      margin: 0;
+    }
+
+    & + blockquote {
+      padding-top: 0;
+    }
+  }
 }
 
 #markdown-toc {
@@ -373,21 +401,12 @@ h1.logo {
   }
 
   ul  {
-    margin-left: 10px;
+    padding-left: 12px;
   }
 
   li li {
     font-size: 15px;
     list-style: none;
-  }
-
-  li li:before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    margin: 0 7px 4px 3px;
-    display: inline-block;
-    background-color: $material-blue-grey-200;
   }
 }
 

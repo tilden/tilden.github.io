@@ -1,5 +1,5 @@
 # Site settings
-title: "Dan Tilden: UX Designer" 
+title: "Dan Tilden: UX Designer"
 description: "Portfolio for Dan Tilden"
 baseurl: ""
 url: ""
@@ -24,8 +24,9 @@ defaults:
       section: "blog"
       top_bar_color: "#3F51B5"
   -
-    scope: 
+    scope:
       path: "projects"
       type: "pages"
     values:
       section: "portfolio"
+      is_project: true
