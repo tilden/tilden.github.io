@@ -233,7 +233,7 @@ h1.logo {
 .card {
   border-radius: 2px;
   background: white;
-  @include shadow-elevation-3dp;
+  @include shadow-elevation-2dp;
 }
 
 .project-card {
@@ -246,60 +246,67 @@ h1.logo {
   transition: all 0.2s;
   padding-right: 20px;
   margin-bottom: 30px;
-}
 
-.project-card:hover {
-  @include shadow-elevation-6dp;
-  text-decoration: none;
-}
+  &:hover {
+    @include shadow-elevation-4dp;
+    text-decoration: none;
+  }
 
-.project-card .thumb {
-  background-size: cover;
-  flex: 10;
-  height: 100%;
-  border-radius: 2px 0 0 2px;
-  position: relative;
-}
+  &:active {
+    @include shadow-elevation-6dp;
+    background-color: $material-grey-100;
+  }
 
-.project-card .thumb::after {
-  content: '';
-  position: absolute;
-  right: -50px;
-  height: 100%;
-  width: 90px;
-  background-color: white;
-  transform: skewX(-10deg);
-}
+  .thumb {
+    background-size: cover;
+    flex: 10;
+    height: 100%;
+    border-radius: 2px 0 0 2px;
+    position: relative;
+    background-color: inherit;
 
-.project-card .desc {
-  flex: 9;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      right: -50px;
+      height: 100%;
+      width: 90px;
+      background-color: inherit;
+      transform: skewX(-10deg);
+    }
+  }
 
-.project-card h3 {
-  font-size: 26px;
-  line-height: 1;
-  margin: 0 0 22px;
-  color: inherit;
-}
+  .desc {
+    flex: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 
-.project-card p {
-  font-size: 16px;
-  margin: 0;
-  color: inherit;
-  opacity: $material-light-secondary-opacity;
-  transition: all 0.2s;
-}
+  h3 {
+    font-size: 26px;
+    line-height: 1;
+    margin: 0 0 22px;
+    color: inherit;
+  }
 
-.project-card br {
-  line-height: 200%;
-}
+  p {
+    font-size: 16px;
+    margin: 0;
+    color: inherit;
+    opacity: $material-light-secondary-opacity;
+    transition: all 0.2s;
+  }
 
-.project-card a {
-  margin: 10px 20px;
-  font-size: 16px;
+  br {
+    line-height: 200%;
+  }
+
+  a {
+    margin: 10px 20px;
+    font-size: 16px;
+  }
+
 }
 
 /* pages */
@@ -379,6 +386,40 @@ h1.logo {
 
     & + blockquote {
       padding-top: 0;
+    }
+  }
+}
+
+.buttons {
+  margin: 40px auto;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background-color: $material-blue-grey-500;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 13.5px 28px;
+    margin: 0 5px;
+    @include shadow-elevation-2dp;
+    transition: all 0.1s;
+
+    &:hover {
+      @include shadow-elevation-4dp;
+    }
+
+    &:active {
+      background-color: $material-blue-grey-700;
+      @include shadow-elevation-6dp;
+    }
+
+    i {
+      margin-left: -5px;
+      padding-right: 6px;
     }
   }
 }

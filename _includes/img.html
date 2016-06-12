@@ -1,8 +1,15 @@
+
 <figure>
+  {% if include.link %}
+  <a href="{{ include.link }}">
+  {% endif %}
   {% if include.w %}
   <img src="{{ include.url }}" alt="{{ include.alt }}" title="{{ include.title }}" width="{{ include.w }}" height="{{ include.h }}">
   {% else %}
   <img src="{{ include.url }}" alt="{{ include.alt }}" title="{{ include.title }}">
+  {% endif %}
+  {% if include.link %}
+  </a>
   {% endif %}
   <figcaption>{{ include.caption }}</figcaption>
 </figure>
