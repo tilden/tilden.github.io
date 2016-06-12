@@ -26,17 +26,7 @@ with nearly 100,000 users!
 * TOC
 {:toc}
 
-
-<!-- - Intro
-	- What the project is
-	- Who the team members are
-	- Your role and contribution on the team -->
-
 ## Introduction
-
-<!-- - Situation
-	- How/why the problem exists
-	- Why the problem matters -->
 
 When I got a Pebble smartwatch, I admired the watch's visual aesthetic; inspired by late 1960s-era pop art, it complemented the watch's hardware, 64-color reflective display[^pebbledesign].
 
@@ -55,13 +45,6 @@ However, I found that while there were thousands of watch faces available for th
 For example, a face might have a beautiful time display, but lack the current temperature outside.  Similarly, a face might include weather data, but lack today's date. In the end, what I wanted wasn't something unique that would make any kind of statement; I simply wanted something that would tell the time and some ancillary information; a _default looking_ watch face.
 
 As such, I took it upon myself to design the watch face that I felt should have been included by default.
-
-<!-- - Action
-	- The process you and your team took to get there
-	- UX Deliverables/activities done to help solve problem.
-		○ Personas
-		○ user research
-		○ wireframes, etc -->
 
 ## Design
 
@@ -106,16 +89,7 @@ Based on these requests, it was evident that customizability would be paramount.
 
 Many Pebble faces offer color customization, but due to the nature of the Pebble configuration system, most require that the user select colors, save and exit the settings page. If the user didn't like the colors, they must go back into the settings page and choose another. Instead of this, I created a selection hand-picked color schemes that I tested on my own watch for readability. Each of these is previewed in the settings page so that one doesn't have to go and commit to it before picking. In later versions, I would eventually add the ability to save, load, share, and suggest theme presets.
 
-{% include img.html
-  url="/images/projects/timestyle/settings_presets.png"
-  alt="Screenshot of settings page showing presets" w="300" h="389f"
-%}
-
-<!-- - Results
-	- Stats, analytics
-	- User testing feedback
-	- Survey scores
-	- What you learned from the project -->
+![Screenshot of settings page showing presets](/images/projects/timestyle/settings_presets.png)
 
 ## Feedback and Iteration
 
