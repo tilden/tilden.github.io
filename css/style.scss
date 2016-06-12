@@ -543,6 +543,15 @@ footer {
   footer {
     background-color: mix($material-light-green-900, $material-grey-200, 10%);
   }
+
+  .buttons a {
+    background-color: $material-light-green-800;
+    color: white;
+
+    &:active {
+      background-color: $material-light-green-900;
+    }
+  }
 }
 
 .section-blog {
@@ -554,6 +563,15 @@ footer {
 
   footer {
     background-color: mix($material-indigo-500, $material-grey-200, 10%);
+  }
+
+  .buttons a {
+    background-color: $material-indigo-500;
+    color: white;
+
+    &:active {
+      background-color: $material-indigo-700;
+    }
   }
 }
 
