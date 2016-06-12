@@ -1,7 +1,7 @@
 ---
 layout: post
 banner_photo: "/images/projects/timestyle/timestyle_sky.jpg"
-title: "TimeStyle"
+title: "Smartwatch Face: TimeStyle"
 subtitle: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
 ---
 
