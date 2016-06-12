@@ -9,7 +9,7 @@ subtitle: "Working with a usability firm, we delivered over 350 pages of wirefra
 * TOC
 {:toc}
 
-## A massive undertaking for a sprawling system...
+## Introduction
 
 In use at over 7,000 restaurants worldwide, the Restaurant Management System was an unqualified success.
 However, as it had grown in popularity, it had also grown in features, slowly evolving into sprawling mess of interconnected pages.
@@ -83,30 +83,31 @@ the wireframes to life (one of my key contributions to the project).
 
 This visual language was intended not only for the redesigned restaurant management system,
 but also for the company's entire range of products. Our key goals were to create a style
-that was *modern*, *consistent*, and *subdued*.
+that was **modern**, **consistent**, and **subdued**.
 
 {% include img.html
   url="/images/projects/restaurant_management/visuals_1.png"
   alt="Screenshot of color mockup" w="320" h="240"
-  caption="<em>Modern</em>. The new visuals should draw inspiration from modern web applications, mobile device
+  caption="<b>Modern</b>. The new visuals should draw inspiration from modern web applications, mobile device
   user interfaces, and the like."
-%}
-
-{% include img.html
-  url="/images/projects/restaurant_management/visuals_2.jpg"
-  alt="Screenshot showing button states" w="320" h="240"
-  caption="<em>Consistent</em>. Pages should adhere as closely as possible established patterns.
-  Particular controls should always look and act in line with expectations."
 %}
 
 {% include img.html
   url="/images/projects/restaurant_management/visuals_3.png"
   alt="Screenshot of system settings screen" w="320" h="240"
-  caption="<em>Subdued</em>. The viewer's focus should be on the content, not on ornamentation. Minimal use of color and heavy use of
+  caption="<b>Subdued</b>. The viewer's focus should be on the content, not on ornamentation. Minimal use of color and heavy use of
   whitespace focuses attention toward what's important."
 %}
 
-## Full-Color Mockups
+{% include img.html
+  url="/images/projects/restaurant_management/visuals_2.jpg"
+  alt="Screenshot showing button states" w="320" h="240"
+  caption="<b>Consistent</b>. Pages should adhere as closely as possible established patterns.
+  Particular controls should always look and act in line with expectations."
+%}
+
+
+### Full-Color Mockups
 The last step of the process was to apply this visual language to several wireframes, demonstrating how
 it could be applied to the system in a clean, consistent way.
 
@@ -120,7 +121,6 @@ Below is a full-resolution example of one of these mockups, showing the final la
 ## Conclusions and Future Work
 
 In the end, our team had delivered hundreds of pages of wireframes depicting a redesigned
-system. Aspects of the redesign are slowly filtering their way into the current version of the restaurant
-management product and other products; the labor scheduler as pictured above was implemented in full.
-
-Farther in the future, the full system as envisioned will be implemented.
+system. Aspects of the redesign are currently filtering their way into the restaurant
+management product and other products; the labor scheduler as pictured above was implemented in full,
+and with each day more components based on the design document are implemented.
