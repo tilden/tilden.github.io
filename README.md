@@ -11,7 +11,7 @@ That means it's entirely possible for a reader to submit pull requests!
 
 * Applies aspects of Google's material design for a clean and consistent look and
   feel across projects and pages
-* Projects are as easy to create as posts, with single Markdown files
+* Project pages work almost like blog posts, and only require a single Markdown file
 * Definitely a website
 
 ## Responsive
@@ -27,4 +27,5 @@ That means it's entirely possible for a reader to submit pull requests!
 All the content (blog posts, photos, other graphics) are licensed under
 [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/), and the code itself is
 licensed under the [MIT License](http://opensource.org/licenses/MIT), so you can
-go fork this site and make your own portfolio!
+go fork this site and make your own portfolio! As far as I can tell no one
+has actually done this, so you could be the first!

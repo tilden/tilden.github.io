@@ -13,7 +13,7 @@ banner_photo: "images/pebbles2.jpg"
   <h2>Featured Projects</h2>
 	{% for project in site.data.projects %}
 	<a class="card project-card" href="{{ project.url }}">
-		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
+		<div class="thumb" style="background-image: url({{ project.banner_img }})"></div>
 		<div class="desc">
 			<h3>{{ project.name }}</h3>
 			<p>
