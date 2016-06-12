@@ -28,30 +28,30 @@
   banner_img: "images/banners/onourown_banner.jpg"
   url: "/projects/onourown"
 
-- name: "Design and Evaluation of a Web-Based Programming
-Tool to Improve the Introductory Computer Science
-Experience"
-  desc: >
-        What if intro computer science students didn't have to install any software, and could start programming right away?
-  banner_img: "images/banners/pythy_banner.png"
-  url: "/projects/pythy"
-
-- name: "Drive-Thru Monitor"
-  desc: >
-        Stay in command of your restaurant's drive-thru with this highly visual
-        way to monitor the current status of all waiting vehicles.
-  banner_img: "images/banners/dt_banner.png"
-  url: "/projects/drivethru"
-
-- name: "JGA: Crossroads of Destiny"
-  desc: >
-        In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
-        and restore balance to the world!
-        <br>
-        For this project, I composed an original soundtrack,
-        drew original artwork, and wrote a 45-page script.
-  banner_img: "images/banners/jga_banner.jpg"
-  url: "/projects/jga"
+# - name: "Design and Evaluation of a Web-Based Programming
+# Tool to Improve the Introductory Computer Science
+# Experience"
+#   desc: >
+#         What if intro computer science students didn't have to install any software, and could start programming right away?
+#   banner_img: "images/banners/pythy_banner.png"
+#   url: "/projects/pythy"
+#
+# - name: "Drive-Thru Monitor"
+#   desc: >
+#         Stay in command of your restaurant's drive-thru with this highly visual
+#         way to monitor the current status of all waiting vehicles.
+#   banner_img: "images/banners/dt_banner.png"
+#   url: "/projects/drivethru"
+#
+# - name: "JGA: Crossroads of Destiny"
+#   desc: >
+#         In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
+#         and restore balance to the world!
+#         <br>
+#         For this project, I composed an original soundtrack,
+#         drew original artwork, and wrote a 45-page script.
+#   banner_img: "images/banners/jga_banner.jpg"
+#   url: "/projects/jga"
 
 # Currently hidden, but these may return in a future update
 
