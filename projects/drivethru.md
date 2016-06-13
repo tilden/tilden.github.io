@@ -1,13 +1,14 @@
 ---
 layout: post
-banner_photo: "drivethru_sky.png"
+banner_photo: "/images/projects/drivethru/drivethru_sky.png"
 title: "Drive-Thru Monitor"
 subtitle: "The Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way."
 ---
 
-
-<img class="screenshot" src="shot_day.jpg" width="640" height="480" alt="Screenshot showing drive-thru from above, with several cars visible" />
-<!--  -->
+{% include img.html
+  url="/images/projects/drivethru/shot_day.jpg"
+  alt="Screenshot showing drive-thru from above, with several cars visible"
+%}
 
 In lieu of the highly abstract representations used by competing systems (such as a simple list of times), the drive-thru monitor product visualizes the status of cars waiting in a drive-thru using simple video-game inspired visuals. The product has been deployed by a major restaurant chain at over 6,000 locations throughout the United States.
 
@@ -22,7 +23,7 @@ Today, a huge number of quick-service restaurants (QSR) offer drive-thrus, allow
 
 In light of this demand, Sicom offered a simple drive-thru timing solution: an LED timer display. Linked with vehicle-detectors installed in the road, the timer would show an estimate of amount of time that the most recent car had been waiting. However, it was not without its flaws; perhaps most evidently, it could only show a single car's timer. Furthermore, vehicle-detectors are often imperfect; when these failed or entered some kind of problem state, the simple LED based timer unable to clearly convey to employees why it was not acting correctly.
 
-    (photo of sicom's original dt timer)
+
 
 To remedy this, Sicom was asked by a major restaurant chain to create a new drive-thru timing solution. I worked up with the product manager for the existing timing product, a high-ranking company member with a deep understanding of the inner workings of QSRs, and a remote development team located in Hungary to create a new solution.
 
