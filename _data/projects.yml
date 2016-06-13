@@ -28,13 +28,11 @@
   banner_img: "images/banners/onourown_banner.jpg"
   url: "/projects/onourown"
 
-# - name: "Design and Evaluation of a Web-Based Programming
-# Tool to Improve the Introductory Computer Science
-# Experience"
-#   desc: >
-#         What if intro computer science students didn't have to install any software, and could start programming right away?
-#   banner_img: "images/banners/pythy_banner.png"
-#   url: "/projects/pythy"
+- name: "Pythy: Improving the Introductory Python Programming Experience"
+  desc: >
+        What if intro computer science students didn't have to install any software, and could start programming right away?
+  banner_img: "images/banners/pythy_banner.png"
+  url: "/projects/pythy"
 #
 # - name: "Drive-Thru Monitor"
 #   desc: >
