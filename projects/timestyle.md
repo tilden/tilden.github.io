@@ -61,7 +61,7 @@ Based on this, I quickly sketched a basic watchface resembling the the most basi
 After using this for several days, I determined there were two key factors that made this design problematic:
 
 1. The time was difficult to read in the dark
-2. The background colors, which looked so vivid in my designs, looked very washed out on the watch. With nothing to contrast the colored background, the colors failed to look like much on the watch's desaturated color display
+2. The background colors, which looked so vivid in my designs, looked very washed out on the watch. With nothing but the time contrasting the colored background, the colors failed to look like much on the watch's desaturated color display
 
 I then iterated further, exploring concepts that I hoped would add some much-needed contrast to the design:
 
@@ -109,7 +109,7 @@ One key metric that I would use to determine where to focus my development effor
 
 > "How can I make the watch show 24 hour time?"
 
-This, however, had nothing to do with my watchface; 24-hour time is an option on the *Pebble itself*! However, many users apparently expected there to be an option here, and there simply wasn't one. I even discussed this with other attendees at the [2015 Pebble Developer Retreat](https://developer.pebble.com/community/events/developer-retreat-2015/), and found that I was not the only one bombarded with this type of request; one developer I spoke with had even set up an automatic email responder for these requests! I wondered if there was a better way, so I tested an incredibly simple solution: I added a brief bit of help text to the settings page mentioning how to change your watch to 24 hour time–the emails essentially vanished!
+This, however, had nothing to do with my watchface; 24-hour time is an option on the Pebble itself! However, many users apparently expected there to be an option here, and there simply wasn't one. I even discussed this with other attendees at the [2015 Pebble Developer Retreat](https://developer.pebble.com/community/events/developer-retreat-2015/), and found that I was not the only one bombarded with this type of request; one developer I spoke with had even set up an automatic email responder for these requests! I wondered if there was a better way, so I tested an incredibly simple solution: I added a brief bit of help text to the settings page mentioning how to change your watch to 24 hour time–the emails essentially vanished!
 
 ## Conclusion
 

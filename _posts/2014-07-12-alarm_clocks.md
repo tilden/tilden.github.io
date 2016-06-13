@@ -7,9 +7,9 @@ banner_photo: "/images/clocks/telechron.jpg"
 
 ![Telechron 7H241 Snooz-Alarm]({{ site.url }}/images/clocks/telechron.jpg)
 
-In 1956 General Electric introduced the *Telechron 7H241 Snooz-Alarm*[^telechron].  Like no alarm clock before it, the Telechron introduced a "snooze" button that, when pressed, would silence the alarm for several minutes before reactivating it, allowing the user to gain several more minutes of sleep. This feature was first copied three years later, but using the name "drowse" instead of snooze[^westclox]. Today, almost all alarm clocks provide a snooze function of this kind; GE's term evidently became the widely accepted one. 
+In 1956 General Electric introduced the *Telechron 7H241 Snooz-Alarm*[^telechron].  Like no alarm clock before it, the Telechron introduced a "snooze" button that, when pressed, would silence the alarm for several minutes before reactivating it, allowing the user to gain several more minutes of sleep. This feature was first copied three years later, but using the name "drowse" instead of snooze[^westclox]. Today, almost all alarm clocks provide a snooze function of this kind; GE's term evidently became the widely accepted one.
 
-As on the Telechron, the "snooze" function on today's alarm clocks is activated by a larger and easier to press button than the "alarm off" function. Presumably, this design was chosen so that the person being woken (who is probably very drowsy) will be more likely to hit the snooze button (and thus be woken again in several minutes) than the alarm off button (and thus sleep for several extra hours and be really late).
+As on the Telechron, the "snooze" function on today's alarm clocks is activated by a larger and easier to press button than the "alarm off" function. Presumably, this design was chosen so that the person being awakened (who is probably very drowsy) will be more likely to hit the snooze button (and thus be awakened again in several minutes) than the alarm off button (and thus sleep for several extra hours and be really late).
 
 Pretty much every smartphone OS on the market today provides a built in alarm clock app -- iOS, Android, Windows Phone. Even most feature phones have this! However, almost all of them exhibit the same mistake: **the snooze button is the same size as the alarm-off button!**
 
@@ -31,7 +31,7 @@ iOS does a better job; the snooze and off actions are distinct interactions -- o
 
 ![iOS 7 Alarm Screenshot]({{ site.url }}/images/clocks/ios7-beta4-alarm.jpg)
 
-Of course, these are all examples of alarm clock apps included with the operating systems themselves. Third party apps often approach this issue the right way. For example, [Timely](https://play.google.com/store/apps/details?id=ch.bitspin.timely&hl=en), which was recently bought by Google[^timely], offers a large snooze button target, as well as the ability to snooze by pressing any physical button on the phone. Alarm off requires a long swipe action, making it much more difficult to trigger by accident. We can only hope that future versions of Android's stock clock app inheirit this:
+Of course, these are all examples of alarm clock apps included with the operating systems themselves. Third party apps often approach this issue the right way. For example, [Timely](https://play.google.com/store/apps/details?id=ch.bitspin.timely&hl=en), which was recently bought by Google[^timely], offers a large snooze button target, as well as the ability to snooze by pressing any physical button on the phone. Alarm off requires a long swipe action, making it much more difficult to trigger by accident. We can only hope that future versions of Android's stock clock app inherit this:
 
 ![Timely for Android Screenshot]({{ site.url }}/images/clocks/timely.png)
 

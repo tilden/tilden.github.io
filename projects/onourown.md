@@ -24,7 +24,7 @@ subtitle: "Our team created new branding and a responsive, maintainable website 
 
 ## Introduction
 
-[Make a Mark Roanoke-Blacksburg](http://makeamarkrb.org/2016/) was started last year as a way to help local nonprofits connect and engage with local design and web professionals. In their words:
+**[Make a Mark Roanoke-Blacksburg](http://makeamarkrb.org/2016/)** was started last year as a way to help local nonprofits connect and engage with local design and web professionals. In their words:
 
 > A 12 hour design and development marathon benefitting our local nonprofits.
 
@@ -43,7 +43,7 @@ Prior to the event itself, several of our team members met up with representativ
 
 As part of this early planning meeting, we talked with the leader of On Our Own, discussing the organization's objectives and how it impacts the local community. On Our Own's focus, we learned, is providing a welcoming community for those with mental health issues, run by people who have themselves overcome similar issues.
 
-Unfortunately, their web presence was lacking; while On Our Own did have a website, it was highly problematic. Not only was it incompatible with mobile devices, it was reliant on outdated and difficult to use software to maintain. Compounding this issue, the original creator of the website was no longer available. As such, the leader of the organization had contacted Make A Mark in hopes of addressing these issues.
+Unfortunately, their web presence was lacking; while On Our Own did have a website, it was highly problematic. Not only was it incompatible with mobile devices, but it also relied on outdated and difficult-to-use software, and the information on the website did not do a good job conveying what the organization even did. Compounding this issue, the original creator of the website was no longer available. As such, the leader of the organization had contacted Make A Mark in hopes of addressing these issues.
 
 {% include img.html
   url="/images/projects/onourown/oldsite.png"
