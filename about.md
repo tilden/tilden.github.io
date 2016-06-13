@@ -8,10 +8,9 @@ banner_photo: "/images/leaf.jpg"
 top_bar_color: '#33691E'
 ---
 
-
 {% include img.html
   url="/images/about_photo.jpg"
-  alt="Photo of me" w="640" h="505"
+  alt="Photo of me"
   caption="Me introducing <a href='http://en.wikipedia.org/wiki/Don_Norman'>Don Norman</a> to student volunteers at the <a href='http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems'>CHI</a> conference, wearing the t-shirt I designed</a>!<br />Photo by <a href='http://www.minqiluo.com/'>Minqui Luo.</a>"
 %}
 
@@ -26,13 +25,13 @@ top_bar_color: '#33691E'
 	</a>
 </div>
 
-Let's be honest, no one likes badly designed user interfaces. However, in order to fix
-the problems, you need to know <b>why</b> they're so bad. Over the course of my years as a CS major, HCI student, and professional UX engineer, I've been learning to do exactly that.
 
-Right now, I'm working at [Sicom Systems, Inc](http://www.sicom.com), where I'm designing
-software to make managing your fast food restaurant empire fun and exciting.
-To get a better idea of the kinds of products I work on, check out the [Restaurant Management System redesign project](/projects/restaurant_management)!
+## Hi there!
+
+I'm a UX designer with a multidisciplinary background -- this allows me to approach design from multiple perspectives, and even actualize my designs in the form of **functional prototypes**. My goal is to create designs that are **pleasant to use**; I believe that the best designs are those that you don't notice.
+
+I began **web design** even before I got my degree in **Computer Science**, which led me to focus on **human-computer interaction** during graduate school. I realized then that what I was truly passionate about was design itself, thus leading to my current role as a **UX designer**. Right now, I'm working at [Sicom Systems](http://www.sicom.com), where I strive to make systems used in quick-serve restaurants easier to use. To get a better idea of the kinds of products I work on, check out the [Restaurant Management System redesign project](/projects/restaurant_management)!
+
+I also enjoy [taking pictures](https://www.instagram.com/freakified/), and even co-author a [webcomic](http://www.scrapinold.com/23.html)! My greatest personal achievement is the creation of [JGA: Crossroads of Destiny](http://freakified.github.io/jga/), a complete video game, from scratch.
 
 <!-- In my spare time, I've built even more exciting projects, like JGA: Crossroads of Destiny. -->
-
-My goal is to improve the world's user interfaces, one step at a time.
