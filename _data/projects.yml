@@ -34,13 +34,13 @@
 #   banner_img: "images/banners/pythy_banner.png"
 #   url: "/projects/pythy"
 
-# - name: "Drive-Thru Monitor"
-#   desc: >
-#         Designed for Sicom Systems, the Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way.
-#         <br>
-#         For this project, I conducted interviews with a local restaurant manager, created initial whiteboard sketches, and designed an animated mockup using CSS.
-#   banner_img: "images/banners/dt_banner.png"
-#   url: "/projects/drivethru"
+- name: "Drive-Thru Monitor"
+  desc: >
+        Designed for Sicom Systems, the Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way.
+        <br>
+        For this project, I conducted interviews with a local restaurant manager, created initial whiteboard sketches, and designed an animated mockup using CSS.
+  banner_img: "images/banners/dt_banner.png"
+  url: "/projects/drivethru"
 
 
 # Currently hidden, but these may return in a future update

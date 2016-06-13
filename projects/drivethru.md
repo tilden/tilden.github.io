@@ -2,12 +2,15 @@
 layout: post
 banner_photo: "drivethru_sky.png"
 title: "Drive-Thru Monitor"
-subtitle: "Designed for Sicom Systems, the Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way."
+subtitle: "The Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way."
 ---
 
 
 <img class="screenshot" src="shot_day.jpg" width="640" height="480" alt="Screenshot showing drive-thru from above, with several cars visible" />
 <!--  -->
+
+In lieu of the highly abstract representations used by competing systems (such as a simple list of times), the drive-thru monitor product visualizes the status of cars waiting in a drive-thru using simple video-game inspired visuals. The product has been deployed by a major restaurant chain at over 6,000 locations throughout the United States.
+
 
 * TOC
 {:toc}
@@ -23,7 +26,7 @@ In light of this demand, Sicom offered a simple drive-thru timing solution: an L
 
 To remedy this, Sicom was asked by a major restaurant chain to create a new drive-thru timing solution. I worked up with the product manager for the existing timing product, a high-ranking company member with a deep understanding of the inner workings of QSRs, and a remote development team located in Hungary to create a new solution.
 
-## A New Drive-Thru Monitor
+## Design Process
 
 My role was chiefly during the design phase. After discussing the requirements with the drive-thru product's manager, I set out to determine how exactly people viewed the existing drive-thru timing solution. I created a set of questions for current users of the system; however, due to limited time and resources, I was only able to interview the manager. Nonetheless, I gained several key insights that would inform the design. In particular, this question yielded a particularly useful insight:
 
@@ -45,48 +48,63 @@ I began by sketching some concepts onto a whiteboard and discussing them with th
 After discussing these initial sketches, I switch to [Sketch](https://www.sketchapp.com/) on my computer, in order to flesh out the ideas explored in the whiteboard sketches. Note that the first of these greatly resembles whiteboard sketch 4 (bottom right), but also explores the possibility of a double drive-thru, something that is becoming increasingly prevalent:
 
 {% include img.html
-  url="/images/projects/drivethru/dt_evolution_2.jpg"
-  alt="Early color mockup" w="320" h="240"
+  url="/images/projects/drivethru/dt_evolution_2@2x.jpg"
+  alt="Early color mockup" w="500" h="375"
 %}
 
 Note that a difference between this mockup and the final version is the timing graph, which underwent several iterations. In this case, we decided that this line graph visualization would be too complex for quick viewing.
 
-### Daily Performance Graph Evolution
-
-    TODO: insert photo of the sketchbook with the things
+### Designing the Daily Performance Graph
 
 Based on the answer given in the interview, in additional to visualizing the status of the drive-thru, it was also vitally important that the system convey the average speed of service performance for the given day. In addition, I was informed that restaurants were often graded based on performance for predetermined timespans during a day, such as "breakfast" or "lunch".
 
-A simple bar graph compares the current average drive-thru service times with a pre-selected goal time, and bubbles attached
-to the car graphics convey how long each car has been waiting.
+I eventually settled on the idea of "average vs. goal": how am I currently doing, vs how does corporate want me to do? However, I believed that simply showing times would quickly convey the difference between the numbers. As such, I started sketching out concepts for a comparison chart. This led to a single bar showing the current average time, with a line indicating the goal. This is intended for users to allow viewers to quickly understand how well they are currently doing.
 
-    TODO: A photo of the weird initial timing charts
+{% include img.html
+  url="/images/projects/drivethru/chart_sketches.jpg"
+  alt="Several early sketches of the daily performance graph"
+  caption="Several early sketches of the daily performance graph"
+%}
+
+{% include img.html
+  url="/images/projects/drivethru/chart_sketch1.png"
+  alt="Initial color sketch of a performance graph"
+  caption="An initial color sketch of a performance graph"
+%}
+
+{% include img.html
+  url="/images/projects/drivethru/chart_sketch2.png"
+  alt="Final appearance of the performance graph"
+  caption="Final appearance of the performance graph"
+%}
+
+### Visual Direction
+
+Initial sketches settled on the top-down view early, but used fairly abstract representations of cars. However, I created the following visual direction exploration, which the team preferred over the original direction:
+
+{% include img.html
+  url="/images/projects/drivethru/dt_evolution_3@2x.jpg"
+  alt="Another early drawing of the drive-thru system" w="500" h="375"
+%}
+
+As such, I worked to play up the video-game inspired visuals, including a real-time day/night cycle, and drive-thru layouts using based on aerial views of actual drive-thrus:
+
+{% include img.html
+  url="/images/projects/drivethru/montage.png"
+  alt="Four different possible drive-thru layouts, at different times of day" w="500" h="375"
+%}
+
+However, these visuals would be highly reliant on motion. To illustrate this motion, I created an animated mockup using CSS animation, SVG, and HTML.
+
+<div style="text-align: center">
+  <iframe width="500" height="375" src="https://www.youtube.com/embed/tSYIW7CXTDA?autoplay=1&loop=1&playlist=tSYIW7CXTDA&showinfo=0&controls=0&vq=large" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- ## Iteration
+
+### Ghost Cars -->
 
 
-<!-- for the second, we put way more emphasis on the total wait times than on the individual ones (at least for my design)-->
+## Conclusions
 
-
-
-
-<img class="screenshot" width="480" height="360" src="montage.png" alt="Four diferent possible drive-thru layouts, at different times of day" />
-
-## Spatially Mapped to Your Drive-Thru
-In lieu of the highly abstract representations (such as a simple list of times)
-
- In addition, after examining I found that several vendors already offered drive-thru timing products; however, these all featured highly abstract visualizations focusing primarily on numerical lists of wait times.
-
-found in competing solutions, I designed Drive-Thru Monitor using aerial views of actual drive-thrus as a basis.
-
-<iframe width="480" height="360" src="https://www.youtube.com/embed/tSYIW7CXTDA?autoplay=1&loop=1&playlist=tSYIW7CXTDA&showinfo=0&controls=0&vq=large" frameborder="0" allowfullscreen></iframe>
-
-## Always in Motion
-Drive-Thru Monitor features video-game inspired visuals, including animated car motion and a real-time day/night cycle.
-
-To illustrate the motion, I created this animated mockup using CSS animation, SVG, and HTML.
-
-## Design Evolution
-
-
-
-## Want to see it in action?
-Drive-Thru Monitor has been deployed by a major restaurant chain at over 6,000 locations throughout the United States.
+The prototypes and mockups were demonstrated at a convention for QSR vendors, and the reaction from attendees was quite positive. As such, the designs that I had delivered were handed off to a separate team and eventually developed into a real product which was deployed by a major restaurant chain at over 8,000 locations throughout the United States. Results have been sufficiently positive; I have been told that operators who manage multiple restaurant brands now want the product in their other brands as well!
