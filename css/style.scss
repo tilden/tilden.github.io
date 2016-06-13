@@ -404,7 +404,7 @@ h1.logo {
     text-decoration: none;
     border-radius: 2px;
     padding: 13.5px 28px;
-    margin: 0 5px;
+    margin: 0 5px 20px;
     @include shadow-elevation-2dp;
     transition: all 0.1s;
 
@@ -415,6 +415,10 @@ h1.logo {
     &:active {
       background-color: $material-blue-grey-700;
       @include shadow-elevation-6dp;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     i {
