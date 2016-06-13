@@ -34,22 +34,22 @@
   banner_img: "images/banners/pythy_banner.png"
   url: "/projects/pythy"
 
-- name: "Drive-Thru Monitor"
-  desc: >
-        Stay in command of your restaurant's drive-thru with this highly visual
-        way to monitor the current status of all waiting vehicles.
-  banner_img: "images/banners/dt_banner.png"
-  url: "/projects/drivethru"
-
-# - name: "JGA: Crossroads of Destiny"
+# - name: "Drive-Thru Monitor"
 #   desc: >
-#         In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
-#         and restore balance to the world!
-#         <br>
-#         For this project, I composed an original soundtrack,
-#         drew original artwork, and wrote a 45-page script.
-#   banner_img: "images/banners/jga_banner.jpg"
-#   url: "/projects/jga"
+#         Stay in command of your restaurant's drive-thru with this highly visual
+#         way to monitor the current status of all waiting vehicles.
+#   banner_img: "images/banners/dt_banner.png"
+#   url: "/projects/drivethru"
+
+- name: "JGA: Crossroads of Destiny"
+  desc: >
+        In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
+        and restore balance to the world!
+        <br>
+        For this project, I composed an original soundtrack,
+        drew original artwork, and wrote a 45-page script.
+  banner_img: "images/banners/jga_banner.jpg"
+  url: "/projects/jga"
 
 # Currently hidden, but these may return in a future update
 
