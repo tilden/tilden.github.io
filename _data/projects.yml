@@ -28,30 +28,32 @@
   banner_img: "images/banners/onourown_banner.jpg"
   url: "/projects/onourown"
 
-- name: "Pythy: Improving the Introductory Python Programming Experience"
-  desc: >
-        What if intro computer science students didn't have to install any software, and could start programming right away?
-  banner_img: "images/banners/pythy_banner.png"
-  url: "/projects/pythy"
-
-# - name: "Drive-Thru Monitor"
+# - name: "Pythy: Improving the Introductory Python Programming Experience"
 #   desc: >
-#         Stay in command of your restaurant's drive-thru with this highly visual
-#         way to monitor the current status of all waiting vehicles.
-#   banner_img: "images/banners/dt_banner.png"
-#   url: "/projects/drivethru"
+#         What if intro computer science students didn't have to install any software, and could start programming right away?
+#   banner_img: "images/banners/pythy_banner.png"
+#   url: "/projects/pythy"
 
-- name: "JGA: Crossroads of Destiny"
+- name: "Drive-Thru Monitor"
   desc: >
-        In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
-        and restore balance to the world!
+        Designed for Sicom Systems, the Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way.
         <br>
-        For this project, I composed an original soundtrack,
-        drew original artwork, and wrote a 45-page script.
-  banner_img: "images/banners/jga_banner.jpg"
-  url: "/projects/jga"
+        For this project, I conducted interviews with a local restaurant manager, created initial whiteboard sketches, and designed an animated mockup using CSS.
+  banner_img: "images/banners/dt_banner.png"
+  url: "/projects/drivethru"
+
 
 # Currently hidden, but these may return in a future update
+
+# - name: "JGA: Crossroads of Destiny"
+#   desc: >
+#         In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
+#         and restore balance to the world!
+#         <br>
+#         For this project, I composed an original soundtrack,
+#         drew original artwork, and wrote a 45-page script.
+#   banner_img: "images/banners/jga_banner.jpg"
+#   url: "/projects/jga"
 
 # - name: "WeatherClock"
 #   desc: "With this webapp, any small internet-enabled device can become a wall-mounted clock displaying the weather."
