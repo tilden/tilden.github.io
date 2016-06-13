@@ -102,7 +102,7 @@ As such, I worked to play up the video-game inspired visuals, including a real-t
 However, these visuals would be highly reliant on motion. To illustrate this motion, I created an animated mockup using CSS animation, SVG, and HTML.
 
 <div style="text-align: center">
-  <iframe width="500" height="375" src="https://www.youtube.com/embed/tSYIW7CXTDA?autoplay=1&loop=1&playlist=tSYIW7CXTDA&showinfo=0&controls=0&vq=large" frameborder="0" allowfullscreen></iframe>
+  <iframe width="500" height="375" style="width: 100%; max-width: 500px;" src="https://www.youtube.com/embed/tSYIW7CXTDA?autoplay=1&loop=1&playlist=tSYIW7CXTDA&showinfo=0&controls=0&vq=large" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- ## Iteration
