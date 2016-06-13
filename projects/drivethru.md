@@ -23,7 +23,11 @@ Today, a huge number of quick-service restaurants (QSR) offer drive-thrus, allow
 
 In light of this demand, Sicom offered a simple drive-thru timing solution: an LED timer display. Linked with vehicle-detectors installed in the road, the timer would show an estimate of amount of time that the most recent car had been waiting. However, it was not without its flaws; perhaps most evidently, it could only show a single car's timer. Furthermore, vehicle-detectors are often imperfect; when these failed or entered some kind of problem state, the simple LED based timer unable to clearly convey to employees why it was not acting correctly.
 
-
+{% include img.html
+  url="/images/projects/drivethru/original_timer.jpg"
+  alt="Initial sketches of system" w="500" h="311"
+  caption="The original drive-thru timing solution"
+%}
 
 To remedy this, Sicom was asked by a major restaurant chain to create a new drive-thru timing solution. I worked up with the product manager for the existing timing product, a high-ranking company member with a deep understanding of the inner workings of QSRs, and a remote development team located in Hungary to create a new solution.
 
