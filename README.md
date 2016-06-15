@@ -19,10 +19,6 @@ That means it's entirely possible for a reader to submit pull requests!
 * Scales for mobiles, tablets, and desktops
 * High-DPI (retina-compatible) graphics
 
-## Compatible
-
-* Viewable by internet explorers using Internet Explorer version 10 or higher
-
 # License
 All the content (blog posts, photos, other graphics) are licensed under
 [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/), and the code itself is
