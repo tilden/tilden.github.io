@@ -75,8 +75,11 @@ a:hover {
 
   .nav-lower {
     pointer-events: none;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-direction: column;
     flex-direction: column;
     text-align: left;
     height: 108px;
@@ -181,6 +184,7 @@ h1.logo {
 .nav-upper.central-col {
     padding-top: 20px;
     padding-bottom: 20px;
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -189,6 +193,7 @@ h1.logo {
   font-size: 18px;
   padding: 0;
   margin: 0 -20px 0 0;
+  display: -webkit-flex;
   display: flex;
 
   li {
@@ -239,7 +244,9 @@ h1.logo {
 .project-card {
   height: 300px;
   text-align: left;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
   text-decoration: none;
   color: black;
@@ -260,6 +267,7 @@ h1.logo {
   .thumb {
     background-size: cover;
     flex: 10;
+    -webkit-flex: 10;
     height: 100%;
     border-radius: 2px 0 0 2px;
     position: relative;
@@ -277,9 +285,12 @@ h1.logo {
   }
 
   .desc {
+    -webkit-flex: 9;
     flex: 9;
     position: relative;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
@@ -464,14 +475,19 @@ footer {
   bottom: 0;
 
   .central-col {
+    display: -webkit-flex;
     display: flex;
     height: 100%;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
   .contact-minibox {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
@@ -496,10 +512,14 @@ footer {
 
 
   .footer-nav-button {
+    -webkit-flex: 50%;
     flex: 50%;
     height: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
@@ -664,6 +684,7 @@ pre > code {
   .project-card {
     padding: 0;
     height: auto;
+    -webkit-flex-direction: column;
     flex-direction: column;
 
     .thumb {
