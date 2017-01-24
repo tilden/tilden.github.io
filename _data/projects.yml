@@ -17,9 +17,17 @@
   desc: >
         Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
         reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
-
   banner_img: "images/banners/restaurant_management_banner.png"
   url: "/projects/restaurant_management"
+
+- name: "JGA: Crossroads of Destiny"
+  desc: >
+        A game for mobile and desktop following the journey of an exiled infomercial chef to restore balance to the world&mdash;and sell additional knives."
+        <br>
+        In addition to writing the game code itself in Unity (C#), I also composed an original soundtrack,
+        drew the artwork, and wrote a 45-page script.
+  banner_img: "images/banners/jga_banner.jpg"
+  url: "/projects/jga"
 
 - name: "On Our Own Roanoke Valley"
   desc: >
@@ -43,17 +51,9 @@
   url: "/projects/drivethru"
 
 
+
 # Currently hidden, but these may return in a future update
 
-# - name: "JGA: Crossroads of Destiny"
-#   desc: >
-#         In this story-driven RPG, you play as an exiled infomercial chef who must embrace his destiny
-#         and restore balance to the world!
-#         <br>
-#         For this project, I composed an original soundtrack,
-#         drew original artwork, and wrote a 45-page script.
-#   banner_img: "images/banners/jga_banner.jpg"
-#   url: "/projects/jga"
 
 # - name: "WeatherClock"
 #   desc: "With this webapp, any small internet-enabled device can become a wall-mounted clock displaying the weather."
