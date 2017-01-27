@@ -12,7 +12,7 @@ top_bar_color: '#33691E'
 {% include img.html
   url="/images/about_photo.jpg"
   alt="Photo of me"
-  caption="Me introducing <a href='http://en.wikipedia.org/wiki/Don_Norman'>Don Norman</a> to student volunteers at the <a href='http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems'>CHI</a> conference, wearing the t-shirt I designed</a>!<br />Photo by <a href='http://www.minqiluo.com/'>Minqui Luo.</a>"
+  caption="Me introducing <a href='http://en.wikipedia.org/wiki/Don_Norman'>Don Norman</a> to student volunteers at the <a href='http://en.wikipedia.org/wiki/Conference_on_Human_Factors_in_Computing_Systems'>CHI</a> conference, wearing the t-shirt I designed!<br />Photo by <a href='http://www.minqiluo.com/'>Minqui Luo.</a>"
 %}
 
 <div class="buttons">
