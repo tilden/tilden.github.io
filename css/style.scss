@@ -29,8 +29,8 @@ body {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  color: black;
-  background: $material-grey-200;
+  color: white;
+  background: $material-grey-900;
   text-align: center;
   margin: 192px 0 150px 0;
 }
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  color: $material-blue-grey-600;
+  color: $material-indigo-600;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
   height: 192px;
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
-  background-color: $material-blue-grey-600;
+  background-color: $material-indigo-600;
 
   &::after {
     position: absolute;
@@ -228,7 +228,7 @@ h1.logo {
     text-align: left;
     text-transform: uppercase;
     font-weight: 500;
-    color: $material-blue-grey-600;
+    color: $material-indigo-600;
     font-size: 14px;
     padding: 0 0 13px 0;
     margin-top: -3px;
@@ -237,7 +237,7 @@ h1.logo {
 
 .card {
   border-radius: 2px;
-  background: white;
+  background: $material-grey-800;
   @include shadow-elevation-2dp;
 }
 
@@ -249,7 +249,7 @@ h1.logo {
   -webkit-align-items: center;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: white;
   transition: all 0.2s;
   padding-right: 20px;
   margin-bottom: 30px;
@@ -261,7 +261,7 @@ h1.logo {
 
   &:active {
     @include shadow-elevation-6dp;
-    background-color: $material-grey-100;
+    background-color: $material-grey-700;
   }
 
   .thumb {
@@ -323,7 +323,7 @@ h1.logo {
 /* pages */
 
 .post-content {
-  color: rgba(0,0,0,$material-light-secondary-opacity);
+  color: rgba(255,255,255,$material-light-secondary-opacity);
   width: 760px;
   margin: 0 auto;
   padding-top: 38px;
@@ -332,7 +332,7 @@ h1.logo {
   h2, h3 {
     font-size: 24px;
     line-height: 1.2;
-    color: $material-blue-grey-600;
+    color: $material-indigo-200;
 
     // sneaky way to take fixed nav into account for anchor links
     // courtesy of http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
@@ -414,7 +414,7 @@ h1.logo {
     text-transform: uppercase;
     font-size: 14px;
     color: white;
-    background-color: $material-blue-grey-500;
+    background-color: $material-indigo-500;
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
@@ -428,7 +428,7 @@ h1.logo {
     }
 
     &:active {
-      background-color: $material-blue-grey-700;
+      background-color: $material-indigo-700;
       @include shadow-elevation-6dp;
     }
 
@@ -472,7 +472,7 @@ h1.logo {
 
 // footer
 footer {
-  background-color: $material-blue-grey-600;
+  background-color: $material-indigo-600;
   height: 96px;
   width: 100%;
   position: absolute;
@@ -554,7 +554,7 @@ footer {
 
 // per-section colors
 h2, h3, a, code, blockquote, .mobile-title {
-  color: $material-blue-grey-600;
+  color: $material-indigo-a100;
 }
 
 footer {
