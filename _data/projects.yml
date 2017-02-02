@@ -1,17 +1,18 @@
 
-- name: "Smartwatch Face: TimeStyle"
+- name: "TimeStyle"
   desc: >
-        Wristwatches reflect the wearer's style, and wearables are no different.
-        TimeStyle provides a readable and customizable time display, designed to
-        blend with the watch's design language. <br>
-        It is among the most popular watch faces for the Pebble smartwatch,
-        with nearly 100,000 users.
+        One of the most popular faces ever made for the Pebble, with over 150,000 users.
   banner_img: "images/banners/timestyle_banner.png"
   tags:
     - Prototyping
     - Interaction Design
     - Wearable
   url: "/projects/timestyle"
+
+- name: "Employee Scheduling App"
+  desc: >
+         "What if you could communicate with your employees in real time? WHAT THEN."
+  url: "/projects/schedule_app"
 
 - name: "Restaurant Management System Redesign"
   desc: >
@@ -22,17 +23,13 @@
 
 - name: "JGA: Crossroads of Destiny"
   desc: >
-        A game for mobile and desktop following the journey of an exiled infomercial chef to restore balance to the world&mdash;and sell additional knives."
-        <br>
-        In addition to writing the game code itself in Unity (C#), I also composed an original soundtrack,
-        drew the artwork, and wrote a 45-page script.
+        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and and sell additional knives.
   banner_img: "images/banners/jga_banner.jpg"
   url: "/projects/jga"
 
 - name: "On Our Own Roanoke Valley"
   desc: >
-        Working with a 5-person team consisting of a visual designer, product designer, and two full-stack developers,
-        we created new branding and a responsive, maintainable website for a local nonprofit organization.
+        Created new branding and a responsive, maintainable website for a local nonprofit organization.
   banner_img: "images/banners/onourown_banner.jpg"
   url: "/projects/onourown"
 
@@ -44,9 +41,7 @@
 
 - name: "Drive-Thru Monitor"
   desc: >
-        Designed for Sicom Systems, the Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way.
-        <br>
-        For this project, I conducted interviews with a local restaurant manager, created initial whiteboard sketches, and designed an animated mockup using CSS.
+        Conveys the status of a restaurant's drive-thru in a highly visual way.
   banner_img: "images/banners/dt_banner.png"
   url: "/projects/drivethru"
 

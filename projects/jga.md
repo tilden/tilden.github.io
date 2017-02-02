@@ -15,14 +15,12 @@ Welcome to the world of **JGA: Crossroads of Destiny**. In this story-driven RPG
 and restore balance to the world. For this project, I composed an **original soundtrack**,
 drew in-game **artwork**, wrote a **45-page script**, and **coded the entire game** using Unity.
 
-
-
 * TOC
 {:toc}
 
-## A Lesson In Focus
+## Facebook
 
-Long ago, I had created a game for my younger brother as a Christmas present, starring him as the protagonist. Only taking about 10-15 minutes to play through, it included a bizarre storyline involving flying basketballs, a J-shaped fortress, and lots of plot holes. For years, I had planned a sequel to the game--one which would finally explain *everything*--but each time I was met with nothing but false starts. Until I finally sat down one day and decided that the time had come. I would create the game I had been planning for nearly a decade.
+Long ago, I had d a game for my younger brother as a Christmas present, starring him as the protagonist. Only taking about 10-15 minutes to play through, it included a bizarre storyline involving flying basketballs, a J-shaped fortress, and lots of plot holes. For years, I had planned a sequel to the game--one which would finally explain *everything*--but each time I was met with nothing but false starts. Until I finally sat down one day and decided that the time had come. I would create the game I had been planning for nearly a decade.
 
 Perhaps the largest issue with the game's protracted planning period was the sheer number of abstract ideas involved: I had concepts based on RPGs, platformers, and even sports games. I had even, at one point, created graphical assets for a 3D version of the game that never made it past the prototype phase. It was clear that in order to start development, I needed to simplify the game.
 
@@ -38,15 +36,13 @@ I needed to like write exposition? I guess? I dunno what else I can really talk 
 
 ## Playtesting
 
-### Early Stage
+### Why can't I jump?
 
 To simply development, I had decided to implement the game as a 2D side-scrolling game. However, as an RPG, it was not a platformer, and therefore the only required character movement was left and right. However, a key piece of feedback I received from early informal playtests: "where's the jump button??". After this happened several times with several different people, I realized that, despite the lack of a technical need for a jump function, people _expected_ this type of game to have a jump function. So I added one, and people 
 
+### Keyboard or mouse? Yes
+
 As development on the game progressed, I wanted to make sure it would work and make sense to people. I initially built the battle system to rely on gamepad-based controls, as I assumed that this would make sense since the rest of the game is played that way. However, in early playtests, I found that people kept trying to go for the mouse. I then designed the battle system to be playable with just the mouse (because that was really easy) and found that everyone tried to go for the keyboard. Finally I realized that I couldn't get away with half-measures and implemented both mouse and gamepad support.
-
-
-
-### Later Stage
 
 After the game has reached a state of more or less completion, I wanted to do a limited degree of playtesting to ensure that it was not annoying to play.
 
