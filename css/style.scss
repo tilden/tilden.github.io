@@ -26,7 +26,7 @@ img {
 }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Lato", "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   color: white;
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  color: $material-indigo-600;
+  color: $material-indigo-a100;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
   height: 192px;
   border-bottom: 11px transparent solid;
   transition: background-color 0.5s;
-  background-color: $material-indigo-600;
+  background: $material-indigo-600 linear-gradient(to right, rgb(53, 53, 125), rgb(158, 89, 89));
 
   &::after {
     position: absolute;
@@ -228,7 +228,7 @@ h1.logo {
     text-align: left;
     text-transform: uppercase;
     font-weight: 500;
-    color: $material-indigo-600;
+    color: $material-grey-600;
     font-size: 14px;
     padding: 0 0 13px 0;
     margin-top: -3px;
@@ -358,7 +358,7 @@ h1.logo {
   h2, h3 {
     font-size: 24px;
     line-height: 1.2;
-    color: $material-indigo-200;
+    color: $material-grey-50;
 
     // sneaky way to take fixed nav into account for anchor links
     // courtesy of http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
@@ -371,21 +371,23 @@ h1.logo {
     font-size: 20px;
   }
 
+  p {
+    font-family: Roboto Slab;
+    letter-spacing: 0.05px;
+    margin-bottom: 1.5em;
+  }
+
   p, ul {
     font-weight: 400;
     line-height: 1.8;
   }
 
-  ol li {
-    margin: 0.5em 0;
-  }
-
-  p {
-    margin-bottom: 1.5em;
-  }
-
   p:last-of-type {
     margin-bottom: 0;
+  }
+
+  ol li {
+    margin: 0.5em 0;
   }
 
   img {
@@ -451,6 +453,7 @@ h1.logo {
 
     &:hover {
       @include shadow-elevation-4dp;
+      background-color: $material-indigo-a400;
     }
 
     &:active {
@@ -463,8 +466,10 @@ h1.logo {
     }
 
     i {
-      margin-left: -5px;
+      margin-left: -12px;
       padding-right: 6px;
+      vertical-align: middle;
+      height: 26px;
     }
   }
 }
@@ -579,12 +584,6 @@ footer {
   .next {
     text-align: right;
   }
-}
-
-
-// per-section colors
-h2, h3, a, code, blockquote, .mobile-title {
-  color: $material-indigo-a100;
 }
 
 footer {

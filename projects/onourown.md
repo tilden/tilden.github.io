@@ -14,7 +14,7 @@ subtitle: "Our team created new branding and a responsive, maintainable website 
 
 <div class="buttons">
   <a href="http://onourownroanoke.org">
-    <i class="fa fa-globe fa-lg"></i>
+    <i class="material-icons">open_in_browser</i>
     Visit website
   </a>
 </div>

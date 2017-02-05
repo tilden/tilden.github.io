@@ -18,11 +18,11 @@ top_bar_color2: "#9e5959"
 
 <div class="buttons">
   <a href="#" id="email_link">
-    <i class="site-icon fa fa-envelope-o fa-lg"></i>
+    <i class="material-icons">email</i>
     Contact via email
   </a>
 	<a href="/files/DanTilden-Resume.pdf">
-    <i class="site-icon fa fa-file-text-o fa-lg"></i>
+    <i class="material-icons">file_download</i>
     Download resume
 	</a>
 </div>

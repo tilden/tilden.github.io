@@ -14,11 +14,11 @@ with nearly 100,000 users!
 
 <div class="buttons">
   <a href="https://apps.getpebble.com/en_US/application/55a5c024f4510f794c000071">
-    <i class="fa fa-download fa-lg"></i>
+    <i class="material-icons">watch</i>
     Available on the Pebble Store
   </a>
 	<a href="https://github.com/freakified/TimeStylePebble">
-    <i class="fa fa-github fa-lg"></i>
+    <i class="material-icons">code</i>
     Source code on GitHub
 	</a>
 </div>
