@@ -116,7 +116,7 @@ a:hover {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.50);
   }
 }
 
@@ -257,30 +257,56 @@ h1.logo {
   &:hover {
     @include shadow-elevation-4dp;
     text-decoration: none;
+
+    .thumb {
+      opacity: 1;
+      background-position-x: 0;
+
+
+      &::after {
+        opacity: 0.5;
+      }
+
+    }
   }
 
   &:active {
     @include shadow-elevation-6dp;
-    background-color: $material-grey-700;
+    background-color: mix($material-indigo-a400, $material-grey-800, 50%);
+
   }
 
   .thumb {
     background-size: cover;
+    background-position-x: -3px;
     flex: 10;
     -webkit-flex: 10;
     height: 100%;
     border-radius: 2px 0 0 2px;
     position: relative;
     background-color: inherit;
+    transition: background-position 0.2s;
+    opacity: 0.9;
 
-    &::after {
+    &::after, &::before {
       content: '';
       position: absolute;
       right: -50px;
       height: 100%;
       width: 90px;
-      background-color: inherit;
       transform: skewX(-10deg);
+    }
+
+    &::after {
+      background-image: linear-gradient(to right, #3d5afe, transparent);
+      transition: opacity 0.2s;
+      width: 200px;
+      right: -160px;
+      opacity: 0;
+    }
+
+    &::before {
+      background-color: inherit;
     }
   }
 

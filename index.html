@@ -5,15 +5,16 @@ is_top_level: true
 browser_title: "Dan Tilden: UX Designer"
 title: "Dan Tilden"
 subtitle: >
-          I'm a multidisplinary UX designer with a strong sense for what will work
-banner_photo: "images/pebbles2.jpg"
+          I'm a multidisplinary UX designer with a supernatural ability to create clean and unobstrusive designs
+top_bar_color: "#35357d"
+top_bar_color2: "#9e5959"
 ---
 
 
 <div class="cards central-col">
   <h2>Featured Projects</h2>
 	{% for project in site.data.projects %}
-	<a class="card project-card" href="{{ project.url }}">
+	<a id="project{{forloop.index}}" class="card project-card" href="{{ project.url }}">
 		<div class="thumb" style="background-image: url({{ project.banner_img }})"></div>
 		<div class="desc">
 			<h3>{{ project.name }}</h3>
