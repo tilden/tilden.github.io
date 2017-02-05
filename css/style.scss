@@ -498,11 +498,14 @@ h1.logo {
 
 // footer
 footer {
-  background-color: $material-indigo-600;
   height: 96px;
   width: 100%;
   position: absolute;
   bottom: 0;
+
+  a {
+    color: $material-grey-500;
+  }
 
   .central-col {
     display: -webkit-flex;
@@ -526,17 +529,18 @@ footer {
     height: 30px;
 
     a {
-      opacity: 0.7;
+      opacity: 0.4;
       transition: 0.2s all;
       padding: 0 2px;
+      color: white;
     }
   }
 
   .social-icons:hover a {
-    opacity: 0.5;
+    opacity: 0.2;
 
     &:hover {
-      opacity: 1;
+      opacity: .7;
     }
   }
 
@@ -584,7 +588,7 @@ h2, h3, a, code, blockquote, .mobile-title {
 }
 
 footer {
-  background-color: $material-blue-grey-100;
+  background-color: mix($material-grey-800, $material-grey-900, 20%);
 }
 
 
