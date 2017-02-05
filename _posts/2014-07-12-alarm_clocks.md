@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How every smartphone platform gets the alarm clock wrong"
+desc: "Spoiler alert it's the snooze button"
 date:   2014-07-12 16:05:21
 banner_photo: "/images/clocks/telechron.jpg"
 ---
