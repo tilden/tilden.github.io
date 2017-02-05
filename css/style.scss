@@ -251,7 +251,7 @@ h1.logo {
   text-decoration: none;
   color: white;
   transition: all 0.2s;
-  padding-right: 20px;
+  padding-right: 30px;
   margin-bottom: 30px;
 
   &:hover {
@@ -415,9 +415,11 @@ h1.logo {
   }
 
   blockquote {
-    border-left: 3px solid;
+    color: $material-grey-300;
+    border-left: 4px solid $material-grey-700;
     margin: 0;
     padding: 1em 2em;
+    font-size: 90%;
 
     p {
       margin: 0;
@@ -480,15 +482,16 @@ h1.logo {
   padding: 0px 15px;
   font-weight: 400;
   font-size: 18px;
-  border-left: 4px solid $material-blue-grey-200;
+  border-left: 4px solid $material-grey-700;
 
   &:before {
     content: 'Contents';
-    font-weight: 400;
     font-size: 14px;
     margin-bottom: 10px;
     display: block;
     color: $material-grey-500;
+    content: 'Contents';
+    text-transform: uppercase;
   }
 
   ul  {
@@ -618,7 +621,7 @@ pre > code {
 .footnotes {
   font-size: 14px;
   word-wrap: break-word;
-  border-top: 1px dashed $material-grey-400;
+  border-top: 1px dashed $material-grey-700;
   margin-top: 2.5em;
   padding-top: 1.5em;
 

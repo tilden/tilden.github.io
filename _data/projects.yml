@@ -11,10 +11,10 @@
 
 - name: "Employee Scheduling App"
   desc: >
-         "What if you could communicate with your employees in real time? WHAT THEN."
+         In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
   url: "/projects/schedule_app"
 
-- name: "Restaurant Management System Redesign"
+- name: "Restaurant Management System"
   desc: >
         Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
         reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
