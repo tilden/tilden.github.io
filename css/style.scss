@@ -417,7 +417,7 @@ h1.logo {
   blockquote {
     color: $material-grey-300;
     border-left: 4px solid $material-grey-700;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 1em 2em;
     font-size: 90%;
 
@@ -436,7 +436,7 @@ h1.logo {
 }
 
 .buttons {
-  margin: 40px auto;
+  margin: 0 auto;
   text-align: center;
 
   a {

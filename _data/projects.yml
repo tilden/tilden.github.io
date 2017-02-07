@@ -15,13 +15,6 @@
   banner_img: "images/banners/schedule_app_banner.jpg"
   url: "/projects/schedule_app"
 
-- name: "Restaurant Management System"
-  desc: >
-        Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
-        reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
-  banner_img: "images/banners/restaurant_management_banner.png"
-  url: "/projects/restaurant_management"
-
 - name: "JGA: Crossroads of Destiny"
   desc: >
         A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and and sell additional knives.
@@ -33,6 +26,14 @@
         Created new branding and a responsive, maintainable website for a local nonprofit organization.
   banner_img: "images/banners/onourown_banner.jpg"
   url: "/projects/onourown"
+
+- name: "Restaurant Management System"
+  desc: >
+        Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
+        reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
+  banner_img: "images/banners/restaurant_management_banner.png"
+  url: "/projects/restaurant_management"
+
 
 # - name: "Pythy: Improving the Introductory Python Programming Experience"
 #   desc: >
