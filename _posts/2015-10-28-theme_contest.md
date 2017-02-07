@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sencha ExtJS Theming Contest - First Place Submission"
-desc: "Of course, the built-in Office 2003 theme is still the best one"
+desc: "Of course, the built-in Office 2003 lookalike theme is still the best one"
 subtitle: "October 28th, 2015"
 date:   2015-10-28 16:00:00
 banner_photo: "/images/posts/theme_contest/post_banner.png"
