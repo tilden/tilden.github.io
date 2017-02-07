@@ -47,7 +47,7 @@ drew in-game **artwork**, wrote a **45-page script**, and **coded the entire gam
   alt="The chef battles two security guards"
 %}
 
-At one point long ago I made my younger brother a game as a Christmas present, starring him as the protagonist. Only taking about 10-15 minutes to play through, it featured a bizarre storyline involving flying basketballs, a J-shaped fortress, and lots of plot holes. For years, I had planned a sequel to the game--one which would finally explain *everything*.
+At one point, long ago, I made my younger brother a game as a Christmas present, starring him as the protagonist. Only taking about 10-15 minutes to play through, it featured a bizarre storyline involving flying basketballs, a J-shaped fortress, and lots of plot holes. For years, I had planned a sequel to the game--one which would finally explain *everything*.
 
 However, years of planning merely resulted in numerous false starts and a huge amount of abstract ideas: I had concepts based on RPGs, platformers, sports games, and beat-em-ups. I had even, at one point, created graphical assets for a 3D version of the game that never made it past the prototype phase. It was clear that in order to start development, I needed to focus and actually design something that could reasonably be implemented. I wrote an outline, stripping the game down the most basic elements: the characters, their motivations, and the overarching framework of the story.
 
@@ -105,9 +105,9 @@ The primary downside to this control scheme is that it lacks discoverability. Ty
 
 ## Conclusion
 
-Ultimately, I was able to finish and release the game, after nearly a decade of being stuck in my own personal [development hell](https://en.wikipedia.org/wiki/Development_hell). The key lesson I learned was ultimately one of project management: always focus on the end goal of a project. What deliverables will I need to make this project into a reality.
+Ultimately, I was able to finish and release the game, after nearly a decade of being stuck in my own personal [development hell](https://en.wikipedia.org/wiki/Development_hell). The key lesson I learned was ultimately one of project management: always focus on the end goal of a project. For every asset you create, ask: how will this fit into the project? Is this really necessary? 
 
-The game, while not a smash hit by any means, at least got several highly-positive Play Store reviews. I particularly enjoyed a [playthrough posted to YouTube](https://www.youtube.com/watch?v=FB8D6A0skS4)! 
+The game, while not a smash hit by any means, at least got several highly-positive Play Store reviews! I particularly enjoyed a [playthrough posted to YouTube](https://www.youtube.com/watch?v=FB8D6A0skS4)! While it wasn't a success like [TimeStyle](/projects/timestyle), it remains my favorite project I've ever created.
 
 {% include img.html
   url="/images/projects/jga/smoothies.jpg" w="640" h="360"
