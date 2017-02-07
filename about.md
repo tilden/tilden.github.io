@@ -5,7 +5,7 @@ title: "About Me"
 permalink: /about/
 is_top_level: true
 section: about
-banner_photo: "/images/leaf.jpg"
+banner_photo: "/images/lizard.jpg"
 top_bar_color: "#35357d"
 top_bar_color2: "#9e5959"
 ---
