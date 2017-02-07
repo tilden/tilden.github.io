@@ -1,14 +1,14 @@
 ---
 layout: post
-banner_photo: "/images/projects/timestyle/timestyle_sky.jpg"
 title: "TimeStyle"
 subtitle: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
 ---
 
+![Photo of TimeStyle running on a watch](/images/projects/timestyle/artsy_photo.jpg)
+
 Wristwatches reflect the wearer's style, and wearables are no different.
 TimeStyle provides a readable and customizable time display, designed to
-blend with the watch's design language. It is among the most popular watch faces for the Pebble smartwatch,
-with nearly 100,000 users!
+blend with the watch's design language. With over 150,000 users and over 9000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
 
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 
@@ -113,13 +113,11 @@ This, however, had nothing to do with my watchface; 24-hour time is an option on
 
 ## Conclusion
 
-![Photo of TimeStyle running on a watch](/images/projects/timestyle/artsy_photo.jpg)
+While Pebble has died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit), the Pebble app store nonetheless continues to function, where TimeStyle has accumulated over 150,000 installs and over 9,000 "hearts"[^scouter], making it the fifth most popular watch face ever made for the Pebble.
 
-As of this writing (June 2016), TimeStyle has accumulated nearly 100,000 installs and over 6,000 "hearts"[^pebblestoremostloved], making it the sixth most popular watch face ever made for the Pebble, and, by far, the *newest* watch face in the top 10.
+These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a *default-looking* face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch, I achieved what I had set out to do: create the "default" digital watch face that I had wished my Pebble came with when I bought it.
 
-These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a *default-looking* face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch with unprecedented customizability, I achieved what I had set out to do: create the default digital watch face that I had wished my Pebble came with when I bought it.
-
-TimeStyle has even been featured (directly or indirectly) in articles about the Pebble watch:
+TimeStyle has been featured in:
 
 {% include img.html
   url="/images/The_Verge_logo.svg"
@@ -133,7 +131,19 @@ TimeStyle has even been featured (directly or indirectly) in articles about the 
 	link="http://gadgets.ndtv.com/wearables/features/new-actions-will-make-your-pebble-simpler-and-smarter-843997"
 %}
 
+{% include img.html
+  url="/images/projects/timestyle/logo_gizmodo.svg"
+  alt="Gizmodo logo" w="200" h="29"
+	link="http://gizmodo.com/the-pebble-2-is-now-the-only-fitness-tracking-smartwatc-1787368019"
+%}
+
+{% include img.html
+  url="/images/projects/timestyle/logo_wareable.png"
+  alt="Gizmodo logo" w="80" h="80"
+	link="https://www.wareable.com/Pebble/pebble-2-review"
+%}
+
 [^pebbledesign]: [Liron Damir: Designing Apps for Pebble](https://www.youtube.com/watch?v=LuiK8ZiPXr4)
 [^originalprototype]: [Github: Early functional prototype source code](https://github.com/tilden/DigitalTimePebbleFace)
-[^pebblestoremostloved]: [Pebble Store: Most Loved Watchfaces](https://apps.getpebble.com/en_US/collection/most-loved/watchfaces/1?dev_settings=true)
 [^swatchtime]: [Wikipedia: Swatch Internet Time](https://en.wikipedia.org/wiki/Swatch_Internet_Time)
+[^scouter]: [It's over 9000!](https://apps.getpebble.com/en_US/collection/most-loved/watchfaces/1?dev_settings=true)

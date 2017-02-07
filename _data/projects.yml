@@ -12,6 +12,7 @@
 - name: "Employee Scheduling App"
   desc: >
          In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "images/banners/schedule_app_banner.jpg"
   url: "/projects/schedule_app"
 
 - name: "Restaurant Management System"
