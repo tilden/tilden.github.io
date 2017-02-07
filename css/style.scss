@@ -291,7 +291,6 @@ h1.logo {
     &::after, &::before {
       content: '';
       position: absolute;
-      right: -50px;
       height: 100%;
       width: 90px;
       transform: skewX(-10deg);
@@ -306,6 +305,7 @@ h1.logo {
     }
 
     &::before {
+      right: -50px;
       background-color: inherit;
     }
   }
