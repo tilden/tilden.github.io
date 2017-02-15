@@ -17,7 +17,7 @@
 
 - name: "JGA: Crossroads of Destiny"
   desc: >
-        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and and sell additional knives.
+        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
   banner_img: "images/banners/jga_banner.jpg"
   url: "/projects/jga"
 
@@ -33,14 +33,7 @@
         reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
   banner_img: "images/banners/restaurant_management_banner.png"
   url: "/projects/restaurant_management"
-
-
-# - name: "Pythy: Improving the Introductory Python Programming Experience"
-#   desc: >
-#         What if intro computer science students didn't have to install any software, and could start programming right away?
-#   banner_img: "images/banners/pythy_banner.png"
-#   url: "/projects/pythy"
-
+  
 - name: "Drive-Thru Monitor"
   desc: >
         Conveys the status of a restaurant's drive-thru in a highly visual way.
@@ -50,7 +43,11 @@
 
 
 # Currently hidden, but these may return in a future update
-
+# - name: "Pythy: Improving the Introductory Python Programming Experience"
+#   desc: >
+#         What if intro computer science students didn't have to install any software, and could start programming right away?
+#   banner_img: "images/banners/pythy_banner.png"
+#   url: "/projects/pythy"
 
 # - name: "WeatherClock"
 #   desc: "With this webapp, any small internet-enabled device can become a wall-mounted clock displaying the weather."
