@@ -1,4 +1,11 @@
 
+
+- name: "JGA: Crossroads of Destiny"
+  desc: >
+        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
+  banner_img: "images/banners/jga_banner.jpg"
+  url: "/projects/jga"
+
 - name: "TimeStyle"
   desc: >
         The fifth most popular watchface ever made for the Pebble, with over 150,000 users.
@@ -14,12 +21,6 @@
          In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
   banner_img: "images/banners/schedule_app_banner.jpg"
   url: "/projects/schedule_app"
-
-- name: "JGA: Crossroads of Destiny"
-  desc: >
-        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
-  banner_img: "images/banners/jga_banner.jpg"
-  url: "/projects/jga"
 
 - name: "On Our Own Roanoke Valley"
   desc: >
