@@ -15,7 +15,7 @@
   banner_img: "images/banners/schedule_app_banner.jpg"
   url: "/projects/schedule_app"
   
-  - name: "JGA: Crossroads of Destiny"
+- name: "JGA: Crossroads of Destiny"
   desc: >
         A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
   banner_img: "images/banners/jga_banner.jpg"
