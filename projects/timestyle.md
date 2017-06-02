@@ -8,7 +8,7 @@ subtitle: "A stylish, modern watchface for the Pebble watch inspired by the visu
 
 Wristwatches reflect the wearer's style, and wearables are no different.
 TimeStyle provides a readable and customizable time display, designed to
-blend with the watch's design language. With over 150,000 users and over 9000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
+blend with the watch's design language. With over 160,000 users and nearly 10,000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
 
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 

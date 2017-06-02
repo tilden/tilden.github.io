@@ -1,7 +1,7 @@
 
 - name: "TimeStyle"
   desc: >
-        The fifth most popular watchface ever made for the Pebble, with over 150,000 users.
+        The fifth most popular watchface ever made for the Pebble, with over 160,000 users.
   banner_img: "images/banners/timestyle_banner.png"
   tags:
     - Prototyping
@@ -46,7 +46,7 @@
 # - name: "Pythy: Improving the Introductory Python Programming Experience"
 #   desc: >
 #         What if intro computer science students didn't have to install any software, and could start programming right away?
-#   banner_img: "images/banners/pythy_banner.png"
+#   banner_Fimg: "images/banners/pythy_banner.png"
 #   url: "/projects/pythy"
 
 # - name: "WeatherClock"
