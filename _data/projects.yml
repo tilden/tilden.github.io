@@ -1,7 +1,7 @@
 
 - name: "TimeStyle"
   desc: >
-        The fifth most popular watchface ever made for the Pebble, with over 160,000 users.
+        The fifth most popular watchface ever made for the Pebble, with over 180,000 users.
   banner_img: "images/banners/timestyle_banner.png"
   tags:
     - Prototyping

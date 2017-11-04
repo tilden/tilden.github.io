@@ -113,7 +113,7 @@ This, however, had nothing to do with my watchface; 24-hour time is an option on
 
 ## Conclusion
 
-While Pebble has died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit), the Pebble app store nonetheless continues to function, where TimeStyle has accumulated over 150,000 installs and over 9,000 "hearts"[^scouter], making it the fifth most popular watch face ever made for the Pebble.
+While Pebble has died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit), the Pebble app store nonetheless continues to function, where TimeStyle has accumulated over 180,000 installs and over 10,000 "hearts"[^hearts], making it the fifth most popular watch face ever made for the Pebble.
 
 These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a *default-looking* face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch, I achieved what I had set out to do: create the "default" digital watch face that I had wished my Pebble came with when I bought it.
 
@@ -146,4 +146,4 @@ TimeStyle has been featured in:
 [^pebbledesign]: [Liron Damir: Designing Apps for Pebble](https://www.youtube.com/watch?v=LuiK8ZiPXr4)
 [^originalprototype]: [Github: Early functional prototype source code](https://github.com/tilden/DigitalTimePebbleFace)
 [^swatchtime]: [Wikipedia: Swatch Internet Time](https://en.wikipedia.org/wiki/Swatch_Internet_Time)
-[^scouter]: [It's over 9000!](https://apps.getpebble.com/en_US/collection/most-loved/watchfaces/1?dev_settings=true)
+[^hearts]: [Pebble App Store](https://apps.getpebble.com/en_US/collection/most-loved/watchfaces/1?dev_settings=true)
