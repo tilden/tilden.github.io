@@ -1,43 +1,70 @@
-
 - name: "TimeStyle"
   desc: >
-        The fifth most popular watchface ever made for the Pebble, with over 180,000 users.
-  banner_img: "images/banners/timestyle_banner.png"
+    Among the most popular watchfaces ever created for the Pebble, with over 180,000 installs.
+  banner_img: "timestyle_banner.png"
   tags:
-    - Prototyping
-    - Interaction Design
-    - Wearable
+    - Smartwatch Face
+    - Built with C
+    - Open Source
+  icon: watch
+  extra_info: >
+    i sure like <b>watches</b> lol
   url: "/projects/timestyle"
 
 - name: "Employee Scheduling App"
   desc: >
-         In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
-  banner_img: "images/banners/schedule_app_banner.jpg"
+    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Mobile App
+   - Wireframes
+  icon: watch
+  icon: smartphone
   url: "/projects/schedule_app"
   
 - name: "JGA: Crossroads of Destiny"
+  tags:
+    - Greatest game ever made
+    - Built with Unity and C#
+    - Open Source
   desc: >
-        A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
-  banner_img: "images/banners/jga_banner.jpg"
+    A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
+  banner_img: "jga_banner.jpg"
+  icon: videogame_asset
   url: "/projects/jga"
 
 - name: "On Our Own Roanoke Valley"
+  tags:
+    - Responsive website
+    - Built with HTML and CSS
+    - Teamwork
   desc: >
-        Created new branding and a responsive, maintainable website for a local nonprofit organization.
-  banner_img: "images/banners/onourown_banner.jpg"
+    Created new branding and a responsive, maintainable website for a local nonprofit organization.
+  banner_img: "onourown_banner.jpg"
+  icon: devices
   url: "/projects/onourown"
 
 - name: "Restaurant Management System"
+  tags:
+    - Web Application
+    - Wireframes & User Research
+    - Built with ExtJS, HTML, CSS, and JS
   desc: >
-        Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
-        reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
-  banner_img: "images/banners/restaurant_management_banner.png"
+    Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
+    reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
+  banner_img: "restaurant_management_banner.png"
+  icon: store
   url: "/projects/restaurant_management"
   
 - name: "Drive-Thru Monitor"
+  tags:
+    - 10-foot UI
+    - Wireframes & User Research
+    - Prototype built with CSS animation
   desc: >
-        Conveys the status of a restaurant's drive-thru in a highly visual way.
-  banner_img: "images/banners/dt_banner.png"
+    Conveys the status of a restaurant's drive-thru in a highly visual way.
+  banner_img: "dt_banner.png"
+  icon: directions_car
   url: "/projects/drivethru"
 
 
@@ -46,15 +73,15 @@
 # - name: "Pythy: Improving the Introductory Python Programming Experience"
 #   desc: >
 #         What if intro computer science students didn't have to install any software, and could start programming right away?
-#   banner_Fimg: "images/banners/pythy_banner.png"
+#   banner_Fimg: "pythy_banner.png"
 #   url: "/projects/pythy"
 
 # - name: "WeatherClock"
 #   desc: "With this webapp, any small internet-enabled device can become a wall-mounted clock displaying the weather."
-#   banner_img: "images/banners/weatherclock_banner.jpg"
+#   banner_img: "weatherclock_banner.jpg"
 #   url: "/projects/weatherclock"
 
 # - name: "The New Adventures of Scrapinold Dooington"
 #   desc: "An open-source, responsive webcomic site built using Github Pages and Jekyll."
-#   banner_img: "images/banners/scrapinold_banner.jpg"
+#   banner_img: "scrapinold_banner.jpg"
 #   url: "/projects/scrapinold"

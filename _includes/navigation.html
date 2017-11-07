@@ -4,7 +4,7 @@
   {% assign nav_extra_cls = 'leaf-level' %}
 {% endif %}
 
-<div class="nav {{nav_extra_cls}}" {% if page.top_bar_color %} style="background: linear-gradient(to right, {{page.top_bar_color}}, {{page.top_bar_color2}}) " {% endif %}>
+<div class="nav {{nav_extra_cls}}">
   {% if page.banner_photo %}
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   {% endif %}

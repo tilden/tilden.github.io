@@ -5,27 +5,32 @@ is_top_level: true
 browser_title: "Dan Tilden: UX Designer"
 title: "Dan Tilden"
 subtitle: >
-          I'm a multidisciplinary UX designer with an eye for clean and unobtrusive design.
+          I’m a UX designer/developer with an eye for clean and unobtrusive design.
 top_bar_color: "#35357d"
 top_bar_color2: "#9e5959"
 ---
 
 
 <div class="cards central-col">
-  <h2>Featured Projects</h2>
+  <!-- <h2>Why not browse this selection of projects with needlessly long write-ups?</h2> -->
 	{% for project in site.data.projects %}
-	<a id="project{{forloop.index}}" class="card project-card" href="{{ project.url }}">
-		<div class="thumb" style="background-image: url({{ project.banner_img }})"></div>
+	<a id="project{{forloop.index}}"
+	   class="card project-card"
+	   href="{{ project.url }}"
+	   style="background-image: url(images/banners/blur/{{ project.banner_img }});">
+		<ul class="tags">
+		{% for tag in project.tags %}
+			<li>{{tag}}</li>
+		{% endfor %}
+		</ul>
+		<h3>{{ project.name }}</h3>
+		<div class="project_icon"><i class="material-icons">{{ project.icon }}</i></div>		
 		<div class="desc">
-			<h3>{{ project.name }}</h3>
-			<p>
 			{{ project.desc }}
-			</p>
-			<!--<ul class="tags">
-			{% for tag in project.tags %}
-				<li>{{tag}}</li>
-			{% endfor %}
-			</ul>-->
+		</div>
+		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
+		<div class="extra_info">
+			{{ project.extra_info }}
 		</div>
 	</a>
 	{% endfor %}

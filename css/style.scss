@@ -33,6 +33,19 @@ body {
   background: $material-grey-900;
   text-align: center;
   margin: 192px 0 150px 0;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100%;
+    background-color: black;
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 }
 
 h1, h2, h3 {
@@ -58,20 +71,9 @@ a:hover {
   z-index: 1;
   position: fixed;
   height: 192px;
-  border-bottom: 11px transparent solid;
+  border-bottom: 2px $material-grey-700 solid;
   transition: background-color 0.5s;
-  background: $material-indigo-600 linear-gradient(to right, rgb(53, 53, 125), rgb(158, 89, 89));
-
-  &::after {
-    position: absolute;
-    bottom: -11px;
-    top: 0;
-    content: "";
-    left: -5px;
-    right: -5px;
-    pointer-events: none;
-    @include shadow-elevation-4dp;
-  }
+  background: $material-grey-900;
 
   .nav-lower {
     pointer-events: none;
@@ -85,6 +87,7 @@ a:hover {
     height: 108px;
     position: absolute;
     bottom: -11px;
+    padding-left: 140px;
     left: 0;
     right: 0;
 
@@ -170,20 +173,10 @@ h1.logo {
   }
 }
 
-.central-col {
-  max-width: 1440px;
-  min-width: 780px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.cards {
-  padding-top: 30px;
-}
-
 .nav-upper.central-col {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 140px;
     display: -webkit-flex;
     display: flex;
 }
@@ -225,71 +218,92 @@ h1.logo {
 
 /* landing page project cards / post cards */
 
-.cards {
-
-  > h2 {
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $material-grey-600;
-    font-size: 14px;
-    padding: 0 0 13px 0;
-    margin-top: -3px;
-  }
-}
-
-.card {
-  border-radius: 2px;
-  background: $material-grey-800;
-  @include shadow-elevation-2dp;
-}
-
 .project-card {
-  height: 250px;
-  text-align: left;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  text-decoration: none;
   color: white;
-  transition: all 0.2s;
-  padding-right: 30px;
-  margin-bottom: 30px;
+  text-align: left;
+  height: 600px;
+  display: block;
+  background-size: cover;
+  background-color: rgba(0,0,0,.8);
+  padding: 20px 0 0 140px;
+  position: relative;
+
+  .scrim {
+    background-color: red;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 
   &:hover {
-    @include shadow-elevation-4dp;
     text-decoration: none;
+  }
 
-    .thumb {
-      opacity: 1;
-      background-position-x: 0;
+  h3 {
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
 
+  .tags {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .5px;
+    opacity: 0.4;
+    margin: 0;
 
-      &::after {
-        opacity: 0.3;
+    li {
+      display: inline;
+      &:not(:first-child)::before {
+        content: ' // ';
+        padding: 0 5px;
       }
-
     }
   }
 
-  &:active {
-    @include shadow-elevation-6dp;
-    background-color: mix($material-indigo-a400, $material-grey-800, 30%);
+  .project_icon {
+    position: absolute;
+    left: 32px;
+    margin-top: -20px;
+    z-index: 3;
+    right: 0;
+    opacity: 0.5;
+    i {
+      font-size: 36px;
+    }
 
+    &::before {
+      content: '';
+      display: block;
+      top: 20px;
+      position: relative;
+      left: 44px;
+      width: calc(100% - 44px);
+      height: 4px;
+      background: transparent url('./images/dotted_line.svg') repeat-x 3px center;
+    }
+  }
+
+  .desc {
+    opacity: 0.7;
+    margin: 1.5em 0;
   }
 
   .thumb {
     background-size: cover;
     background-position-x: -3px;
-    flex: 10;
-    -webkit-flex: 10;
-    height: 100%;
+    height: 250px;
+    width: 80%;
     border-radius: 2px 0 0 2px;
     position: relative;
     background-color: inherit;
     transition: background-position 0.2s;
     opacity: 0.9;
+    margin-left: -40px;
 
     &::after, &::before {
       content: '';
@@ -313,39 +327,13 @@ h1.logo {
     }
   }
 
-  .desc {
-    -webkit-flex: 9;
-    flex: 9;
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-
-  h3 {
-    font-size: 26px;
-    line-height: 1;
-    margin: 0 0 22px;
-    color: inherit;
-  }
 
   p {
     font-size: 16px;
     margin: 0;
     color: inherit;
     opacity: $material-light-secondary-opacity;
-    transition: all 0.2s;
-  }
-
-  br {
-    line-height: 200%;
-  }
-
-  a {
-    margin: 10px 20px;
-    font-size: 16px;
-  }
+    }
 
 }
 
