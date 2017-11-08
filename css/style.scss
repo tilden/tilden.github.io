@@ -69,20 +69,22 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 10;
-  height: 192px;
+  height: 212px;
   transition: background-color 0.5s;
   background: $material-grey-900;
+  position: relative;
 
 
   &::after {
     position: absolute;
     bottom: 0;
-    top: 0;
+    height: 2px;
     content: "";
     left: -5px;
     right: -5px;
     pointer-events: none;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    opacity: 0.2;
   }
 
   .nav-lower {
@@ -200,11 +202,7 @@ h1.logo {
 }
 
 .nav-upper.central-col {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 140px;
-    display: -webkit-flex;
-    display: flex;
+  text-align: right;
 }
 
 .nav-tabs {
@@ -212,8 +210,7 @@ h1.logo {
   font-size: 18px;
   padding: 0;
   margin: 0 -20px 0 0;
-  display: -webkit-flex;
-  display: flex;
+  display: inline-flex;
 
   li {
     line-height: 64px;
@@ -247,7 +244,10 @@ h1.logo {
 .project-card {
   color: white;
   text-align: left;
-  height: 600px;
+  // height: 60vw;
+  // min-height: 600px;
+  // max-height: 50vh;
+  height: auto;
   display: block;
   background-size: cover;
   background-color: black;
@@ -347,36 +347,27 @@ h1.logo {
   .thumb {
     background-size: cover;
     background-position-x: -3px;
-    height: 250px;
-    width: 80%;
+    height: 30vw;
+    max-height: 25vh;
+    width: 100%;
     border-radius: 2px 0 0 2px;
-    position: relative;
     background-color: inherit;
     transition: background-position 0.2s;
-    opacity: 0.9;
     margin-bottom: 30px;
-    margin-left: -40px;
+    border-top-left-radius: 00px;
+    border-bottom-left-radius: 50px;
+    border: 0px solid rgba(255,255,255, .5);
+    // margin-left: -40px;
 
-    &::after, &::before {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 90px;
-      transform: skewX(-10deg);
-    }
-
-    &::after {
-      background-image: linear-gradient(to right, #3d5afe, transparent);
-      transition: opacity 0.2s;
-      width: 200px;
-      right: -160px;
-      opacity: 0;
-    }
-
-    &::before {
-      right: -50px;
-      background-color: inherit;
-    }
+    // &::after  {
+    //   content: '';
+    //   background: rgba(0, 0, 0, 0.288);
+    //   position: absolute;
+    //   top: 0;
+    //   left: 100%;
+    //   bottom: 0;
+    //   right: -100vw;
+    // }
   }
 
 
