@@ -244,9 +244,9 @@ h1.logo {
 .project-card {
   color: white;
   text-align: left;
-  // height: 60vw;
-  // min-height: 600px;
-  // max-height: 50vh;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
   height: auto;
   display: block;
   background-size: cover;
@@ -271,6 +271,16 @@ h1.logo {
     bottom: 0;
     opacity: 0.8;
     transition: inherit;
+  }
+
+  blockquote p {
+    font-weight: 300;
+    font-size: 22px;
+    opacity: .9;
+
+    &:last-of-type {
+      font-size:14px;
+    }
   }
 
   h3, div {
@@ -306,6 +316,19 @@ h1.logo {
     }
   }
 
+  h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    // margin: 0;
+    opacity: .5;
+    letter-spacing: 1px;
+  }
+
+  .extra_info {
+    padding-bottom: 35px;
+  }
+
   &:hover .project_icon {
     opacity: 1;
   }
@@ -335,9 +358,19 @@ h1.logo {
     }
   }
 
+  .image_row {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 40px;
+    }
+  }
+
   .desc {
     opacity: 0.7;
     margin: 1.5em 0;
+    max-width: 80%;
   }
 
   &:hover .thumb {
@@ -448,24 +481,26 @@ h1.logo {
     }
   }
 
-  blockquote {
-    color: $material-grey-300;
-    border-left: 4px solid $material-grey-700;
-    margin: 0 0 1em 0;
-    padding: 1em 2em;
-    font-size: 90%;
 
-    p {
-      margin: 0;
-    }
+}
 
-    a {
-      opacity: 0.7;
-    }
+blockquote {
+  color: $material-grey-300;
+  border-left: 4px solid rgba(255,255,255,0.2);
+  margin: 0 0 1em 0;
+  padding: 1em 2em;
+  font-size: 90%;
 
-    & + blockquote {
-      padding-top: 0;
-    }
+  p {
+    margin: 0;
+  }
+
+  a, p:last-of-type {
+    opacity: 0.7;
+  }
+
+  & + blockquote {
+    padding-top: 0;
   }
 }
 
