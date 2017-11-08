@@ -3,11 +3,11 @@
 
   {% include head.html %}
 
-  <!-- {% if page.section == "blog" %}
-    {% assign body_class = "blog" %}
-  {% endif %} -->
+  {% if page.is_top_level %}
+    {% assign body_class = "top-level" %}
+  {% endif %}
 
-  <body class="section-{{page.section}}">
+  <body class="{{body_class}} section-{{page.section}}">
 
   {% include navigation.html %}
 

@@ -3,31 +3,31 @@
 {% else %}
   {% assign nav_extra_cls = 'leaf-level' %}
 {% endif %}
+<div class="nav-icon">
+  {% if page.is_top_level %}
 
+    <a href="/{{home_dest}}" class="logo" >
+      <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
+    </a>
+
+    {% else %}
+
+    {% if page.is_post %}
+      {% assign home_dest = 'blog' %}
+    {% endif %}
+
+    <a href="/{{home_dest}}" class="logo" >
+      <i class="material-icons">arrow_back</i>
+
+      <span>{{page.title}}<span>
+    </a>
+    {% endif %}
+</div>
 <div class="nav {{nav_extra_cls}}">
   {% if page.banner_photo %}
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   {% endif %}
-  <div class="nav-icon">
-    {% if page.is_top_level %}
   
-      <a href="/{{home_dest}}" class="logo" >
-        <img src="/images/logo.svg" width="55" height="55" alt="logo" class="logo" data-no-retina />
-      </a>
-  
-      {% else %}
-  
-      {% if page.is_post %}
-        {% assign home_dest = 'blog' %}
-      {% endif %}
-  
-      <a href="/{{home_dest}}" class="logo" >
-        <i class="material-icons">arrow_back</i>
-  
-        <span>{{page.title}}<span>
-      </a>
-      {% endif %}
-  </div>
   <div class="nav-upper central-col">
     <ul class="nav-tabs">
       <li>

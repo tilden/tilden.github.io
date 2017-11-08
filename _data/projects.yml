@@ -1,6 +1,6 @@
 - name: "TimeStyle"
   desc: >
-    Among the most popular watchfaces ever created for the Pebble, with over 180,000 installs.
+    One of the most popular watchfaces ever created for the Pebble.
   banner_img: "timestyle_banner.png"
   tags:
     - Smartwatch Face
@@ -15,26 +15,8 @@
     <img src="/images/projects/timestyle/logo_gizmodo.svg" alt="Gizmodo logo" title="" width="200" height="29" />
     <img src="/images/projects/timestyle/logo_wareable.png" alt="Wareable logo" title="" width="80" height="80" />
     </div>
-  action_buttons:
-    - text: Download from the Pebble Store
-      icon: 'code'
-      link: 'example.com'
-    - text: View on Github
-      icon: 'code'
-      link: 'example.com'
-
   url: "/projects/timestyle"
 
-- name: "Employee Scheduling App"
-  desc: >
-    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
-  banner_img: "schedule_app_banner.jpg"
-  tags:
-   - Mobile App
-   - Wireframes
-  icon: watch
-  icon: smartphone
-  url: "/projects/schedule_app"
   
 - name: "JGA: Crossroads of Destiny"
   tags:
@@ -53,10 +35,20 @@
     <p>&ldquo;This is the best RPG story I had ever experienced&rdquo;</p>
     <p>―CrickySoupDoupLP, YouTube Let's Play</p>
     </blockquote>
-
   icon: videogame_asset
   url: "/projects/jga"
 
+- name: "Employee Scheduling App"
+  desc: >
+    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Mobile App
+   - Wireframes
+  icon: watch
+  icon: smartphone
+  url: "/projects/schedule_app"
+  
 - name: "On Our Own Roanoke Valley"
   tags:
     - Responsive website
@@ -87,6 +79,7 @@
     - Prototype built with CSS animation
   desc: >
     Conveys the status of a restaurant's drive-thru in a highly visual way.
+    Deployed at over 6,000 Burger King locations worldwide.
   banner_img: "dt_banner.png"
   icon: directions_car
   url: "/projects/drivethru"
