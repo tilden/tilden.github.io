@@ -230,6 +230,12 @@ h1.logo {
   padding: 30px 0 0 140px;
   position: relative;
   // box-shadow: inset rgba(255,255,255,1) 0px -5px 0px
+  text-decoration: none;
+  transition: all .2s linear;
+
+  &:hover .bg_overlay {
+    opacity: 0.7;
+  }
 
   .bg_overlay {
     background-color: black;
@@ -239,7 +245,8 @@ h1.logo {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.7;
+    opacity: 0.8;
+    transition: inherit;
   }
 
   h3, div {
@@ -275,6 +282,10 @@ h1.logo {
     }
   }
 
+  &:hover .project_icon {
+    opacity: 1;
+  }
+
   .project_icon {
     position: absolute;
     left: 32px;
@@ -285,6 +296,7 @@ h1.logo {
     i {
       font-size: 36px;
     }
+    transition: inherit;
 
     &::before {
       content: '';
@@ -295,12 +307,17 @@ h1.logo {
       width: calc(100% - 44px);
       height: 4px;
       background: transparent url('./images/dotted_line.svg') repeat-x 3px center;
+      transition: inherit;
     }
   }
 
   .desc {
     opacity: 0.7;
     margin: 1.5em 0;
+  }
+
+  &:hover .thumb {
+    opacity: 1;
   }
 
   .thumb {

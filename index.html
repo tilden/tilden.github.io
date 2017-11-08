@@ -14,7 +14,7 @@ top_bar_color2: "#9e5959"
 <div class="cards central-col">
   <!-- <h2>Why not browse this selection of projects with needlessly long write-ups?</h2> -->
 	{% for project in site.data.projects %}
-	<div id="project{{forloop.index}}"
+	<a id="project{{forloop.index}}"
 	   class="card project-card"
 	   href="{{ project.url }}"
 	   style="background-image: url(images/banners/blur/{{ project.banner_img }});">
@@ -30,24 +30,10 @@ top_bar_color2: "#9e5959"
 			{{ project.desc }}
 		</div>
 		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
-		<div class="extra_info">
+		<!-- <div class="extra_info">
 			{{ project.extra_info }}
-		</div>
-		<div class="buttons">
-			<a href="{{ project.url }}">
-				<i class="material-icons">code</i>
-				Learn more
-			</a>
-			<a href="https://apps.getpebble.com/en_US/application/55a5c024f4510f794c000071">
-			  <i class="material-icons">watch</i>
-			  Download from Pebble
-			</a>
-			<a href="https://github.com/freakified/TimeStylePebble">
-			  <i class="material-icons">code</i>
-			  View Source
-			</a>
-		</div>
-	</div>
+		</div> -->
+	</a>
 	{% endfor %}
 
 </div>
