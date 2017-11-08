@@ -32,7 +32,7 @@ body {
   color: white;
   background: $material-grey-900;
   text-align: center;
-  margin: 192px 0 150px 0;
+  margin: 212px 0 150px 0;
 
   &::before {
     content: '';
@@ -41,6 +41,8 @@ body {
     height: 100%;
     background-color: black;
     box-shadow: 0 0 20px black;
+    opacity: 0.9;
+    background-blend-mode: multiply;
     position: absolute;
     top: 0;
     left: 0;
@@ -86,7 +88,7 @@ a:hover {
     text-align: left;
     height: 108px;
     position: absolute;
-    bottom: -11px;
+    bottom: 10px;
     padding-left: 140px;
     left: 0;
     right: 0;
@@ -224,16 +226,24 @@ h1.logo {
   height: 600px;
   display: block;
   background-size: cover;
-  background-color: rgba(0,0,0,.8);
-  padding: 20px 0 0 140px;
+  background-color: black;
+  padding: 30px 0 0 140px;
   position: relative;
+  // box-shadow: inset rgba(255,255,255,1) 0px -5px 0px
 
-  .scrim {
-    background-color: red;
+  .bg_overlay {
+    background-color: black;
     content: '';
     position: absolute;
-    height: 100%;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+  }
+
+  h3, div {
+    position: relative;
   }
 
   &:hover {
@@ -303,6 +313,7 @@ h1.logo {
     background-color: inherit;
     transition: background-position 0.2s;
     opacity: 0.9;
+    margin-bottom: 30px;
     margin-left: -40px;
 
     &::after, &::before {
@@ -428,30 +439,35 @@ h1.logo {
 
 .buttons {
   margin: 0 auto;
-  text-align: center;
 
   a {
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     color: white;
-    background-color: $material-indigo-500;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
     padding: 13.5px 28px;
     margin: 0 5px 20px;
-    @include shadow-elevation-2dp;
-    transition: all 0.1s;
+    transition: all 0.2s linear;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 1px;
+    background-image: radial-gradient(ellipse farthest-side at center bottom, rgba(255, 255, 255, 0.178), rgba(255,255,255,0) );
+    background-position-y: 50px;    
+    background-repeat: no-repeat;
 
     &:hover {
-      @include shadow-elevation-4dp;
-      background-color: $material-indigo-a400;
+      //background-color: rgba(255, 123, 0, 0.21);
+      background-position-y: 10px;  
+      //border-color: rgba(233, 66, 0, 0.22);
+      border-color: rgba(255, 255, 255, 0.22);
+
     }
 
     &:active {
-      background-color: $material-indigo-700;
-      @include shadow-elevation-6dp;
+      background-color: transparentize($material-indigo-700, .5);
     }
 
     &:last-child {

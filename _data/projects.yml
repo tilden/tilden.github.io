@@ -9,6 +9,14 @@
   icon: watch
   extra_info: >
     i sure like <b>watches</b> lol
+  action_buttons:
+    - text: Download from the Pebble Store
+      icon: 'code'
+      link: 'example.com'
+    - text: View on Github
+      icon: 'code'
+      link: 'example.com'
+
   url: "/projects/timestyle"
 
 - name: "Employee Scheduling App"
