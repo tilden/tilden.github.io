@@ -3,35 +3,6 @@
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="/scripts/retina.min.js"></script>
 
-<script>
-	// nav bar resizer
-	var navBar = $('.nav');
-	var upperNav = $('.nav-upper');
-	var lowerNav = $('.nav-lower');
-	var bannerImage = $('.nav .banner-image');
-	var toolbarTitle = $('.nav a.logo span');
-	var fullHeight = 212;
-	var condensedHeight = 64;
-	var heightDiff = fullHeight - condensedHeight;
-
-	function adjustNavBar() {
-		var scrollDistance = $(document).scrollTop();
-    var yRatio = Math.min(1, scrollDistance / heightDiff);
-
-		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
-		upperNav.css('padding-top', (1 - yRatio) * 20);
-		bannerImage.css('opacity', 1 - yRatio);
-		lowerNav.css('opacity', 1 - yRatio * 3);
-
-		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
-	}
-
-	$('document').ready(function() {
-		adjustNavBar();
-		setInterval(adjustNavBar, 10);
-	});
-</script>
-
 <script type="text/javascript">
 	$(document).ready(function () {
 		// simple email encoder; we'll just hope spambots can't parse JS...
