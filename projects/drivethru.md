@@ -1,6 +1,6 @@
 ---
 layout: post
-banner_photo: "/images/projects/drivethru/drivethru_sky.png"
+#banner_photo: "/images/projects/drivethru/drivethru_sky.png"
 title: "Drive-Thru Monitor"
 subtitle: "The Drive-Thru monitor product conveys the status of a restaurant's drive-thru in a highly visual way."
 ---

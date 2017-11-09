@@ -4,9 +4,11 @@ title:  "Sencha ExtJS Theming Contest - First Place Submission"
 desc: "Of course, the built-in Office 2003 lookalike theme is still the best one"
 subtitle: "October 28th, 2015"
 date:   2015-10-28 16:00:00
-banner_photo: "/images/posts/theme_contest/post_banner.png"
+banner_photo: "theme-contest-banner.png"
+icon: "new releases"
+icon: "important devices"
+icon: "stars"
 ---
-
 
 
 **Sencha ExtJS** is a Javascript web-application framework, like many others that are currently popular, such as [Angular](https://angularjs.org/), [Backbone](http://backbonejs.org/), and [Ember](http://emberjs.com/). However, a key factor that makes ExtJS unusual is its age---ExtJS predates all of those frameworks by at least two years. Perhaps more impressively, ExtJS 1.0 shipped with Internet Explorer 6 compatibility, a browser that came out in _2001_[^ie6_wiki]. Angular, the next-oldest framework, required IE8[^angular_ie], a browser which, while still terrible, was much more capable[^ie_6_7_8].

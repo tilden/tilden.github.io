@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Employee Scheduling App"
+#title: "Employee Scheduling App"
 subtitle: "In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?"
 ---
 

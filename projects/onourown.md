@@ -1,6 +1,6 @@
 ---
 layout: post
-banner_photo: "/images/projects/onourown/onourown_sky.jpg"
+#banner_photo: "/images/projects/onourown/onourown_sky.jpg"
 title: "On Our Own Roanoke Valley"
 subtitle: "Our team created new branding and a responsive, maintainable website for a local nonprofit organization."
 ---
