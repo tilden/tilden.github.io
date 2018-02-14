@@ -298,6 +298,28 @@ h1.logo {
 
 }
 
+// alternate color schemes for glass elements
+@mixin addGlassColor($classname, $color) {
+  .glass_effect.#{$classname} {
+    .color_hot_track {
+      background-image: radial-gradient(ellipse closest-side,
+                        transparentize(white, 0),
+                        transparentize($color, 0),
+                        transparentize($color, 1));
+    }
+    
+    &:hover {
+      background-color: darken($color, 20);
+    }
+  }
+}
+
+@include addGlassColor("green", $material-green-700);
+@include addGlassColor("blue", $material-blue-700);
+@include addGlassColor("red", $material-red-800);
+@include addGlassColor("teal", $material-teal-600);
+@include addGlassColor("light-green", $material-light-green-700);
+
 .project-card {
   min-height: 300px;
   perspective: 10px;

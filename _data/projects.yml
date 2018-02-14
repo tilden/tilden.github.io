@@ -16,6 +16,7 @@
     <img src="/images/projects/timestyle/logo_wareable.png" alt="Wareable logo" title="" width="80" height="80" />
     </div>
   url: "/projects/timestyle"
+  hover_color: "amber"
 
   
 - name: "JGA: Crossroads of Destiny"
@@ -38,6 +39,7 @@
     </blockquote>
   icon: videogame_asset
   url: "/projects/jga"
+  hover_color: "green"
 
 - name: "Employee Scheduling App"
   desc: >
@@ -49,6 +51,7 @@
   icon: watch
   icon: smartphone
   url: "/projects/schedule_app"
+  hover_color: "teal"
   
 - name: "On Our Own Roanoke Valley"
   tags:
@@ -60,6 +63,7 @@
   banner_img: "onourown_banner.jpg"
   icon: devices
   url: "/projects/onourown"
+  hover_color: "blue"
 
 - name: "Restaurant Management System"
   tags:
@@ -72,6 +76,7 @@
   banner_img: "restaurant_management_banner.png"
   icon: store
   url: "/projects/restaurant_management"
+  hover_color: "red"
   
 - name: "Drive-Thru Monitor"
   tags:
@@ -84,6 +89,7 @@
   banner_img: "dt_banner.png"
   icon: directions_car
   url: "/projects/drivethru"
+  hover_color: "light-green"
 
 
 
