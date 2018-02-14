@@ -247,6 +247,7 @@ h1.logo {
   transition: all 0.1s linear;
   border-radius: 2px;
   background-color: $material-grey-800;
+  overflow: hidden;
 
   // semitransparent inner border for maximum shine
   &::before {
@@ -265,10 +266,10 @@ h1.logo {
   .color_hot_track {
     position: absolute;
     transition: transform 0.1s linear, opacity .5s linear;
-    top: 0;
+    top: 10%;
     left: 0;
     width: 200%;
-    height: 300%;
+    height: 200%;
     z-index: -2;
     opacity: 0;
     background-image: radial-gradient(ellipse closest-side,

@@ -17,7 +17,7 @@ top_bar_color2: "#9e5959"
 %}
 
 <div class="buttons">
-  <a href="#" id="email_link">
+  <a href="#" id="email_link" class="glass_effect">
     <i class="material-icons">email</i>
     Contact via email
   </a>

@@ -27,47 +27,34 @@
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
 	}
 
-	$('document').ready(function() {
-		adjustNavBar();
-		setInterval(adjustNavBar, 10);
-		
-		offset = $('#project1').offset();
-		offset.left += $('#color_hot_track1').width() / 2;
-		offset.top += $('#color_hot_track1').height() / 2;
-		$('#project1').mousemove(recordMousePosition);
-		setInterval(doColorHotTrack, 100);
-	});
+	adjustNavBar();
+	setInterval(adjustNavBar, 10);
 </script>
 
-<!-- Aero Glass Style Buttons (Thanks Windows 7) -->
+<!-- "Aero Glass" style buttons (thanks Windows 7) -->
 <script type="text/javascript">
-	// color hot track nonsense
 	var mouseX;
 	var mouseY = 20;
-	var offsetX;
-
-	function recalculateOffsets(e) {
-		offsetX = $('#project1').offset().left;
-	}
+	var currentEl;
 
 	function recordMousePosition(e) {
-		mouseX = e.pageX - offsetX;
+		mouseX = e.pageX;
+		currentEl = e.currentTarget;
 	}
 
 	function doColorHotTrack() {
-		$('#color_hot_track1').css('transform', 'translate3d(' + mouseX + 'px,' + mouseY + 'px, 0)');
+		if(currentEl) {
+			var target = $(currentEl);
+			let offsetX = mouseX - (target.offset().left + target.width());
+			let offsetY = 0;
+			target.find(".color_hot_track").css('transform', 'translate3d(' + offsetX + 'px,' + offsetY + 'px, 0)');
+		}
 	}
 
-	$(window).resize(recalculateOffsets);
-
-	$('document').ready(function() {
-		offsetX = $('#project1').offset().left + $('#color_hot_track1').width() / 2;
-		$('#project1').mousemove(recordMousePosition);
-		setInterval(doColorHotTrack, 100);
-	});
-
-	//console.log("(" + mouseX + ", " + mouseY + ")");
-	//console.log(offset.left);
+	$('.glass_effect').append('<div class="color_hot_track"></div>');
+	$('.glass_effect').mousemove(recordMousePosition);
+	
+	setInterval(doColorHotTrack, 100);
 </script>
 
 
