@@ -1,8 +1,10 @@
 
 
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="/scripts/glass-effect.jquery.js"></script>
 <script src="/scripts/retina.min.js"></script>
 
+<!-- "Waterfall" style nav (thanks Google) -->
 <script type="text/javascript">
 	var navBar = $('.nav');
 	var upperNav = $('.nav-upper');
@@ -13,13 +15,9 @@
 	var condensedHeight = 64;
 	var heightDiff = fullHeight - condensedHeight;
 
-	// color hot track nonsense
-	var mouseX, mouseY;
-	var offset;
-
 	function adjustNavBar() {
 		var scrollDistance = $(document).scrollTop();
-    var yRatio = Math.min(1, scrollDistance / heightDiff);
+    	var yRatio = Math.min(1, scrollDistance / heightDiff);
 
 		navBar.css('height', (1 - yRatio) * heightDiff + condensedHeight);
 		upperNav.css('padding-top', (1 - yRatio) * 20);
@@ -27,18 +25,6 @@
 		lowerNav.css('opacity', 1 - yRatio * 3);
 
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
-	}
-
-	function recordMousePosition(e) {
-		mouseX = e.pageX - offset.left;
-		//mouseX = 50;
-		mouseY = e.pageY - offset.top;
-		mouseY = 50;
-		//console.log("(" + mouseX + ", " + mouseY + ")");
-	}
-
-	function doColorHotTrack() {
-		$('#color_hot_track1').css('transform', 'translate3d(' + mouseX + 'px,' + mouseY + 'px, 0)');
 	}
 
 	$('document').ready(function() {
@@ -53,9 +39,41 @@
 	});
 </script>
 
+<!-- Aero Glass Style Buttons (Thanks Windows 7) -->
+<script type="text/javascript">
+	// color hot track nonsense
+	var mouseX;
+	var mouseY = 20;
+	var offsetX;
+
+	function recalculateOffsets(e) {
+		offsetX = $('#project1').offset().left;
+	}
+
+	function recordMousePosition(e) {
+		mouseX = e.pageX - offsetX;
+	}
+
+	function doColorHotTrack() {
+		$('#color_hot_track1').css('transform', 'translate3d(' + mouseX + 'px,' + mouseY + 'px, 0)');
+	}
+
+	$(window).resize(recalculateOffsets);
+
+	$('document').ready(function() {
+		offsetX = $('#project1').offset().left + $('#color_hot_track1').width() / 2;
+		$('#project1').mousemove(recordMousePosition);
+		setInterval(doColorHotTrack, 100);
+	});
+
+	//console.log("(" + mouseX + ", " + mouseY + ")");
+	//console.log(offset.left);
+</script>
+
+
+<!-- Probably Outmoded Naive E-Mail Obfucation -->
 <script type="text/javascript">
 	$(document).ready(function () {
-		// simple email encoder; we'll just hope spambots can't parse JS...
 		var a = {'gmail': 'dan', 'com': 'tilden', '@': '.'};
 		var b = "";
 		b += a[Object.getOwnPropertyNames(a)[0]];

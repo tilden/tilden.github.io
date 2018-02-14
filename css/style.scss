@@ -225,8 +225,6 @@ h1.logo {
 
 /* landing page project cards / post cards */
 
-
-
 .cards {
   // card section header
   > h2 {
@@ -241,17 +239,63 @@ h1.logo {
   }
 }
 
-.card {
+// support for color-hot-tracking effect (thanks, win7)
+.glass_effect {
+  color: white;
+  transform: translate3d(0,0,0);
+  text-shadow: 0 0 5px rgba(0,0,0,0.75);
+  transition: all 0.1s linear;
   border-radius: 2px;
   background-color: $material-grey-800;
-  transform: translate3d(0,0,0);
 
-  &:hover {
-    background-color: darken($material-amber-900, 20);
+  // semitransparent inner border for maximum shine
+  &::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    transition: inherit;
+    box-shadow: inset 0 0 0 1px white;
+    opacity: 0.25;
   }
+  
+  // color hot tracking for that win7 taskbar goodness
+  .color_hot_track {
+    position: absolute;
+    transition: transform 0.1s linear, opacity .5s linear;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 300%;
+    z-index: -2;
+    opacity: 0;
+    background-image: radial-gradient(ellipse closest-side,
+                      transparentize(white, 0),
+                      transparentize($material-amber-700, 0),
+                      transparentize($material-amber-700, 1));
+  }
+
+  // hover effects
+  &:hover {
+    text-decoration: none;
+    background-color: darken($material-amber-900, 20);
+
+    .color_hot_track {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: .5;
+    }
+  }
+
+  &:active {
+    // TODO: something exciting
+  }
+
 }
-
-
 
 .project-card {
   min-height: 300px;
@@ -262,45 +306,11 @@ h1.logo {
   -webkit-align-items: center;
   align-items: center;
   text-decoration: none;
-  color: white;
-  transition: all 0.1s linear;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
   flex-direction: column;
-  text-shadow: 0 0 5px rgba(0,0,0,0.75);
-
   font-weight: 300;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-    transition: inherit;
-  }
-
-  &:hover {
-    @include shadow-elevation-4dp;
-    text-decoration: none;
-
-    &::before {
-      box-shadow: inset 0 0 0 1px transparentize($material-amber-700, .5);
-    }
-
-    .color_hot_track {
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    @include shadow-elevation-6dp;
-    //background-color: mix($material-indigo-a400, $material-grey-800, 30%);
-
-  }
 
   .proj_info {
     flex: 1;
@@ -454,28 +464,6 @@ h1.logo {
     transition: inherit;
     opacity: .5;
   }
-
-  // color hot-track effect (thanks win7)
-  .color_hot_track {
-    position: absolute;
-    transition: transform 0.1s linear, opacity .5s linear;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    z-index: -2;
-    opacity: 0;
-    // background-color: red;
-    background-image: radial-gradient(ellipse closest-side,
-                      transparentize(white, 0),
-                      transparentize($material-amber-700, 0),
-                      transparentize($material-amber-700, 1));
-    // background-image: radial-gradient(ellipse closest-side,
-    //                   rgba(255,255,255,.2),
-    //                   rgba(255,255,255,0));
-    // background-image: radial-gradient($material-amber-a700, $material-indigo-a700);
-  }
-
 }
 
 
