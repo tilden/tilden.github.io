@@ -225,6 +225,8 @@ h1.logo {
 
 /* landing page project cards / post cards */
 
+
+
 .cards {
   // card section header
   > h2 {
@@ -241,12 +243,19 @@ h1.logo {
 
 .card {
   border-radius: 2px;
-  background: transparentize($material-grey-800, .5);
-  @include shadow-elevation-2dp;
+  background-color: $material-grey-800;
+  transform: translate3d(0,0,0);
+
+  &:hover {
+    background-color: darken($material-amber-900, 20);
+  }
 }
+
+
 
 .project-card {
   min-height: 300px;
+  perspective: 10px;
   text-align: left;
   display: -webkit-flex;
   display: flex;
@@ -254,34 +263,42 @@ h1.logo {
   align-items: center;
   text-decoration: none;
   color: white;
-  transition: all 0.2s;
+  transition: all 0.1s linear;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-  background-size: cover;
   flex-direction: column;
+  text-shadow: 0 0 5px rgba(0,0,0,0.75);
+
   font-weight: 300;
-  border: 1px solid rgba(255,255,255,0.25);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+    transition: inherit;
+  }
 
   &:hover {
     @include shadow-elevation-4dp;
     text-decoration: none;
 
-    .thumb {
+    &::before {
+      box-shadow: inset 0 0 0 1px transparentize($material-amber-700, .5);
+    }
+
+    .color_hot_track {
       opacity: 1;
-      background-position-x: 0;
-
-
-      &::after {
-        opacity: 0.3;
-      }
-
     }
   }
 
   &:active {
     @include shadow-elevation-6dp;
-    background-color: mix($material-indigo-a400, $material-grey-800, 30%);
+    //background-color: mix($material-indigo-a400, $material-grey-800, 30%);
 
   }
 
@@ -313,7 +330,6 @@ h1.logo {
     background-size: cover;
     background-position-x: 3px;
     background-color: inherit;
-    transition: background-position 0.2s;
     opacity: 0.9;
     transform: skewX(10deg);
     position: absolute;
@@ -321,27 +337,10 @@ h1.logo {
     left: -27px;
     right: -27px;
     bottom: 0;
+  }
 
-    // &::after, &::before {
-    //   content: '';
-    //   position: absolute;
-    //   height: 100%;
-    //   width: 90px;
-    //   transform: skewX(-10deg);
-    // }
-
-    // &::after {
-    //   background-image: linear-gradient(to right, #3d5afe, transparent);
-    //   transition: opacity 0.2s;
-    //   width: 200px;
-    //   right: -160px;
-    //   opacity: 0;
-    // }
-
-    // &::before {
-    //   right: -50px;
-    //   background-color: inherit;
-    // }
+  .upper, .lower {
+    z-index: -1;
   }
 
   .upper {
@@ -350,6 +349,7 @@ h1.logo {
     padding: 25px;
     display: flex;
     align-items: center;
+
 
     div:first-child {
       flex: 1;
@@ -384,7 +384,7 @@ h1.logo {
   blockquote {
     opacity: 0.8;
     border-left: 3px solid rgba(255,255,255,0.1);
-    padding: 6px 0 6px 6px;
+    padding: 6px 0 6px 12px;
     font-size: 14px;
     margin: 0 0 8px 0;
     font-weight: 400;
@@ -410,10 +410,10 @@ h1.logo {
 
   .tags, h4 {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 1px;
     opacity: 0.5;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .tags {
@@ -435,29 +435,50 @@ h1.logo {
     display: flex;
 
     > img {
-      width: 50px;
-      height: 75px;
+      //TODO: make this actually use flexbox
+      width: 6vw;
+      height: 6vw;
       padding: 10px;
       margin: auto;
-      //flex: 1;
     }
   }
 
-  .bg_overlay {
-    background-color: $material-grey-800;
+  .bg_overlay{
     position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    opacity: 1;
     background-size: cover;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
     transition: inherit;
-    opacity: 0.5;
+    opacity: .5;
+  }
+
+  // color hot-track effect (thanks win7)
+  .color_hot_track {
+    position: absolute;
+    transition: transform 0.1s linear, opacity .5s linear;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    z-index: -2;
+    opacity: 0;
+    // background-color: red;
+    background-image: radial-gradient(ellipse closest-side,
+                      transparentize(white, 0),
+                      transparentize($material-amber-700, 0),
+                      transparentize($material-amber-700, 1));
+    // background-image: radial-gradient(ellipse closest-side,
+    //                   rgba(255,255,255,.2),
+    //                   rgba(255,255,255,0));
+    // background-image: radial-gradient($material-amber-a700, $material-indigo-a700);
   }
 
 }
+
+
 
 /* pages */
 
@@ -789,27 +810,27 @@ pre > code {
     display: block;
   }
 
-  .project-card {
-    padding: 0;
-    height: auto;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+  // .project-card {
+  //   padding: 0;
+  //   height: auto;
+  //   -webkit-flex-direction: column;
+  //   flex-direction: column;
 
-    .thumb {
-      width: 100%;
-      height: 200px;
-      border-bottom: 1px solid $material-grey-800;
-      opacity: 1;
-      background-position-x: 0;
+  //   .thumb {
+  //     width: 100%;
+  //     height: 200px;
+  //     border-bottom: 1px solid $material-grey-800;
+  //     opacity: 1;
+  //     background-position-x: 0;
 
-      &::before, &::after {
-        display: none;
-      }
-    }
+  //     &::before, &::after {
+  //       display: none;
+  //     }
+  //   }
 
-    .desc {
-      padding: 20px;
-    }
-  }
+  //   .desc {
+  //     padding: 20px;
+  //   }
+  // }
 
 }
