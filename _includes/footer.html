@@ -4,7 +4,7 @@
 <script src="/scripts/glass-effect.jquery.js"></script>
 <script src="/scripts/retina.min.js"></script>
 
-<!-- "Waterfall" style nav (thanks Google) -->
+<!-- Nav bar scroll adaptation -->
 <script type="text/javascript">
 	var navBar = $('.nav');
 	var upperNav = $('.nav-upper');
@@ -20,17 +20,9 @@
 		var offsetDistance = Math.min(heightDiff, scrollDistance);
     	var yRatio = Math.min(1, scrollDistance / heightDiff);
 
-		//navBar.css('transform', 'translate3d(0,-' + offsetDistance + 'px,0)');
-		
-		// if(scrollDistance > heightDiff) {
-		// 	navBar.css('position', 'fixed');
-		// } else {
-		// 	navBar.css('position', 'absolute');
-		// }
-
-		upperNav.css('padding-top', (1 - yRatio) * 20);
+		upperNav.css('transform', 'translate3d(0,' + (1 - yRatio) * 20 + 'px,0)');
 		bannerImage.css('opacity', 1 - yRatio);
-		lowerNav.css('opacity', 1 - yRatio * 3);
+		lowerNav.css('opacity', 1 - yRatio * 2);
 
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));
 	}

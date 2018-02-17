@@ -32,7 +32,7 @@ body {
   color: white;
   background: $material-grey-900;
   text-align: center;
-  margin: 355px 0 150px 0;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -52,34 +52,28 @@ a:hover {
 
 .nav {
   color: white;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
-  position: absolute;
-  height: 355px;
-  border-bottom: 11px transparent solid;
-  // transition: height .1s ease-in-out;
+  // border-bottom: 1px solid rgba(255,255,255,0.25);
   background: rgb(53, 53, 125);
 
   &::after {
-    position: absolute;
-    bottom: -11px;
+    position: fixed;
+    background: rgb(53, 53, 125);
+    // border-bottom: 1px solid rgba(255,255,255,0.25);
     top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    z-index: -1;
     content: "";
-    left: -5px;
-    right: -5px;
-    pointer-events: none;
     @include shadow-elevation-4dp;
   }
 
   .nav-lower {
     font-family: 'Roboto Mono';
     text-align: left;
-    position: absolute;
-    top: 42%;
-    left: 0;
-    right: 0;
+    padding-top: 140px;
+    padding-bottom: 50px;
 
     h1, p {
       margin: 0;
@@ -95,13 +89,15 @@ a:hover {
     }
 
     p {
-      opacity: $material-light-secondary-opacity;
       font-size: 20px;
 
       &.subsubheading {
         font-size: 16px;
-        opacity: 0.5;
         margin-top: 25px;
+
+        span {
+          opacity: $material-light-secondary-opacity;
+        }
       }
     }
   }
@@ -166,6 +162,12 @@ h1.logo {
   }
 }
 
+// Ensure that page content is always behind navigation
+.content-wrapper {
+  position: relative;
+  z-index: -2;
+}
+
 .central-col {
   max-width: 1440px;
   min-width: 780px;
@@ -181,7 +183,7 @@ h1.logo {
   font-family: "Roboto Mono";
   text-align: left;
   padding-bottom: 40px;
-  padding-top: 10px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
 
@@ -199,7 +201,8 @@ h1.logo {
     display: -webkit-flex;
     display: flex;
     position: fixed;
-    padding: 20px 20px;
+    padding: 0 20px;
+    transform: translate3d(0,0,0);
     width: 100%;
 }
 

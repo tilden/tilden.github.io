@@ -10,9 +10,10 @@
   <body class="section-{{page.section}}">
 
   {% include navigation.html %}
-
-  {{ content }}
-
+  
+  <div class="content-wrapper">
+    {{ content }}
+  </div>
 
   {% unless page.no_footer_nav %}
     {% include nav_footer.html %}
