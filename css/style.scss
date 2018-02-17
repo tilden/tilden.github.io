@@ -32,7 +32,7 @@ body {
   color: white;
   background: $material-grey-900;
   text-align: center;
-  margin: 192px 0 150px 0;
+  margin: 355px 0 150px 0;
 }
 
 h1, h2, h3 {
@@ -56,11 +56,11 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1;
-  position: fixed;
-  height: 192px;
+  position: absolute;
+  height: 355px;
   border-bottom: 11px transparent solid;
-  transition: background-color 0.5s;
-  background: $material-indigo-600 linear-gradient(to right, rgb(53, 53, 125), rgb(158, 89, 89));
+  // transition: height .1s ease-in-out;
+  background: rgb(53, 53, 125);
 
   &::after {
     position: absolute;
@@ -74,31 +74,35 @@ a:hover {
   }
 
   .nav-lower {
-    pointer-events: none;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    font-family: 'Roboto Mono';
     text-align: left;
-    height: 108px;
     position: absolute;
-    bottom: -11px;
+    top: 42%;
     left: 0;
     right: 0;
 
     h1, p {
       margin: 0;
-      line-height: 1.3;
     }
 
     h1 {
-      margin-bottom: 5px;
+      margin-bottom: 18px;
+      font-size: 36px;
+
+      span {
+        color: $material-amber-500;
+      }
     }
 
     p {
       opacity: $material-light-secondary-opacity;
+      font-size: 20px;
+
+      &.subsubheading {
+        font-size: 16px;
+        opacity: 0.5;
+        margin-top: 25px;
+      }
     }
   }
 
@@ -127,14 +131,6 @@ h1.logo {
   color: white;
   transition: opacity 0.2s;
   margin: 0;
-}
-
-.subheading {
-  display: block;
-  opacity: 0.7;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
 }
 
 .logo {
@@ -181,18 +177,37 @@ h1.logo {
   padding-top: 30px;
 }
 
-.nav-upper.central-col {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.blurb {
+  font-family: "Roboto Mono";
+  text-align: left;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+
+  i {
+    padding: 0 15px 0 10px;
+    color: $material-amber-500;
+  }
+
+  span {
+    opacity: 0.7;
+  }
+}
+
+.nav-upper {
     display: -webkit-flex;
     display: flex;
+    position: fixed;
+    padding: 20px 20px;
+    width: 100%;
 }
 
 .nav-tabs {
   list-style: none;
   font-size: 18px;
   padding: 0;
-  margin: 0 -20px 0 0;
+  margin: 0;
   display: -webkit-flex;
   display: flex;
 
@@ -217,7 +232,7 @@ h1.logo {
 
 
     &.current {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $material-amber-500;
       opacity: 1;
     }
   }
@@ -248,6 +263,7 @@ h1.logo {
   border-radius: 2px;
   background-color: $material-grey-800;
   overflow: hidden;
+  position: relative;
 
   // semitransparent inner border for maximum shine
   &::before {
@@ -319,6 +335,7 @@ h1.logo {
 @include addGlassColor("red", $material-red-800);
 @include addGlassColor("teal", $material-teal-600);
 @include addGlassColor("light-green", $material-light-green-700);
+@include addGlassColor("indigo", $material-indigo-500);
 
 .project-card {
   min-height: 300px;
@@ -485,7 +502,7 @@ h1.logo {
     height: 100%;
     z-index: -3;
     transition: inherit;
-    opacity: .5;
+    opacity: .3;
   }
 }
 
@@ -581,35 +598,34 @@ h1.logo {
 }
 
 .buttons {
-  margin: 0 auto;
+  margin: 6px auto;
   text-align: center;
+  display: flex;
 
   a {
-    display: inline-block;
+    display: block;
     text-transform: uppercase;
     font-size: 14px;
     color: white;
-    background-color: $material-indigo-500;
+    background-color: #ffffff14;
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
     padding: 13.5px 28px;
-    margin: 0 5px 20px;
-    @include shadow-elevation-2dp;
-    transition: all 0.1s;
+    transition: all 0.2s linear;
+    margin: 10px 10px 5px 0px;
+    border: 1px solid transparent;
+    background-image: radial-gradient(ellipse farthest-side at center bottom, transparentize($material-orange-500, 0.822), transparentize($material-orange-500, 1));
+    background-position-y: 50px;    
+    background-repeat: no-repeat;
 
     &:hover {
-      @include shadow-elevation-4dp;
-      background-color: $material-indigo-a400;
+      border: 1px solid rgba(255,255,255,0.15);
+      background-position-y: 10px;  
     }
 
     &:active {
-      background-color: $material-indigo-700;
-      @include shadow-elevation-6dp;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
+      // @include shadow-elevation-6dp;
     }
 
     i {

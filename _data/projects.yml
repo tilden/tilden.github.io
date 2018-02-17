@@ -18,6 +18,17 @@
   url: "/projects/timestyle"
   hover_color: "amber"
 
+- name: "Employee Scheduling App"
+  desc: >
+    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Mobile App
+   - Wireframes
+  icon: watch
+  icon: smartphone
+  url: "/projects/schedule_app"
+  hover_color: "teal"
   
 - name: "JGA: Crossroads of Destiny"
   tags:
@@ -40,23 +51,11 @@
   icon: videogame_asset
   url: "/projects/jga"
   hover_color: "green"
-
-- name: "Employee Scheduling App"
-  desc: >
-    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
-  banner_img: "schedule_app_banner.jpg"
-  tags:
-   - Mobile App
-   - Wireframes
-  icon: watch
-  icon: smartphone
-  url: "/projects/schedule_app"
-  hover_color: "teal"
   
 - name: "On Our Own Roanoke Valley"
   tags:
     - Responsive website
-    - Built with HTML and CSS
+    - Custom Wordpress Theme
     - Teamwork
   desc: >
     Created new branding and a responsive, maintainable website for a local nonprofit organization.
@@ -77,15 +76,15 @@
   icon: store
   url: "/projects/restaurant_management"
   hover_color: "red"
-  
+
 - name: "Drive-Thru Monitor"
   tags:
-    - 10-foot UI
     - Wireframes & User Research
-    - Prototype built with CSS animation
+    - Motion prototype
+    - 10 Foot UI
   desc: >
     Conveys the status of a restaurant's drive-thru in a highly visual way.
-    Deployed at over 6,000 Burger King locations worldwide.
+    Deployed at nearly 10,000 Burger King® locations worldwide.
   banner_img: "dt_banner.png"
   icon: directions_car
   url: "/projects/drivethru"
