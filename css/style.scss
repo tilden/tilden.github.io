@@ -52,22 +52,11 @@ a:hover {
 
 .nav {
   color: white;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
   // border-bottom: 1px solid rgba(255,255,255,0.25);
   background: rgb(53, 53, 125);
 
-  &::after {
-    position: fixed;
-    background: rgb(53, 53, 125);
-    // border-bottom: 1px solid rgba(255,255,255,0.25);
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    z-index: -1;
-    content: "";
-    @include shadow-elevation-4dp;
-  }
 
   .nav-lower {
     font-family: 'Roboto Mono';
@@ -108,7 +97,7 @@ a:hover {
     bottom: -11px;
     height: 196px;
     width: 100%;
-    z-index: -1;
+    //z-index: -1;
   }
 
   .banner-image::after {
@@ -165,7 +154,7 @@ h1.logo {
 // Ensure that page content is always behind navigation
 .content-wrapper {
   position: relative;
-  z-index: -2;
+  // z-index: -2;
 }
 
 .central-col {
@@ -202,7 +191,7 @@ h1.logo {
     display: flex;
     position: fixed;
     padding: 0 20px;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 20px, 0);
     width: 100%;
 }
 
@@ -238,6 +227,24 @@ h1.logo {
       border-bottom: 2px solid $material-amber-500;
       opacity: 1;
     }
+  }
+}
+
+#sticky_nav_bg {
+  position: fixed;
+  background: rgb(53, 53, 125);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 1;
+  @include shadow-elevation-4dp;
+}
+
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  #sticky_nav_bg {
+    background: rgba(53, 53, 125, .8);
+    -webkit-backdrop-filter: blur(10px);
   }
 }
 
