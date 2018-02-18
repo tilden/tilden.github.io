@@ -57,7 +57,6 @@ a:hover {
   background: rgb(53, 53, 125);
   margin-bottom: 55px;
 
-
   .nav-lower {
     font-family: 'Roboto Mono';
     text-align: left;
@@ -405,7 +404,6 @@ svg.logo {
 
   .thumb {
     background-size: cover;
-    background-position-x: 3px;
     background-color: inherit;
     opacity: 0.9;
     transform: skewX(10deg);
@@ -509,14 +507,14 @@ svg.logo {
 
   div.image_row {
     padding: 0;
-    display: flex;
 
     > img {
-      //TODO: make this actually use flexbox
       width: 6vw;
       height: 6vw;
       padding: 10px;
       margin: auto;
+      min-height: 42px;
+      min-width: 42px;
     }
   }
 
@@ -806,68 +804,48 @@ pre > code {
   text-decoration: none;
 }
 
-.mobile-title {
-  display: none;
-  padding-bottom: 11px;
-
-  h1 {
-    font-size: 32px;
-    line-height: 1.2;
-    margin-bottom: 12px;
+// responsive modes
+@media all and (max-width: 827px) {
+  .central-col {
+    width: 100%;
+    min-width: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .subtitle {
-    opacity: 1;
+  .nav.leaf-level .nav-tabs {
+    display: none;
   }
 }
 
-// responsive modes
-// @media all and (max-width: 827px) {
-//   .central-col {
-//     width: 100%;
-//     min-width: 0;
-//     padding-left: 16px;
-//     padding-right: 16px;
-//   }
+// tiny screens
+@media all and (max-width: 460px) {
+  .project-card {
+    .lower {
+      flex-direction: column-reverse;
+    }
+    
+    .thumb_outer {
+      transform: none;
+      left: 0;
+      height: 200px;
+    }
 
-//   .leaf-level  {
-//     .nav-lower {
-//       display: none;
-//     }
+    .thumb {
+      transform: none;
+    }
+  }
 
-//     a.logo span {
-//       display: none;
-//     }
-//   }
+  .central-col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-//   .post-content {
-//     padding-top: 5px;
-//   }
+  .nav-upper {
+    padding: 0 10px;
+  }
 
-//   .mobile-title {
-//     display: block;
-//   }
-
-  // .project-card {
-  //   padding: 0;
-  //   height: auto;
-  //   -webkit-flex-direction: column;
-  //   flex-direction: column;
-
-  //   .thumb {
-  //     width: 100%;
-  //     height: 200px;
-  //     border-bottom: 1px solid $material-grey-800;
-  //     opacity: 1;
-  //     background-position-x: 0;
-
-  //     &::before, &::after {
-  //       display: none;
-  //     }
-  //   }
-
-  //   .desc {
-  //     padding: 20px;
-  //   }
-  // }
-//}
+  .nav-tabs li > a {
+    padding: 0 10px;
+  }
+}

@@ -71,7 +71,7 @@
     - Wireframes & User Research
   desc: >
     Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
-    reimagined version of a restaurant management system in use at over 7,000 restaurants worldwide.<br>
+    reimagined version of a restaurant management system in use at thousands of restaurants worldwide.<br>
   banner_img: "restaurant_management_banner.png"
   icon: store
   url: "/projects/restaurant_management"
@@ -84,7 +84,7 @@
     - 10 Foot UI
   desc: >
     Conveys the status of a restaurant's drive-thru in a highly visual way.
-    Deployed at nearly 10,000 Burger King® locations worldwide.
+    Currently in use at nearly every Burger King® location in the United States.
   banner_img: "dt_banner.png"
   icon: directions_car
   url: "/projects/drivethru"
