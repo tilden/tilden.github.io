@@ -133,10 +133,14 @@ h1.logo {
   margin: 0;
 }
 
-.logo {
-  float: left;
-  margin: 4px 0;
+svg.logo {
   border: 0;
+  margin: 4px 0;
+
+  > circle {
+    stroke: rgba(255,255,255,0.5);
+    transition: stroke .5s ease;
+  }
 }
 
 .nav a.logo {
@@ -163,6 +167,11 @@ h1.logo {
     position: relative;
     top: -5px;
     opacity: 0;
+  }
+
+    
+  &:hover circle {
+    stroke: white;
   }
 }
 
@@ -215,7 +224,6 @@ h1.logo {
   li > a {
     color: inherit;
     text-transform: uppercase;
-    font-weight: 500;
     font-size: 14px;
     text-decoration: none;
     opacity: 1;
@@ -224,8 +232,11 @@ h1.logo {
     display: block;
     height: 64px;
     opacity: 0.8;
-    background: transparent linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 0.1)) no-repeat;
-    background-position-y: 64px;
+    border-bottom: 2px solid transparentize($material-amber-500, 1);
+
+    &:hover {
+      border-bottom: 2px solid rgba(255,255,255,0.25);
+    }
 
 
     &.current {
@@ -296,7 +307,7 @@ h1.logo {
   // color hot tracking for that win7 taskbar goodness
   .color_hot_track {
     position: absolute;
-    transition: transform 0.1s linear, opacity .5s linear;
+    transition: transform 0.1s linear, opacity .5s linear, top .2s linear;
     top: 10%;
     left: 0;
     width: 200%;
@@ -324,7 +335,9 @@ h1.logo {
   }
 
   &:active {
-    // TODO: something exciting
+    .color_hot_track {
+      top: -10px;
+    }
   }
 
 }
@@ -628,7 +641,7 @@ h1.logo {
 
     i {
       display: block;
-      font-size: 48px;
+      font-size: 36px;
       opacity: .8;
       padding-bottom: 15px;
     }
