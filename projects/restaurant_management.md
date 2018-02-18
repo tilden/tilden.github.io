@@ -1,6 +1,6 @@
 ---
 layout: post
-banner_photo: "/images/projects/restaurant_management/restaurant_management_sky.jpg"
+# banner_photo: "/images/projects/restaurant_management/restaurant_management_sky.jpg"
 title: "Restaurant Management System"
 subtitle: "Working with a usability firm, we delivered over 350 pages of wireframes depicting a reimagined version of a company's flagship product."
 ---

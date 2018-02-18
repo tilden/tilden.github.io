@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Why is it so difficult to write valid &ldquo;tar&rdquo; commands from memory?"
-desc: "Somehow more difficult than every other command"
+desc: "The `tar` utility, used to consolidate multiple files or directories into a single
+archive file, is ubiquitous among Unix-like operating systems; whenever source
+code is made available for download, it is almost always archived using tar.
+Nonetheless, the `tar` utility remains notorious for being difficult to use. Why is that?"
 date:   2015-03-24 16:05:21
-banner_photo: "/images/posts/tar/post_banner.png"
+banner_photo: "tar-banner.png"
 ---
 
 {% include img.html

@@ -32,7 +32,7 @@ body {
   color: white;
   background: $material-grey-900;
   text-align: center;
-  margin: 0;
+  margin: 0 0 126px 0;
 }
 
 h1, h2, h3 {
@@ -54,15 +54,15 @@ a:hover {
   color: white;
   z-index: 2;
   position: relative;
-  // border-bottom: 1px solid rgba(255,255,255,0.25);
   background: rgb(53, 53, 125);
+  margin-bottom: 55px;
 
 
   .nav-lower {
     font-family: 'Roboto Mono';
     text-align: left;
-    padding-top: 140px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 35px;
 
     h1, p {
       margin: 0;
@@ -78,9 +78,9 @@ a:hover {
     }
 
     p {
-      font-size: 20px;
+      font-size: 16px;
 
-      &.subsubheading {
+      &.subsubtitle {
         font-size: 16px;
         margin-top: 25px;
 
@@ -90,22 +90,37 @@ a:hover {
       }
     }
   }
+}
 
-  .banner-image {
-    position: absolute;
-    background-size: cover;
-    bottom: -11px;
-    height: 196px;
-    width: 100%;
-    //z-index: -1;
+.nav.landing-page {
+  background: rgb(53, 53, 125);
+  margin-bottom: 0;
+
+  .subtitle {
+    font-size: 20px;
+    opacity: 1;
   }
 
-  .banner-image::after {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.50);
+  .nav-lower {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+
+  & + #sticky_nav_bg {
+    background: rgb(53, 53, 125);
+  }
+}
+
+.nav.leaf-level {
+  background: $material-grey-800;
+
+  .subtitle {
+    font-size: 16px;
+    opacity: $material-light-secondary-opacity;
+  }
+
+  & + #sticky_nav_bg {
+    background: $material-grey-800;
   }
 }
 
@@ -151,28 +166,18 @@ h1.logo {
   }
 }
 
-// Ensure that page content is always behind navigation
-.content-wrapper {
-  position: relative;
-  // z-index: -2;
-}
-
 .central-col {
   max-width: 1440px;
-  min-width: 780px;
   width: 80%;
   margin: 0 auto;
 }
 
-.cards {
-  padding-top: 30px;
-}
-
 .blurb {
   font-family: "Roboto Mono";
+  font-size: 14px;
   text-align: left;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 33px;
+  padding-top: 33px;
   display: flex;
   align-items: center;
 
@@ -241,12 +246,12 @@ h1.logo {
   @include shadow-elevation-4dp;
 }
 
-@supports (-webkit-backdrop-filter: blur(10px)) {
-  #sticky_nav_bg {
-    background: rgba(53, 53, 125, .8);
-    -webkit-backdrop-filter: blur(10px);
-  }
-}
+// @supports (-webkit-backdrop-filter: blur(10px)) {
+//   #sticky_nav_bg {
+//     background: rgba(53, 53, 125, .8);
+//     -webkit-backdrop-filter: blur(10px);
+//   }
+// }
 
 /* landing page project cards / post cards */
 
@@ -348,8 +353,7 @@ h1.logo {
 @include addGlassColor("indigo", $material-indigo-500);
 
 .project-card {
-  min-height: 300px;
-  perspective: 10px;
+  min-height: 350px;
   text-align: left;
   display: -webkit-flex;
   display: flex;
@@ -524,13 +528,13 @@ h1.logo {
   color: rgba(255,255,255,$material-light-secondary-opacity);
   width: 760px;
   margin: 0 auto;
-  padding-top: 38px;
   text-align: left;
 
   h2, h3 {
     font-size: 24px;
+    font-family: "Roboto Mono";
     line-height: 1.2;
-    color: $material-grey-50;
+    color: $material-amber-500;
 
     // sneaky way to take fixed nav into account for anchor links
     // courtesy of http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
@@ -544,7 +548,6 @@ h1.logo {
   }
 
   p {
-    font-family: Roboto Slab;
     letter-spacing: 0.05px;
     margin-bottom: 1.5em;
   }
@@ -608,41 +611,26 @@ h1.logo {
 }
 
 .buttons {
-  margin: 6px auto;
-  text-align: center;
+  justify-content: center;
   display: flex;
 
   a {
     display: block;
-    text-transform: uppercase;
-    font-size: 14px;
     color: white;
-    background-color: #ffffff14;
-    font-weight: 500;
+    background-color: rgba(255,255,255,.15);
+    width: 200px;
+    font-weight: 300;
     text-decoration: none;
     border-radius: 2px;
-    padding: 13.5px 28px;
-    transition: all 0.2s linear;
+    padding: 15px 25px;
     margin: 10px 10px 5px 0px;
-    border: 1px solid transparent;
-    background-image: radial-gradient(ellipse farthest-side at center bottom, transparentize($material-orange-500, 0.822), transparentize($material-orange-500, 1));
-    background-position-y: 50px;    
-    background-repeat: no-repeat;
-
-    &:hover {
-      border: 1px solid rgba(255,255,255,0.15);
-      background-position-y: 10px;  
-    }
-
-    &:active {
-      // @include shadow-elevation-6dp;
-    }
+    text-align: center;
 
     i {
-      margin-left: -12px;
-      padding-right: 6px;
-      vertical-align: middle;
-      height: 26px;
+      display: block;
+      font-size: 48px;
+      opacity: .8;
+      padding-bottom: 15px;
     }
   }
 }
@@ -651,7 +639,7 @@ h1.logo {
   list-style: none;
   margin-left: 0;
   padding: 0px 15px;
-  font-weight: 400;
+  font-family: "Roboto Mono";
   font-size: 18px;
   border-left: 4px solid $material-grey-700;
 
@@ -815,37 +803,37 @@ pre > code {
     margin-bottom: 12px;
   }
 
-  .subheading {
+  .subtitle {
     opacity: 1;
   }
 }
 
 // responsive modes
-@media all and (max-width: 827px) {
-  .central-col {
-    width: 100%;
-    min-width: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+// @media all and (max-width: 827px) {
+//   .central-col {
+//     width: 100%;
+//     min-width: 0;
+//     padding-left: 16px;
+//     padding-right: 16px;
+//   }
 
-  .leaf-level  {
-    .nav-lower {
-      display: none;
-    }
+//   .leaf-level  {
+//     .nav-lower {
+//       display: none;
+//     }
 
-    a.logo span {
-      display: none;
-    }
-  }
+//     a.logo span {
+//       display: none;
+//     }
+//   }
 
-  .post-content {
-    padding-top: 5px;
-  }
+//   .post-content {
+//     padding-top: 5px;
+//   }
 
-  .mobile-title {
-    display: block;
-  }
+//   .mobile-title {
+//     display: block;
+//   }
 
   // .project-card {
   //   padding: 0;
@@ -869,5 +857,4 @@ pre > code {
   //     padding: 20px;
   //   }
   // }
-
-}
+//}

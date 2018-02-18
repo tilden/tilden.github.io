@@ -1,6 +1,6 @@
 ---
 layout: post
-banner_photo: "/images/projects/jga/jga_sky.jpg"
+# banner_photo: "/images/banners/blur/jga_banner.jpg"
 title: "JGA: Crossroads of Destiny"
 subtitle: "JGA: Crossroads of Destiny is a game for mobile and desktop following the journey of an exiled infomercial chef to restore balance to the world&mdash;and sell additional knives."
 ---

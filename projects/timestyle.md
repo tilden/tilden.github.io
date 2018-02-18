@@ -1,23 +1,24 @@
 ---
 layout: post
+# banner_photo: "/images/banners/blur/mestyle_banner.png"
 title: "TimeStyle"
-subtitle: "A stylish, modern watchface for the Pebble watch inspired by the visual language of the Pebble Timeline."
+subtitle: "The 5th most popular Pebble watch face of all time, with nearly 200,000 installs."
 ---
 
 ![Photo of TimeStyle running on a watch](/images/projects/timestyle/artsy_photo.jpg)
 
 Wristwatches reflect the wearer's style, and wearables are no different.
 TimeStyle provides a readable and customizable time display, designed to
-blend with the watch's design language. With over 160,000 users and nearly 10,000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
+blend with the watch's design language. With nearly 200,000 users and over 10,000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
 
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 
 <div class="buttons">
-  <a href="https://apps.getpebble.com/en_US/application/55a5c024f4510f794c000071">
+  <a href="https://apps.getpebble.com/en_US/application/55a5c024f4510f794c000071" class="glass_effect">
     <i class="material-icons">watch</i>
-    Available on the Pebble Store
+    Somehow still available on the Pebble Store
   </a>
-	<a href="https://github.com/freakified/TimeStylePebble">
+	<a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
     <i class="material-icons">code</i>
     Source code on GitHub
 	</a>

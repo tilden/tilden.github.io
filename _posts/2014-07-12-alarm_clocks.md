@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "How every smartphone platform gets the alarm clock wrong"
-desc: "Spoiler alert it's the snooze button"
+desc: >
+    Pretty much every smartphone OS on the market today provides a built in alarm clock app. However, almost all of them exhibit the same mistake! In keeping with the spirit of the clickbait title, I won't tell you what it is in this preview despite having ample room to do so! 
 date:   2014-07-12 16:05:21
-banner_photo: "/images/clocks/telechron.jpg"
+banner_photo: "alarm-clocks-banner.jpg"
 ---
 
 ![Telechron 7H241 Snooz-Alarm]({{ site.url }}/images/clocks/telechron.jpg)

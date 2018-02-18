@@ -2,76 +2,54 @@
 layout: default
 section: portfolio
 is_top_level: true
+is_landing_page: true
 browser_title: "Dan Tilden: UX Designer"
 title: "Dan Tilden: <span>UX Designer</span>"
-subtitle: >
-          I'm a designer who enjoys building things. 
+subtitle: "I'm a designer who enjoys building things."
+subsubtitle: "<span>My work has been featured in several leading tech publications and has been deployed at nearly 10,000 fast food restaurants worldwide</span> 🍔"	  
 ---
 
 
 <div class="cards central-col">
   <p class="blurb">
-	<i class="material-icons">arrow_downward</i>
-	<span>Here are a few of my favorite creations. Click one to read more, or just skip the reading and scroll straight to the pictures! The choice is yours!</span>
+    <i class="material-icons">arrow_downward</i>
+    <span>Here are a few of my favorite creations. Click one to read more, or just skip the reading and scroll straight to the pictures! The choice is yours!</span>
 </p>
-	{% for project in site.data.projects %}
-	<a id="project{{forloop.index}}"
-	    class="card project-card glass_effect {{ project.hover_color }}"
-		href="{{ project.url }}">
+    {% for project in site.data.projects %}
+    <a id="project{{forloop.index}}"
+        class="card project-card glass_effect {{ project.hover_color }}"
+        href="{{ project.url }}">
 
-		<div class="upper">
-			<div>
-				<h3>{{ project.name }}</h3>
-				<ul class="tags">
-					{% for tag in project.tags %}
-						<li>{{tag}}</li>
-					{% endfor %}
-				</ul>
-			</div>
+        <div class="upper">
+            <div>
+                <h3>{{ project.name }}</h3>
+                <ul class="tags">
+                    {% for tag in project.tags %}
+                        <li>{{tag}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
 
-			<div class="project_icon"><i class="material-icons">{{ project.icon }}</i></div>		
-		</div>
-		<div class="lower">
-			<div class="proj_info">
-				<div class="desc">
-				{{ project.desc }}
-				</div>
-				<div class="extra_info">
-					{{ project.extra_info }}
-				</div>
-			</div>
-			<div class="thumb_outer">
-				<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
-			</div>
-		</div>
-		<!-- <div class="color_hot_track"></div> -->
-		<div class="bg_overlay"
-		     style="background-image: url(images/banners/blur/{{ project.banner_img }});">
-		</div> 
-	</a>
-	{% endfor %}
-
-	<!-- {% for project in site.data.projects %}
-	<a id="project{{forloop.index}}"
-	   class="card project-card"
-	   href="{{ project.url }}"
-	   style="background-image: url(images/banners/blur/{{ project.banner_img }});">
-	   <div class="bg_overlay"></div>	   
-		<ul class="tags">
-		{% for tag in project.tags %}
-			<li>{{tag}}</li>
-		{% endfor %}
-		</ul>
-		<h3>{{ project.name }}</h3>
-		<div class="project_icon"><i class="material-icons">{{ project.icon }}</i></div>		
-		<div class="desc">
-			{{ project.desc }}
-		</div>
-		<div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
-		<div class="extra_info">
-			{{ project.extra_info }}
-		</div>
-	</a>
-	{% endfor %} -->
+            <div class="project_icon"><i class="material-icons">{{ project.icon }}</i></div>		
+        </div>
+        <div class="lower">
+            <div class="proj_info">
+                <div class="desc">
+                {{ project.desc }}
+                </div>
+                <div class="extra_info">
+                    {{ project.extra_info }}
+                </div>
+            </div>
+            <div class="thumb_outer">
+                <div class="thumb" style="background-image: url(images/banners/{{ project.banner_img }})"></div>
+            </div>
+        </div>
+        <!-- <div class="color_hot_track"></div> -->
+        <div class="bg_overlay"
+             style="background-image: url(images/banners/blur/{{ project.banner_img }});">
+        </div> 
+    </a>
+    {% endfor %}
 
 </div>

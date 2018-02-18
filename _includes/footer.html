@@ -1,7 +1,6 @@
 
 
 <script src="/scripts/jquery-3.3.1.slim.min.js"></script>
-<script src="/scripts/glass-effect.jquery.js"></script>
 <script src="/scripts/retina.min.js"></script>
 
 <!-- Nav bar scroll adaptation -->
@@ -11,11 +10,14 @@
 	var lowerNav = $('.nav-lower');
 	var bannerImage = $('.nav .banner-image');
 	var toolbarTitle = $('.nav a.logo span');
-	var fullHeight = 355;
 	var condensedHeight = 64;
+	var fullHeight = navBar.height();
 	var heightDiff = fullHeight - condensedHeight;
 
 	function adjustNavBar() {
+		fullHeight = navBar.height();
+		heightDiff = fullHeight - condensedHeight;
+		
 		var scrollDistance = $(document).scrollTop();
 		var offsetDistance = Math.min(heightDiff, scrollDistance);
     	var yRatio = Math.min(1, scrollDistance / heightDiff);
