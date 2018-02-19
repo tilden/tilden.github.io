@@ -11,7 +11,9 @@
 
   {% include navigation.html %}
   
-  {{ content }}
+  <div id="content-wrapper">
+    {{ content }}
+  </div>
 
   {% unless page.no_footer_nav %}
     {% include nav_footer.html %}
