@@ -2,28 +2,29 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
+{% assign base_url = "https://www.dantilden.com" %}
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>{{ site.url }}</loc>
+        <loc>{{ base_url }}</loc>
         <lastmod>2017-02-18T00:00:00-08:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>{{ site.url }}/blog</loc>
+        <loc>{{ base_url }}/blog</loc>
         <lastmod>2017-02-18T00:00:00-08:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>{{ site.url }}/about</loc>
+        <loc>{{ base_url }}/about</loc>
         <lastmod>2017-02-18T00:00:00-08:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     {% for project in site.data.projects %}
         <url>
-        <loc>{{ site.url }}{{ project.url }}</loc>
+        <loc>{{ base_url }}{{ project.url }}</loc>
         <lastmod>2017-02-18T00:00:00-08:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -31,7 +32,7 @@ layout: null
     {% endfor %}
     {% for post in site.posts %}
         <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>{{ base_url }}{{ post.url }}</loc>
         {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         {% else %}
