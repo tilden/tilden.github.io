@@ -3,13 +3,13 @@
 
 @import 'material-colors';
 
-.nav {
-    animation: nav_leaflevel_color_change 1s ease;
-    // transform: translate3d(0,0,0);
+.nav.leaf-level {
+    animation: nav_leaflevel_color_change .5s ease .5s forwards;
+    background-color: $material-grey-900;
 }
 
 @keyframes nav_leaflevel_color_change {
-    0%, 50% {
+    0% {
         background-color: $material-grey-900;
     }
     100% {
@@ -18,11 +18,12 @@
 }
 
 .nav.root-level {
-    animation: nav_rootlevel_color_change 1s ease -1ms;
+    animation: nav_rootlevel_color_change .5s ease .5s forwards;
+    background-color: $material-grey-900;
 }
 
 @keyframes nav_rootlevel_color_change {
-    0%, 50% {
+    0% {
         background-color: $material-grey-900;
     }
     100% {
@@ -33,27 +34,27 @@
 // this animates the nav bar's size, but it gave me too many safari compat headaches so it's disabled for now.
 // perhaps, one day, i can reenable it.
 
-// .nav.root-level::after {
-//     content: '';
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     height: 50vh;
-//     width: 100%;
-//     background-color: inherit;
-//     // background-color: red;
-//     animation: nav_slide_in 0.5s ease 0.5s forwards;
-//     z-index: -1;
-// }
+.nav.root-level::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-color: inherit;
+    // background-color: red;
+    animation: nav_slide_in 0.5s ease 0.5s forwards;
+    z-index: -1;
+}
 
-// @keyframes nav_slide_in {
-//     0% {
-//         transform: translate3d(0, 0, 0)
-//     }
-//     100% {
-//         transform: translate3d(0, -50vh, 0)
-//     }
-// }
+@keyframes nav_slide_in {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        transform: translate3d(0, -50vh, 0)
+    }
+}
 
 .nav .nav-lower {
     animation: nav_text_fade_in .5s ease;
