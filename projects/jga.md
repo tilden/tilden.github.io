@@ -8,11 +8,11 @@ subtitle: "JGA: Crossroads of Destiny is a game for mobile and desktop following
 ![A knife-wielding chef standing in a corridor](/images/projects/jga/intro.jpg)
 
 <div class="buttons">
-  <a href="http://freakified.github.io/jga/">
+  <a href="http://freakified.github.io/jga/" class="glass_effect">
     <i class="material-icons">file_download</i>
     Download from project page
   </a>
-	<a href="https://github.com/freakified/jga/">
+	<a href="https://github.com/freakified/jga/" class="glass_effect">
     <i class="material-icons">code</i>
     Source Code on GitHub
 	</a>

@@ -13,7 +13,7 @@ subtitle: "Our team created new branding and a responsive, maintainable website 
 	• Your role and contribution on the team -->
 
 <div class="buttons">
-  <a href="http://onourownroanoke.org">
+  <a href="http://onourownroanoke.org" class="glass_effect">
     <i class="material-icons">open_in_browser</i>
     Visit website
   </a>
