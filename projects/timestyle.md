@@ -14,9 +14,9 @@ blend with the watch's design language. With nearly 200,000 users and over 10,00
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 
 <div class="buttons">
-  <a href="https://apps.getpebble.com/en_US/application/55a5c024f4510f794c000071" class="glass_effect">
+  <a href="https://apps.rebble.io/en_US/application/55a5c024f4510f794c000071" class="glass_effect">
     <i class="material-icons">watch</i>
-    Somehow still available on the Pebble Store
+    Available from <del>Pebble</del> Rebble
   </a>
 	<a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
     <i class="material-icons">code</i>

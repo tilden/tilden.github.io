@@ -26,7 +26,7 @@ I'm a UX designer with a multidisciplinary background---this allows me to approa
 	</a>
 </div>
 
-I began web design even before I got my degree in Computer Science, which led me to focus on human-computer interaction during graduate school. I realized then that what I was truly passionate about was design itself, thus leading to my current role as a UX designer. Right now, I'm working at [Sicom Systems](http://www.sicom.com), where I strive to make systems used in quick-serve restaurants easier to use. To get a better idea of the kinds of products I work on, check out the [Restaurant Management System redesign project](/projects/restaurant_management)!
+I began web design even before I got my degree in Computer Science, which led me to focus on human-computer interaction during graduate school. I realized then that what I was truly passionate about was design itself, thus leading to my current role as a UX designer. Right now, I'm working at [Indeed.com](http://www.indeed.com) as a Design Technologist, where I work closely with the design team to build functional prototypes!
 
 I also enjoy [taking pictures](https://www.instagram.com/freakified/), and even co-author a [webcomic](http://www.scrapinold.com/23.html)! My greatest personal achievement is the creation of [JGA: Crossroads of Destiny](/projects/jga), a complete video game, from scratch.
 
