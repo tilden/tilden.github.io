@@ -3,7 +3,7 @@ layout: post
 title:  "Gmail isn't ready to replace Google Inbox, and neither is anything else"
 desc: >
   Inbox was, and probably will be for the foreseeable future, the  greatest email client ever designed. 
-date:   2019-03-18 16:00:00
+date:   2019-03-20 9:00:00
 banner_photo: "inbox-banner.png"
 ---
 
