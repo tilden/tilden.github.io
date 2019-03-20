@@ -69,9 +69,16 @@ To me, Gmail feels like a strange mashup of several dozen different developers' 
 
 Gmail requires a _context switch_ every time you click an email. You're in the list, now you're in the email! Go back and...where were you in that list again? Many e-mail clients attempt to mitigate this by using multiple panes. Even Gmail itself can do this, if you enable the "two-pane" option in the settings! Problem solved, right?
 
-Except that I would argue that Inbox's approach is still superior. By clever use of animation, it remains consistently clear where you are in the flow at all times. 
+Except that I would argue that Inbox's approach is still superior. By clever use of animation, it remains consistently clear where you are in the flow at all times:
 
-They even apply this logic to folders, using "Bundles". By grouping related emails into a single top-level heading, you once again can always retain your mental position. Furthermore, bundles don't exist as a strange separate entity from emails like folders -- they seamlessly expand within the flow of emails.
+{% include img.html
+  url="/images/posts/inbox/inbox_anim.gif"
+  alt="Animation showing opening and closing an email in Inbox"
+  title="If only Gmail had this level of polish!"
+  caption="Smooth transitions! Everywhere!"
+%}
+
+They even apply this logic to folders, using the "bundles", the grouping system mentioned above. Just as when email are opened, bundles expand out seamlessly into the flow of emails! I find this a far better approach than Gmail's category tabs.
 
 ### Built-in reminders handle the "email to yourself" scenario 
 
@@ -82,7 +89,7 @@ They even apply this logic to folders, using "Bundles". By grouping related emai
   caption="Note that I didn't add Chase's phone number; Inbox added that suggested action automatically based on the content of the reminder"
 %}
 
-Another odd holdover behavior from past email clients (that I still did) was write emails to myself to remind you of things, or to save links, etc. Inbox includes built-in support for this, with its integrated "reminder" support.
+Another holdover behavior from past email clients (that I still used to do!) was write emails to myself to remind you of things, or to save links, etc. Inbox includes built-in support for this, with its integrated "reminder" support.
 
 ### Unread actually *means* unread
 
@@ -92,7 +99,7 @@ Another odd holdover behavior from past email clients (that I still did) was wri
   title="You're a kitty!"
 %}
 
-Conceptually, one cannot _un_-read a message; the very idea is inherently absurd. Yet most email clients offer this option as if it's a completely normal thing to do. I believe this is an awkward holdover from legacy mail clients that is thoroughly obsoleted by an email client with properly designed categorization abilities. In short: it's better to create a new organizational construct (that of "completeness"), than to arbitrarily assign meaning onto something effectively unrelated.
+Conceptually, one cannot _un_-read a message; the very idea is inherently absurd. Yet most email clients offer this option as if it's a completely normal thing to do. I believe this is an awkward holdover from legacy mail clients that could only store 1-bit of metadata for each email. It is, in my view, thoroughly obsoleted if an email client has properly designed categorization abilities. In short: it's better to create a new organizational construct (that of "completeness"), than to arbitrarily assign meaning onto something effectively unrelated.
 
 ## Part 3: Alternatives
 
@@ -100,8 +107,7 @@ I've explored several alternatives. Spark has been actively promoting itself as 
 	
 ## To Conclude: What would Gmail need to _properly_ replace Inbox?
 
-
-When Google announced that they intended to kill Inbox six months ago, their support page indicated that "your favorite" Inbox features would be brought to Gmail. As of this writing, they have ported snooze, the [amusing yet useless smart-reply function](https://blog.google/products/gmail/computer-respond-to-this-email/), and the most exciting feature of all...quick action icons that appear when hovering the mouse cursor over an email: 
+When Google announced that they intended to kill Inbox six months ago, their support page implied that, before Inbox's death, its core features would be brought to Gmail. As of this writing, they have ported snooze, the [amusing yet useless smart-reply function](https://www.fastcompany.com/3054007/what-it-was-like-to-have-a-robot-answer-all-of-my-emails-for-a-week), and perhaps the most exciting feature of all, quick action icons that appear when hovering the mouse cursor over an email: 
 
 {% include img.html
   url="/images/posts/inbox/gmail_actions.png"
@@ -110,7 +116,7 @@ When Google announced that they intended to kill Inbox six months ago, their sup
   caption="Soon, this is all that will remain of Inbox: quick-action icons, and a snooze function."
 %}
 
-That's it. That's everything Google has ported, and probably will _ever_ port.
+That's it. That's everything Google has ported.
 
 _Could_ Google have ported more? Of course. Key Inbox features, like automatic travel grouping, or even the _Finance_ category, are nowhere to be seen in Gmail. Even more-complex UI features like bundles could conceivably have made it in: Gmail already offers 5 different Inbox styles to cater to different types of users, and could have easily included sixth with a more Inbox-like view. But no. We get snooze and quick actions. According to the cheerfully-written Inbox closure notice, these apparently represent the entire sum of "my favorite Inbox features":
 
@@ -120,6 +126,10 @@ _Could_ Google have ported more? Of course. Key Inbox features, like automatic t
   title="I want to punch whoever wrote this text"
 	w="479" h="224"
 %}
+
+Ultimately, I understand that it doesn't make sense for Google to operate two separate applications that basically do the same thing; given this, it's completely reasonable for them to kill the less-popular one. What I find particularly _unreasonable_ is Google's decision to kill the less-popular one without seemingly even _trying_ to bring over the majority of its key features, some of which continue to remain far ahead of any competitor's offering. 
+
+***
 
 Is there actually a viable alternative that I missed? Do you work for Google and wish to repent for your sins? If so, why not [discuss this article on Hacker News](https://news.ycombinator.com)!
 
