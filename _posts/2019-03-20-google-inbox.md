@@ -131,7 +131,7 @@ Ultimately, I understand that it doesn't make sense for Google to operate two se
 
 ***
 
-Is there actually a viable alternative that I missed? Do you work for Google and wish to repent for your sins? If so, why not [discuss this article on Hacker News](https://news.ycombinator.com)!
+Is there actually a viable alternative that I missed? Do you work for Google and wish to repent for your sins? If so, why not [discuss this article on Hacker News](https://news.ycombinator.com/item?id=19444058)!
 
 [^tripitnote]: The closest thing I've found is [TripIt](https://www.tripit.com), a service which, while functional, requires that you forward all your travel emails to it manually and looks like it arrived in a time machine from 2011.
 [^nngroup-icons]: [Icon Usability, Neilsen Norman Group.](https://www.nngroup.com/articles/icon-usability/)
