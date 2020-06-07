@@ -257,10 +257,11 @@ svg.logo {
   @include shadow-elevation-4dp;
 }
 
-// @supports (-webkit-backdrop-filter: blur(10px)) {
+// @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
 //   #sticky_nav_bg {
-//     background: rgba(53, 53, 125, .8);
+//     background: rgba(0, 0, 0, .8);
 //     -webkit-backdrop-filter: blur(10px);
+//	 backdrop-filter: blur(10px);
 //   }
 // }
 
@@ -271,7 +272,6 @@ svg.logo {
   > h2 {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
     color: $material-grey-600;
     font-size: 12px;
     padding: 0 0 13px 0;
@@ -315,8 +315,8 @@ svg.logo {
     z-index: -2;
     opacity: 0;
     background-image: radial-gradient(ellipse closest-side,
-                      transparentize(white, 0),
-                      transparentize($material-amber-700, 0),
+                      transparentize(white, 0.5),
+                      transparentize($material-amber-700, 0.5),
                       transparentize($material-amber-700, 1));
   }
 
@@ -347,8 +347,8 @@ svg.logo {
   .glass_effect.#{$classname} {
     .color_hot_track {
       background-image: radial-gradient(ellipse closest-side,
-                        transparentize(white, 0),
-                        transparentize($color, 0),
+                        transparentize(white, 0.5),
+                        transparentize($color, 0.5),
                         transparentize($color, 1));
     }
     
