@@ -22,7 +22,7 @@ section: about
 
 I'm a UX designer with a multidisciplinary background in Human-Computer Interaction and Computer Science! My goal is to slowly fix all those minor things that annoy you in the websites and apps you use every day. Currently, I work at [Indeed](https://www.indeed.com), where I'm trying to make finding a job slightly less stressful! 
 
-I particularly enjoy working on side projects, like this [video game](/projects/jga) and this [smartwatch face](/projects/timestyle).
+I particularly enjoy working on side projects, like [my weird video game](/projects/jga) and one of the most popular [smartwatch faces for the Pebble (RIP)](/projects/timestyle).
 
 {% include img.html
   url="/images/about_photo.jpg"

@@ -4,8 +4,6 @@
   banner_img: "timestyle_banner.png"
   tags:
     - Smartwatch Face
-    - Built with C
-    - Open Source
   icon: watch
   extra_info: >
     <h4>Featured in</h4>
@@ -24,7 +22,6 @@
   banner_img: "schedule_app_banner.jpg"
   tags:
    - Mobile App
-   - Wireframes
   icon: watch
   icon: smartphone
   url: "/projects/schedule_app"
@@ -32,9 +29,7 @@
   
 - name: "JGA: Crossroads of Destiny"
   tags:
-    - Story-Driven 2D RPG
-    - Built with Unity
-    - Open Source
+    - Video Game
   desc: >
     A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
   banner_img: "jga_banner.jpg"
@@ -55,8 +50,6 @@
 - name: "On Our Own Roanoke Valley"
   tags:
     - Responsive website
-    - Custom Wordpress Theme
-    - Teamwork
   desc: >
     Created new branding and a responsive, maintainable website for a local nonprofit organization.
   banner_img: "onourown_banner.jpg"
@@ -66,9 +59,7 @@
 
 - name: "Restaurant Management System"
   tags:
-    - Complex Web Application
-    - Built with ExtJS, HTML, CSS, and JS
-    - Wireframes & User Research
+    - Web Application
   desc: >
     Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
     reimagined version of a restaurant management system in use at thousands of restaurants worldwide.<br>
@@ -79,9 +70,7 @@
 
 - name: "Drive-Thru Monitor"
   tags:
-    - Wireframes & User Research
-    - Motion prototype
-    - 10 Foot UI
+    - Smart display
   desc: >
     Conveys the status of a restaurant's drive-thru in a highly visual way.
     Currently in use at nearly every Burger King® location in the United States.
