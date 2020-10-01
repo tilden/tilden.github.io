@@ -1,5 +1,8 @@
 tilden.github.io
 ================
+# My Portfolio
+ 
+ ### Intro of my.
 
 A combined portfolio/blog built entirely using a plugin-free Jekyll.
 
@@ -15,5 +18,4 @@ A combined portfolio/blog built entirely using a plugin-free Jekyll.
 All the content (blog posts, photos, other graphics) are licensed under
 [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/), and the code itself is
 licensed under the [MIT License](http://opensource.org/licenses/MIT), so you can
-go fork this site and make your own portfolio! ~~As far as I can tell no one
-has actually done this, so you, yes, you, could be the first! Wow!~~ [Someone actually did it!](http://www.raisiqueira.com/)
+go fork this site and make your own portfolio!  [Someone actually did it!](http://www.raisiqueira.com/)
