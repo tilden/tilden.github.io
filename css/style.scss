@@ -366,6 +366,8 @@ svg.logo {
 @include addGlassColor("blue", $material-blue-700);
 @include addGlassColor("red", $material-red-800);
 @include addGlassColor("teal", $material-teal-600);
+@include addGlassColor("indeed-blue", #085ff7);
+@include addGlassColor("indeed-orange", #085ff7);
 @include addGlassColor("light-green", $material-light-green-700);
 @include addGlassColor("indigo", $material-indigo-500);
 

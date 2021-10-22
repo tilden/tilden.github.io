@@ -1,3 +1,25 @@
+
+
+# - name: "Indeed Taxonomy Browser"
+#   desc: >
+#     How can we make browsing large quantities of multilingual, hierarchical data less of a pain?
+#   banner_img: "schedule_app_banner.jpg"
+#   tags:
+#    - Web Application
+#   icon: account_tree
+#   url: "/projects/schedule_app"
+#   hover_color: "indigo"
+
+- name: "Indeed Messaging"
+  desc: >
+    Searching for jobs can be one of the most stressful processes. Can we make communication easier solely via a new user interface?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Responsive Webapp
+  icon: message
+  url: "/projects/messaging"
+  hover_color: "indeed-blue"
+
 - name: "TimeStyle"
   desc: >
     Among the most popular Pebble watchfaces of all time, with over 200,000 installs.
@@ -43,7 +65,7 @@
   tags:
     - Responsive website
   desc: >
-    Created new branding and a responsive, maintainable website for a local nonprofit organization.
+    As part of a local hackathon team, created new branding and a responsive, maintainable website for a local nonprofit organization.
   banner_img: "onourown_banner.jpg"
   icon: devices
   url: "/projects/onourown"
@@ -63,6 +85,16 @@
   hover_color: "teal"
   section_blurb: "I used to work for a company that made software for fast-food restaurants! Some of these made it into over 10,000 Burger Kings 🍔"
 
+- name: "Employee Scheduling App"
+  desc: >
+    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Mobile App
+  icon: event
+  url: "/projects/schedule_app"
+  hover_color: "teal"
+
 - name: "Restaurant Management System"
   tags:
     - Web Application
@@ -70,7 +102,7 @@
     Working with a usability consulting firm, our team delivered over 350 pages of wireframes depicting a
     reimagined version of a restaurant management system in use at thousands of restaurants worldwide.<br>
   banner_img: "restaurant_management_banner.png"
-  icon: store
+  icon: restaurant
   url: "/projects/restaurant_management"
   hover_color: "red"
 
