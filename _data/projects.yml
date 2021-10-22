@@ -1,6 +1,6 @@
 - name: "TimeStyle"
   desc: >
-    The 5th most popular Pebble watch face of all time, with nearly 200,000 installs.
+    Among the most popular Pebble watchfaces of all time, with over 200,000 installs.
   banner_img: "timestyle_banner.png"
   tags:
     - Smartwatch Face
@@ -15,17 +15,9 @@
     </div>
   url: "/projects/timestyle"
   hover_color: "amber"
+  section_blurb: "My favorite side projects have included a very popular smartwatch face and a really weird game ⌚ 🎮"
 
-- name: "Employee Scheduling App"
-  desc: >
-    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
-  banner_img: "schedule_app_banner.jpg"
-  tags:
-   - Mobile App
-  icon: watch
-  icon: smartphone
-  url: "/projects/schedule_app"
-  hover_color: "teal"
+
   
 - name: "JGA: Crossroads of Destiny"
   tags:
@@ -56,6 +48,20 @@
   icon: devices
   url: "/projects/onourown"
   hover_color: "blue"
+  section_blurb: "I made this website for a nonprofit hackathon! It's too bad they don't run it anymore 👨‍💻"
+
+ 
+- name: "Employee Scheduling App"
+  desc: >
+    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
+  banner_img: "schedule_app_banner.jpg"
+  tags:
+   - Mobile App
+  icon: watch
+  icon: smartphone
+  url: "/projects/schedule_app"
+  hover_color: "teal"
+  section_blurb: "I used to work for a company that made software for fast-food restaurants! Some of these made it into over 10,000 Burger Kings 🍔"
 
 - name: "Restaurant Management System"
   tags:

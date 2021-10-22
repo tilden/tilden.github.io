@@ -23,7 +23,7 @@
     	var yRatio = Math.min(1, scrollDistance / heightDiff);
 
 		upperNav.css('transform', 'translate3d(0,' + (1 - yRatio) * 20 + 'px,0)');
-		bannerImage.css('opacity', 1 - yRatio);
+		bannerImage.css('opacity',(1 - yRatio) / 3);
 		lowerNav.css('opacity', 1 - yRatio * 2);
 
 		toolbarTitle.css('opacity', Math.pow(yRatio, 4));

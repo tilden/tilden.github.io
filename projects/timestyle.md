@@ -1,8 +1,8 @@
 ---
 layout: post
-# banner_photo: "/images/banners/blur/mestyle_banner.png"
+#banner_photo: "/images/banners/blur/timestyle_banner.png"
 title: "TimeStyle"
-subtitle: "The 5th most popular Pebble watch face of all time, with nearly 200,000 installs."
+subtitle: "Among the most popular Pebble watch faces of all time, with over 200,000 installs."
 ---
 
 ![Photo of TimeStyle running on a watch](/images/projects/timestyle/artsy_photo.jpg)

@@ -5,17 +5,22 @@ is_top_level: true
 is_landing_page: true
 browser_title: "Dan Tilden: UX Designer"
 title: "Dan Tilden: <span>UX Designer</span>"
-subtitle: "I'm a designer who enjoys building things."
-#subsubtitle: "<span>My work has been deployed at nearly 10,000 fast food restaurants worldwide</span> 🍔"	  
+#subtitle: "Ideally, you will not remember anything I design"
+subsubtitle: "I'm a designer based in San Francisco focused on building sensible experiences that won't get in your way."
+top_bar_color: "#35357d"
+top_bar_color2: "#994300"
 ---
 
 
 <div class="cards central-col">
-  <p class="blurb">
-    <i class="material-icons">arrow_downward</i>
-    <span>Here are a few of my favorite creations. Click one to read more, or just skip the reading and scroll straight to the pictures! The choice is yours!</span>
-</p>
     {% for project in site.data.projects %}
+    {% if project.section_blurb %}
+        <h2 class="blurb">
+        <i class="material-icons">arrow_downward</i>
+        {{ project.section_blurb }}
+        </h2>
+    {% endif %}
+    
     <a id="project{{forloop.index}}"
         class="card project-card glass_effect {{ project.hover_color }}"
         href="{{ project.url }}">

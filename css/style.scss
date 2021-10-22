@@ -62,6 +62,11 @@ a:hover {
     text-align: left;
     padding-top: 100px;
     padding-bottom: 35px;
+    font-size: 16px;
+
+    .subtitle, .subsubtitle {
+      color: rgba(255,255,255,$material-light-secondary-opacity);
+    }
 
     h1, p {
       margin: 0;
@@ -73,19 +78,6 @@ a:hover {
 
       span {
         color: $material-amber-500;
-      }
-    }
-
-    p {
-      font-size: 16px;
-
-      &.subsubtitle {
-        font-size: 16px;
-        margin-top: 25px;
-
-        span {
-          opacity: $material-light-secondary-opacity;
-        }
       }
     }
   }
@@ -111,7 +103,7 @@ a:hover {
 }
 
 .nav.leaf-level {
-  background: $material-grey-800;
+  background: black;
 
   .subtitle {
     font-size: 16px;
@@ -119,7 +111,7 @@ a:hover {
   }
 
   & + #sticky_nav_bg {
-    background: $material-grey-800;
+    background: black;
   }
 }
 
@@ -188,14 +180,11 @@ svg.logo {
   padding-top: 33px;
   display: flex;
   align-items: center;
+  color: rgba(255,255,255,$material-light-secondary-opacity);
 
   i {
     padding: 0 15px 0 10px;
     color: $material-amber-500;
-  }
-
-  span {
-    opacity: 0.7;
   }
 }
 
@@ -227,7 +216,7 @@ svg.logo {
     font-size: 14px;
     text-decoration: none;
     opacity: 1;
-    transition: all 0.5s;
+    transition: border-bottom 0.5s;
     padding: 0 20px;
     display: block;
     height: 64px;
@@ -257,6 +246,14 @@ svg.logo {
   @include shadow-elevation-4dp;
 }
 
+.banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
 // @supports (-webkit-backdrop-filter: blur(10px)) {
 //   #sticky_nav_bg {
 //     background: rgba(53, 53, 125, .8);
@@ -265,20 +262,6 @@ svg.logo {
 // }
 
 /* landing page project cards / post cards */
-
-.cards {
-  // card section header
-  > h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: $material-grey-600;
-    font-size: 12px;
-    padding: 0 0 13px 0;
-    margin-top: -3px;
-    letter-spacing: 1px;
-  }
-}
 
 // support for color-hot-tracking effect (thanks, win7)
 .glass_effect {
