@@ -39,12 +39,18 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
-a {
+article a {
   text-decoration: none;
   color: $material-indigo-a100;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 7%;
+  text-decoration-color: $material-indigo-600;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 250ms;
+
+  &:hover {
+    text-decoration-color: $material-indigo-200;
+  }
 }
 
 /* navigation */
@@ -677,6 +683,8 @@ footer {
 
   a {
     color: $material-grey-500;
+    text-decoration: none;
+    text-decoration-line: none;
   }
 
   .central-col {
@@ -727,10 +735,6 @@ footer {
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
-  }
-
-  a:hover {
-    text-decoration: none;
   }
 
   .label {
