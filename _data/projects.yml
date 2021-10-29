@@ -6,7 +6,7 @@
     - Smartwatch Face
   icon: watch
   extra_info: >
-    <h3>Featured in</h3>
+    <p class="feature-text">Featured in</p>
     <div class="image_row">
     <img src="/images/The_Verge_logo.svg" alt="The Verge logo" title="" width="117" height="80" />
     <img src="/images/NDTV_logo.svg" alt="NDTV logo" title="" width="150" height="80" />
@@ -26,7 +26,7 @@
     A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
   banner_img: "jga_banner.jpg"
   extra_info: >
-    <h3>Excerpts from Reviews</h3>
+    <p class="feature-text">Excerpts from Reviews</p>
     <blockquote>
     <p>&ldquo;Truly a work of art, this is a glass of cold water in an endless scorching desert.&rdquo;</p>
     <p>―Niles Black</p>

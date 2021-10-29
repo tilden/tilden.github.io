@@ -16,7 +16,7 @@ top_bar_color2: "#994300"
     {% for project in site.data.projects %}
     {% if project.section_blurb %}
         <h2 class="blurb">
-        <i class="material-icons">arrow_downward</i>
+        <i class="material-icons" aria-hidden="true">arrow_downward</i>
         {{ project.section_blurb }}
         </h2>
     {% endif %}
@@ -27,7 +27,7 @@ top_bar_color2: "#994300"
 
         <div class="upper">
             <div>
-                <h2>{{ project.name }}</h2>
+                <h3>{{ project.name }}</h3>
                 <ul class="tags">
                     {% for tag in project.tags %}
                         <li>{{tag}}</li>
