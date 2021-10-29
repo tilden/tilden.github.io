@@ -27,7 +27,7 @@ top_bar_color2: "#994300"
 
         <div class="upper">
             <div>
-                <h3>{{ project.name }}</h3>
+                <h2>{{ project.name }}</h2>
                 <ul class="tags">
                     {% for tag in project.tags %}
                         <li>{{tag}}</li>
@@ -35,7 +35,7 @@ top_bar_color2: "#994300"
                 </ul>
             </div>
 
-            <div class="project_icon"><i class="material-icons">{{ project.icon }}</i></div>		
+            <div class="project_icon" aria-hidden="true"><i class="material-icons">{{ project.icon }}</i></div>		
         </div>
         <div class="lower">
             <div class="proj_info">

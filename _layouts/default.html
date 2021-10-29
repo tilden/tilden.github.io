@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
@@ -11,9 +11,9 @@
 
   {% include navigation.html %}
   
-  <div id="content-wrapper">
+  <main id="content-wrapper">
     {{ content }}
-  </div>
+  </main>
 
   {% unless page.no_footer_nav %}
     {% include nav_footer.html %}

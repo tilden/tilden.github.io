@@ -7,8 +7,9 @@
 {% endif %}
 
 
+<nav class="nav {{nav_extra_cls}}" {% if page.top_bar_color %} style="background: linear-gradient(to right, {{page.top_bar_color}}, {{page.top_bar_color2}}) " {% endif %}>
+  <a class="skip-link" href="#content-wrapper">Skip to main content</a>
 
-<div class="nav {{nav_extra_cls}}" {% if page.top_bar_color %} style="background: linear-gradient(to right, {{page.top_bar_color}}, {{page.top_bar_color2}}) " {% endif %}>
   {% if page.banner_photo %}
   <div class="banner-image" style="background-image: url({{page.banner_photo}})"></div>
   {% endif %}
@@ -64,5 +65,5 @@
     <p class="subsubtitle">{{page.subsubtitle}}</p>
     {% endif %}
   </div>
-</div>
+</nav>
 <div id="sticky_nav_bg" {% if page.top_bar_color %} style="background: linear-gradient(to right, {{page.top_bar_color}}, {{page.top_bar_color2}}) " {% endif %}></div>
