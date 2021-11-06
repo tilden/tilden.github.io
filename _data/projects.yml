@@ -1,29 +1,41 @@
 
 
-# - name: "Indeed Taxonomy Browser"
-#   desc: >
-#     How can we make browsing large quantities of multilingual, hierarchical data less of a pain?
-#   banner_img: "schedule_app_banner.jpg"
-#   tags:
-#    - Web Application
-#   icon: account_tree
-#   url: "/projects/schedule_app"
-#   hover_color: "indigo"
 
-- name: "Indeed Messaging"
+- name: "Indeed Messages"
   desc: >
     Searching for jobs can be one of the most stressful processes. Can we make communication easier solely via a new user interface?
-  banner_img: "schedule_app_banner.jpg"
+    <p class="feature-text">User feedback</p>
+    <ul>
+      <li>Created a spam feature</li>
+      <li>Did accessibility stuffs</li>
+    </ul>
+  banner_img: "messaging_banner.jpg"
   tags:
    - Responsive Webapp
   icon: message
   url: "/projects/messaging"
   hover_color: "indeed-blue"
+  section_blurb: "I currently work at Indeed, where I work on projects that, ideally, will help people get jobs"
+
+- name: "Taxonomy Browser"
+  desc: >
+    How can we make browsing large quantities of multilingual, hierarchical data easier?
+    <p class="feature-text">User feedback</p>
+    <blockquote>
+    <p>&ldquo;I’m liking it so far. Browsing all countries then using the flag/country filter is a useful combination&rdquo;</p>
+    </blockquote>
+  banner_img: "taxonomy_banner.jpg"
+  tags:
+   - Internal Tool
+  icon: account_tree
+  url: "/projects/taxonomy"
+  hover_color: "indeed-purple"
+
 
 - name: "TimeStyle"
   desc: >
     Among the most popular Pebble watchfaces of all time, with over 200,000 installs.
-  banner_img: "timestyle_banner.png"
+  banner_img: "timestyle_banner.jpg"
   tags:
     - Smartwatch Face
   icon: watch
@@ -39,11 +51,9 @@
   hover_color: "amber"
   section_blurb: "My favorite side projects have included a very popular smartwatch face and a really weird game ⌚ 🎮"
 
-
-  
 - name: "JGA: Crossroads of Destiny"
   tags:
-    - Video Game
+    - Story-Driven Video Game
   desc: >
     A game for mobile and desktop following an exiled infomercial chef's journey to bring balance to the world&mdash;and sell additional knives.
   banner_img: "jga_banner.jpg"
@@ -51,15 +61,16 @@
     <p class="feature-text">Excerpts from Reviews</p>
     <blockquote>
     <p>&ldquo;Truly a work of art, this is a glass of cold water in an endless scorching desert.&rdquo;</p>
-    <p>―Niles Black</p>
+    <p class="byline">―Niles Black</p>
     </blockquote>
     <blockquote>
     <p>&ldquo;This is the best RPG story I had ever experienced&rdquo;</p>
-    <p>―CrickySoupDoupLP</p>
+    <p class="byline">―CrickySoupDoupLP</p>
     </blockquote>
   icon: videogame_asset
   url: "/projects/jga"
   hover_color: "green"
+
   
 - name: "On Our Own Roanoke Valley"
   tags:
@@ -70,7 +81,7 @@
   icon: devices
   url: "/projects/onourown"
   hover_color: "blue"
-  section_blurb: "I made this website for a nonprofit hackathon! It's too bad they don't run it anymore 👨‍💻"
+  section_blurb: "I made this website for a hackathon intended to help local nonprofits! "
 
  
 - name: "Employee Scheduling App"
@@ -83,17 +94,7 @@
   icon: smartphone
   url: "/projects/schedule_app"
   hover_color: "teal"
-  section_blurb: "I used to work for a company that made software for fast-food restaurants! Some of these made it into over 10,000 Burger Kings 🍔"
-
-- name: "Employee Scheduling App"
-  desc: >
-    In a restaurant, determining who is working which shift can be more complex than it seems. Can we make this process more seamless for employees?
-  banner_img: "schedule_app_banner.jpg"
-  tags:
-   - Mobile App
-  icon: event
-  url: "/projects/schedule_app"
-  hover_color: "teal"
+  section_blurb: "I used to work for Sicom, a company that made software for fast-food restaurants 🍔"
 
 - name: "Restaurant Management System"
   tags:

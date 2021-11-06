@@ -198,7 +198,7 @@ svg.logo {
   font-size: 14px;
   text-align: left;
   padding-bottom: 33px;
-  padding-top: 33px;
+  margin-top: 43px;
   display: flex;
   align-items: center;
   color: rgba(255,255,255,$material-light-secondary-opacity);
@@ -291,7 +291,7 @@ svg.logo {
   text-shadow: 0 0 5px rgba(0,0,0,0.75);
   transition: all 0.1s linear;
   border-radius: 2px;
-  background-color: $material-grey-800;
+  background-color: $material-grey-900;
   overflow: hidden;
   position: relative;
 
@@ -366,8 +366,8 @@ svg.logo {
 @include addGlassColor("blue", $material-blue-700);
 @include addGlassColor("red", $material-red-800);
 @include addGlassColor("teal", $material-teal-600);
-@include addGlassColor("indeed-blue", #085ff7);
-@include addGlassColor("indeed-orange", #085ff7);
+@include addGlassColor("indeed-blue", #4D72CC);
+@include addGlassColor("indeed-purple", #9d2b6b);
 @include addGlassColor("light-green", $material-light-green-700);
 @include addGlassColor("indigo", $material-indigo-500);
 
@@ -474,7 +474,7 @@ svg.logo {
       margin: 0;
     }
 
-    p:last-child {
+    .byline {
       font-size: 12px;
       opacity: 0.75;
     }

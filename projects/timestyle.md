@@ -16,7 +16,7 @@ blend with the watch's design language. With nearly 200,000 users and over 10,00
 <div class="buttons">
   <a href="https://apps.rebble.io/en_US/application/55a5c024f4510f794c000071" class="glass_effect">
     <i class="material-icons">watch</i>
-    Available from <del>Pebble</del> Rebble
+    Still installable via the Rebble Project!
   </a>
 	<a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
     <i class="material-icons">code</i>
@@ -24,8 +24,9 @@ blend with the watch's design language. With nearly 200,000 users and over 10,00
 	</a>
 </div>
 
+<!-- 
 * TOC
-{:toc}
+{:toc} -->
 
 ## Introduction
 

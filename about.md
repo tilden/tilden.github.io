@@ -12,7 +12,7 @@ subtitle: I'm a UX designer with a multidisciplinary background in Human-Compute
   url="/images/about_photo.jpg"
   alt="Photo of me standing in the Steve Jobs Theatre in Apple Park"
   title="According to Ancient Apple™ Legend, spending one second in this featureless Apple™-themed chamber takes 500 years in the outside world"
-  caption="It's the Steve Jobs™ Theatre™ at Apple™ Park™!<br />Remember when Apple would host interesting events there?"
+  caption="It's the Steve Jobs™ Theatre™ at Apple™ Park™!"
 %}
 
 <div class="buttons">
