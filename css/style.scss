@@ -59,10 +59,9 @@ article a {
   position: absolute;
   color: white;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   top: 0;
   left: 20px;
-  // height: 1px;
   opacity: 0;
   transition: opacity 250ms;
 
@@ -83,7 +82,7 @@ article a {
     text-align: left;
     padding-top: 100px;
     padding-bottom: 35px;
-    font-size: 16px;
+    font-size: 1rem;
 
     .subtitle, .subsubtitle {
       color: rgba(255,255,255,$material-light-secondary-opacity);
@@ -95,7 +94,7 @@ article a {
 
     h1 {
       margin-bottom: 18px;
-      font-size: 36px;
+      font-size: 2.25rem;
 
       span {
         color: $material-amber-500;
@@ -109,7 +108,7 @@ article a {
   margin-bottom: 0;
 
   .subtitle {
-    font-size: 20px;
+    font-size: 1.25rem;
     opacity: 1;
   }
 
@@ -127,7 +126,7 @@ article a {
   background: black;
 
   .subtitle {
-    font-size: 16px;
+    font-size: 1rem;
     opacity: $material-light-secondary-opacity;
   }
 
@@ -138,7 +137,7 @@ article a {
 
 h1.logo {
   text-align: left;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 400;
   color: white;
   transition: opacity 0.2s;
@@ -174,7 +173,7 @@ svg.logo {
   }
 
   span {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     position: relative;
     top: -5px;
@@ -195,7 +194,7 @@ svg.logo {
 
 .blurb {
   font-family: "Roboto Mono";
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: left;
   padding-bottom: 33px;
   margin-top: 43px;
@@ -221,7 +220,7 @@ svg.logo {
 
 .nav-tabs {
   list-style: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 0;
   margin: 0;
   display: -webkit-flex;
@@ -234,7 +233,7 @@ svg.logo {
   li > a {
     color: inherit;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
     opacity: 1;
     transition: border-bottom 0.5s;
@@ -442,7 +441,7 @@ svg.logo {
     height: 32px;
 
     > i {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
 
@@ -455,7 +454,7 @@ svg.logo {
   }
 
   h2, h3 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1;
     margin: 0 0 7px -3px;
@@ -466,7 +465,7 @@ svg.logo {
     opacity: 0.8;
     border-left: 3px solid rgba(255,255,255,0.1);
     padding: 6px 0 6px 12px;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 0 0 8px 0;
     font-weight: 400;
 
@@ -475,7 +474,7 @@ svg.logo {
     }
 
     .byline {
-      font-size: 12px;
+      font-size: 0.75rem;
       opacity: 0.75;
     }
   }
@@ -486,12 +485,12 @@ svg.logo {
 
   a {
     margin: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .tags, .feature-text {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.6875rem;
     letter-spacing: 1px;
     opacity: 0.75;
     font-weight: 400;
@@ -548,7 +547,7 @@ svg.logo {
   text-align: left;
 
   h2, h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Roboto Mono";
     line-height: 1.2;
     color: $material-amber-500;
@@ -561,7 +560,7 @@ svg.logo {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   p {
@@ -641,7 +640,7 @@ svg.logo {
 
     i {
       display: block;
-      font-size: 36px;
+      font-size: 2.25rem;
       opacity: .8;
       padding-bottom: 15px;
     }
@@ -653,12 +652,12 @@ svg.logo {
   margin-left: 0;
   padding: 0px 15px;
   font-family: "Roboto Mono";
-  font-size: 18px;
+  font-size: 1.125rem;
   border-left: 4px solid $material-grey-700;
 
   &:before {
     content: 'Contents';
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 10px;
     display: block;
     color: $material-grey-500;
@@ -671,7 +670,7 @@ svg.logo {
   }
 
   li li {
-    font-size: 15px;
+    font-size: 0.9375rem;
     list-style: none;
   }
 }
@@ -707,7 +706,7 @@ footer {
   }
 
   .social-icons {
-    font-size: 24px;
+    font-size: 1.5rem;
     height: 30px;
 
     a {
@@ -741,12 +740,12 @@ footer {
 
   .label {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffc107;
   }
 
   .name {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
   }
 
@@ -778,7 +777,7 @@ code {
 
 pre > code {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   white-space: pre;
   border-radius: 2px;
   background-color: #333;
@@ -789,7 +788,7 @@ pre > code {
 
 
 .footnotes {
-  font-size: 14px;
+  font-size: 0.875rem;
   word-wrap: break-word;
   border-top: 1px dashed $material-grey-700;
   margin-top: 2.5em;
