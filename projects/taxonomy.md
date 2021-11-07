@@ -1,50 +1,43 @@
 ---
 layout: post
-# banner_photo: "/images/projects/drivethru/drivethru_sky.png"
 title: "Taxonomy Viewer"
-subtitle: "An internal tool used to view taxonomies"
+subtitle: "How can we make browsing large quantities of multilingual, hierarchical data easier?"
 ---
 
 {% include img.html
-  url="/images/projects/drivethru/drivethru.png"
-  alt="Screenshot showing drive-thru monitor with several cars waiting"
+  url="/images/projects/taxonomy/after.png"
+  alt="Screenshot showing the taxonomy viewer"
+  caption="The redesigned taxonomy viewer, showing two regions"
 %}
 
-The drive-thru monitor visualizes the status of cars waiting in a drive-thru using simple video-game inspired visuals anbd gamification features. After deployment at every Burger King location in the United States (over 10,000 locations), franchisees observed a ~50% reduction in vehicle wait times.
+For this project, I worked with an international team to redesign Indeed's internal taxonomy tool. After talking with the project manager, I used access logs to identify the top 10 users of the existing tool, and invited each of them to a research session, using semi-structured interview questions to determine likely pain points.
+
+I then worked with the engineer on the project to redesign the UI based on this feedback. Here are some examples of how the feedback influenced by refreshed design:
+
+## Example 1: Global View & Language Filters
+There exists a separate hierarchy for each region (US, Canada, etc). Therefore, in the prior version of the tool, it would simply select United States 🇺🇸 and show you the hierarchy for that region. While that sort of worked, it meant that in almost every view _something_ would be hidden. One user noted frustration with having to "constantly switch between the US and Canada".
+
+A second issue was that each node in the hierarchy would contain localized strings for any number of languages/regions, all of which were visible at once. Some people did like this, but others felt that it created too much clutter, as they were only interested in one or two languages (typically related to whatever project they were working on at the moment). 
+
+As such, I worked with the team to create two key new features: a global view that showed a composite of all hierarchies, and the ability to select one or more the languages to be shown (instead of just showing all of them).
+
+> 
+> &ldquo;I’m liking it so far. Browsing all countries then using the flag/country filter is a useful combination&rdquo;
+> 
+> &#x2015; Random person on Slack
 
 
-<!-- * TOC
-{:toc} -->
+## Example 2: Emphasizing the identifier tag and adding a quick copy action
 
+From interviewing users, it became apparently that the #1 thing anyone ever did with this tool was search for concepts and copy the "UUID" tag. As such, I emphasized it in the UI and also added a quick copy to clipboard action that didn't require text selection.
 
-## Background
-
-Today, a huge number of fast food restaurants offer drive-thrus, allowing patrons to order food without leaving their car. However, going to the drive-thru can often result in a lot of waiting. To combat that, many fast food restaurants are highly focused on quantitatively improving their "speed of service" by measuring vehicle wait times and rewarding restaurant operators with the fastest service.
-
-In light of this demand, Sicom offered a simple drive-thru timing solution: an LED timer display. Linked with vehicle-detectors installed in the road, the timer would show an estimate of amount of time that the most recent car had been waiting:
-{% include img.html
-  url="/images/projects/drivethru/original_timer.jpg"
-  alt="Initial sketches of system" w="500" h="311"
-  caption="Sicom's original drive-thru timing solution"
-%}
-
-To remedy this, Sicom was asked by a major restaurant chain to create a new drive-thru timing solution. I worked up with the product manager for the existing timing product and a remote development team located in Hungary to create a new solution. The new solution went through a variety of tests and iterations, finally settling on a [cabinet-projection](https://en.wikipedia.org/wiki/Oblique_projection#Cabinet_projection) view showing a side view of a drive-thru lane.
-
-In addition, the new version was capable of ranking a restaurant against its peers, displaying a leaderboard of the best times.
-
-<!-- ## Early version
-
-{% include img.html
-  url="/images/projects/drivethru/shot_day.jpg"
-  alt="Screenshot showing drive-thru from above, with several cars visible"
-  caption="An older iteration of Drive-Thru monitor, showing the ultimately-scrapped top-down view"
-%} -->
-
+## Pre-Redesign Version
 
 {% include img.html
-  url="/images/projects/drivethru/reallife_shot.jpg"
+  url="/images/projects/taxonomy/before.png"
   alt="Photo showing a real drive-thru monitor installation on a screen"
-  caption="A photo of Drive-Thru Monitor in the real world"
+  caption="The previous version, showing only the taxonomy hierarchy for the United States with all languages visible (the only option)"
 %}
+
 
 <!-- ## Conclusions -->

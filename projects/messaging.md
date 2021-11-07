@@ -19,6 +19,7 @@ As such, I got to experience Indeed's UX firsthand, and one of the things that s
   url="/images/projects/messaging/legacy-inbox.png"
   alt="Screenshot showing the classic messaging experience"
   caption="The legacy messaging experience"
+  w="550"
 %}
 
 ## My Contributions
@@ -36,7 +37,7 @@ A key issue that job seekers often face is spam and scams. For example, maybe a 
 
 In the initial draft of the spec, the feature would simply add an additional action menu item for "Move to spam" and nothing else. However, I felt that this missed a key aspect: the fact that we also offered a "report message" option -- both of those strongly relate to spammy messages, so it seemed like we were missing an opportunity if we didn't integrate them in some way. As such, I suggested a redesign of our reporting flow as part of our spam feature, one which would also move reported messages directly to the spam folder. After all, if a user thought a message was bad enough to report, it follows that they wouldn't want to see it again. 
 
-I proposed this to product and engineering, who liked my the idea behind my designs, but were notably less enthusiastic about the fact that my designs called for 3 slightly different variations of a dialog box depending on a variety of contextual factors. After some additional discussion, we were able to agree on a simplified flow and copy that only required a single flow. Moving on to the specification phase, I continued to work with the Engineering and QA teams to identify likely edge cases _before_ we even got to the implementation phase. I also used my knowledge of frontend dev to create particularly unambiguous redlines, showing exactly which UI components to use and which props to feed them.
+Moving on to the specification phase, work with the Engineering and QA teams to make changes based on feedback and identify likely edge cases prior to implementation. I also used my knowledge of frontend dev to create particularly unambiguous redlines, showing exactly which UI components to use and which parameters to feed them.
 
 
 {% include img.html
@@ -60,13 +61,15 @@ To give you an example of the kinds of things I worked on, consider [these guide
 {% include img.html
   url="/images/projects/messaging/accessibility_headings.png"
   alt="An annotated mockup of Messaging with heading levels highlighted"
+  w="550"
   caption="Heading levels! It's really too bad we're still stuck with hardcoded heading levels, instead of <a href='http://blogoscoped.com/archive/2005-04-20-n74.html'>that cool proposed &lt;h&gt; element</a>"
 %}
 
 {% include img.html
   url="/images/projects/messaging/accessibility_landmarks.png"
   alt="An annotated mockup of Messaging with landmark regions highlighted"
-  caption="An annotated image I made showing landmarks for Messaging; try to pretend it doesn't look like I made it in MS Paint"
+  w="550"
+  caption="An annotated image I made showing proposed landmarks for Messaging; try to pretend it doesn't look like I made it in MS Paint"
 %}
 
 Ultimately, we were able to fix a large amount of these issues, and hopefully users with disabilities will have an easier time using Indeed Messages!

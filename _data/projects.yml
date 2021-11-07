@@ -4,11 +4,6 @@
 - name: "Indeed Messages"
   desc: >
     Searching for jobs can be one of the most stressful processes. Can we make communication easier solely via a new user interface?
-    <p class="feature-text">User feedback</p>
-    <ul>
-      <li>Created a spam feature</li>
-      <li>Did accessibility stuffs</li>
-    </ul>
   banner_img: "messaging_banner.jpg"
   tags:
    - Responsive Webapp
@@ -20,10 +15,6 @@
 - name: "Taxonomy Browser"
   desc: >
     How can we make browsing large quantities of multilingual, hierarchical data easier?
-    <p class="feature-text">User feedback</p>
-    <blockquote>
-    <p>&ldquo;I’m liking it so far. Browsing all countries then using the flag/country filter is a useful combination&rdquo;</p>
-    </blockquote>
   banner_img: "taxonomy_banner.jpg"
   tags:
    - Internal Tool
