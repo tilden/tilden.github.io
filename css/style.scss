@@ -573,10 +573,6 @@ svg.logo {
     line-height: 1.8;
   }
 
-  p:last-of-type {
-    margin-bottom: 0;
-  }
-
   ol li {
     margin: 0.5em 0;
   }
@@ -707,13 +703,18 @@ footer {
 
   .social-icons {
     font-size: 1.5rem;
-    height: 30px;
+    display: flex;
 
     a {
       opacity: 0.4;
       transition: 0.2s all;
       padding: 0 2px;
       color: white;
+      display: flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
     }
   }
 
