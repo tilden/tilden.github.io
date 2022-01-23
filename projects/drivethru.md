@@ -10,7 +10,7 @@ subtitle: "The Drive-Thru monitor product conveys the status of a restaurant's d
   alt="Screenshot showing drive-thru monitor with several cars waiting"
 %}
 
-The drive-thru monitor visualizes the status of cars waiting in a drive-thru using simple video-game inspired visuals anbd gamification features. After deployment at every Burger King location in the United States (over 10,000 locations), franchisees observed a ~50% reduction in vehicle wait times.
+The drive-thru monitor visualizes the status of cars waiting in a drive-thru using simple video-game inspired visuals and gamification features. After deployment at every Burger King location in the United States (over 10,000 locations), franchisees observed a ~50% reduction in vehicle wait times.
 
 
 <!-- * TOC
