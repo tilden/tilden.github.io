@@ -9,14 +9,14 @@ subtitle: "Among the most popular Pebble watch faces of all time, with over 200,
 
 Wristwatches reflect the wearer's style, and wearables are no different.
 TimeStyle provides a readable and customizable time display, designed to
-blend with the watch's design language. With nearly 200,000 users and over 10,000 "hearts", it remains the fifth most popular watchface ever made for the Pebble smartwatch [(may it rest in peace)](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit).
+blend with the watch's design language. With nearly 200,000 users and over 14,000 "hearts", it is the third most popular watchface ever made for the Pebble smartwatch, which recently has been [revived after a long absense!](https://repebble.com/).
 
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 
 <div class="buttons">
-  <a href="https://apps.rebble.io/en_US/application/55a5c024f4510f794c000071" class="glass_effect">
+  <a href="https://apps.repebble.com/timestyle_55a5c024f4510f794c000071" class="glass_effect">
     <i class="material-icons">watch</i>
-    Still installable via the Rebble Project!
+    Still available on the Pebble App store
   </a>
 	<a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
     <i class="material-icons">code</i>
@@ -115,7 +115,7 @@ This, however, had nothing to do with my watchface; 24-hour time is an option on
 
 ## Conclusion
 
-While Pebble has died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit), the Pebble app store nonetheless continues to function, where TimeStyle has accumulated over 180,000 installs and over 10,000 "hearts"[^hearts], making it the fifth most popular watch face ever made for the Pebble.
+While Pebble died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit) back in 2016, thanks to dedicated fans, a mirror of the Pebble app store nonetheless continued to function, where TimeStyle continued to accumulate installs, even slightly increasing its position on in the rankings! After the revival of Pebble, TimeStyle was even used in product renders for the new Pebble Time 2 smartwatch!
 
 These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a *default-looking* face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch, I achieved what I had set out to do: create the "default" digital watch face that I had wished my Pebble came with when I bought it.
 

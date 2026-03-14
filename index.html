@@ -6,23 +6,23 @@ is_landing_page: true
 browser_title: "Dan Tilden: UX Designer"
 title: "Dan Tilden: <span>UX Designer</span>"
 #subtitle: "Ideally, you will not remember anything I design"
-subsubtitle: "I'm a designer based in San Francisco focused on building sensible experiences that won't get in your way."
-top_bar_color: "#35357d"
-top_bar_color2: "#994300"
+subsubtitle: "I'm a designer currently based in Tokyo, Japan, focused on building sensible experiences that won't get in
+your way."
+top_bar_color: "#000000"
+top_bar_color2: "#000000"
 ---
 
 
 <div class="cards central-col">
     {% for project in site.data.projects %}
     {% if project.section_blurb %}
-        <h2 class="blurb">
+    <h2 class="blurb">
         <i class="material-icons" aria-hidden="true">arrow_downward</i>
         {{ project.section_blurb }}
-        </h2>
+    </h2>
     {% endif %}
-    
-    <a id="project{{forloop.index}}"
-        class="card project-card glass_effect {{ project.hover_color }}"
+
+    <a id="project{{forloop.index}}" class="card project-card glass_effect {{ project.hover_color }}"
         href="{{ project.url }}">
 
         <div class="upper">
@@ -30,17 +30,17 @@ top_bar_color2: "#994300"
                 <h3>{{ project.name }}</h3>
                 <ul class="tags">
                     {% for tag in project.tags %}
-                        <li>{{tag}}</li>
+                    <li>{{tag}}</li>
                     {% endfor %}
                 </ul>
             </div>
 
-            <div class="project_icon" aria-hidden="true"><i class="material-icons">{{ project.icon }}</i></div>		
+            <div class="project_icon" aria-hidden="true"><i class="material-icons">{{ project.icon }}</i></div>
         </div>
         <div class="lower">
             <div class="proj_info">
                 <div class="desc">
-                {{ project.desc }}
+                    {{ project.desc }}
                 </div>
                 <div class="extra_info">
                     {{ project.extra_info }}
@@ -51,9 +51,8 @@ top_bar_color2: "#994300"
             </div>
         </div>
         <!-- <div class="color_hot_track"></div> -->
-        <div class="bg_overlay"
-             style="background-image: url(images/banners/blur/{{ project.banner_img }});">
-        </div> 
+        <div class="bg_overlay" style="background-image: url(images/banners/blur/{{ project.banner_img }});">
+        </div>
     </a>
     {% endfor %}
 

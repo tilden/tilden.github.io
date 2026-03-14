@@ -36,11 +36,33 @@
 <!-- "Aero Glass" style buttons (thanks Windows 7) -->
 <script type="text/javascript">
 	var mouseX;
+	var mouseY;
 	var currentEl;
+	var isTouch = false;
 
 	function recordMousePosition(e) {
 		mouseX = e.pageX;
+		mouseY = e.pageY;
 		currentEl = e.currentTarget;
+		isTouch = false;
+	}
+
+	function recordTouchPosition(e) {
+		if (e.touches && e.touches.length > 0) {
+			mouseX = e.touches[0].pageX;
+			mouseY = e.touches[0].pageY;
+			currentEl = e.currentTarget;
+			isTouch = true;
+			$(currentEl).addClass('is-touching');
+		}
+	}
+
+	function clearTouchPosition(e) {
+		if (e.currentTarget === currentEl) {
+			$(currentEl).removeClass('is-touching');
+			currentEl = null;
+			isTouch = false;
+		}
 	}
 
 	function doColorHotTrack() {
@@ -48,12 +70,21 @@
 			var target = $(currentEl);
 			let offsetX = mouseX - (target.offset().left + target.width());
 			let offsetY = 0;
+			
+			if (isTouch) {
+				let currentCenterY = target.height() * 1.1;
+				let desiredCenterY = mouseY - target.offset().top;
+				offsetY = desiredCenterY - currentCenterY;
+			}
+			
 			target.find(".color_hot_track").css('transform', 'translate3d(' + offsetX + 'px,' + offsetY + 'px, 0)');
 		}
 	}
 
 	$('.glass_effect').append('<div class="color_hot_track"></div>');
 	$('.glass_effect').mousemove(recordMousePosition);
+	$('.glass_effect').on('touchstart touchmove', recordTouchPosition);
+	$('.glass_effect').on('touchend', clearTouchPosition);
 	
 	setInterval(doColorHotTrack, 100);
 </script>

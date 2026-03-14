@@ -30,7 +30,7 @@ subtitle: I'm a UX designer with a multidisciplinary background in Human-Compute
 
 I currently work at [Indeed.com™](https://www.indeed.com), where I am trying to make job searching slightly less stressful! Previously I designed things primarily used by Burger King™, which at one point deployed my designs to over 10,000 restaurants! I wonder whatever happened to all those... 🍔 🤔
 
-I particularly enjoy working on side projects, like [my weird video game](/projects/jga) and one of the most popular [smartwatch faces for the Pebble (RIP)](/projects/timestyle).
+I particularly enjoy working on side projects, like [my weird video game](/projects/jga) and one of the most popular [smartwatch faces for the Pebble)](/projects/timestyle).
 
 I also take too many photos, some of which you can find on my [Instagram](https://www.instagram.com/freakified/), and I even compose music from time to time, which you can find on my [Soundcloud](https://soundcloud.com/freakified)! 
 

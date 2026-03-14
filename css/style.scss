@@ -78,7 +78,7 @@ article a {
   color: white;
   z-index: 2;
   position: relative;
-  background: rgb(53, 53, 125);
+  background: black;
   margin-bottom: 55px;
 
   .nav-lower {
@@ -88,11 +88,13 @@ article a {
     padding-bottom: 35px;
     font-size: 1rem;
 
-    .subtitle, .subsubtitle {
-      color: rgba(255,255,255,$material-light-secondary-opacity);
+    .subtitle,
+    .subsubtitle {
+      color: rgba(255, 255, 255, $material-light-secondary-opacity);
     }
 
-    h1, p {
+    h1,
+    p {
       margin: 0;
     }
 
@@ -121,9 +123,9 @@ article a {
     padding-bottom: 50px;
   }
 
-  & + #sticky_nav_bg {
-    background: rgb(53, 53, 125);
-  }
+  // &+#sticky_nav_bg {
+  //   background: rgba(0,0,0,0.8);
+  // }
 }
 
 .nav.leaf-level {
@@ -134,9 +136,9 @@ article a {
     opacity: $material-light-secondary-opacity;
   }
 
-  & + #sticky_nav_bg {
-    background: black;
-  }
+  // &+#sticky_nav_bg {
+  //   background: rgba(0,0,0,0.8);
+  // }
 }
 
 h1.logo {
@@ -152,8 +154,8 @@ svg.logo {
   border: 0;
   margin: 4px 0;
 
-  > circle {
-    stroke: rgba(255,255,255,0.5);
+  >circle {
+    stroke: rgba(255, 255, 255, 0.5);
     transition: stroke .5s ease;
   }
 }
@@ -203,7 +205,7 @@ svg.logo {
   margin-top: 43px;
   display: flex;
   align-items: center;
-  color: rgba(255,255,255,$material-light-secondary-opacity);
+  color: rgba(255, 255, 255, $material-light-secondary-opacity);
 
   i {
     padding: 0 15px 0 10px;
@@ -212,13 +214,13 @@ svg.logo {
 }
 
 .nav-upper {
-    display: -webkit-flex;
-    display: flex;
-    position: fixed;
-    padding: 0 20px;
-    // transform: translate3d(0, 20px, 0);
-    width: 100%;
-    z-index: 5;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  padding: 0 20px;
+  // transform: translate3d(0, 20px, 0);
+  width: 100%;
+  z-index: 5;
 }
 
 .nav-tabs {
@@ -233,7 +235,7 @@ svg.logo {
     line-height: 64px;
   }
 
-  li > a {
+  li>a {
     color: inherit;
     text-transform: uppercase;
     font-size: 0.875rem;
@@ -247,7 +249,7 @@ svg.logo {
     border-bottom: 2px solid transparentize($material-amber-500, 1);
 
     &:hover {
-      border-bottom: 2px solid rgba(255,255,255,0.25);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     }
 
 
@@ -260,12 +262,13 @@ svg.logo {
 
 #sticky_nav_bg {
   position: fixed;
-  background: rgb(53, 53, 125);
+  background: rgba(0,0,0,0.8);;
   top: 0;
   left: 0;
   right: 0;
   height: 64px;
   z-index: 1;
+  backdrop-filter: blur(5px);
   @include shadow-elevation-4dp;
 }
 
@@ -277,22 +280,15 @@ svg.logo {
   background-size: cover;
 }
 
-// @supports (-webkit-backdrop-filter: blur(10px)) {
-//   #sticky_nav_bg {
-//     background: rgba(53, 53, 125, .8);
-//     -webkit-backdrop-filter: blur(10px);
-//   }
-// }
-
 /* landing page project cards / post cards */
 
 // support for color-hot-tracking effect (thanks, win7)
 .glass_effect {
   color: white;
-  transform: translate3d(0,0,0);
-  text-shadow: 0 0 5px rgba(0,0,0,0.75);
+  transform: translate3d(0, 0, 0);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   transition: all 0.1s linear;
-  border-radius: 2px;
+  border-radius: 24px;
   background-color: $material-grey-900;
   overflow: hidden;
   position: relative;
@@ -301,15 +297,20 @@ svg.logo {
   &::before {
     content: '';
     position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     transition: inherit;
     box-shadow: inset 0 0 0 1px white;
     opacity: 0.25;
+    border-radius: inherit;
   }
-  
+
+  &::after {
+    border-radius: inherit;
+  }
+
   // color hot tracking for that win7 taskbar goodness
   .color_hot_track {
     position: absolute;
@@ -321,9 +322,9 @@ svg.logo {
     z-index: -2;
     opacity: 0;
     background-image: radial-gradient(ellipse closest-side,
-                      transparentize(white, 0.5),
-                      transparentize($material-amber-700, 0.5),
-                      transparentize($material-amber-700, 1));
+        transparentize(white, 0.5),
+        transparentize($material-amber-700, 0.5),
+        transparentize($material-amber-700, 1));
   }
 
   // hover effects
@@ -353,11 +354,11 @@ svg.logo {
   .glass_effect.#{$classname} {
     .color_hot_track {
       background-image: radial-gradient(ellipse closest-side,
-                        transparentize(white, 0.5),
-                        transparentize($color, 0.5),
-                        transparentize($color, 1));
+          transparentize(white, 0.5),
+          transparentize($color, 0.5),
+          transparentize($color, 1));
     }
-    
+
     &:hover {
       background-color: darken($color, 20);
     }
@@ -422,13 +423,14 @@ svg.logo {
     bottom: 0;
   }
 
-  .upper, .lower {
+  .upper,
+  .lower {
     z-index: -1;
   }
 
   .upper {
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,.15);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
     padding: 25px;
     display: flex;
     align-items: center;
@@ -443,7 +445,7 @@ svg.logo {
     opacity: .5;
     height: 32px;
 
-    > i {
+    >i {
       font-size: 2rem;
     }
   }
@@ -456,7 +458,8 @@ svg.logo {
     overflow: hidden;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1;
@@ -466,7 +469,7 @@ svg.logo {
 
   blockquote {
     opacity: 0.8;
-    border-left: 3px solid rgba(255,255,255,0.1);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
     padding: 6px 0 6px 12px;
     font-size: 0.875rem;
     margin: 0 0 8px 0;
@@ -491,7 +494,8 @@ svg.logo {
     font-size: 1rem;
   }
 
-  .tags, .feature-text {
+  .tags,
+  .feature-text {
     text-transform: uppercase;
     font-size: 0.6875rem;
     letter-spacing: 1px;
@@ -506,6 +510,7 @@ svg.logo {
 
     li {
       display: inline;
+
       &:not(:first-child)::before {
         content: ' // ';
         padding: 0 5px;
@@ -516,7 +521,7 @@ svg.logo {
   div.image_row {
     padding: 0;
 
-    > img {
+    >img {
       width: 6vw;
       height: 6vw;
       padding: 10px;
@@ -526,7 +531,7 @@ svg.logo {
     }
   }
 
-  .bg_overlay{
+  .bg_overlay {
     position: absolute;
     background-size: cover;
     top: 0;
@@ -544,12 +549,13 @@ svg.logo {
 /* pages */
 
 .post-content {
-  color: rgba(255,255,255,$material-light-secondary-opacity);
+  color: rgba(255, 255, 255, $material-light-secondary-opacity);
   width: 760px;
   margin: 0 auto;
   text-align: left;
 
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 1.5rem;
     font-family: "Roboto Mono";
     line-height: 1.2;
@@ -558,7 +564,12 @@ svg.logo {
     // sneaky way to take fixed nav into account for anchor links
     // courtesy of http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
     &::before {
-      content: ''; display: block; position: relative; width: 0; height: 84px; margin-top: -84px;
+      content: '';
+      display: block;
+      position: relative;
+      width: 0;
+      height: 84px;
+      margin-top: -84px;
     }
   }
 
@@ -571,7 +582,8 @@ svg.logo {
     margin-bottom: 1.5em;
   }
 
-  p, ul {
+  p,
+  ul {
     font-weight: 400;
     line-height: 1.8;
   }
@@ -589,7 +601,7 @@ svg.logo {
   }
 
   figure {
-    margin:  40px 0;
+    margin: 40px 0;
     border-radius: 3px;
     text-align: center;
     font-size: 80%;
@@ -615,7 +627,7 @@ svg.logo {
       margin: 0;
     }
 
-    & + blockquote {
+    &+blockquote {
       padding-top: 0;
     }
   }
@@ -628,11 +640,11 @@ svg.logo {
   a {
     display: block;
     color: white;
-    background-color: rgba(255,255,255,.15);
+    background-color: rgba(255, 255, 255, .15);
     width: 200px;
     font-weight: 300;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 24px;
     padding: 15px 25px;
     margin: 10px 10px 5px 0px;
     text-align: center;
@@ -664,7 +676,7 @@ svg.logo {
     text-transform: uppercase;
   }
 
-  ul  {
+  ul {
     padding-left: 12px;
   }
 
@@ -680,6 +692,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+  background-color: mix($material-grey-800, $material-grey-900, 20%);
 
   a {
     color: $material-grey-500;
@@ -769,17 +782,17 @@ footer {
 
 sup {
   line-height: 1em;
-}
 
-sup a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 code {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", monospace;
 }
 
-pre > code {
+pre>code {
   font-weight: bold;
   font-size: 0.875rem;
   white-space: pre;
@@ -827,7 +840,7 @@ pre > code {
     .lower {
       flex-direction: column-reverse;
     }
-    
+
     .thumb_outer {
       transform: none;
       left: 0;
@@ -848,7 +861,7 @@ pre > code {
     padding: 0 10px;
   }
 
-  .nav-tabs li > a {
+  .nav-tabs li>a {
     padding: 0 10px;
   }
 }
