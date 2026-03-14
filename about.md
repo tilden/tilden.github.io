@@ -5,7 +5,7 @@ title: "About Me"
 permalink: /about/
 is_top_level: true
 section: about
-subtitle: I'm a UX designer with a multidisciplinary background in Human-Computer Interaction and Computer Science! My goal is to slowly fix all those minor things that annoy you in the websites and apps you use every day. 
+subtitle: With my multidisciplinary background in Human-Computer Interaction and Computer Science, my goal is to slowly fix all those minor things that annoy you in the websites and apps you use every day. 
 ---
 
 {% include img.html
