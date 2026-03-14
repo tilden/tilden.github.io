@@ -9,7 +9,7 @@ subtitle: "Among the most popular Pebble watch faces of all time, with over 200,
 
 Wristwatches reflect the wearer's style, and wearables are no different.
 TimeStyle provides a readable and customizable time display, designed to
-blend with the watch's design language. With nearly 200,000 users and over 14,000 "hearts", it is the third most popular watchface ever made for the Pebble smartwatch, which recently has been [revived after a long absense!](https://repebble.com/).
+blend with the watch's design language. With nearly 200,000 users and over 14,000 "hearts", it is the third most popular watchface ever made for the Pebble smartwatch, which recently has been [revived after a long absense](https://repebble.com/)!
 
 ![Collage of Timestyle screenshots](/images/projects/timestyle/collage.png)
 
@@ -18,10 +18,10 @@ blend with the watch's design language. With nearly 200,000 users and over 14,00
     <i class="material-icons">watch</i>
     Still available on the Pebble App store
   </a>
-	<a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
+ <a href="https://github.com/freakified/TimeStylePebble" class="glass_effect">
     <i class="material-icons">code</i>
     Source code on GitHub
-	</a>
+ </a>
 </div>
 
 <!-- 
@@ -35,7 +35,7 @@ When I got a Pebble smartwatch, I admired the watch's visual aesthetic; inspired
 {% include img.html
   url="/images/projects/timestyle/kickstarter_watch_anim.gif"
   alt="The Verge logo"
-	caption="An official animation demonstrating Pebble UI elements from their <a href='https://www.kickstarter.com/projects/597507018/pebble-time-awesome-smartwatch-no-compromises/description'>2015 Kickstarter campaign</a>"
+ caption="An official animation demonstrating Pebble UI elements from their <a href='https://www.kickstarter.com/projects/597507018/pebble-time-awesome-smartwatch-no-compromises/description'>2015 Kickstarter campaign</a>"
 %}
 
 However, I found that while there were thousands of watch faces available for the watch (many of them quite lovely), there were two key issues:
@@ -56,7 +56,7 @@ I began by examining the watch's existing user interface elements to find good e
 
 ![Example illustration of the Pebble's timeline interface](/images/projects/timestyle/timeline_ex.png)
 
-Based on this, I quickly sketched a basic watchface resembling the the most basic from of the timeline: the LECO font paired with a smaller san-serif on a solid colored background. However, given the watch's unique hardware, I realized that my mockups did not accurately represent what the face would like to *use*. As such, I created rapid prototype of this style, installing it on my watch[^originalprototype]:
+Based on this, I quickly sketched a basic watchface resembling the the most basic from of the timeline: the LECO font paired with a smaller san-serif on a solid colored background. However, given the watch's unique hardware, I realized that my mockups did not accurately represent what the face would like to _use_. As such, I created rapid prototype of this style, installing it on my watch[^originalprototype]:
 
 ![Early draft screenshot](/images/projects/timestyle/prototype_1.jpg)
 
@@ -117,35 +117,34 @@ This, however, had nothing to do with my watchface; 24-hour time is an option on
 
 While Pebble died a [tragic Silicon Valley accquideath](https://www.bloomberg.com/news/articles/2016-12-07/pebble-said-to-discuss-selling-software-assets-to-fitbit) back in 2016, thanks to dedicated fans, a mirror of the Pebble app store nonetheless continued to function, where TimeStyle continued to accumulate installs, even slightly increasing its position on in the rankings! After the revival of Pebble, TimeStyle was even used in product renders for the new Pebble Time 2 smartwatch!
 
-These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a *default-looking* face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch, I achieved what I had set out to do: create the "default" digital watch face that I had wished my Pebble came with when I bought it.
+These results, I believe, indicate that my initial intuition was correct; the ideal watch face for the Pebble is a _default-looking_ face coupled with a meticulous attention to detail and close attention to user feedback. By creating a simple, readable, and customizable watch face that matched the aesthetic of the watch, I achieved what I had set out to do: create the "default" digital watch face that I had wished my Pebble came with when I bought it.
 
 TimeStyle has been featured in:
 
 {% include img.html
   url="/images/The_Verge_logo.svg"
   alt="The Verge logo" w="200" h="137"
-	link="http://www.theverge.com/2015/8/6/9108023/pebble-time-steel-preorder-launch-review"
+ link="<http://www.theverge.com/2015/8/6/9108023/pebble-time-steel-preorder-launch-review>"
 %}
 
 {% include img.html
   url="/images/NDTV_logo.svg"
   alt="NDTV logo" w="200" h="137"
-	link="http://gadgets.ndtv.com/wearables/features/new-actions-will-make-your-pebble-simpler-and-smarter-843997"
+ link="<http://gadgets.ndtv.com/wearables/features/new-actions-will-make-your-pebble-simpler-and-smarter-843997>"
 %}
 
 {% include img.html
   url="/images/projects/timestyle/logo_gizmodo.svg"
   alt="Gizmodo logo" w="200" h="29"
-	link="http://gizmodo.com/the-pebble-2-is-now-the-only-fitness-tracking-smartwatc-1787368019"
+ link="<http://gizmodo.com/the-pebble-2-is-now-the-only-fitness-tracking-smartwatc-1787368019>"
 %}
 
 {% include img.html
   url="/images/projects/timestyle/logo_wareable.png"
   alt="Gizmodo logo" w="80" h="80"
-	link="https://www.wareable.com/Pebble/pebble-2-review"
+ link="<https://www.wareable.com/Pebble/pebble-2-review>"
 %}
 
 [^pebbledesign]: [Liron Damir: Designing Apps for Pebble](https://www.youtube.com/watch?v=LuiK8ZiPXr4)
 [^originalprototype]: [Github: Early functional prototype source code](https://github.com/tilden/DigitalTimePebbleFace)
 [^swatchtime]: [Wikipedia: Swatch Internet Time](https://en.wikipedia.org/wiki/Swatch_Internet_Time)
-[^hearts]: [Pebble App Store](https://apps.getpebble.com/en_US/collection/most-loved/watchfaces/1?dev_settings=true)
